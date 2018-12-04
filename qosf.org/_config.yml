@@ -1,24 +1,28 @@
 # Theme settings
 doks:
     baseurl:
-    color_theme: # Available themes: blue (default), green, purple, red and yellow
+    color_theme: green # Available themes: blue (default), green, purple, red and yellow
     header:
         logo:
-            text: Project name
+            text: QOSF
             image:
         nav:
-            - item_name: Item 1
-              item_url: '#'
-            - item_name: Item 2
-              item_url: '#'
-            - item_name: Item 3
-              item_url: '#'
+            - item_name: Home
+              item_url: '/'
+            - item_name: Manifesto
+              item_url: '/manifesto'
+            - item_name: Learn
+              item_url: '/learn_quantum'
+            - item_name: Code
+              item_url: '/project_list'
+            - item_name: Ranking
+              item_url: '/ranking'
     footer:
         content:
             logo:
-                text: Project name
+                text: Quantum Open Source Foundation </br> (QOSF)
                 image:
-            copyright: Copyright &copy; 2017. - Project name <br>All rights reserved.
+            copyright: This website is itself open source and released under a CC0 license.
         social_list:
             - network_name: facebook
               profile_url: '#'
