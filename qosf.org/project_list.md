@@ -28,18 +28,12 @@ page_nav:
         url: '#'
 ---
 
-# Quantum full-stack libraries
-
-#### [Forest](some_link)
-Hybrid quantum-classical full stack software developed by [Rigetti Computing](https://rigetti.com).
-
-#### [Qiskit](some_link)
-Quantum information science kit developed by [IBM](https://ibm.com).
-
-# Quantum computing simulators
-
-#### [Quantum++](some_link)
-Short description of the project
-
-#### [reference-qvm](some_link)
-Short description of the project
+<p>
+{% for category in site.data.yaml_project_list %}
+    <h1>{{ category.name }}</h1>
+    {% for project in category.projects %}
+        <h4><a href="{{ project.url }}">{{ project.name }}</a></h4>
+        <p>{{ project.description | markdownify }}</p>
+    {% endfor %}
+{% endfor %}
+</p>
