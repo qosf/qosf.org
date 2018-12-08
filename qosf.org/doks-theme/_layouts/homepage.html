@@ -22,11 +22,17 @@
 										{% if button.icon %}<i class="icon icon--{{ button.icon }}"></i>{% endif %}
 										{{ button.content }}
 									</a>
+                                        {% if forloop.index == 1 %}
+                                        </br>
+                                        {% endif %}
 									{% else %}
 									<a href="{% if jekyll.environment == 'production' %}{{ site.doks.baseurl }}{% endif %}{{ button.url }}" class="btn btn--dark btn--rounded btn--w-icon">
 										{% if button.icon %}<i class="icon icon--{{ button.icon }}"></i>{% endif %}
 										{{ button.content }}
 									</a>
+                                        {% if forloop.index == 1 %}
+                                        </br>
+                                        {% endif %}
 									{% endif %}
 								{% endfor %}
 							</div><!-- /.align-inner -->
