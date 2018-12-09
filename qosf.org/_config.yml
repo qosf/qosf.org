@@ -22,14 +22,14 @@ doks:
             logo:
                 text: Quantum Open Source Foundation </br> (QOSF)
                 image:
-            copyright: This website is itself open source and released under a CC0 license.
+            copyright: This website is itself open source and released under a <a href='https://github.com/qosf/qosf.org/blob/master/LICENSE'>CC0 license</a>.
         social_list:
             - network_name: facebook
-              profile_url: '#'
+              profile_url: 'https://www.facebook.com/quantumOSfoundation'
             - network_name: twitter
-              profile_url: '#'
+              profile_url: 'qosfoundation'
             - network_name: instagram
-              profile_url: '#'
+              profile_url: 'https://www.instagram.com/qosfoundation/'
             - network_name: youtube
               profile_url: '#'
     google_analytics:
