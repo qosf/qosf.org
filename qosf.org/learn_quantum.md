@@ -6,7 +6,7 @@ comments: false
 
 # Hero section
 title: Learning Resources on Quantum Computing
-description: Page description
+description: A curated selection of the best free learning resources on quantum computing for all skill levels.
 
 # Author box
 author:
