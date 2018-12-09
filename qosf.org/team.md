@@ -11,14 +11,6 @@ description: Overview of the main people behind QOSF. We're always looking for n
 # Micro navigation
 micro_nav: false
 
-# Page navigation
-page_nav:
-    prev:
-        content: Previous page
-        url: '#'
-    next:
-        content: Next page
-        url: '#'
 ---
 
 This should be an overview of the core QOSF team, advisors, backers and supporters.

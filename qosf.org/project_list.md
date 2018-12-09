@@ -16,16 +16,8 @@ author:
     description: 
 
 # Micro navigation
-micro_nav: true
+micro_nav: false
 
-# Page navigation
-page_nav:
-    prev:
-        content: Previous page
-        url: '#'
-    next:
-        content: Next page
-        url: '#'
 ---
 
 <p>
