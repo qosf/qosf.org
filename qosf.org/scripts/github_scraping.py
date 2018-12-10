@@ -14,19 +14,55 @@ Usage:
 
 from functools import reduce
 
-# TODO: use `requests` to get the file content more elegantly
-readme = open('README.md', 'r')
+import re
+import yaml
+import requests
+
+readme = requests.get('https://raw.githubusercontent.com/qosf/os_quantum_software/master/README.md')
 
 # Open Source Quantum Software Projects (OSQSP) dictionary
-OSQSP_dict = {}
+OSQSP_list = []
+heading = None
+projects = {}
+unneeded_sections = ['Contents', 'Contributing', 'License'] # exclude these sections
 
 # iterate of the lines
-for line in readme:
-    if line[:2] == '##': # extract the heading lines
-        heading = reduce(lambda x,y: x + f' {y}', line.split()[1:]) # get the name of the heading
-        unneeded = ['Contents', 'Contributing', 'License'] # exclude these sections
-        if heading not in unneeded:
-            OSQSP_dict[heading] = {} # initialize empty dictionaries
+for line in readme.content.decode().splitlines():
 
-import bpython
-bpython.embed(locals_=locals())
+    if line[:2] == '##': # extract the heading lines
+
+        heading = reduce(lambda x,y: x + f' {y}', line.split()[1:]) # get the name of the heading
+
+        if heading not in unneeded_sections:
+            category_dict = {
+                    'name': heading,
+                    'projects': []
+            }
+            OSQSP_list.append(category_dict)
+
+    else: # these must be projects
+        if heading and heading not in unneeded_sections:
+            if heading not in projects.keys():
+                projects[heading] = [line]
+            else:
+                projects[heading].append(line)
+
+for heading, lines in projects.items():
+    for line in lines:
+
+        if line[:2] == '- ':
+            project_name = re.search(r'\[(.*?)\]', line).group(1)
+            project_description = re.search(r'^.*-.*- (.*)$', line).group(1)#.strip('\'')
+            project_url = re.search(r'\((.*?)\)', line).group(1)
+            heading_index = OSQSP_list.index(list(filter(lambda x: x['name'] == heading, OSQSP_list))[0])
+            OSQSP_list[heading_index]['projects'].append({
+                'name': project_name,
+                'description': project_description,
+                'url': project_url
+            })
+
+# finally dump it into a YAML file
+yaml_output = yaml.dump(OSQSP_list, default_flow_style=False)
+
+with open('../_data/yaml_project_list.yml', '+w') as output:
+    output.write(yaml_output)
