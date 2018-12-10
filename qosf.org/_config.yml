@@ -20,9 +20,9 @@ doks:
     footer:
         content:
             logo:
-                text: Quantum Open Source Foundation </br> (QOSF)
+                text: Quantum Open Source Foundation (QOSF)
                 image:
-            copyright: This website is itself open source and released under a <a href='https://github.com/qosf/qosf.org/blob/master/LICENSE'>CC0 license</a>.
+            copyright: 'Contact us: <a href="mailto:team@qosf.org">team@qosf.org</a> </br> The content of this website is released under the <a href="https://github.com/qosf/qosf.org/blob/master/LICENSE">CC0 1.0 Universal</a> license.'
         social_list:
             - network_name: facebook
               profile_url: 'https://www.facebook.com/quantumOSfoundation'
