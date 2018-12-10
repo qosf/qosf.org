@@ -5,8 +5,8 @@ keywords:
 comments: false
 
 # Hero section
-title: Why Open Source
-description: how you and others benefit from open sourcing your work
+title: Why you should open source.
+description: How you and others benefit from open sourcing your work.
 
 # Micro navigation
 micro_nav: false
