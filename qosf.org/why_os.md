@@ -24,7 +24,7 @@ Sharing the source code alleviates this problem.
 There is evidence that sharing details of the code of a scientific work increases its impact.
 Additionaly, public evidence of mastering quantum computing may be perceived as a pathway to better career prospects.
 
-# Development
+# Software development
 
 ## Community innovation
 
