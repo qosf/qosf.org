@@ -6,7 +6,7 @@ comments: false
 
 # Hero section
 title: What is Open Source
-description: and why it's not about *just* putting code out there
+description: and why it's not just about putting code out there
 
 # Micro navigation
 micro_nav: false
