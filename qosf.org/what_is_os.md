@@ -5,8 +5,8 @@ keywords:
 comments: false
 
 # Hero section
-title: What is Open Source
-description: and why it's not just about putting code out there
+title: What is open source...
+description: ...and why it's not about <i>just</i> putting code out there
 
 # Micro navigation
 micro_nav: false
