@@ -9,8 +9,8 @@ title: Quantum Open Source Foundation
 description: Supporting the development and standardization of open tools for quantum computing.
 buttons:
     - content: Become a supporter
-      url: '#'
-      external_url: false
+      url: 'https://mailchi.mp/762c19baab5a/qosf-supporter'
+      external_url: true
     - icon: gitlab
       content: Follow us on GitLab
       url: 'https://gitlab.com/qosf'
