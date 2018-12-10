@@ -42,8 +42,8 @@ grid_navigation:
       excerpt: Overview of open quantum software projects for newcomers, academics and experts alike.
       cta: View projects
       url: 'project_list'
-    - title: Quantum software project ranking.
-      excerpt: Most recent results of our monthly ranking of curated open quantum software projects.
+    - title: Quantum software project evaluation.
+      excerpt: Most recent results of our monthly evaluation of curated open quantum software projects.
       cta: View results
       url: 'ranking'
 ---

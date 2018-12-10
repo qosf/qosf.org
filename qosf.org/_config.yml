@@ -15,8 +15,8 @@ doks:
               item_url: '/learn_quantum'
             - item_name: Code
               item_url: '/project_list'
-            - item_name: Ranking
-              item_url: '/ranking'
+            - item_name: Evaluation
+              item_url: '/evaluation'
     footer:
         content:
             logo:
