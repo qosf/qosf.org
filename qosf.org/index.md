@@ -22,10 +22,6 @@ buttons:
 
 # Grid navigation
 grid_navigation:
-    - title: The QOSFoundation Manifesto.
-      excerpt: Our core beliefs and mission statement and why you should get excited about us.
-      cta: Get inspired
-      url: 'manifesto'
     - title: What is open source?
       excerpt: Simply uploading your code into the web isn't enough. Learn what open source really means.
       cta: Read more

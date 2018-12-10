@@ -9,8 +9,6 @@ doks:
         nav:
             - item_name: Home
               item_url: '/'
-            - item_name: Manifesto
-              item_url: '/manifesto'
             - item_name: Learn
               item_url: '/learn_quantum'
             - item_name: Code
