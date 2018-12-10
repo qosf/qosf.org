@@ -15,7 +15,7 @@
 									<h1 class="hero-subheader__title">{{ page.title }}</h1>
 								{% endif %}
 								{% if page.description %}
-									<p class="hero-subheader__desc">{{ page.description }}</p>
+                                <p class="hero-subheader__desc">{{ page.description | markdownify }}</p>
 								{% endif %}
 								{% if page.page_nav.prev.content or page.page_nav.next.content %}
 									{% if page.page_nav.prev.content and page.page_nav.prev.url %}
