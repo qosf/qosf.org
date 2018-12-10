@@ -20,13 +20,6 @@ buttons:
       url: 'https://github.com/qosf'
       external_url: true
 
-# Author box
-author:
-    title: The Team
-    title_url: 'team'
-    external_url: true
-    description: Find out more about the team behind the Quantum Open Source Foundation (QOSF).
-
 # Grid navigation
 grid_navigation:
     - title: The QOSFoundation Manifesto.
