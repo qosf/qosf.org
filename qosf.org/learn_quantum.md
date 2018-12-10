@@ -76,36 +76,7 @@ Introduction to the key concepts of quantum computing with minimal mathematics.
 
 # Development Tools 
 
-#### [Cirq](https://github.com/quantumlib/Cirq)
-Python library for writing, manipulating, and optimizing NISQ circuits to run on quantum computers.
-
-#### [IBM Quantum Composer](https://quantumexperience.ng.bluemix.net/qx/editor)
-Online quantum composer to run experiments on real quantum computing hardware.
-
-#### [Project Q](http://projectq.ch/)
-Framework for implementing quantum computing in Python.
-
-#### [pyQuil](https://github.com/rigetticomputing/pyquil)
-Python library for quantum programming using Quil.
-
-#### [QCL](http://tph.tuwien.ac.at/~oemer/qcl.html)
-Older, C like language for quantum computers. Only has a simulator and debugger.
-
-#### [QISKit SDK](https://github.com/QISKit/qiskit-sdk-py)
-Software development kit for working with OpenQASM and the IBM Q Experience.
-
-#### [Qrack](https://vm6502q.readthedocs.io/)
-High performance LGPL-licensed C++ quantum simulator library, documentation, and test code.
-
-#### [Quipper](https://www.mathstat.dal.ca/~selinger/quipper/)
-Embedded, scalable, functional programming language for quantum computing.
-
-#### [QuTiP](http://qutip.org/docs/latest/index.html)
-Quantum toolbox in Python for simulating dynamics of open quantum systems.
-
-#### [Q#](https://docs.microsoft.com/en-gb/quantum/?view=qsharp-preview)
-Microsoft quantum development kit and Q# programming language.
-
+[Click here](/project_list) for the most up-to-date list of all open source quantum software projects.
 
 # Blogs
 
