@@ -10,10 +10,10 @@ description: A curated selection of the best free learning resources on quantum 
 
 # Author box
 author:
-    title: About Author
-    title_url: '#'
+    title: Desiree Vogt-Lee
+    title_url: 'https://github.com/desireevl'
     external_url: true
-    description:
+    description: Australian physics student and passionate cat lover who curates the most up-to-date list of quantum learning and developing resources on GitHub.
 
 # Micro navigation
 micro_nav: false

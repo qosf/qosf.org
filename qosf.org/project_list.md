@@ -6,14 +6,7 @@ comments: false
 
 # Hero section
 title: List of Open Quantum Projects
-description: Page description
-
-# Author box
-author:
-    title: Mark
-    title_url: '#'
-    external_url: true
-    description: 
+description: Curated list of open-source developed quantum software projects found on GitHub and GitLab.
 
 # Micro navigation
 micro_nav: false
