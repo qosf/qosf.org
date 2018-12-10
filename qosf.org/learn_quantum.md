@@ -13,7 +13,7 @@ author:
     title: Desiree Vogt-Lee
     title_url: 'https://github.com/desireevl'
     external_url: true
-    description: Australian physics student and passionate cat lover who curates the most up-to-date list of quantum learning and developing resources on GitHub.
+    description: Australian physics student and passionate cat lover who curates the most up-to-date [list of quantum learning and developing resources on GitHub](https://github.com/desireevl/awesome-quantum-computing).
 
 # Micro navigation
 micro_nav: false
