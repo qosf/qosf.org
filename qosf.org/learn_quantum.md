@@ -147,3 +147,8 @@ Facebook group for quantum research discussion.
 
 #### [Rigetti Community](http://slack.rigetti.com/)
 Slack Channel for Rigetti and quantum computing discussions.
+
+#### [Quantum Computing Slack Community](http://quantum-computing.slack.com/)
+Slack Channel for quantum computing discussions. Generate an invite for
+this channel here: [Quantum Computing Slack -
+Invite](https://quantum-computing.herokuapp.com).
