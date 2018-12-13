@@ -125,6 +125,9 @@ Quantum machine learning and what quantum computing means to data mining.
 
 # Videos
 
+#### [Introduction to Quantum Programming](https://skillsmatter.com/skillscasts/11929-programming-the-world-s-first-quantum-computers-using-forest)
+This talk is an introduction to modern quantum programming. It covers why you might want to program a quantum computer and how you would do so today, with a focus on the Forest Python SDK from Rigetti Computing. The only background assumed is linear algebra and complex numbers at the level of undergraduate computer science. Duration: 1 hour, 22 minutes.
+
 #### [Quantum Computing for Computer Scientists](https://www.youtube.com/watch?v=F_Riqjdh2oM)
 Microsoft Research Talk on introductory quantum computing for computer scientists. Duration: 1 hour, 28 minutes.
 
