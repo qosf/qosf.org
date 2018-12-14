@@ -139,7 +139,7 @@ IBM Quantum experience Community Forum.
 #### [IBM Q QISKit Community](https://qiskit.slack.com/)
 Slack Channel for QISKit and quantum computing discussions.
 
-#### [Mike & Ike Subreddit](Mike & Ike Subreddit)
+#### [Mike & Ike Subreddit](https://www.reddit.com/r/MikeAndIke/)
 Discussion about the book Quantum Computation and Quantum Information.
 
 #### [Quantum Computing StackExchange](http://quantumcomputing.stackexchange.com/)
