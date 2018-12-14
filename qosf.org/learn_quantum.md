@@ -10,22 +10,14 @@ description: A curated selection of the best free learning resources on quantum 
 
 # Author box
 author:
-    title: About Author
-    title_url: '#'
+    title: Desiree Vogt-Lee
+    title_url: 'https://github.com/desireevl'
     external_url: true
-    description:
+    description: Australian physics student and passionate cat lover who curates the most up-to-date [list of quantum learning and developing resources on GitHub](https://github.com/desireevl/awesome-quantum-computing).
 
 # Micro navigation
-micro_nav: true
+micro_nav: false
 
-# Page navigation
-page_nav:
-    prev:
-        content: Previous page
-        url: '#'
-    next:
-        content: Next page
-        url: '#'
 ---
 
 # Learning
@@ -84,36 +76,7 @@ Introduction to the key concepts of quantum computing with minimal mathematics.
 
 # Development Tools 
 
-#### [Cirq](https://github.com/quantumlib/Cirq)
-Python library for writing, manipulating, and optimizing NISQ circuits to run on quantum computers.
-
-#### [IBM Quantum Composer](https://quantumexperience.ng.bluemix.net/qx/editor)
-Online quantum composer to run experiments on real quantum computing hardware.
-
-#### [Project Q](http://projectq.ch/)
-Framework for implementing quantum computing in Python.
-
-#### [pyQuil](https://github.com/rigetticomputing/pyquil)
-Python library for quantum programming using Quil.
-
-#### [QCL](http://tph.tuwien.ac.at/~oemer/qcl.html)
-Older, C like language for quantum computers. Only has a simulator and debugger.
-
-#### [QISKit SDK](https://github.com/QISKit/qiskit-sdk-py)
-Software development kit for working with OpenQASM and the IBM Q Experience.
-
-#### [Qrack](https://vm6502q.readthedocs.io/)
-High performance LGPL-licensed C++ quantum simulator library, documentation, and test code.
-
-#### [Quipper](https://www.mathstat.dal.ca/~selinger/quipper/)
-Embedded, scalable, functional programming language for quantum computing.
-
-#### [QuTiP](http://qutip.org/docs/latest/index.html)
-Quantum toolbox in Python for simulating dynamics of open quantum systems.
-
-#### [Q#](https://docs.microsoft.com/en-gb/quantum/?view=qsharp-preview)
-Microsoft quantum development kit and Q# programming language.
-
+[Click here](/project_list) for the most up-to-date list of all open source quantum software projects.
 
 # Blogs
 
@@ -162,6 +125,9 @@ Quantum machine learning and what quantum computing means to data mining.
 
 # Videos
 
+#### [Introduction to Quantum Programming](https://skillsmatter.com/skillscasts/11929-programming-the-world-s-first-quantum-computers-using-forest)
+This talk is an introduction to modern quantum programming. It covers why you might want to program a quantum computer and how you would do so today, with a focus on the Forest Python SDK from Rigetti Computing. The only background assumed is linear algebra and complex numbers at the level of undergraduate computer science. Duration: 1 hour, 22 minutes.
+
 #### [Quantum Computing for Computer Scientists](https://www.youtube.com/watch?v=F_Riqjdh2oM)
 Microsoft Research Talk on introductory quantum computing for computer scientists. Duration: 1 hour, 28 minutes.
 
@@ -184,3 +150,8 @@ Facebook group for quantum research discussion.
 
 #### [Rigetti Community](http://slack.rigetti.com/)
 Slack Channel for Rigetti and quantum computing discussions.
+
+#### [Quantum Computing Slack Community](http://quantum-computing.slack.com/)
+Slack Channel for quantum computing discussions. Generate an invite for
+this channel here: [Quantum Computing Slack -
+Invite](https://quantum-computing.herokuapp.com).

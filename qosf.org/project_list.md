@@ -6,34 +6,25 @@ comments: false
 
 # Hero section
 title: List of Open Quantum Projects
-description: Page description
-
-# Author box
-author:
-    title: Mark
-    title_url: '#'
-    external_url: true
-    description: 
+description: Mirror of the curated list of open source developed quantum software projects hosted on [QOSF's GitHub page](https://github.com/qosf/os_quantum_software).
 
 # Micro navigation
-micro_nav: true
+micro_nav: false
 
-# Page navigation
-page_nav:
-    prev:
-        content: Previous page
-        url: '#'
-    next:
-        content: Next page
-        url: '#'
 ---
 
 <p>
 {% for category in site.data.yaml_project_list %}
-    <h1>{{ category.name }}</h1>
+    <h1 id="{{ category.name | downcase | replace: ' ', '-' }}">{{ category.name }}</h1>
     {% for project in category.projects %}
-        <h4><a href="{{ project.url }}">{{ project.name }}</a></h4>
-        <p>{{ project.description | markdownify }}</p>
+        {% if project.name == 'Q#' %}
+            <h4  id="qsharp"><a href="{{ project.url }}">{{ project.name }}</a></h4>
+        {% elsif project.name == 'Liqui|>' %}
+            <h4  id="liquid"><a href="{{ project.url }}">{{ project.name }}</a></h4>
+        {% else %}
+            <h4  id="{{ project.name | downcase | replace: ' ', '-' }}"><a href="{{ project.url }}">{{ project.name }}</a></h4>
+        {% endif %}
+        {{ project.description | markdownify }}
     {% endfor %}
 {% endfor %}
 </p>
