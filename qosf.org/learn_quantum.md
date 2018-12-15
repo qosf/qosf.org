@@ -30,7 +30,7 @@ Short tutorials providing a gentle introduction to quantum computing and IBM Q.
 #### [John Preskill's Notes on Quantum Computation](http://www.theory.caltech.edu/~preskill/ph219/index.html#lecture)
 Notes of Caltech's Quantum Computation Course Physics 219/Computer Science 219 by John Preskill.
 
-#### [Nielsen and Chuang](http://quantum.wobblybit.com/category/nielsenchuang/)
+#### [Nielsen and Chuang](https://workedproblems.wordpress.com/category/nielsenchuang/)
 Worked examples on quantum algorithm problems.
 
 #### [QISKit Tutorials](https://github.com/QISKit/qiskit-tutorial)
