@@ -1,6 +1,6 @@
 - name: Quantum full-stack libraries
   projects:
-  - description: D-Wave System's suite of tools for solving hard problems with quantum computers..
+  - description: D-Wave System's suite of tools for solving hard problems with quantum computers.
     name: Ocean
     url: https://ocean.dwavesys.com/
   - description: IBM's quantum information software kit for simulating, compiling
