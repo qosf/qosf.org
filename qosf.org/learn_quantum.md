@@ -7,6 +7,11 @@ comments: false
 # Hero section
 title: Learning Resources on Quantum Computing
 description: A curated selection of the best free learning resources on quantum computing for all skill levels.
+buttons:
+    - content: Become a supporter
+      url: 'https://mailchi.mp/762c19baab5a/qosf-supporter'
+      external_url: true
+      icon: home
 
 # Author box
 author:

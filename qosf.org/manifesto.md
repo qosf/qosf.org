@@ -7,6 +7,11 @@ comments: false
 # Hero section
 title: QOSF Manifesto
 description: Our core beliefs and mission statement and why you should get excited about us.
+buttons:
+    - content: Become a supporter
+      url: 'https://mailchi.mp/762c19baab5a/qosf-supporter'
+      external_url: true
+      icon: home
 
 # Micro navigation
 micro_nav: false

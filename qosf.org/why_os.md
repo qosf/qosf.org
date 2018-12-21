@@ -7,6 +7,11 @@ comments: false
 # Hero section
 title: Why you should open source.
 description: How you and others benefit from open sourcing your work.
+buttons:
+    - content: Become a supporter
+      url: 'https://mailchi.mp/762c19baab5a/qosf-supporter'
+      external_url: true
+      icon: home
 
 # Micro navigation
 micro_nav: false
