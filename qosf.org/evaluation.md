@@ -14,7 +14,27 @@ micro_nav: false
 
 ---
 
+<div class="callout callout--danger">
+    <p><strong>The evaluation is not completely automated yet.</strong>
+    Current evaluation results are identical to the results reported in the PLoS ONE collection review on <a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0208561">"Open source software in quantum computing"</a>. We're currently working hard on fully automating the evaluation such that we can publish monthly updates soon.
+    </p>
+</div>
+
+<h1>Project selection</h1>
+We only evaluate a subset of the projects presented in [our exhaustive list of open quantum software repositories](/project_list). The following decision tree outlines the process which is used to select free and open software projects for evaluation. The main goal is to identify projects that have already built a community around their project. The acronym PR stands for [pull request](https://en.wikipedia.org/wiki/Distributed_version_control#Pull_requests) which is a form of code contribution on software hosting websites.
+<br>
+<center><img src='/assets/img/quantum_project_selection_flow_diagram.png' alt='Flow diagram showing quantum project selection' width="800vh"></center>
+<br>
+
+<div class="callout callout--info">
+    <p><strong>These rules are not set in stone and we're always open for suggestions.</strong>
+    If you have some thoughts, comments or concerns, please open an issue on <a href="https://github.com/qosf/qosf.org">our GitHub page</a>.
+    </p>
+</div>
+
 <h1>Repository evaluation</h1>
+Evaluation results for the static analysis of each project and its source code. We report the version control and issue tracking systems as well as the total number, attention rate and average response time for all open and closed issues and pull requests (PRs). We define attention rate as 1-I where I is the fraction of ignored issues and pull requests with respect to the total number of issues and pull requests. An ideal project never ignores any of its user or developer questions or contributions and would have an attention rate of 1.0. The average response time measures how long it takes a core contributor (or an employee of the company hosting the project) to respond to issues or pull requests. Next, we analyze the existence of a test suite and report the resulting code coverage for most projects. Code complexity is only reported for projects written in Python since other languages do not allow for fast retrieval of this metric (if you know how to do this please let us know through a <a href="https://github.com/qosf/qosf.org">GitHub issue</a> or <a href="mailto:info@qosf.org">email</a>).
+<br>
 <br>
 
 | Name             | Version control system     | Issue tracking system | Issues/PRs | Attention rate | Average response time (days) | Test suite | Code coverage | Cyclomatic Complexity
@@ -47,13 +67,15 @@ micro_nav: false
 [XACC VQE](https://github.com/ornl-qci/xacc-vqe)                   | Git | GitHub | 22/4    | 0.33 | 8.8   | <span style="font-size:35px;color:green;">&#10003;</span> | -     | -
 
 <h1>Documentation evaluation</h1>
+The image below shows the detailed results of our qualitative documentation analysis in form of a colour coded heatmap with scores ranging from 1 (bad) to 5 (good). We evaluated each project based on the quality of their source code documentation, README files, changelogs, user documentation and tutorials. The detailed rubrik used for scoring each of the five aspects can be found in the Supporting Information of the review paper <a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0208561">"Open source software in quantum computing"</a>.
 <br>
 
 <center><img src='/assets/img/documentation_results.png' alt='Heatmap' width="800vh"></center>
 <br>
-The heatmap shows the evaluation results for source code documentation, README files, changelogs, user documentation and tutorials on a scale from 1 (bad) to 5 (good).
 
 <h1>Community evaluation</h1>
+Lastly, the following table shows the evaluation results for the community analysis. For each project, we analyse if a public development roadmap exists and if the software is published in form of releases. Additionally, we report the <a href="https://help.github.com/articles/about-community-profiles-for-public-repositories/">GitHub community profile score</a>, the total number of contributors, the type of user- and developer-centric discussion channel and the type of public code review process -- specifically if it applies to internal (I) and/or external (E) contributors.
+<br>
 <br>
 
 | Project         | Roadmap     | Releases | Contributors | User-discussion channels | Developer-discussion channels | Public review process | Community Profile
@@ -84,3 +106,10 @@ The heatmap shows the evaluation results for source code documentation, README f
 [Strawberry Fields](https://github.com/xanaduai/strawberryfields)  | <span style="font-size:20px;">&#10060;</span>             | <span style="font-size:35px;color:green;">&#10003;</span> | 5  | Slack            | Slack    | E+I  | 7/7
 [XACC](https://github.com/ORNL-QCI/xacc)                           | <span style="font-size:20px;">&#10060;</span>             | <span style="font-size:20px;">&#10060;</span>             | 6  | -                | -        | E    | 4/7
 [XACC VQE](https://github.com/ornl-qci/xacc-vqe)                   | <span style="font-size:20px;">&#10060;</span>             | <span style="font-size:20px;">&#10060;</span>             | 2  | -                | -        | E    | 3/7
+
+<div class="callout callout--info">
+    <p><strong>Let us know if you disagree with some of these results.</strong>
+    If you're maintaining one of the projects above and you think that we did a mistake in our evaluation then we want to hear from you! Please open an issue on <a href="https://github.com/qosf/qosf.org">our GitHub page</a>.
+    </p>
+</div>
+
