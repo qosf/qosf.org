@@ -61,6 +61,10 @@ for heading, lines in projects.items():
                 'url': project_url
             })
 
+# sort all projects alphabetically
+for heading_dict in OSQSP_list:
+    heading_dict['projects'].sort(key=lambda x: x['name'])
+
 # finally dump it into a YAML file
 yaml_output = yaml.dump(OSQSP_list, default_flow_style=False)
 

@@ -1,89 +1,137 @@
 - name: Quantum full-stack libraries
   projects:
-  - description: D-Wave System's suite of tools for solving hard problems with quantum computers.
-    name: Ocean
-    url: https://ocean.dwavesys.com/
-  - description: IBM's quantum information software kit for simulating, compiling
-      and executing quantum programs.
-    name: Qiskit
-    url: https://qiskit.org/
-  - description: '[Xanadu](https://www.xanadu.ai)''s software library for photonic
-      quantum computing.'
-    name: Strawberry Fields
-    url: https://github.com/xanaduai/strawberryfields
-  - description: '[Rigetti](https://www.rigetti.com/)''s software library for writing,
-      simulating, compiling and executing quantum programs.'
-    name: Forest
-    url: https://github.com/rigetticomputing/pyquil
-  - description: Hardware-agnostic framework with compiler and simulator with emulation
-      capabilities.
-    name: ProjectQ
-    url: https://github.com/ProjectQ-Framework/ProjectQ
   - description: Framework for creating, editing, and invoking Noisy Intermediate
       Scale Quantum (NISQ) circuits.
     name: Cirq
     url: https://github.com/quantumlib/Cirq
+  - description: '[Rigetti](https://www.rigetti.com/)''s software library for writing,
+      simulating, compiling and executing quantum programs.'
+    name: Forest
+    url: https://github.com/rigetticomputing/pyquil
+  - description: '[D-Wave System](https://www.dwavesys.com/home)''s suite of tools
+      for solving hard problems with quantum computers.'
+    name: Ocean
+    url: https://github.com/dwavesystems/dwave-ocean-sdk
+  - description: Hardware-agnostic framework with compiler and simulator with emulation
+      capabilities.
+    name: ProjectQ
+    url: https://github.com/ProjectQ-Framework/ProjectQ
   - description: Microsoft's quantum programming language with Visual Studio integration.
     name: Q#
     url: https://www.microsoft.com/en-us/quantum/development-kit
-  - description: '[Extreme-scale programming model for quantum acceleration within
-      high-performance computing](https://arxiv.org/abs/1710.01794).'
-    name: XACC
-    url: https://github.com/ORNL-QCI/xacc
+  - description: IBM's quantum information software kit for simulating, compiling
+      and executing quantum programs.
+    name: Qiskit
+    url: https://qiskit.org/
   - description: '[IBM''s quantum information software kit](https://qiskit.org/) for
       JavaScript.'
     name: Qiskit-JS
     url: https://github.com/Qiskit/qiskit-js
+  - description: '[Xanadu](https://www.xanadu.ai)''s software library for photonic
+      quantum computing.'
+    name: Strawberry Fields
+    url: https://github.com/xanaduai/strawberryfields
+  - description: '[Extreme-scale programming model for quantum acceleration within
+      high-performance computing](https://arxiv.org/abs/1710.01794).'
+    name: XACC
+    url: https://github.com/ORNL-QCI/xacc
 - name: Quantum simulators
   projects:
-  - description: Reference implementation of Rigetti's Quantum Virtual Machine.
-    name: Quantum Virtual Machine
-    url: https://github.com/rigetticomputing/reference-qvm
-  - description: User-friendly and efficient numerical simulations of a wide variety
-      of open quantum systems.
-    name: QuTiP
-    url: http://qutip.org/
-  - description: Simulation and visualization of topological quantum computers.
-    name: QTop
-    url: https://github.com/jacobmarks/QTop
-  - description: Simulating the 5-qubit processor of the [IBM Quantum Experience](https://quantumexperience.ng.bluemix.net/qx/experience).
-    name: Quintuple
-    url: https://github.com/corbett/QuantumComputing
-  - description: Ideal noise-free multi-qubit simulator written in 150 lines of code.
-    name: QuSim
-    url: https://github.com/adamisntdead/QuSimPy
+  - description: Specification and implementation of quantum common lisp, for gate-model
+      quantum computers.
+    name: BLACK-STONE
+    url: https://github.com/thephoeron/black-stone
+  - description: Efficient calculation of Clifford circuits in Julia.
+    name: Cliffords.jl
+    url: https://github.com/BBN-Q/Cliffords.jl
+  - description: Toolsuite for quantum simulation developed by [Microsoft QuArC](https://www.microsoft.com/en-us/research/group/quantum-architectures-and-computation-group-quarc/).
+    name: Liqui|>
+    url: http://stationq.github.io/Liquid/
   - description: Efficient simulation of open quantum dynamics of identical qubits.
     name: PIQS
     url: https://github.com/nathanshammah/piqs
-  - description: Application level simulator of a quantum network.
-    name: SimulaQron
-    url: https://github.com/StephanieWehner/SimulaQron
-  - description: High-performance general purpose quantum simulator (can simulate
-      d-dimensional qudits).
-    name: Quantum++
-    url: https://github.com/vsoftco/qpp
+  - description: High-performance GPU-accelerated quantum computer simulation outlined
+      in this [arXiv paper](https://arxiv.org/pdf/1805.00988.pdf).
+    name: QCGPU
+    url: https://github.com/QCGPU/qcgpu-rust
   - description: High level, hardware-agnostic programming language for quantum computers
       (syntax like C or Pascal).
     name: QCL
     url: https://github.com/aviggiano/qcl
+  - description: Quantum OCaml Circuit Simulator is a functional approach to simulating
+      quantum gates.
+    name: QOCS
+    url: https://github.com/dillanchang/QOCS
+  - description: Unitary and Lindbladian evolution in Julia.
+    name: QSimulator.jl
+    url: https://github.com/BBN-Q/QSimulator.jl
+  - description: Simulation and visualization of topological quantum computers.
+    name: QTop
+    url: https://github.com/jacobmarks/QTop
+  - description: A quantum circuit language and formal verification tool [described
+      in this paper](https://dl.acm.org/citation.cfm?id=3009894).
+    name: QWIRE
+    url: https://github.com/jpaykin/QWIRE
+  - description: ' Interpreter for the functional quantum programming language Qumin.'
+    name: Qlmp
+    url: https://github.com/wintershammer/QImp
   - description: Comprehensive qubit and gate implementation for developing universal
       virtual quantum processors.
     name: Qrack
     url: https://github.com/vm6502q/qrack
-  - description: Tensor Network QPU Simulator for Eclipse [XACC](https://github.com/ORNL-QCI/xacc).
-    name: TNQVM
-    url: https://github.com/ornl-qci/tnqvm
-  - description: Parallel time-dependent open quantum systems solver.
-    name: QuaC
-    url: https://github.com/0tt3r/QuaC
   - description: ' Quantum Exact Simulation Toolkit is a high performance multicore
       simulator of universal quantum circuits.'
     name: QuEST
     url: https://github.com/aniabrown/QuEST
-  - description: Crude translation from the C implementation of `libquantum` to a
-      Java version.
-    name: libQuantumJava
-    url: https://github.com/gbanegas/libQuantumJava
+  - description: Ideal noise-free multi-qubit simulator written in 150 lines of code.
+    name: QuSim
+    url: https://github.com/adamisntdead/QuSimPy
+  - description: User-friendly and efficient numerical simulations of a wide variety
+      of open quantum systems.
+    name: QuTiP
+    url: http://qutip.org/
+  - description: Parallel time-dependent open quantum systems solver.
+    name: QuaC
+    url: https://github.com/0tt3r/QuaC
+  - description: Smoothly runs 20+ qubit simulations in browser or on node.js server.
+    name: Quantum Circuit Simulator
+    url: https://github.com/perak/quantum-circuit
+  - description: Reference implementation of Rigetti's Quantum Virtual Machine.
+    name: Quantum Virtual Machine
+    url: https://github.com/rigetticomputing/reference-qvm
+  - description: High-performance general purpose quantum simulator (can simulate
+      d-dimensional qudits).
+    name: Quantum++
+    url: https://github.com/vsoftco/qpp
+  - description: Julia library for quantum information related calculations.
+    name: QuantumInfo.jl
+    url: https://github.com/BBN-Q/QuantumInfo.jl
+  - description: Tools for quantum control, simulation, channel representation conversion,
+      and perturbations.
+    name: QuantumUtils
+    url: https://github.com/QuantumUtils/quantum-utils-mathematica
+  - description: Simulating the 5-qubit processor of the [IBM Quantum Experience](https://quantumexperience.ng.bluemix.net/qx/experience).
+    name: Quintuple
+    url: https://github.com/corbett/QuantumComputing
+  - description: Scalable functional programming language for quantum computing based
+      on [Quantum Lambda Calculus](https://arxiv.org/abs/cs/0404056).
+    name: Quipper
+    url: https://github.com/thephoeron/quipper-language
+  - description: Drag-and-drop quantum circuit simulator in your browser.
+    name: Quirk
+    url: https://github.com/Strilanc/Quirk
+  - description: Package for generating random quantum states and processes.
+    name: RandomQuantum.jl
+    url: https://github.com/BBN-Q/RandomQuantum.jl
+  - description: Application level simulator of a quantum network.
+    name: SimulaQron
+    url: https://github.com/StephanieWehner/SimulaQron
+  - description: Tensor Network QPU Simulator for Eclipse [XACC](https://github.com/ORNL-QCI/xacc).
+    name: TNQVM
+    url: https://github.com/ornl-qci/tnqvm
+  - description: Extensible, Efficient Quantum Algorithm Design for Humans.
+    name: Yao.jl
+    url: https://github.com/QuantumBFS/Yao.jl
   - description: A Java library for quantum programming using [Quil](https://en.wikipedia.org/wiki/Quil_(instruction_set_architecture)).
     name: jquil
     url: https://github.com/QCHackers/jquil
@@ -91,129 +139,102 @@
       programs.
     name: jsquil
     url: https://github.com/mapmeld/jsquil
-  - description: Drag-and-drop quantum circuit simulator in your browser.
-    name: Quirk
-    url: https://github.com/Strilanc/Quirk
-  - description: Smoothly runs 20+ qubit simulations in browser or on node.js server.
-    name: Quantum Circuit Simulator
-    url: https://github.com/perak/quantum-circuit
-  - description: Scalable functional programming language for quantum computing based
-      on [Quantum Lambda Calculus](https://arxiv.org/abs/cs/0404056).
-    name: Quipper
-    url: https://github.com/thephoeron/quipper-language
-  - description: High-performance GPU-accelerated quantum computer simulation outlined
-      in this [arXiv paper](https://arxiv.org/pdf/1805.00988.pdf).
-    name: QCGPU
-    url: https://github.com/QCGPU/qcgpu-rust
-  - description: Extensible, Efficient Quantum Algorithm Design for Humans.
-    name: Yao.jl
-    url: https://github.com/QuantumBFS/Yao.jl
-  - description: Julia library for quantum information related calculations.
-    name: QuantumInfo.jl
-    url: https://github.com/BBN-Q/QuantumInfo.jl
-  - description: Unitary and Lindbladian evolution in Julia.
-    name: QSimulator.jl
-    url: https://github.com/BBN-Q/QSimulator.jl
-  - description: Package for generating random quantum states and processes.
-    name: RandomQuantum.jl
-    url: https://github.com/BBN-Q/RandomQuantum.jl
-  - description: Efficient calculation of Clifford circuits in Julia.
-    name: Cliffords.jl
-    url: https://github.com/BBN-Q/Cliffords.jl
-  - description: Specification and implementation of quantum common lisp, for gate-model
-      quantum computers.
-    name: BLACK-STONE
-    url: https://github.com/thephoeron/black-stone
-  - description: ' Interpreter for the functional quantum programming language Qumin.'
-    name: Qlmp
-    url: https://github.com/wintershammer/QImp
-  - description: Toolsuite for quantum simulation developed by [Microsoft QuArC](https://www.microsoft.com/en-us/research/group/quantum-architectures-and-computation-group-quarc/).
-    name: Liqui|>
-    url: http://stationq.github.io/Liquid/
-  - description: Quantum OCaml Circuit Simulator is a functional approach to simulating
-      quantum gates.
-    name: QOCS
-    url: https://github.com/dillanchang/QOCS
-  - description: Tools for quantum control, simulation, channel representation conversion,
-      and perturbations.
-    name: QuantumUtils
-    url: https://github.com/QuantumUtils/quantum-utils-mathematica
-  - description: A quantum circuit language and formal verification tool [described
-      in this paper](https://dl.acm.org/citation.cfm?id=3009894).
-    name: QWIRE
-    url: https://github.com/jpaykin/QWIRE
+  - description: Crude translation from the C implementation of `libquantum` to a
+      Java version.
+    name: libQuantumJava
+    url: https://github.com/gbanegas/libQuantumJava
 - name: Quantum annealing
   projects:
+  - description: QUBO solver with [D-Wave](https://www.dwavesys.com) or classical
+      tabu solver backend.
+    name: Qbsolv
+    url: https://github.com/dwavesystems/qbsolv
+  - description: Virtual Hardware Embedding Suite for adiabatic quantum computing.
+    name: Virtual Hardware Embedding
+    url: https://github.com/ORNL-QCI/aqc-virtual-embedding
+  - description: Algorithms to generate native-structured embeddings for Chimera graphs.
+    name: chimera_embedding
+    url: https://github.com/dwavesystems/chimera-embedding
   - description: Shared API for Ising and QUBO problems.
     name: dimod
-    url: https://github.com/dwavesystems/dimod
-  - description: Library to construct a binary quadratic model from a constraint satisfaction
-      problem with small constraints over binary variables.
-    name: dwavebinarycsp
     url: https://github.com/dwavesystems/dimod
   - description: Min. implementation of the REST interface to communicate with D-Wave's
       Solver API.
     name: dwave-cloud-client
     url: https://github.com/dwavesystems/dwave-cloud-client
-  - description: An implementation of a simulated annealing sampler..
+  - description: API for easily incorporating D-Wave quantum annealers as samplers
+      in the [Ocean](https://ocean.dwavesys.com/) software stack.
+    name: dwave-system
+    url: https://github.com/dwavesystems/dwave-system
+  - description: An implementation of a simulated annealing sampler.
     name: dwave_neal
     url: https://github.com/dwavesystems/dwave-neal
   - description: Exploration and analysis of network graphs.
     name: dwave_networkx
     url: https://github.com/dwavesystems/dwave_networkx
-  - description: Installer for D-Wave’s Ocean Tools.
-    name: dwave-ocean-sdk
-    url: https://github.com/dwavesystems/dwave-ocean-sdk
-  - description: Basic API for easily incorporating D-Wave quantum annealers as samplers in the D-Wave
-      Ocean software stack.
-    name: dwave-system
-    url: https://github.com/dwavesystems/dwave-system
-  - description: Utilities and interfaces for using penalty models.
-    name: penaltymodel
-    url: https://github.com/dwavesystems/penaltymodel
-  - description: Heuristic tool for minor graph embedding.
-    name: minorminer
-    url: https://github.com/dwavesystems/minorminer
-  - description: QUBO solver with [D-Wave](https://www.dwavesys.com) or classical
-      tabu solver backend.
-    name: Qbsolv
-    url: https://github.com/dwavesystems/qbsolv
+  - description: Map constraint satisfaction problems with binary variables to binary
+      quadratic models.
+    name: dwavebinarycsp
+    url: https://github.com/dwavesystems/dwavebinarycsp
   - description: Mapping samples between original and embedded graph.
     name: embedding_utilities
     url: https://github.com/dwavesystems/dwave_embedding_utilities
-  - description: Algorithms to generate native-structured embeddings for Chimera graphs.
-    name: chimera_embedding
-    url: https://github.com/dwavesystems/chimera-embedding
-  - description: Virtual Hardware Embedding Suite for adiabatic quantum computing.
-    name: Virtual Hardware Embedding
-    url: https://github.com/ORNL-QCI/aqc-virtual-embedding
+  - description: '[Dimod](https://github.com/dwavesystems/dimod) wrapper for the D-Wave
+      Micro Client.'
+    name: micro_client_sapi_dimod
+    url: https://github.com/dwavesystems/dwave_micro_client_dimod
+  - description: Heuristic tool for minor graph embedding.
+    name: minorminer
+    url: https://github.com/dwavesystems/minorminer
+  - description: Utilities and interfaces for using penalty models.
+    name: penaltymodel
+    url: https://github.com/dwavesystems/penaltymodel
+  - description: '[Dimod](https://github.com/dwavesystems/dimod) wrapper for D-Wave''s
+      Solver API (SAPI).'
+    name: sapi_dimod
+    url: https://github.com/dwavesystems/dwave_sapi_dimod
 - name: Quantum algorithms
   projects:
-  - description: Library for quantum ML, automatic differentiation and optimization
-      of hybrid computations.
-    name: PennyLane
-    url: https://github.com/XanaduAI/pennylane
+  - description: Algorithms for adaptive refinement of measurements.
+    name: Adapt
+    url: https://github.com/BBN-Q/Adapt
+  - description: Software for analyzing fermionic quantum simulation algorithms with
+      [ProjectQ](https://github.com/ProjectQ-Framework/ProjectQ).
+    name: FermiLib
+    url: https://github.com/ProjectQ-Framework/FermiLib
   - description: Quantum algorithms implemented using [Rigetti](https://www.rigetti.com/)'s
       [pyQuil](https://github.com/rigetticomputing/pyquil).
     name: Grove
     url: https://github.com/rigetticomputing/grove
+  - description: Compiling and analyzing quantum algorithm for quantum chemistry simulations.
+    name: OpenFermion
+    url: https://github.com/quantumlib/OpenFermion
+  - description: Library for quantum ML, automatic differentiation and optimization
+      of hybrid computations.
+    name: PennyLane
+    url: https://github.com/XanaduAI/pennylane
+  - description: Framework for analyzing both classical and quantum Bayesian Networks.
+    name: QFog
+    url: https://github.com/artiste-qb-net/quantum-fog
   - description: Library of various quantum algorithm implemented with [QISKit](https://github.com/Qiskit/qiskit-terra).
     name: Qiskit Aqua
     url: https://github.com/Qiskit/aqua
   - description: Jupyter notebook filled with tutorials for [QISKit](https://github.com/QISKit/qiskit-terra).
     name: Qiskit Tutorial
     url: https://github.com/QISKit/qiskit-tutorial
-  - description: Software for analyzing fermionic quantum simulation algorithms with
-      [ProjectQ](https://github.com/ProjectQ-Framework/ProjectQ).
-    name: FermiLib
-    url: https://github.com/ProjectQ-Framework/FermiLib
-  - description: Compiling and analyzing quantum algorithm for quantum chemistry simulations.
-    name: OpenFermion
-    url: https://github.com/quantumlib/OpenFermion
+  - description: ' Programming exercises for learning Q# and quantum computing.'
+    name: Quantum Katas
+    url: https://github.com/Microsoft/QuantumKatas
   - description: Quantum Algorithms Development Toolkit e.g. allowing for backpropagation
       with QAOA.
     name: QuantumFlow
     url: https://github.com/rigetti/quantumflow
+  - description: Julia package to perform quantum state and process tomography.
+    name: QuantumTomography.jl
+    url: https://github.com/BBN-Q/QuantumTomography.jl
+  - description: 'Python tools for supervised learning by Quantum Neural Networks '
+    name: Quantum_Edward
+    url: https://github.com/artiste-qb-net/Quantum_Edward
   - description: Example code using [XACC](https://github.com/ORNL-QCI/xacc) for quantum
       computing.
     name: XACC Examples
@@ -222,38 +243,12 @@
       [Psi4](http://www.psicode.org/) and [OpenFermion](https://github.com/quantumlib/OpenFermion).
     name: XACC QChem
     url: https://github.com/ORNL-QCI/xacc-qchem-benchmarks
-  - description: Algorithms for adaptive refinement of measurements.
-    name: Adapt
-    url: https://github.com/BBN-Q/Adapt
-  - description: Framework for analyzing both classical and quantum Bayesian Networks.
-    name: QFog
-    url: https://github.com/artiste-qb-net/quantum-fog
-  - description: 'Python tools for supervised learning by Quantum Neural Networks '
-    name: Quantum_Edward
-    url: https://github.com/artiste-qb-net/Quantum_Edward
-  - description: Julia package to perform quantum state and process tomography.
-    name: QuantumTomography.jl
-    url: https://github.com/BBN-Q/QuantumTomography.jl
   - description: Variational quantum eigensolver built on [XACC](https://github.com/ORNL-QCI/xacc)
       for distributed, and shared memory systems.
     name: XACC VQE
     url: https://github.com/ornl-qci/xacc-vqe
-  - description: ' Programming exercises for learning Q# and quantum computing.'
-    name: Quantum Katas
-    url: https://github.com/Microsoft/QuantumKatas
 - name: Quantum compilers
   projects:
-  - description: Compilation, analysis and optimization framework for the Scaffold
-      quantum programming language.
-    name: ScaffCC
-    url: https://github.com/epiqc/ScaffCC
-  - description: Quantum compiler with Python wrapper for [LAPACK's CS Decomposition](http://www.netlib.org/lapack/README-CSD.html)
-      to build a binary tree of matrices.
-    name: Qubiter
-    url: https://github.com/artiste-qb-net/qubiter
-  - description: Language compiler for imperative Quantum Gate Language ([QGL](https://github.com/BBN-Q/QGL)).
-    name: QGL2 Compiler
-    url: https://github.com/BBN-Q/pyqgl2
   - description: Python library for quantum circuit rewriting and optimisation using
       the ZX-calculus.
     name: PyZX
@@ -261,20 +256,35 @@
   - description: A performance orientated [QGL](https://github.com/BBN-Q/QGL) compiler.
     name: QGL.jl
     url: https://github.com/BBN-Q/QGL.jl
+  - description: Language compiler for imperative Quantum Gate Language ([QGL](https://github.com/BBN-Q/QGL)).
+    name: QGL2 Compiler
+    url: https://github.com/BBN-Q/pyqgl2
+  - description: Quantum compiler with Python wrapper for [LAPACK's CS Decomposition](http://www.netlib.org/lapack/README-CSD.html)
+      to build a binary tree of matrices.
+    name: Qubiter
+    url: https://github.com/artiste-qb-net/qubiter
+  - description: Compilation, analysis and optimization framework for the Scaffold
+      quantum programming language.
+    name: ScaffCC
+    url: https://github.com/epiqc/ScaffCC
 - name: Quantum assembly
   projects:
-  - description: An open hybrid quantum/classical instruction set currently used by
-      Rigetti. [Parser](https://github.com/rigetticomputing/pyquil/tree/master/pyquil/_parser)
-    name: Quil
-    url: https://arxiv.org/abs/1608.03355
   - description: IBM's open-source quantum assembly language.
     name: OpenQASM
     url: https://github.com/QISKit/openqasm
   - description: A quantum macro assembler for D-Wave's quantum annealers.
     name: QMASM
     url: https://github.com/lanl/qmasm
+  - description: An open hybrid quantum/classical instruction set currently used by
+      Rigetti. [Parser](https://github.com/rigetticomputing/pyquil/tree/master/pyquil/_parser)
+    name: Quil
+    url: https://arxiv.org/abs/1608.03355
 - name: Quantum cryptography
   projects:
+  - description: '[Quantum Resistant Ledger](https://theqrl.org/) utilizing hash-based
+      one-time merkle tree signature scheme instead of ECDSA. '
+    name: QRL
+    url: https://github.com/theQRL/QRL/
   - description: C library for quantum-resistant cryptographic algorithms.
     name: liboqs
     url: https://github.com/open-quantum-safe/liboqs
@@ -284,63 +294,59 @@
   - description: OpenSSL with quantum-safe cryptographic algorithms.
     name: openssl
     url: https://github.com/open-quantum-safe/openssl
-  - description: '[Quantum Resistant Ledger](https://theqrl.org/) utilizing hash-based
-      one-time merkle tree signature scheme instead of ECDSA. '
-    name: QRL
-    url: https://github.com/theQRL/QRL/
 - name: Experimental quantum computing
   projects:
-  - description: ' Domain-specific language embedded in python for specifying pulse
-      sequences.'
-    name: QGL
-    url: https://github.com/BBN-Q/QGL
-  - description: Node-based GUI that allows for graphical configuration of qubit experiments
-      in Auspex.
-    name: Quince
-    url: https://github.com/BBN-Q/Quince
-  - description: Library for instrument control and superconducting QIP experiments.
-    name: PyQLab
-    url: https://github.com/BBN-Q/PyQLab
   - description: Next-generation control system for quantum information experiments.
     name: ARTIQ
     url: https://github.com/m-labs/artiq
-  - description: Quantum Computing Toolkit for Qubit Control.
-    name: qc-toolkit
-    url: https://github.com/qutech/qc-toolkit
+  - description: Library for instrument control and superconducting QIP experiments.
+    name: PyQLab
+    url: https://github.com/BBN-Q/PyQLab
   - description: Machine Learning tools for autotuning quantum dot experiments.
     name: QFlow-lite
     url: https://github.com/jpzwolak/QFlow-lite
+  - description: ' Domain-specific language embedded in Python for specifying pulse
+      sequences.'
+    name: QGL
+    url: https://github.com/BBN-Q/QGL
   - description: Measurement and control software for superconducting qubits.
     name: Qlab
     url: https://github.com/BBN-Q/Qlab
   - description: Generic lab tools in Julia.
     name: Qlab.jl
     url: https://github.com/BBN-Q/Qlab.jl
+  - description: Node-based GUI that allows for graphical configuration of qubit experiments
+      in Auspex.
+    name: Quince
+    url: https://github.com/BBN-Q/Quince
+  - description: Quantum Computing Toolkit for Qubit Control.
+    name: qc-toolkit
+    url: https://github.com/qutech/qc-toolkit
 - name: Quantum fun
   projects:
+  - description: "The world\u2019s first open source quantum computing board game.\
+      \ For 2 players."
+    name: Entanglion
+    url: https://github.com/Entanglion/entanglion
+  - description: ' Quantum programming language putting entanglement and superposition
+      front and center.'
+    name: QSEL
+    url: https://github.com/dabacon/qsel
   - description: '[Simple puzzles to benchmark various quantum processor](https://medium.com/@decodoku/understanding-quantum-computers-through-a-simple-puzzle-game-a290dde89fb2).'
     name: Quantum Awesomeness
     url: https://github.com/decodoku/A_Game_to_Benchmark_Quantum_Computers
   - description: '[Playing battleships with quantum measurements](https://medium.com/@decodoku/how-to-program-a-quantum-computer-part-2-f0d3eee872fe).'
     name: Quantum Battleships
     url: https://github.com/decodoku/Battleships_with_complementary_measurements
-  - description: ' Quantum programming language putting entanglement and superposition
-      front and center.'
-    name: QSEL
-    url: https://github.com/dabacon/qsel
   - description: Quantum game loosely based on Minesweeper Flag.
     name: Quantum Catsweeper
     url: https://github.com/desireevl/quantum-catsweeper
-  - description: Compose and perform quantum music with Rigetti's Forest.
-    name: Quantum Music Composer for Rigetti
-    url: https://github.com/JavaFXpert/quantum-toy-piano
   - description: Compose and perform quantum music with IBM Q.
     name: Quantum Music Composer for IBM Q
     url: https://github.com/JavaFXpert/quantum-toy-piano-ibmq
-  - description: "The world\u2019s first open source quantum computing board game.\
-      \ For 2 players."
-    name: Entanglion
-    url: https://github.com/Entanglion/entanglion
+  - description: Compose and perform quantum music with Rigetti's Forest.
+    name: Quantum Music Composer for Rigetti
+    url: https://github.com/JavaFXpert/quantum-toy-piano
 - name: Quantum tools
   projects:
   - description: Bot for Slack and Telegram to monitor the load of IBM Q quantum computers.
@@ -351,21 +357,21 @@
     url: https://github.com/JavaFXpert/quil-syntax-highlighter
 - name: Abandoned projects
   projects:
+  - description: Python with C++ backend simulator for superconducting circuits.
+    name: PySimulator
+    url: https://github.com/BBN-Q/PySimulator
   - description: Quantum Arithmetic Circuit Generator in Haskell.
     name: QACG
     url: https://github.com/QCT-IQC/qacg
   - description: A visual quantum circuit design and simulation tool.
     name: QCViewer
     url: https://github.com/QCT-IQC/QCViewer
-  - description: C library for quantum computing and quantum simulation.
-    name: libquantum
-    url: http://libquantum.de
   - description: Visual Java quantum simulator.
     name: Squankum
     url: https://github.com/jeffwass/Squankum
-  - description: Python with C++ backend simulator for superconducting circuits.
-    name: PySimulator
-    url: https://github.com/BBN-Q/PySimulator
+  - description: C library for quantum computing and quantum simulation.
+    name: libquantum
+    url: http://libquantum.de
   - description: '[Parallel quantum circuit synthesis](https://uwspace.uwaterloo.ca/handle/10012/9267)
       with optimal T-count.'
     name: pQCS
