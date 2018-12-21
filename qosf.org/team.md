@@ -27,6 +27,7 @@ micro_nav: false
     </div>
     <div class='col-md-8' style='text-align: justify;'>
        <b>Tomas Babej</b>
+       is a serial open source project author and maintainer. He became infatuated with the spirit of open source at a very early age while being employed at Red Hat, where motivated by the fear of public shaming on mailing lists he absorbed the best practices for conducting open source software development and governing open source communities. Tomas loves how open source enables him to tweak every little piece of his setup and hopes to maintain this capability even when playing with quantum computing hardware.
     </div>
 </div>
 
