@@ -53,5 +53,5 @@ grid_navigation:
     - title: Quantum software project evaluation.
       excerpt: Most recent results of our monthly evaluation of curated open quantum software projects.
       cta: View results
-      url: 'ranking'
+      url: 'evaluation'
 ---
