@@ -21,11 +21,12 @@ micro_nav: false
 ---
 
 # Learning
-#### [Documentation for Ocean](https://docs.ocean.dwavesys.com/en/latest/)
-Tutorial for D-Wave System's SDK.
 
 #### [Documentation for Forest and pyQuil](http://pyquil.readthedocs.io/en/latest/)
 Tutorials for Rigetti Computing's SDK.
+
+#### [Documentation for Ocean](https://docs.ocean.dwavesys.com/en/latest/)
+Tutorial for D-Wave System's SDK.
 
 #### [IBM Q Full User Guide](https://quantumexperience.ng.bluemix.net/qx/tutorial?sectionId=full-user-guide&page=introduction)
 Short tutorials providing a gentle introduction to quantum computing and IBM Q.
