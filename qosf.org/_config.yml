@@ -40,6 +40,9 @@ sass:
     sass_dir: ./doks-theme/_sass
     style: :compressed
 
+gems:
+- jekyll-latex
+
 # Jekyll settings
 layouts_dir: ./doks-theme/_layouts
 includes_dir: ./doks-theme/_includes
