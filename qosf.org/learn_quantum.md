@@ -21,6 +21,9 @@ micro_nav: false
 ---
 
 # Learning
+#### [Documentation for Ocean](https://docs.ocean.dwavesys.com/en/latest/)
+Tutorial for D-Wave System's SDK.
+
 #### [Documentation for Forest and pyQuil](http://pyquil.readthedocs.io/en/latest/)
 Tutorials for Rigetti Computing's SDK.
 
@@ -74,7 +77,7 @@ Conceptual introduction to the fundamental principles of quantum mechanics.
 #### [Understanding Quantum Computers](https://www.futurelearn.com/courses/intro-to-quantum-computing)
 Introduction to the key concepts of quantum computing with minimal mathematics.
 
-# Development Tools 
+# Development Tools
 
 [Click here](/project_list) for the most up-to-date list of all open source quantum software projects.
 
@@ -132,6 +135,9 @@ This talk is an introduction to modern quantum programming. It covers why you mi
 Microsoft Research Talk on introductory quantum computing for computer scientists. Duration: 1 hour, 28 minutes.
 
 # Community
+
+#### [D-Wave Leap Community](https://support.dwavesys.com/hc/en-us/community/topics)
+D-Wave System's Leap Community Forum.
 
 #### [IBM Q Community](https://quantumexperience.ng.bluemix.net/qx/community)
 IBM Quantum experience Community Forum.

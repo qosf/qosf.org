@@ -1,5 +1,8 @@
 - name: Quantum full-stack libraries
   projects:
+  - description: D-Wave System's suite of tools for solving hard problems with quantum computers.
+    name: Ocean
+    url: https://ocean.dwavesys.com/
   - description: IBM's quantum information software kit for simulating, compiling
       and executing quantum programs.
     name: Qiskit
@@ -141,41 +144,43 @@
     url: https://github.com/jpaykin/QWIRE
 - name: Quantum annealing
   projects:
-  - description: QUBO solver with [D-Wave](https://www.dwavesys.com) or classical
-      tabu solver backend.
-    name: Qbsolv
-    url: https://github.com/dwavesystems/qbsolv
-  - description: Exploration and analysis of network graphs.
-    name: dwave_networkx
-    url: https://github.com/dwavesystems/dwave_networkx
   - description: Shared API for Ising and QUBO problems.
     name: dimod
     url: https://github.com/dwavesystems/dimod
-  - description: '[Dimod](https://github.com/dwavesystems/dimod) wrapper for D-Wave''s
-      Solver API (SAPI).'
-    name: sapi_dimod
-    url: https://github.com/dwavesystems/dwave_sapi_dimod
-  - description: '[Dimod](https://github.com/dwavesystems/dimod) wrapper for the D-Wave
-      Micro Client.'
-    name: micro_client_sapi_dimod
-    url: https://github.com/dwavesystems/dwave_micro_client_dimod
-  - description: Heuristic tool for minor graph embedding.
-    name: minorminer
-    url: https://github.com/dwavesystems/minorminer
-  - description: Utilities and interfaces for using penalty models.
-    name: penaltymodel
-    url: https://github.com/dwavesystems/penaltymodel
-  - description: Mapping samples between original and embedded graph.
-    name: embedding_utilities
-    url: https://github.com/dwavesystems/dwave_embedding_utilities
-  - description: Incorporating D-Wave quantum annealers as samplers in the D-Wave
-      Ocean (?) software stack.
-    name: dwave-system
-    url: https://github.com/dwavesystems/dwave-system
+  - description: Library to construct a binary quadratic model from a constraint satisfaction
+      problem with small constraints over binary variables.
+    name: dwavebinarycsp
+    url: https://github.com/dwavesystems/dimod
   - description: Min. implementation of the REST interface to communicate with D-Wave's
       Solver API.
     name: dwave-cloud-client
     url: https://github.com/dwavesystems/dwave-cloud-client
+  - description: An implementation of a simulated annealing sampler..
+    name: dwave_neal
+    url: https://github.com/dwavesystems/dwave-neal
+  - description: Exploration and analysis of network graphs.
+    name: dwave_networkx
+    url: https://github.com/dwavesystems/dwave_networkx
+  - description: Installer for D-Wave’s Ocean Tools.
+    name: dwave-ocean-sdk
+    url: https://github.com/dwavesystems/dwave-ocean-sdk
+  - description: Basic API for easily incorporating D-Wave quantum annealers as samplers in the D-Wave
+      Ocean software stack.
+    name: dwave-system
+    url: https://github.com/dwavesystems/dwave-system
+  - description: Utilities and interfaces for using penalty models.
+    name: penaltymodel
+    url: https://github.com/dwavesystems/penaltymodel
+  - description: Heuristic tool for minor graph embedding.
+    name: minorminer
+    url: https://github.com/dwavesystems/minorminer
+  - description: QUBO solver with [D-Wave](https://www.dwavesys.com) or classical
+      tabu solver backend.
+    name: Qbsolv
+    url: https://github.com/dwavesystems/qbsolv
+  - description: Mapping samples between original and embedded graph.
+    name: embedding_utilities
+    url: https://github.com/dwavesystems/dwave_embedding_utilities
   - description: Algorithms to generate native-structured embeddings for Chimera graphs.
     name: chimera_embedding
     url: https://github.com/dwavesystems/chimera-embedding
