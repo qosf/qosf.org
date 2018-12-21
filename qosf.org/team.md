@@ -27,6 +27,7 @@ micro_nav: false
     </div>
     <div class='col-md-8'>
         <b>Peter Wittek</b>
+        Peter is a life-long fan of free and open source software and he gets furious every time he has to fill in a PDF form that does not work on Linux. When he is not preaching about the importance of open source software, he pursues research on the borderline of artificial intelligence and quantum physics as an Assistant Professor in the University of Toronto, and as an affiliate in the Vector Institute for Artificial Intelligence and the Perimeter Institute for Theoretical Physics. He is also the Academic Director of the Quantum Stream in the Creative Destruction Lab, where he sees dozens of startups exploring ideas using quantum computers and the corresponding software stack.         
     </div>
 </div>
 
