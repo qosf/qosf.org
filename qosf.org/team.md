@@ -57,7 +57,7 @@ micro_nav: false
 
 # Contributors
 
-<a href="https://github.com/desireevl">Desiree Voigt-Lee</a>
+<a href="https://github.com/desireevl">Desiree Vogt-Lee</a>
 <br>
 <a href="https://github.com/JoelPasvolsky">Joel Pasvolsky</a>
 <br>
