@@ -11,14 +11,22 @@ buttons:
     - content: Become a supporter
       url: 'https://mailchi.mp/762c19baab5a/qosf-supporter'
       external_url: true
+      icon: home
     - icon: gitlab
-      content: Follow us on GitLab
+      content: Follow us on GitLab &nbsp;
       url: 'https://gitlab.com/qosf'
       external_url: true
     - icon: github
       content: Follow us on GitHub
       url: 'https://github.com/qosf'
       external_url: true
+
+# Author box
+author:
+    title: The Team
+    title_url: 'team'
+    external_url: false
+    description: Find out more about the team behind the Quantum Open Source Foundation (QOSF).
 
 # Grid navigation
 grid_navigation:
