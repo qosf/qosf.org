@@ -40,7 +40,7 @@ micro_nav: false
     <div class='col-md-4'>
         <img style='border-radius:50%;' src='/assets/img/team/tomas.jpg' alt='Tomas Babej' width="200px">
     </div>
-    <div class='col-md-8'>
+    <div class='col-md-8' style='text-align: justify;'>
        <b>Tomas Babej</b>
     </div>
 </div>
@@ -50,10 +50,13 @@ micro_nav: false
 
 <div class='row'>
     <div class='col-md-4'>
+        <br>
+        <br>
+        <br>
         <img style='border-radius:50%;' src='/assets/img/team/mark.jpg' alt='Mark Fingerhuth' width="200px">
     </div>
-    <div class='col-md-8'>
-       <b>Mark Fingerhuth</b>
+    <div class='col-md-8' style='text-align: justify;'>
+       <b>Mark Fingerhuth</b> wants to rid his life of as much third-party and proprietary software as possible through the use of open source software in all aspects of his life - be it his phone, 3D printer, laptop or smart speakers. He loves popularizing the term <i>quantum software engineer</i> and with the <a href="https://github.com/qosf/os_quantum_software">list of open source quantum software projects on GitHub</a> he kickstarted the effort to enumerate and categorize all existing quantum software projects in our observable universe. In his day-to-day life, Mark is the CEO of <a href="https://proteinqure.com">ProteinQure</a> whose goal it is to demonstrate the world's first useful application of quantum/classical hybrid computation in pharmaceutical drug discovery.
     </div>
 </div>
 
