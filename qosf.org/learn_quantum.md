@@ -83,6 +83,9 @@ Conceptual introduction to the fundamental principles of quantum mechanics.
 #### [Understanding Quantum Computers](https://www.futurelearn.com/courses/intro-to-quantum-computing)
 Introduction to the key concepts of quantum computing with minimal mathematics.
 
+#### [Quantum Quest](https://www.quantum-quest.nl/)
+A web class for _high school students_. Organized by [QuSoft](http://www.qusoft.org/)
+
 # Development Tools
 
 [Click here](/project_list) for the most up-to-date list of all open source quantum software projects.
