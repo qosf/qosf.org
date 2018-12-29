@@ -106,6 +106,9 @@
   - description: Julia library for quantum information related calculations.
     name: QuantumInfo.jl
     url: https://github.com/BBN-Q/QuantumInfo.jl
+  - description: A Julia package for numerical computation in quantum information theory.
+    name: QuantumInformation.jl
+    url: https://github.com/ZKSI/QuantumInformation.jl
   - description: Tools for quantum control, simulation, channel representation conversion,
       and perturbations.
     name: QuantumUtils
