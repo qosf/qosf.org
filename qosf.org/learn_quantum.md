@@ -33,6 +33,9 @@ Tutorials for Rigetti Computing's SDK.
 #### [Documentation for Ocean](https://docs.ocean.dwavesys.com/en/latest/)
 Tutorial for D-Wave System's SDK.
 
+#### [Documentation for Strawberry Fields](https://strawberryfields.readthedocs.io/en/latest/)
+Background information on the photonic continuous-variable approach to quantum computation, as well as tutorials for Xanadu's SDK.
+
 #### [IBM Q Full User Guide](https://quantumexperience.ng.bluemix.net/qx/tutorial?sectionId=full-user-guide&page=introduction)
 Short tutorials providing a gentle introduction to quantum computing and IBM Q.
 
@@ -157,6 +160,9 @@ Slack Channel for QISKit and quantum computing discussions.
 #### [Mike & Ike Subreddit](https://www.reddit.com/r/MikeAndIke/)
 Discussion about the book Quantum Computation and Quantum Information.
 
+#### [PennyLane Discussion Forum](https://discuss.pennylane.ai)
+Discussion forum for quantum machine learning, both using simulations and on near term hardware.
+
 #### [Quantum Computing StackExchange](http://quantumcomputing.stackexchange.com/)
 Question and answer site for quantum computing.
 
@@ -165,6 +171,9 @@ Facebook group for quantum research discussion.
 
 #### [Rigetti Community](http://slack.rigetti.com/)
 Slack Channel for Rigetti and quantum computing discussions.
+
+#### [Strawberry Fields Community](https://u.strawberryfields.ai/slack)
+Slack channel for Xanadu and Strawberry Fields photonic/CV quantum computing discussions.
 
 #### [Quantum Computing Slack Community](http://quantum-computing.slack.com/)
 Slack Channel for quantum computing discussions. Generate an invite for
