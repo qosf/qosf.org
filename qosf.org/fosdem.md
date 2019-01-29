@@ -94,7 +94,7 @@ During the first day of the conference, the quantum computing track is held in t
 | PennyLane - Automatic differentiation and ML of QC                 | 04:05:00 PM | 04:50:00 PM | Josh Izaac            |
 | Quantum Computing at Google and in the Cloud                       | 04:55:00 PM | 05:40:00 PM | Kevin D. Kissell      |
 | Promotion of open source and role of standardization in QC         | 05:45:00 PM | 06:30:00 PM | Panel Discussion      |
-| Exponential speedp in progress                                     | 06:35:00 PM | 07:00:00 PM | Mark Fingerhuth       |
+| Exponential speedup in progress                                    | 06:35:00 PM | 07:00:00 PM | Mark Fingerhuth       |
 
 ### Sunday, Feb 3rd
 
