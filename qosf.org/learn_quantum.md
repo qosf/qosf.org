@@ -89,6 +89,10 @@ Introduction to the key concepts of quantum computing with minimal mathematics.
 #### [Quantum Quest](https://www.quantum-quest.nl/)
 A web class for _high school students_. Organized by [QuSoft](http://www.qusoft.org/)
 
+#### [Quantum Machine Learning](https://www.edx.org/course/quantum-machine-learning)
+Hands-on introduction to quantum computing and quantum-enhanced machine learning, complete with a [code repo](https://gitlab.com/qosf/qml-mooc/).
+
+
 # Development Tools
 
 [Click here](/project_list) for the most up-to-date list of all open source quantum software projects.
