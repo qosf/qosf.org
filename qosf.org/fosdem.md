@@ -130,4 +130,7 @@ with talks being recorded and hosted on the official [FOSDEM video archive](http
 * [Mark Fingerhuth](https://github.com/markf94) - ProteinQure Inc.
 * [Peter Wittek](https://gitlab.com/peterwittek) - University Of Toronto, Vector Institute, Perimeter Institute for Theoretical Physics
 
+# Sponsors
+[![Unitary Fund](http://unitary.fund/logos/logo.png)](http://unitary.fund)
+
 Please, take a moment to read the [FOSDEM Code of Conduct](https://fosdem.org/2019/practical/conduct/).
