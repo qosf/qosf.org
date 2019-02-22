@@ -142,6 +142,9 @@ Opportunities and challenges for quantum-assisted machine learning in near-term 
 #### [Quantum Machine Learning](https://www.researchgate.net/publication/264825604_Quantum_Machine_Learning_What_Quantum_Computing_Means_to_Data_Mining)
 Quantum machine learning and what quantum computing means to data mining.
 
+#### [Making Quantum Computing Open: Lessons from Open-Source Projects](https://arxiv.org/abs/1902.00991)
+An investigation of contributors to open-source quantum computing projects, their educational and professional backgrounds. Includes a survey with focus on what helped them succeed in the field.
+
 # Videos
 
 #### [Introduction to Quantum Programming](https://skillsmatter.com/skillscasts/11929-programming-the-world-s-first-quantum-computers-using-forest)
