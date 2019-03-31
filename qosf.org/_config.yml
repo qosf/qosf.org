@@ -1,4 +1,9 @@
 # Theme settings
+defaults:
+  - scope:
+      path: "assets/img"
+    values:
+      image: true
 doks:
     baseurl:
     color_theme: blue # Available themes: blue (default), green, purple, red and yellow
