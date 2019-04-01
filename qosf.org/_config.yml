@@ -47,7 +47,7 @@ sass:
     sass_dir: ./doks-theme/_sass
     style: :compressed
 
-gems:
+plugins:
 - jekyll-latex
 
 # Jekyll settings
