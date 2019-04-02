@@ -6,7 +6,9 @@
 	<body class="{{ site.doks.color_theme }}">
 		{% include site-header.html %}
 		<div class="hero-subheader{% if page.grid_navigation %} hero-subheader--before-out{% endif %}">
-			<div class="container">
+            <img src="{{ site.baseurl }}/assets/img/{{ page.left_illustration }}" alt="" class='left-illustration'>
+            <img src="{{ site.baseurl }}/assets/img/{{ page.right_illustration }}" alt="" class='right-illustration'>
+            <div class="container">
 				<div class="row">
 					<div class="col-md-7">
 						<div class="align-container" data-mh>
