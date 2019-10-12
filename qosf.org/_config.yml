@@ -9,8 +9,7 @@ doks:
     color_theme: blue # Available themes: blue (default), green, purple, red and yellow
     header:
         logo:
-            text: QOSF
-            image:
+            image: assets/img/logos/qosf_colour_logo.svg
         nav:
             - item_name: Home
               item_url: '/'

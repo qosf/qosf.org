@@ -18,7 +18,7 @@
 						<a href="{% if jekyll.environment == 'production' %}{{ site.doks.baseurl }}{% endif %}/" class="site-header__logo">{{ site.doks.header.logo.text }}</a>
 					{% elsif site.doks.header.logo.image %}
 						<a href="{% if jekyll.environment == 'production' %}{{ site.doks.baseurl }}{% endif %}/" class="site-header__logo">
-							<img src="{% if jekyll.environment == 'production' %}{{ site.doks.baseurl }}{% endif %}/doks-theme/assets/images/layout/logo.png">
+                            <img src="{% if jekyll.environment == 'production' %}{{ site.doks.baseurl }}{% endif %}{{ site.doks.header.logo.image }}">
 						</a><!-- /.site-header__logo -->
 					{% endif %}
 					{% if site.doks.header.nav %}
