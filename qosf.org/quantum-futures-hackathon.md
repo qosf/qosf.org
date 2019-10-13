@@ -6,7 +6,7 @@ comments: false
 hackathon_illustration: illustrations/smaller_octopus.png
 
 # Hero section
-title: "Quantum Future Hackathon"
+title: "Quantum Futures Hackathon"
 description: A weekend co-organized with CERN dedicated to hacking on quantum computers at the Fields Institute in Toronto, the world's most renown mathematics institute.
 buttons:
     - content: Apply for the hackathon
@@ -15,7 +15,7 @@ buttons:
       icon:
 ---
 
-## Quantum Future Hackathon
+## Quantum Futures Hackathon
 
 _Are you interested in learning more about quantum technologies and where it could take us? Do you enjoy collaborating on solutions to challenging problems? Whether you are an artist, a scientist or an engineer, whether you are a complete novice or have already fooled around with quantum technologies, this is for you._
 
@@ -23,7 +23,7 @@ _Are you interested in learning more about quantum technologies and where it cou
 
 ## Overview
 
-Toronto's first Quantum Futures Hackathon is co-organized by CERN (the world's largest particle accelerator) and QOSF. The Toronto leg of the hackathon will be held at the Fields Institute from Friday the 18th to Sunday the 20th of October 2019 whilst the Swiss leg will take place simultaneously at CERN IdeaSquare. [Register now](https://docs.google.com/forms/d/e/1FAIpQLSeuOYCQLf6wGGB6nMrVsnK4fZs1zL1ioSgK7A-DSKZukTONHA/viewform?usp=sf_link) to secure your chance to explore one of the most promising technologies of our time. The hackathon is a follow up event to the Quantum Future Workshop, which took place at CERN earlier this year.
+Toronto's first Quantum Futures Hackathon is co-organized by CERN (the world's largest particle accelerator) and QOSF. The Toronto leg of the hackathon will be held at the Fields Institute from Friday the 18th to Sunday the 20th of October 2019 whilst the Swiss leg will take place simultaneously at CERN IdeaSquare. [Register now](https://docs.google.com/forms/d/e/1FAIpQLSeuOYCQLf6wGGB6nMrVsnK4fZs1zL1ioSgK7A-DSKZukTONHA/viewform?usp=sf_link) to secure your chance to explore one of the most promising technologies of our time. The hackathon is a follow up event to the Quantum Futures Workshop, which took place at CERN earlier this year.
 
 Participants will learn more about quantum computing by working in cross-disciplinary teams, exploring the emerging quantum-based technologies and developing their own contributions. Mentored by top scientists from both industry and academia, they will engage in a wide range of projects and challenges, such designing online games, developing solutions that help physicists at CERN, and quantum-generated artworks.
 
