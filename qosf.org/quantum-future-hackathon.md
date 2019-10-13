@@ -3,7 +3,7 @@
 layout: default
 keywords:
 comments: false
-right_illustration: illustrations/big_octopus.png
+hackathon_illustration: illustrations/smaller_octopus.png
 
 # Hero section
 title: "Quantum Future Hackathon"
