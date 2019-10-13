@@ -6,21 +6,34 @@
  */
 
 .left-illustration {
-    width: 45vh;
+    width: 15vw;
     position: absolute;
     left:0;
     top: 6.625rem;
 }
 
 .right-illustration {
-    width: 45vh;
+    width: 15vw;
     position: absolute;
     right:0;
     top: 6.625rem;
 }
 
-@media only screen and (max-width: 2110px) {
-    .left-illustration, .right-illustration {
+.hackathon-illustration {
+    width: 25vw;
+    position: absolute;
+    right:0;
+    top: 10.625rem;
+}
+
+@media only screen and (max-width: 1550px) {
+    .hackathon-illustration .left-illustration, .right-illustration {
             display: none !important;
+    }
+}
+
+@media only screen and (min-width: 1850px) {
+    .left-illustration, .right-illustration {
+            width: 20vw !important;
     }
 }
