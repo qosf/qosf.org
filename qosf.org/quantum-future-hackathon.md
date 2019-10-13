@@ -48,9 +48,9 @@ The first day of the hackathon will consist of a gentle introduction to quantum 
 |--------------------------------------------------------------------|----------|----------|
 | Arrival & Registration	                                         | 05:00 PM | 05:30 PM |
 | Introductory lecture on quantum computing & software	             | 05:30 PM | 06:30 PM |
-| Overview of potential topics	                                     | 06:45 PM | 07:10 PM |
-| Pizza & getting to know each other                                 | 07:10 PM | 07:45 PM |
-| Team formation and hackathon kickoff                               | 07:45 PM | 09:00 PM |
+| Pizza & getting to know each other                                 | 06:30 PM | 07:30 PM |
+| Overview of potential topics	                                     | 07:30 PM | 08:00 PM |
+| Team formation and hackathon kickoff                               | 08:00 PM | 09:00 PM |
 | Go home and sleep!                                                 | 09:00 PM | --:-- PM |
 
 ### Saturday, Oct 19th
@@ -68,21 +68,21 @@ The second day of the hackathon is supposed to be the most productive. The idea 
 
 ### Sunday, Oct 20th
 
-The last hackathon day is usually pretty hectic! Once again, we gather at the Fields Institute at 9AM and you have until 6PM to finalize your projects and presentations. Then it's award time where our judges will determine prizes in three categories (most creative, most scientific and best open source contribution).
+The last hackathon day is usually pretty hectic! Once again, we gather at the Fields Institute at 9AM and you have until 6PM to finalize your projects and presentations. Then it's time to present what your team achieved in the past days and celebrate your achievements!
 
 | Section                                                            | Start    | End      |
 |--------------------------------------------------------------------|----------|----------|
 | Hacking                                                            | 09:00 AM | 06:00 PM |
 | Light breakfast (Coffee, Tea & Cereals)	                         | 09:00 AM | 11:00 AM |
 | Lunch (buffet style)                                               | 12:00 PM | 02:00 PM |
-| Award ceremony & dinner	                                         | 06:00 PM | 08:30 PM |
-| Optional beers with judges & organizers                            | 08:30 PM | 10:30 PM |
+| Final presentations & dinner	                                     | 06:00 PM | 08:30 PM |
+| Optional post-hackathon get-together                               | 08:30 PM | 10:30 PM |
 
 
 # Organizers
 
 * [Tomas Babej](https://github.com/tbabej) - QOSF and ProteinQure Inc.
 * [Mark Fingerhuth](https://github.com/markf94) - QOSF and ProteinQure Inc.
-* [Peter Wittek<sup>&#10013;</sup>](https://gitlab.com/peterwittek) - QOSF, University of Toronto, Vector Institute and Perimeter Institute for Theoretical Physics
+* [Peter Wittek](https://gitlab.com/peterwittek) - QOSF, University of Toronto, Vector Institute and Perimeter Institute for Theoretical Physics
 
 Please take a moment to read the [QOSF manifesto](https://qosf.org/manifesto) to learn what we're all about.
