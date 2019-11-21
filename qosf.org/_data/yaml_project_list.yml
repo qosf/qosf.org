@@ -216,10 +216,10 @@
   - description: Framework for analyzing both classical and quantum Bayesian Networks.
     name: QFog
     url: https://github.com/artiste-qb-net/quantum-fog
-  - description: Library of various quantum algorithm implemented with [QISKit](https://github.com/Qiskit/qiskit-terra).
+  - description: Library of various quantum algorithm implemented with [Qiskit](https://github.com/Qiskit/qiskit-terra).
     name: Qiskit Aqua
     url: https://github.com/Qiskit/aqua
-  - description: Jupyter notebook filled with tutorials for [QISKit](https://github.com/QISKit/qiskit-terra).
+  - description: Jupyter notebook filled with tutorials for [Qiskit](https://github.com/QISKit/qiskit-terra).
     name: Qiskit Tutorial
     url: https://github.com/QISKit/qiskit-tutorial
   - description: ' Programming exercises for learning Q# and quantum computing.'
