@@ -5,8 +5,8 @@ keywords:
 comments: false
 
 # Hero section
-title: "FOSDEM&#39;20 Quantum Computing"
-description: Two days dedicated to Quantum computing at Europe's largest open source conference!
+title: "FOSDEM&#39;20 - open source quantum computing"
+description: Two days dedicated to quantum open source at Europe's largest open source conference!
 buttons:
     - content: Become a supporter
       url: 'https://mailchi.mp/762c19baab5a/qosf-supporter'
@@ -14,13 +14,11 @@ buttons:
       icon: home
 ---
 
-## FOSDEM&#39;20 Quantum Computing
-
-**The world's first mini-conference for quantum software engineers**
+## The world's first conference for quantum software engineers
 
 ---
 
-Open source software for quantum computing is growing at an rate faster than ever and it becomes increasingly difficult to stay on top of the newest developments. The inaugural quantum track at FOSDEM aims to bring together quantum software engineers from academia & industry as well as traditional open source developers in order to provide a space to share new developments, features and libraries for quantum computing applications. Think of it as PyCon for quantum computing!
+Open source software for quantum computing is growing faster than ever and it becomes increasingly difficult to stay on top of the newest developments. The inaugural quantum track at FOSDEM aims to bring together quantum software engineers from academia & industry as well as traditional open source developers in order to provide a space to share new developments, features and libraries for quantum computing applications. Think of it as PyCon for quantum computing!
 
 The main themes of the event are:
 
@@ -33,35 +31,32 @@ The main themes of the event are:
 
 Past speakers included:
 
-Robert Smith (Rigetti)
-Murray Thom (?)
-Shahnawaz Ahmed (QuTip)
-Alexander Condello & Radomir Stevanovic (D-Wave)
-Nathan Killoran & Josh Izaac (Xanadu)
-Kevin Kissell (Google)
-Mark Mattingley-Scott (IBM)
-Will Zeng (Unitary Fund)
+- Robert Smith (Rigetti)
+- Shahnawaz Ahmed (QuTip)
+- Alexander Condello & Radomir Stevanovic (D-Wave)
+- Nathan Killoran & Josh Izaac (Xanadu)
+- Kevin Kissell (Google)
+- Mark Mattingley-Scott (IBM)
+- Will Zeng (Unitary Fund)
 
 # Apply as a speaker
 
-__Have you started an open source quantum software repo or are you a top-committer or maintainer of one?__
+*Have you started an open source quantum software repo or are you a top-committer or maintainer of one?*
 
 **or**
 
-__Are you working for a quantum software company with an open-source component in the stack?__
+*Are you working for a quantum software company that is partly developing open source?*
 
-If the answer is YES, then we would love to hear from you! We still have a few last-minute open speaker slots for FOSDEM 2020. Join us for two packed days full of quantum computing, celebrating open source and fostering collaboration at [FOSDEM 2020](https://fosdem.org/2020/).
+If the answer is YES, then we would love to hear from you! We still have a few speaker slots available for FOSDEM 2020. Join us for two packed days full of quantum computing, celebrating open source and fostering collaboration at [FOSDEM 2020](https://fosdem.org/2020/).
 
-# TODO: check if link works
 Before applying, please take a moment to read the [FOSDEM Code of Conduct](https://fosdem.org/2020/practical/conduct/).
 
 # Organizers
 
 * [Tomas Babej](https://github.com/tbabej) - QOSF & ProteinQure
 * [Mark Fingerhuth](https://github.com/markf94) - QOSF & ProteinQure
-# TODO: add Michal's and Will's github link
-* [Will Zeng](https://gitlab.com/) - Unitary Fund
-* [Michal Stechly](https://gitlab.com/) - QOSF & Zapata Computing
+* [Will Zeng](https://github.com/willzeng) - Unitary Fund
+* [Michal Stechly](https://github.com/mstechly) - QOSF & Zapata Computing
 
 # Sponsors
 [![Unitary Fund](https://unitary.fund/logos/logo.png)](https://unitary.fund)
