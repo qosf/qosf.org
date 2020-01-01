@@ -51,6 +51,8 @@ If the answer is YES, then we would love to hear from you! We still have a few s
 
 Before applying, please take a moment to read the [FOSDEM Code of Conduct](https://fosdem.org/2020/practical/conduct/).
 
+**To apply email:** [fosdem20@qosf.org](mailto:fosdem20@qosf.org) with the subject of your talk.
+
 # Organizers
 
 * [Tomas Babej](https://github.com/tbabej) - QOSF & ProteinQure
