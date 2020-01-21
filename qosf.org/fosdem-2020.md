@@ -39,17 +39,9 @@ Past speakers included:
 - Mark Mattingley-Scott (IBM)
 - Will Zeng (Unitary Fund)
 
-# Apply as a speaker
+You can find the schedule for this year at [the official FOSDEM page](https://fosdem.org/2020/schedule/track/quantum_computing/).
 
-*Have you started an open source quantum software repo or are you a top-committer or maintainer of one?*
 
-**or**
-
-*Are you working for a quantum software company that is partly developing open source?*
-
-If the answer is YES, then we would love to hear from you! We still have a few speaker slots available for FOSDEM 2020. Join us for two packed days full of quantum computing, celebrating open source and fostering collaboration at [FOSDEM 2020](https://fosdem.org/2020/).
-
-Before applying, please take a moment to read the [FOSDEM Code of Conduct](https://fosdem.org/2020/practical/conduct/).
 
 # Organizers
 
