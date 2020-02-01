@@ -56,4 +56,9 @@ grid_navigation:
       excerpt: Most recent results of our monthly evaluation of curated open quantum software projects.
       cta: View results
       url: 'evaluation'
+    - title: QC Mentorship program.
+      excerpt: Information about the mentorship program
+      cta: View results
+      url: 'qc_mentorship'
+
 ---
