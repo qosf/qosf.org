@@ -80,7 +80,6 @@ That’s why we want the participants to be highly motivated and committed–if 
 What would be a mentorship program without the mentors?
 We have invited a diverse group of professionals, from both the industry and academia to be mentors in this program. A list is coming soon!
 
-
 ## Timelines
 
 The program will run in batches–this means that you enroll only during a limited time window and the second batch won’t start until the first one finishes.
@@ -95,6 +94,7 @@ The first batch will start in March and last until the end of May 2020.
 
 If you’re interested, you can find an application form [here](https://forms.gle/3mE7gMHoQc84R6Vr8).
 If you would like to be informed about the updates, please follow us on [Twitter](https://twitter.com/qosfoundation) and [Facebook](https://www.facebook.com/quantumOSfoundation).
+Finally, if you would like to know what's the backstory of this project, Michał Stęchły, the main coordinator, described it [in this blogpost](https://www.mustythoughts.com/post/qc-mentorship-program-backstory).
 
 
 ## FAQ
