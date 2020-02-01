@@ -94,8 +94,7 @@ The first batch will start in March and last until the end of May 2020.
 
 If you’re interested, you can find an application form [here](https://forms.gle/3mE7gMHoQc84R6Vr8).
 If you would like to be informed about the updates, please follow us on [Twitter](https://twitter.com/qosfoundation) and [Facebook](https://www.facebook.com/quantumOSfoundation).
-Finally, if you would like to know what's the backstory of this project, Michał Stęchły, the main coordinator, described it [in this blogpost](https://www.mustythoughts.com/post/qc-mentorship-program-backstory).
-
+Finally, if you would like to learn the story behind this project (and its predecessor), Michał Stęchły (the main coordinator) described it [on his blog](https://www.mustythoughts.com/post/qc-mentorship-program-backstory).
 
 ## FAQ
 
