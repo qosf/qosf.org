@@ -108,11 +108,17 @@ By the QuTech institution, sharing their research and daily life.
 #### [Decodoku](https://medium.com/@decodoku)
 Interesting posts on quantum computation, by James Wootton.
 
+#### [Musty Thoughts](http://www.mustythoughts.com)
+Blog by Michał Stęchły ([Zapata Computing](https://www.zapatacomputing.com), [QOSF](https://qosf.org)).
+
 #### [Quantum Frontiers](https://quantumfrontiers.com/)
- By the Quantum Institute for Quantum Information and Matter, sharing behind the scenes research insights.
+By the Quantum Institute for Quantum Information and Matter, sharing behind the scenes research insights.
 
 #### [Quantum Weekly](https://quantumweekly.com/)
 A weekly correlation of all things quantum - computing, cryptography, entanglement.
+
+#### [Shtetl Optimized](https://www.scottaaronson.com/blog/)
+Blog by Scott Aaronson.
 
 # Books
 
