@@ -140,6 +140,9 @@ Conversational approach to explaining quantum computing with worked solutions.
 #### [Quantum Computing for Computer Scientists](https://www.amazon.com/Quantum-Computing-Computer-Scientists-Yanofsky/dp/0521879965)
 Quantum computing explained using an approach accessible to undergraduate computer science students.
 
+#### [Learn Quantum Computing with Python and Q#](https://www.manning.com/books/learn-quantum-computing-with-python-and-q-sharp)
+Learn about quantum computing by building your own quantum simulator, implementing quantum algorithms, and applying quantum programming techniques to real-world examples including cryptography and chemistry.
+
 # Papers
 
 #### [Opportunities and Challenges for Quantum Machine Learning](https://arxiv.org/abs/1708.09757)
@@ -170,6 +173,12 @@ IBM Quantum experience Community Forum.
 #### [IBM Q QISKit Community](https://qiskit.slack.com/)
 Slack Channel for QISKit and quantum computing discussions.
 
+#### [Q# Community](https://qsharp.community/)
+An open-source community around quantum programming in Q#, including blogs, code repositories, and online meetups.
+
+#### [Women In Quantum Computing and Applications](https://www.wiqca.dev/)
+An inclusive meetup group based in Seattle, WA, USA (currently gathering remotely) that hosts talks and tutorial series.
+
 #### [Mike & Ike Subreddit](https://www.reddit.com/r/MikeAndIke/)
 Discussion about the book Quantum Computation and Quantum Information.
 
@@ -192,3 +201,4 @@ Slack channel for Xanadu and Strawberry Fields photonic/CV quantum computing dis
 Slack Channel for quantum computing discussions. Generate an invite for
 this channel here: [Quantum Computing Slack -
 Invite](https://quantum-computing.herokuapp.com).
+
