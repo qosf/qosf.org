@@ -21,6 +21,8 @@ doks:
               item_url: '/project_list'
             - item_name: Evaluation
               item_url: '/evaluation'
+            - item_name: Mentorship
+              item_url: '/qc_mentorship'
     footer:
         content:
             logo:
