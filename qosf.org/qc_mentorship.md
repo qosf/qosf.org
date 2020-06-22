@@ -184,7 +184,7 @@ In total, there were 8 projects completed. However, there are still a couple mor
   
 **Financial Portfolio Rebalancing Using Variational Algorithms**  
   
-*Project description*: For my project I implemented the algorithm from [M. Hodson et. al., 2019](https://arxiv.org/abs/1911.05296). that solves the financial portfolio rebalancing problem using variational quantum algorithms. Following the paper, I implemented the algorithm with both soft and with hard constraints and used different optimization algorithms to compare the results.  The project was carried out by myself under the mentorship of Guoming Wang. 
+*Project description*: For my project I implemented the algorithm from *[M. Hodson et. al., 2019](https://arxiv.org/abs/1911.05296)*. that solves the financial portfolio rebalancing problem using variational quantum algorithms. Following the paper, I implemented the algorithm with both soft and with hard constraints and used different optimization algorithms to compare the results.  The project was carried out by myself under the mentorship of Guoming Wang. 
     
 *Mentee*: **[Oscar Javier Hernandez](https://www.linkedin.com/in/oscar-javier-hernandez/)**. Check out his [company website](http://www.zorc-finance.com/).
 
@@ -196,7 +196,7 @@ In total, there were 8 projects completed. However, there are still a couple mor
   
 **Cost-Function-Dependent Barren Plateuas in Shallow Quantum Neural Networks**  
   
-*Project description*: In this tutorial, we’ve implemented the work presented by [Cerezo et al., 2020](https://arxiv.org/abs/2001.00550) in Cost-Function-Dependent Barren Plateaus in Shallow Quantum Neural Networks and expanded upon it to create a cost-aware optimization strategy to optimize quantum neural networks while avoiding barren plateaus.
+*Project description*: In this tutorial, we’ve implemented the work presented by *[Cerezo et al., 2020](https://arxiv.org/abs/2001.00550) in Cost-Function-Dependent Barren Plateaus in Shallow Quantum Neural Networks* and expanded upon it to create a cost-aware optimization strategy to optimize quantum neural networks while avoiding barren plateaus.
     
 *Mentee*: **[Thomas Storwick](https://www.linkedin.com/in/thomasstorwick/)** is a graduate student at the University of Waterloo in the Waterloo Institute for Nanotechnology. His research interests range from 2D materials and interfaces, electronic devices, and of course, quantum computing. 
 
