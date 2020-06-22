@@ -26,7 +26,7 @@ micro_nav: false
 
 ---
 
-## What?
+## General Overview
 
 We would like to invite you to participate in our quantum computing mentorship program.
 In a nutshell: you’ll do an open-source project with the support of an expert and a community of like-minded people from all around the world.
@@ -43,9 +43,7 @@ By pairing people with mentors we want to help them overcome these hurdles and c
 
 ## Timeline 
 
-The program will run in batches. This means that you enroll only during a limited time window and the second batch won’t start until the first one finishes. The first batch has already ended. 
-
-We'll be running the next cohort of this program later this year (likely September/October 2020).
+The program is running in cohorts. The next cohort won't start until the previous one is finished - currently, the first cohort has already completed the program and we'll be running the next cohort later this year (likely September/October 2020). 
 
 If you would like to be informed about updates, please follow us on [Twitter](https://twitter.com/qosfoundation) and [Facebook](https://www.facebook.com/quantumOSfoundation)! If you would like to learn the story behind this project (and its predecessor), Michał Stęchły (the main coordinator) described it [on his blog](https://www.mustythoughts.com/post/qc-mentorship-program-backstory).
 
@@ -59,7 +57,7 @@ If you would like to be informed about updates, please follow us on [Twitter](ht
 
 ### Application
 
-To take part in the program, you need to fill in an application form. Based on that, we will choose people who we feel will have the best chance to succeed in this program. 
+To take part in the program, you need to fill in an application form. Based on that, we will choose people who we feel will have the best chance to succeed in this program. Link to the application form will be available once we start recruitment for the next cohort.
 
 ### Assessment task
 
@@ -154,7 +152,9 @@ Here is a quick overview of the program!
 
 ### Project Showcase! 
 
-In total, there were 8 projects completed: 
+In total, there were 8 projects completed. However, there are still a couple more that were delayed by unforeseen circumstances! 
+
+---
 
 **QML Contribution to Pennylane**  
   
@@ -164,7 +164,9 @@ In total, there were 8 projects completed:
 
 *Mentors*: Big thanks go to **[Tom Lubowe](https://twitter.com/TomLubowe)** from Rigetti for supporting the project, and to [Josh Izaac](https://twitter.com/3rdquantization) and [Tom Bromley](https://www.linkedin.com/in/thomas-bromley-a53a28130/) from Xanadu for discussing and reviewing my code! 
 
-*Links*: [Contribution](https://github.com/XanaduAI/pennylane/pull/642), [Github Repo](https://github.com/nvitucci/notebook_qc/tree/dev).
+*Links*: [Contribution](https://github.com/XanaduAI/pennylane/pull/642), [Notebook with Examples](https://github.com/nvitucci/notebook_qc/tree/dev).
+
+---
    
 **Applying Quantum Natural Gradient to Accelerate VQE**  
   
@@ -176,7 +178,9 @@ In total, there were 8 projects completed:
 
 *Mentor*: **[Sukin (Hannah) Sim](https://twitter.com/sukin_sim)** is a PhD student in Professor Alan Aspuru-Guzik’s research group interested in developing ways to make the best use of current and near-term quantum computers
 
-*Links*: [Tutorial](https://pennylane.ai/qml/demos/tutorial_vqe_qng.html), [Github Repo](https://github.com/hsim13372/quantum_natural_gradient), [Contribution](https://github.com/XanaduAI/pennylane/pull/618).
+*Links*: [Tutorial](https://pennylane.ai/qml/demos/tutorial_vqe_qng.html), [Notebook with Examples](https://github.com/hsim13372/quantum_natural_gradient), [Contribution](https://github.com/XanaduAI/pennylane/pull/618).
+
+---
   
 **Financial Portfolio Rebalancing Using Variational Algorithms**  
   
@@ -184,9 +188,11 @@ In total, there were 8 projects completed:
     
 *Mentee*: **[Oscar Javier Hernandez](https://www.linkedin.com/in/oscar-javier-hernandez/)**. Check out his [company website](http://www.zorc-finance.com/).
 
-*Mentor*: **[Guoming Wang](https://www.linkedin.com/in/guoming-wang-cs/)**.
+*Mentor*: **[Guoming Wang](https://www.linkedin.com/in/guoming-wang-cs/)** is a Quantum Research Scientist at [Zapata Computing](https://www.zapatacomputing.com/).
 
-*Links*: [Github Repo and Tutorial](https://github.com/OscarJHernandez/qc_mentorship_project).
+*Links*: [Notebook with Examples and Tutorial](https://github.com/OscarJHernandez/qc_mentorship_project).
+
+---
   
 **Cost-Function-Dependent Barren Plateuas in Shallow Quantum Neural Networks**  
   
@@ -194,19 +200,23 @@ In total, there were 8 projects completed:
     
 *Mentee*: **[Thomas Storwick](https://www.linkedin.com/in/thomasstorwick/)** is a graduate student at the University of Waterloo in the Waterloo Institute for Nanotechnology. His research interests range from 2D materials and interfaces, electronic devices, and of course, quantum computing. 
 
-*Mentor*: **[Josh Izaac](https://twitter.com/3rdquantization)** is a quantum physicist, experienced quantum software developer, and prolific science writer. He currently works for quantum computing company Xanadu Quantum Technologies as a theoretical physicist, using his background in quantum computation and software development to perform research and drive forward the field of quantum software. 
+*Mentor*: **[Josh Izaac](https://twitter.com/3rdquantization)** is a quantum physicist, experienced quantum software developer, and prolific science writer. He currently works for quantum computing company [Xanadu](https://www.xanadu.ai/) as a theoretical physicist, using his background in quantum computation and software development to perform research and drive forward the field of quantum software. 
 
 *Links*: [Tutorial](https://github.com/XanaduAI/qml/pull/94)
+
+---
   
 **Quantum computer Simulator with Ability to Simulate Noise via Kraus Operators**  
   
 *Project description*: My project is a quantum computer simulator with the ability to simulate noise via Kraus operators. The project is written in programming language Julia.
     
-*Mentee*: **[Eduard Smetanin](https://www.linkedin.com/in/eduard-smetanin-211b9972/)**.
+*Mentee*: **[Eduard Smetanin](https://www.linkedin.com/in/eduard-smetanin-211b9972/)** is a Software Engineer with 15 years of experience with experience in various programming languages.
 
-*Mentor*: **[Ntwali Bashige](https://twitter.com/nbashige)** is a Quantum Software Engineer at Zapata Computing. 
+*Mentor*: **[Ntwali Bashige](https://twitter.com/nbashige)** is a Quantum Software Engineer at [Zapata Computing](https://www.zapatacomputing.com/). 
 
-*Links*: [Github Repo and Tutorial](https://github.com/eduardsmetanin/NoisyQuantumComputerSimulator).
+*Links*: [Notebook with Examples and Tutorial](https://github.com/eduardsmetanin/NoisyQuantumComputerSimulator).
+
+---
   
 **VQE Algorithm on Quantum Mechanical Solids**  
   
@@ -214,19 +224,23 @@ In total, there were 8 projects completed:
     
 *Mentee*: **[Warren Alphonso](https://www.linkedin.com/in/warrenalphonso/)** is an undergraduate at UC Berkeley. 
 
-*Mentor*: **[Ntwali Bashige](https://twitter.com/nbashige)** is a Quantum Software Engineer at Zapata Computing. 
+*Mentor*: **[Ntwali Bashige](https://twitter.com/nbashige)** is a Quantum Software Engineer at [Zapata Computing](https://www.zapatacomputing.com/). 
 
 *Links*: [Project Webpage and Tutorial](http://www.warrenalphonso.com/qc/hubbard), [Github Repo](https://github.com/warrenalphonso/qc-mentorship).
+
+---
   
 **Implementing a SWAP-based BidiREctional Heuristic Search algorithm (SABRE)**  
   
-*Project description*: Due to limited connections between physical qubits, most two-qubit gates cannot be directly implemented on Noisy Intermediate-Scale Quantum (NISQ) devices. A dynamic remapping of logical to physical qubits is needed to enable execution of two qubit gates in a quantum algorithm on a NISQ device. In this project, we have implemented a SWAP-based BidiREctional heuristic search algorithm (SABRE), proposed in the [paper](https://arxiv.org/pdf/1809.02573.pd) Tackling the Qubit Mapping Problem for NISQ-Era Quantum Devices by Gushu Li, Yufei Ding, and Yuan Xie that is applicable to NISQ devices with arbitrary qubit connections. Our goal with this implementation is to be able to provide a tool that can be used by quantum programmers to explore the qubit mapping problem on their own physical qubit connections or predefined chip architectures.
+*Project description*: Due to limited connections between physical qubits, most two-qubit gates cannot be directly implemented on Noisy Intermediate-Scale Quantum (NISQ) devices. A dynamic remapping of logical to physical qubits is needed to enable execution of two qubit gates in a quantum algorithm on a NISQ device. In this project, we have implemented a SWAP-based BidiREctional heuristic search algorithm (SABRE), proposed in the paper *[Tackling the Qubit Mapping Problem for NISQ-Era Quantum Devices](https://arxiv.org/pdf/1809.02573.pd)* by Gushu Li, Yufei Ding, and Yuan Xie that is applicable to NISQ devices with arbitrary qubit connections. Our goal with this implementation is to be able to provide a tool that can be used by quantum programmers to explore the qubit mapping problem on their own physical qubit connections or predefined chip architectures.
     
 *Mentee*: **[Kaustuvi Basu](https://www.linkedin.com/in/kaustuvibasu/)** - I am a full stack software developer with over 3.5 years of experience in Python, Angular and DevOps and have been contributing to Quantum Programming Studio and quantum-circuit tools for Quantastica for the past 1 year.
 
 *Mentor*: **[Petar Korponaić](https://www.linkedin.com/in/petar-korponaic/)** is a software engineer and entrepreneur, founder at Quantastica, and quantum computing enthusiast with 25+ years of experience in information technology, he is author and contributor in many projects including "[quantum-circuit](https://quantum-circuit.com)" - open source quantum circuit simulator and automatic converter between quantum programming languages.
 
-*Links*: [Github Repo and Tutorial](https://github.com/Kaustuvi/quantum-qubit-mapping), [Project Webpage](https://pypi.org/project/quantum-qubit-mapping/).
+*Links*: [Notebook with Examples and Tutorial](https://github.com/Kaustuvi/quantum-qubit-mapping), [Project Webpage](https://pypi.org/project/quantum-qubit-mapping/).
+
+---
 
 **Quantum Algorithms for Simulating Ground State of Quantum Many Body Systems** 
 
@@ -234,6 +248,8 @@ In total, there were 8 projects completed:
 
 On the other hand, the so-called imaginary time evolution algorithm ensures the convergence to the ground state, provided that the initial Ansatz had a non-vanishing overlap with the desired state. However, since based on the imaginary time evolution, this algorithm makes use of non-unitary operators, thus making it not particularly suitable to be implemented in a NISQ machine. It has been recently proposed by [Motto et al., 2019](https://arxiv.org/abs/1901.07653). 
 
-*Mentee*: **Dario Rosa**.
+*Mentee*: **Dario Rosa** - I am a physicist working on quantum many body problems who wants to see how quantum computing can boost my research towards more ambitious problems.
 
-*Mentor*: **[Maria Kieferova](https://twitter.com/mkieferova)**.
+*Mentor*: **[Maria Kieferova](https://twitter.com/mkieferova)** is a Postdoctoral Fellow at University of Technology in Sydney. Her areas of interest are quantum algorithms, adiabatic quantum computation, and quantum machine learning.
+
+---
