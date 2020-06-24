@@ -252,4 +252,6 @@ On the other hand, the so-called imaginary time evolution algorithm ensures the 
 
 *Mentor*: **[Maria Kieferova](https://twitter.com/mkieferova)** is a Postdoctoral Fellow at University of Technology in Sydney. Her areas of interest are quantum algorithms, adiabatic quantum computation, and quantum machine learning.
 
+*Links*: [Repository](https://github.com/Dario-Rosa85/QuantumManyBody).
+
 ---
