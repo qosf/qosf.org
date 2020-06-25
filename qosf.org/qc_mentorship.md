@@ -45,7 +45,7 @@ By pairing people with mentors we want to help them overcome these hurdles and c
 
 The program is running in cohorts. The next cohort won't start until the previous one is finished - currently, the first cohort has already completed the program and we'll be running the next cohort later this year (likely September/October 2020). 
 
-If you would like to be informed about updates, please follow us on [Twitter](https://twitter.com/qosfoundation) and [Facebook](https://www.facebook.com/quantumOSfoundation)! If you would like to learn the story behind this project (and its predecessor), Michał Stęchły (the main coordinator) described it [on his blog](https://www.mustythoughts.com/post/qc-mentorship-program-backstory).
+If you would like to be informed about updates, please follow us on [Twitter](https://twitter.com/qosfoundation) and [Facebook](https://www.facebook.com/quantumOSfoundation)! If you would like to learn the story behind this project (and its predecessor), Michał Stęchły (the main coordinator) described it [on his blog](https://www.mustythoughts.com/qc-mentorship-program-backstory).
 
 ## How does it work?
 
