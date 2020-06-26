@@ -45,7 +45,7 @@ By pairing people with mentors we want to help them overcome these hurdles and c
 
 The program is running in cohorts. The next cohort won't start until the previous one is finished - currently, the first cohort has already completed the program and we'll be running the next cohort later this year (likely September/October 2020). 
 
-If you would like to be informed about updates, please follow us on [Twitter](https://twitter.com/qosfoundation) and [Facebook](https://www.facebook.com/quantumOSfoundation)! If you would like to learn the story behind this project (and its predecessor), Michał Stęchły (the main coordinator) described it [on his blog](https://www.mustythoughts.com/post/qc-mentorship-program-backstory).
+If you would like to be informed about updates, please follow us on [Twitter](https://twitter.com/qosfoundation) and [Facebook](https://www.facebook.com/quantumOSfoundation)! If you would like to learn the story behind this project (and its predecessor), Michał Stęchły (the main coordinator) described it [on his blog](https://www.mustythoughts.com/qc-mentorship-program-backstory).
 
 ## How does it work?
 
@@ -251,5 +251,7 @@ On the other hand, the so-called imaginary time evolution algorithm ensures the 
 *Mentee*: **Dario Rosa** - I am a physicist working on quantum many body problems who wants to see how quantum computing can boost my research towards more ambitious problems.
 
 *Mentor*: **[Maria Kieferova](https://twitter.com/mkieferova)** is a Postdoctoral Fellow at University of Technology in Sydney. Her areas of interest are quantum algorithms, adiabatic quantum computation, and quantum machine learning.
+
+*Links*: [Repository](https://github.com/Dario-Rosa85/QuantumManyBody).
 
 ---

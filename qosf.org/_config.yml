@@ -50,6 +50,8 @@ sass:
 
 plugins:
 - jekyll-latex
+- jekyll-target-blank
+
 
 # Jekyll settings
 layouts_dir: ./doks-theme/_layouts
