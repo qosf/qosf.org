@@ -265,7 +265,7 @@ On the other hand, the so-called imaginary time evolution algorithm ensures the 
 - **Omar Hussein**: A physics student in his final year, who is mainly interested in the experimental side of quantum info. 
 - **[Walid](https://twitter.com/Walid_Mk99)**: A physics student in his final year and planning for a master's program in quantum computing and computer, interested in quantum information theory and its application, also an enthusiast about quantum machine learning.
 
-*Mentor*: **[Yuval Sanders](https://researchers.mq.edu.au/en/persons/yuval-sanders)** A Rearch Fellow, Department of Physics and Astronomy at MACQUARIE university. Yuval's research is focused on assessing and applying quantum technologies through quantum algorithms, quantum characterization and quantum information theory. The work Yuval does seeks to deliver rigorous assessment procedures and clear use cases for quantum technology.
+*Mentor*: **[Yuval Sanders](https://researchers.mq.edu.au/en/persons/yuval-sanders)** A Research Fellow, Department of Physics and Astronomy at Macquarie University. Yuval's research is focused on assessing and applying quantum technologies through quantum algorithms, quantum characterization and quantum information theory. The work Yuval does seeks to deliver rigorous assessment procedures and clear use cases for quantum technology.
 
 *Links*: [Repository](https://github.com/moustafa-7/Grover-s-Algorithm-QOSF).
 
