@@ -190,7 +190,7 @@ In total, there were 8 projects completed. However, there are still a couple mor
 
 *Mentor*: **[Guoming Wang](https://www.linkedin.com/in/guoming-wang-cs/)** is a Quantum Research Scientist at [Zapata Computing](https://www.zapatacomputing.com/).
 
-*Links*: [Notebook with Examples and Tutorial](https://github.com/OscarJHernandez/qc_mentorship_project).
+*Links*: [Notebook with Examples and Tutorial](https://github.com/OscarJHernandez/qc_mentorship_project), [Blog post](https://www.zorc-finance.com/post/optimal-portfolios-with-qaoa).
 
 ---
   
