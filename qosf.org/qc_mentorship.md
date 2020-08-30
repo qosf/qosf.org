@@ -127,11 +127,6 @@ We estimate that finishing such a project would take about 80-100 hours of work.
 We know it’s a lot of time, but we also know that there is a lot of effort behind every great software project.
 That’s why we want the participants to be highly motivated and committed – if you have other commitments and won’t be able to spend that much time on a project in the upcoming months, perhaps it’s better to wait.
 
-## Mentors
-
-What would a mentorship program be without the mentors?
-We have invited a diverse group of professionals, from both industry and academia to be mentors in this program. 
-
 
 ## Mentors
 
