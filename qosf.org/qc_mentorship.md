@@ -18,13 +18,6 @@ buttons:
       external_url: false
       icon: stackoverflow
 
-# Author box
-author:
-    title: Michał Stęchły
-    title_url: 'https://www.mustythoughts.com/about'
-    external_url: true
-    description: Michał authored and supported OS implementations and research of several quantum computing algorithms and is currently a Quantum Software Engineer at Zapata Computing.
-
 # Micro navigation
 micro_nav: false
 
@@ -46,6 +39,8 @@ The idea for this program comes from the fact that many people from diverse back
 
 By pairing people with mentors we want to help them overcome these hurdles and create interesting projects, which will, in turn, will help others.
 
+Learn more about the story behind this program (and its predecessor) on [Michał Stęchły’s blog](https://www.mustythoughts.com/QC-Mentorship-Program-backstory.html). 
+
 
 ## Timeline 
 
@@ -56,12 +51,10 @@ If you would like to be informed about updates, please follow us on [Twitter](ht
 | Program milestone                                           | Timeframe                                                           |
 --------------------------------------------------------------|---------------------------------------------------------------------|
 | Program applications released                               | September 2020. Application deadline on September 13th, 2020        | 
-| Applications review                                         | September 2020 - October 2020                                       |
+| Applications review                                         | Late September 2020 - Early October 2020                            |
 | Pairing mentors with mentees and defining projects’ scope   | Early October 2020                                                  |
 | Mentees and mentors work on projects                        | October 2020 - December 2020                                        |
 | Program wrap-up and promotion of all open-source projects!  | January/February 2021                                               |
-
-Learn more about the story behind this program (and its predecessor) on [Michał Stęchły’s blog](https://www.mustythoughts.com/QC-Mentorship-Program-backstory.html). 
 
 
 ## How does it work?
@@ -74,13 +67,13 @@ Learn more about the story behind this program (and its predecessor) on [Michał
 
 ### Application
 
-To take part in the program, you need to fill in an application form. Link to the application form will be available once we start recruitment for the next cohort.
+To take part in the program, you need to fill in an application form. Link to the application is available at the bottom of this page.
 
 ### Assessment task
 
-We know that just reading someone’s CV is not enough. We also know that reading the description of this program might not be enough for you to tell whether it’s something you would enjoy. That’s why we will send “homework tasks” to people who filled in the application. You will have 2 weeks to complete them. It will be the second step of the assessment process.
+We know that just reading someone’s CV is not enough. We also know that reading the description of this program might not be enough for you to tell whether it’s something you would enjoy. That’s why we will send “homework tasks” to people who filled in the application. You will have 2 weeks to complete them, from the moment you submit your application. It will be the second step of the assessment process.
 
-You can find the assessment tasks from the first cohort [here](https://docs.google.com/document/d/1lo_qy6Y7jhwBMWpQuecxAFG3L_4soYkpq0TaLq42o-A/edit?usp=sharing).
+To get an idea of what to expect from these tasks, you can find the assessment tasks from the first cohort [here](https://docs.google.com/document/d/1lo_qy6Y7jhwBMWpQuecxAFG3L_4soYkpq0TaLq42o-A/edit?usp=sharing).
 
 ### Mentor and project assignment
 
@@ -92,9 +85,18 @@ Once both you and your mentor agree on the project, you will work together to pl
 
 Finally, we have arrived at the most exciting part! You will work on the project under the supervision of the mentor. This part will last for a maximum of 3 months.
 
+Most (but not all) projects will probably fall into one of two categories:
+
+- contribution to existing software projects.
+- research projects – implementing papers, reproducing results, etc.
+
+Some mentors have already proposed ideas for projects ([see here](https://docs.google.com/document/d/1OV15csKKZTSGn9z7kwhPD7bVk4dkD67hr00UtDEgu7o/edit?usp=sharing)) and if you're interested in doing such project, you can indicate it in the application form. These projects might also have more specific (and higher) skill requirements than the program overall.
+
+You can also take a look at [the list of the projects from the 1st cohort](TODO) to get a better idea how such projects could look like.
+
 ### Finalizing
 
-The project is done–great! But your job is not over yet. What good will do the project that no-one knows about? Now it’s time to wrap it up and promote – depending on the nature of your project, it might be either a blog post, paper, tutorial or something entirely different.
+The project is done – great! But your job is not over yet. What good will do the project that no-one knows about? Now it’s time to wrap it up and promote – depending on the nature of your project, it might be either a blog post, paper, tutorial or something entirely different.
 
 
 ## Requirements
@@ -105,13 +107,13 @@ Below you can find the minimal requirements for participation in the project.
 
 While we don’t require expertise, you need to know the basics. We don’t want to specify it exactly, but if you have done any of the things below:
 
-- Read a book about quantum computing (e.g. [Nielsen and Chuang](http://mmrc.amss.cas.cn/tlb/201702/W020170224608149940643.pdf)),
+- Read a book about quantum computing (e.g. [Nielsen and Chuang](https://en.wikipedia.org/wiki/Quantum_Computation_and_Quantum_Information)),
 - Finished a course on quantum computing (online or at your university),
 - Implemented some quantum algorithms on a simulator.
 
 you probably know enough.
 
-A place which probably gathers all the necessary basics in one place is [Quantum Computing for the Very Curious](https://quantum.country) – if after reading this essay you feel like everything sounds new, then it might be a sign that you need to study a little bit more before applying.
+A place which probably gathers all the necessary basics in one place is [Quantum Computing for the Very Curious](https://quantum.country/qcvc) – if after reading this essay you feel like everything sounds new, then it might be a sign that you need to study a little bit more before applying.
 
 ### Coding skills
 
@@ -144,7 +146,6 @@ For QOSF’s second cohort (starting October 2020), the program mentors are:
 - [Antal Szava](https://www.linkedin.com/in/antalszava/), Xanadu
 - [Amira Abbas](https://www.linkedin.com/in/amira-abbas/), IBM Research Zurich
 - [Seyon Sivarajah](https://www.linkedin.com/in/seyon-sivarajah-720067b6/), Cambridge Quantum Computing
-- [Ethan Hansen](https://www.linkedin.com/in/1ethanhansen/), Zapata Computing
 - [Mark Skillbeck](https://www.linkedin.com/in/mark-skilbeck-5418b317b/), Rigetti Computing
 - [Tushar Mittal](https://www.linkedin.com/in/tushar-mittal/), Rigetti Computing
 - [Anastasia Marchenkova](https://www.linkedin.com/in/amarchenkova/), Bleximo Corporation
@@ -158,6 +159,7 @@ For QOSF’s second cohort (starting October 2020), the program mentors are:
 - Experts from industry and academia will help you build this project.
 - The deadline for the application is September 13th, 2020.
 
+You can find link to the application form [here](https://forms.gle/yjY7inLeZYq6YAYx6).
 
 ## FAQ
 
@@ -165,18 +167,9 @@ For QOSF’s second cohort (starting October 2020), the program mentors are:
 First, you will have a call with your mentor to get to know each other and decide on the details of the projects. Then, your mentor will check-in with you every two weeks, to make sure you’re on track with the project and you’re not stuck. In the meantime, there will also be a Slack channel, where you can ask them questions or schedule a call if you need that and they will do their best to answer you quickly.
 
 ### We would like to apply as a team
+We do accept groups of up to 3 people. In such a case, we require you to provide some information about the projects you have done together. Please fill in a separate application form for each of the team members. Also, each of the team members should solve and submit screening tasks separately.
 
-We do accept groups of up to 3 people. In such a case, we require you to provide some information about the projects you have done together. Please fill in only one application form per team.
 
-### What type of projects will I work on?
-
-With the guidance of your mentor, you will work on an open-source quantum computing project in one or some of the following categories. It is up to you and your mentor to determine the exact scope of the project. 
-
-- Research: examples include implementing papers, reproducing results, etc.
-- Contribution to existing software projects: one large contribution or several smaller ones
-- Special: well-defined projects proposed by mentors ahead of time (ie, quantum benchmarking). Applicants will have to indicate their interest at the time of their application. These projects might also have more specific (and higher) skill requirements than the program overall.
-- Other: everything that doesn't fit in one of the previous ones.
-
-If you have any other questions, don't hesitate to [reach out](). 
+If you have any other questions, don't hesitate to [reach out](qosf.mentorship@gmail.com). 
 
 ---
