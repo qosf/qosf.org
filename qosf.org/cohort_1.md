@@ -17,6 +17,8 @@ buttons:
 # Micro navigation
 micro_nav: false
 
+permalink: /cohort_1/
+
 ---
 
 ## Mentorship Program Cohort 1 Project Showcase 
