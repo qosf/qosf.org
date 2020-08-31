@@ -10,13 +10,13 @@ title: Quantum Computing Mentorship Program
 description: Connecting quantum enthusiasts with mentors from academia & industry.
 buttons:
     - content: Apply for mentorship
-      url: 'https://forms.gle/3mE7gMHoQc84R6Vr8'
+      url: '(https://forms.gle/yjY7inLeZYq6YAYx6)'
       external_url: true
       icon: stackoverflow
     - content: Check out the project showcase for cohort one
       url: 'qc_mentorship_cohort_1'
       external_url: false
-      icon: stackoverflow
+      icon: github
 
 # Micro navigation
 micro_nav: false
@@ -67,7 +67,7 @@ If you would like to be informed about updates, please follow us on [Twitter](ht
 
 ### Application
 
-To take part in the program, you need to fill in an application form. Link to the application is available at the bottom of this page.
+To take part in the program, you need to fill in an application form. Link to the application is available at the top and bottom of this page.
 
 ### Assessment task
 
@@ -92,7 +92,7 @@ Most (but not all) projects will probably fall into one of two categories:
 
 Some mentors have already proposed ideas for projects ([see here](https://docs.google.com/document/d/1OV15csKKZTSGn9z7kwhPD7bVk4dkD67hr00UtDEgu7o/edit?usp=sharing)) and if you're interested in doing such project, you can indicate it in the application form. These projects might also have more specific (and higher) skill requirements than the program overall.
 
-You can also take a look at [the list of the projects from the 1st cohort](TODO) to get a better idea how such projects could look like.
+You can also take a look at [the list of the projects from the 1st cohort]({% link qosf.org/qc_mentorship_cohort_1.md %}) to get a better idea how such projects could look like.
 
 ### Finalizing
 
@@ -105,13 +105,11 @@ Below you can find the minimal requirements for participation in the project.
 
 ### Knowledge of quantum computing basics
 
-While we don’t require expertise, you need to know the basics. We don’t want to specify it exactly, but if you have done any of the things below:
+While we don’t require expertise, you need to know the basics. We don’t want to specify it exactly, but if you have done any of the things below, you probably know enough:
 
 - Read a book about quantum computing (e.g. [Nielsen and Chuang](https://en.wikipedia.org/wiki/Quantum_Computation_and_Quantum_Information)),
 - Finished a course on quantum computing (online or at your university),
 - Implemented some quantum algorithms on a simulator.
-
-you probably know enough.
 
 A place which probably gathers all the necessary basics in one place is [Quantum Computing for the Very Curious](https://quantum.country/qcvc) – if after reading this essay you feel like everything sounds new, then it might be a sign that you need to study a little bit more before applying.
 
