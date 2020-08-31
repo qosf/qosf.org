@@ -1,0 +1,623 @@
+I"��<div class="callout callout--danger">
+    <p><strong>The evaluation is not completely automated yet.</strong>
+    Current evaluation results are identical to the results reported in the PLoS ONE collection review on <a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0208561">"Open source software in quantum computing"</a>. We're currently working hard on fully automating the evaluation such that we can publish monthly updates soon.
+    </p>
+</div>
+
+<h1>Project selection</h1>
+<p>We only evaluate a subset of the projects presented in <a href="/project_list">our exhaustive list of open quantum software repositories</a>. The following decision tree outlines the process which is used to select free and open software projects for evaluation. The main goal is to identify projects that have already built a community around their project. The acronym PR stands for <a href="https://en.wikipedia.org/wiki/Distributed_version_control#Pull_requests">pull request</a> which is a form of code contribution on software hosting websites.
+<br /></p>
+<center><img src="/assets/img/quantum_project_selection_flow_diagram.png" alt="Flow diagram showing quantum project selection" width="800vh" /></center>
+<p><br /></p>
+
+<div class="callout callout--info">
+    <p><strong>These rules are not set in stone and we're always open for suggestions.</strong>
+    If you have some thoughts, comments or concerns, please open an issue on <a href="https://github.com/qosf/qosf.org">our GitHub page</a>.
+    </p>
+</div>
+
+<h1>Repository evaluation</h1>
+<p>Evaluation results for the static analysis of each project and its source code. We report the version control and issue tracking systems as well as the total number, attention rate and average response time for all open and closed issues and pull requests (PRs). We define attention rate as 1-I where I is the fraction of ignored issues and pull requests with respect to the total number of issues and pull requests. An ideal project never ignores any of its user or developer questions or contributions and would have an attention rate of 1.0. The average response time measures how long it takes a core contributor (or an employee of the company hosting the project) to respond to issues or pull requests. Next, we analyze the existence of a test suite and report the resulting code coverage for most projects. Code complexity is only reported for projects written in Python since other languages do not allow for fast retrieval of this metric (if you know how to do this please let us know through a <a href="https://github.com/qosf/qosf.org">GitHub issue</a> or <a href="mailto:info@qosf.org">email</a>).
+<br />
+<br /></p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">Name</th>
+      <th style="text-align: center">Version control system</th>
+      <th style="text-align: center">Issue tracking system</th>
+      <th style="text-align: center">Issues/PRs</th>
+      <th style="text-align: center">Attention rate</th>
+      <th style="text-align: center">Average response time (days)</th>
+      <th style="text-align: center">Test suite</th>
+      <th style="text-align: center">Code coverage</th>
+      <th style="text-align: center">Cyclomatic Complexity</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center"><a href="https://github.com/quantumlib/Cirq">Cirq</a></td>
+      <td style="text-align: center">Git</td>
+      <td style="text-align: center">GitHub</td>
+      <td style="text-align: center">448/686</td>
+      <td style="text-align: center">0.54</td>
+      <td style="text-align: center">2.6</td>
+      <td style="text-align: center"><span style="font-size:35px;color:green;">✓</span></td>
+      <td style="text-align: center">94%</td>
+      <td style="text-align: center">2.99</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><a href="https://github.com/BBN-Q/Cliffords.jl">Cliffords.jl</a></td>
+      <td style="text-align: center">Git</td>
+      <td style="text-align: center">GitHub</td>
+      <td style="text-align: center">6/12</td>
+      <td style="text-align: center">0.33</td>
+      <td style="text-align: center">&lt;1</td>
+      <td style="text-align: center"><span style="font-size:35px;color:green;">✓</span></td>
+      <td style="text-align: center">-</td>
+      <td style="text-align: center">-</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><a href="https://github.com/dwavesystems/dimod">dimod</a></td>
+      <td style="text-align: center">Git</td>
+      <td style="text-align: center">GitHub</td>
+      <td style="text-align: center">110/201</td>
+      <td style="text-align: center">0.30</td>
+      <td style="text-align: center">5.3</td>
+      <td style="text-align: center"><span style="font-size:35px;color:green;">✓</span></td>
+      <td style="text-align: center">94%</td>
+      <td style="text-align: center">2.96</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><a href="https://github.com/dwavesystems/dwave-system">dwave-system</a></td>
+      <td style="text-align: center">Git</td>
+      <td style="text-align: center">GitHub</td>
+      <td style="text-align: center">54/72</td>
+      <td style="text-align: center">0.24</td>
+      <td style="text-align: center">8.2</td>
+      <td style="text-align: center"><span style="font-size:35px;color:green;">✓</span></td>
+      <td style="text-align: center">87%</td>
+      <td style="text-align: center">3.47</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><a href="https://github.com/ProjectQ-Framework/FermiLib">FermiLib</a></td>
+      <td style="text-align: center">Git</td>
+      <td style="text-align: center">GitHub</td>
+      <td style="text-align: center">24/134</td>
+      <td style="text-align: center">0.31</td>
+      <td style="text-align: center">&lt;1</td>
+      <td style="text-align: center"><span style="font-size:35px;color:green;">✓</span></td>
+      <td style="text-align: center">99%</td>
+      <td style="text-align: center">2.43</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><a href="https://github.com/rigetticomputing/grove">Forest - Grove</a></td>
+      <td style="text-align: center">Git</td>
+      <td style="text-align: center">GitHub</td>
+      <td style="text-align: center">53/130</td>
+      <td style="text-align: center">0.51</td>
+      <td style="text-align: center">17.7</td>
+      <td style="text-align: center"><span style="font-size:35px;color:green;">✓</span></td>
+      <td style="text-align: center">72%</td>
+      <td style="text-align: center">3.25</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><a href="https://github.com/rigetticomputing/pyquil">Forest - pyQuil</a></td>
+      <td style="text-align: center">Git</td>
+      <td style="text-align: center">GitHub</td>
+      <td style="text-align: center">293/385</td>
+      <td style="text-align: center">0.41</td>
+      <td style="text-align: center">10.6</td>
+      <td style="text-align: center"><span style="font-size:35px;color:green;">✓</span></td>
+      <td style="text-align: center">88%</td>
+      <td style="text-align: center">2.65</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><a href="https://github.com/quantumlib/OpenFermion">OpenFermion</a></td>
+      <td style="text-align: center">Git</td>
+      <td style="text-align: center">GitHub</td>
+      <td style="text-align: center">137/345</td>
+      <td style="text-align: center">0.61</td>
+      <td style="text-align: center">1.3</td>
+      <td style="text-align: center"><span style="font-size:35px;color:green;">✓</span></td>
+      <td style="text-align: center">100%</td>
+      <td style="text-align: center">2.46</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><a href="https://github.com/ProjectQ-Framework/ProjectQ">ProjectQ</a></td>
+      <td style="text-align: center">Git</td>
+      <td style="text-align: center">GitHub</td>
+      <td style="text-align: center">84/198</td>
+      <td style="text-align: center">0.75</td>
+      <td style="text-align: center">4.0</td>
+      <td style="text-align: center"><span style="font-size:35px;color:green;">✓</span></td>
+      <td style="text-align: center">100%</td>
+      <td style="text-align: center">4.02</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><a href="https://github.com/Quantomatic/pyzx">PyZX</a></td>
+      <td style="text-align: center">Git</td>
+      <td style="text-align: center">GitHub</td>
+      <td style="text-align: center">6/2</td>
+      <td style="text-align: center">0.80</td>
+      <td style="text-align: center">&lt;1</td>
+      <td style="text-align: center"><span style="font-size:35px;color:green;">✓</span></td>
+      <td style="text-align: center">51%</td>
+      <td style="text-align: center">4.42</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><a href="https://github.com/BBN-Q/QGL.jl">QGL.jl</a></td>
+      <td style="text-align: center">Git</td>
+      <td style="text-align: center">GitHub</td>
+      <td style="text-align: center">17/13</td>
+      <td style="text-align: center">0.75</td>
+      <td style="text-align: center">130.6</td>
+      <td style="text-align: center"><span style="font-size:35px;color:green;">✓</span></td>
+      <td style="text-align: center">-</td>
+      <td style="text-align: center">-</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><a href="https://github.com/dwavesystems/qbsolv">Qbsolv</a></td>
+      <td style="text-align: center">Git</td>
+      <td style="text-align: center">GitHub</td>
+      <td style="text-align: center">50/85</td>
+      <td style="text-align: center">0.17</td>
+      <td style="text-align: center">22.2</td>
+      <td style="text-align: center"><span style="font-size:35px;color:green;">✓</span></td>
+      <td style="text-align: center">95%</td>
+      <td style="text-align: center">-</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><a href="https://github.com/Qiskit/aqua">Qiskit Aqua</a></td>
+      <td style="text-align: center">Git</td>
+      <td style="text-align: center">GitHub</td>
+      <td style="text-align: center">43/141</td>
+      <td style="text-align: center">0.20</td>
+      <td style="text-align: center">1.8</td>
+      <td style="text-align: center"><span style="font-size:35px;color:green;">✓</span></td>
+      <td style="text-align: center">67%</td>
+      <td style="text-align: center">3.04</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><a href="https://github.com/Qiskit/qiskit-terra">Qiskit Terra</a></td>
+      <td style="text-align: center">Git</td>
+      <td style="text-align: center">GitHub</td>
+      <td style="text-align: center">526/713</td>
+      <td style="text-align: center">0.11</td>
+      <td style="text-align: center">16.0</td>
+      <td style="text-align: center"><span style="font-size:35px;color:green;">✓</span></td>
+      <td style="text-align: center">76%</td>
+      <td style="text-align: center">2.56</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><a href="https://github.com/QISKit/qiskit-tutorial">Qiskit Tutorials</a></td>
+      <td style="text-align: center">Git</td>
+      <td style="text-align: center">GitHub</td>
+      <td style="text-align: center">94/274</td>
+      <td style="text-align: center">0.40</td>
+      <td style="text-align: center">8.6</td>
+      <td style="text-align: center"><span style="font-size:20px;">❌</span></td>
+      <td style="text-align: center">-</td>
+      <td style="text-align: center">-</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><a href="https://github.com/Qiskit/qiskit-js">Qiskit.js</a></td>
+      <td style="text-align: center">Git</td>
+      <td style="text-align: center">GitHub</td>
+      <td style="text-align: center">19/8</td>
+      <td style="text-align: center">0.33</td>
+      <td style="text-align: center">4.4</td>
+      <td style="text-align: center"><span style="font-size:35px;color:green;">✓</span></td>
+      <td style="text-align: center">66%</td>
+      <td style="text-align: center">-</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><a href="https://github.com/vm6502q/qrack">Qrack</a></td>
+      <td style="text-align: center">Git</td>
+      <td style="text-align: center">GitHub</td>
+      <td style="text-align: center">7/78</td>
+      <td style="text-align: center">0.07</td>
+      <td style="text-align: center">8.7</td>
+      <td style="text-align: center"><span style="font-size:35px;color:green;">✓</span></td>
+      <td style="text-align: center">87%</td>
+      <td style="text-align: center">-</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><a href="https://github.com/artiste-qb-net/quantum-fog">Quantum Fog</a></td>
+      <td style="text-align: center">Git</td>
+      <td style="text-align: center">GitHub</td>
+      <td style="text-align: center">17/1</td>
+      <td style="text-align: center">1.00</td>
+      <td style="text-align: center">&lt;1</td>
+      <td style="text-align: center"><span style="font-size:20px;">❌</span></td>
+      <td style="text-align: center">0%</td>
+      <td style="text-align: center">3.32</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><a href="https://github.com/vsoftco/qpp">Quantum++</a></td>
+      <td style="text-align: center">Git</td>
+      <td style="text-align: center">GitHub</td>
+      <td style="text-align: center">8/45</td>
+      <td style="text-align: center">0.88</td>
+      <td style="text-align: center">&lt;1</td>
+      <td style="text-align: center"><span style="font-size:35px;color:green;">✓</span></td>
+      <td style="text-align: center">72%</td>
+      <td style="text-align: center">-</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><a href="https://github.com/artiste-qb-net/qubiter">Qubiter</a></td>
+      <td style="text-align: center">Git</td>
+      <td style="text-align: center">GitHub</td>
+      <td style="text-align: center">14/3</td>
+      <td style="text-align: center">0.75</td>
+      <td style="text-align: center">&lt;1</td>
+      <td style="text-align: center"><span style="font-size:20px;">❌</span></td>
+      <td style="text-align: center">0%</td>
+      <td style="text-align: center">-</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><a href="https://github.com/Strilanc/Quirk">Quirk</a></td>
+      <td style="text-align: center">Git</td>
+      <td style="text-align: center">GitHub</td>
+      <td style="text-align: center">286/131</td>
+      <td style="text-align: center">0.96</td>
+      <td style="text-align: center">&lt;1</td>
+      <td style="text-align: center"><span style="font-size:35px;color:green;">✓</span></td>
+      <td style="text-align: center">-</td>
+      <td style="text-align: center">-</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><a href="https://github.com/rigetticomputing/reference-qvm">reference-qvm</a></td>
+      <td style="text-align: center">Git</td>
+      <td style="text-align: center">GitHub</td>
+      <td style="text-align: center">6/14</td>
+      <td style="text-align: center">0.44</td>
+      <td style="text-align: center">75.6</td>
+      <td style="text-align: center"><span style="font-size:35px;color:green;">✓</span></td>
+      <td style="text-align: center">80%</td>
+      <td style="text-align: center">3.99</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><a href="https://github.com/epiqc/ScaffCC">ScaffCC</a></td>
+      <td style="text-align: center">Git</td>
+      <td style="text-align: center">GitHub</td>
+      <td style="text-align: center">15/11</td>
+      <td style="text-align: center">0.18</td>
+      <td style="text-align: center">10.1</td>
+      <td style="text-align: center"><span style="font-size:35px;color:green;">✓</span></td>
+      <td style="text-align: center">-</td>
+      <td style="text-align: center">-</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><a href="https://github.com/xanaduai/strawberryfields">Strawberry Fields</a></td>
+      <td style="text-align: center">Git</td>
+      <td style="text-align: center">GitHub</td>
+      <td style="text-align: center">16/20</td>
+      <td style="text-align: center">0.73</td>
+      <td style="text-align: center">1.2</td>
+      <td style="text-align: center"><span style="font-size:35px;color:green;">✓</span></td>
+      <td style="text-align: center">97%</td>
+      <td style="text-align: center">2.70</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><a href="https://github.com/ORNL-QCI/xacc">XACC</a></td>
+      <td style="text-align: center">Git</td>
+      <td style="text-align: center">GitHub</td>
+      <td style="text-align: center">65/14</td>
+      <td style="text-align: center">0.65</td>
+      <td style="text-align: center">&lt;1</td>
+      <td style="text-align: center"><span style="font-size:35px;color:green;">✓</span></td>
+      <td style="text-align: center">-</td>
+      <td style="text-align: center">-</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><a href="https://github.com/ornl-qci/xacc-vqe">XACC VQE</a></td>
+      <td style="text-align: center">Git</td>
+      <td style="text-align: center">GitHub</td>
+      <td style="text-align: center">22/4</td>
+      <td style="text-align: center">0.33</td>
+      <td style="text-align: center">8.8</td>
+      <td style="text-align: center"><span style="font-size:35px;color:green;">✓</span></td>
+      <td style="text-align: center">-</td>
+      <td style="text-align: center">-</td>
+    </tr>
+  </tbody>
+</table>
+
+<h1>Documentation evaluation</h1>
+<p>The image below shows the detailed results of our qualitative documentation analysis in form of a colour coded heatmap with scores ranging from 1 (bad) to 5 (good). We evaluated each project based on the quality of their source code documentation, README files, changelogs, user documentation and tutorials. The detailed rubrik used for scoring each of the five aspects can be found in the Supporting Information of the review paper <a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0208561">“Open source software in quantum computing”</a>.
+<br /></p>
+
+<center><img src="/assets/img/documentation_results.png" alt="Heatmap" width="800vh" /></center>
+<p><br /></p>
+
+<h1>Community evaluation</h1>
+<p>Lastly, the following table shows the evaluation results for the community analysis. For each project, we analyse if a public development roadmap exists and if the software is published in form of releases. Additionally, we report the <a href="https://help.github.com/articles/about-community-profiles-for-public-repositories/">GitHub community profile score</a>, the total number of contributors, the type of user- and developer-centric discussion channel and the type of public code review process – specifically if it applies to internal (I) and/or external (E) contributors.
+<br />
+<br /></p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">Project</th>
+      <th style="text-align: center">Roadmap</th>
+      <th style="text-align: center">Releases</th>
+      <th style="text-align: center">Contributors</th>
+      <th style="text-align: center">User-discussion channels</th>
+      <th style="text-align: center">Developer-discussion channels</th>
+      <th style="text-align: center">Public review process</th>
+      <th style="text-align: center">Community Profile</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center"><a href="https://github.com/quantumlib/Cirq">Cirq</a></td>
+      <td style="text-align: center"><span style="font-size:20px;">❌</span></td>
+      <td style="text-align: center"><span style="font-size:35px;color:green;">✓</span></td>
+      <td style="text-align: center">28</td>
+      <td style="text-align: center">Stack Exchange</td>
+      <td style="text-align: center">-</td>
+      <td style="text-align: center">E+I</td>
+      <td style="text-align: center">4/7</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><a href="https://github.com/BBN-Q/Cliffords.jl">Cliffords.jl</a></td>
+      <td style="text-align: center"><span style="font-size:20px;">❌</span></td>
+      <td style="text-align: center"><span style="font-size:35px;color:green;">✓</span></td>
+      <td style="text-align: center">7</td>
+      <td style="text-align: center">-</td>
+      <td style="text-align: center">-</td>
+      <td style="text-align: center">E</td>
+      <td style="text-align: center">3/7</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><a href="https://github.com/dwavesystems/dimod">dimod</a></td>
+      <td style="text-align: center"><span style="font-size:20px;">❌</span></td>
+      <td style="text-align: center"><span style="font-size:35px;color:green;">✓</span></td>
+      <td style="text-align: center">11</td>
+      <td style="text-align: center">Forum</td>
+      <td style="text-align: center">-</td>
+      <td style="text-align: center">E+I</td>
+      <td style="text-align: center">5/7</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><a href="https://github.com/dwavesystems/dwave-system">dwave-system</a></td>
+      <td style="text-align: center"><span style="font-size:20px;">❌</span></td>
+      <td style="text-align: center"><span style="font-size:35px;color:green;">✓</span></td>
+      <td style="text-align: center">6</td>
+      <td style="text-align: center">Forum</td>
+      <td style="text-align: center">-</td>
+      <td style="text-align: center">E+I</td>
+      <td style="text-align: center">4/7</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><a href="https://github.com/ProjectQ-Framework/FermiLib">FermiLib</a></td>
+      <td style="text-align: center"><span style="font-size:20px;">❌</span></td>
+      <td style="text-align: center"><span style="font-size:35px;color:green;">✓</span></td>
+      <td style="text-align: center">10</td>
+      <td style="text-align: center">-</td>
+      <td style="text-align: center">-</td>
+      <td style="text-align: center">E+I</td>
+      <td style="text-align: center">3/7</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><a href="https://github.com/rigetticomputing/grove">Forest - Grove</a></td>
+      <td style="text-align: center"><span style="font-size:20px;">❌</span></td>
+      <td style="text-align: center"><span style="font-size:35px;color:green;">✓</span></td>
+      <td style="text-align: center">24</td>
+      <td style="text-align: center">Slack</td>
+      <td style="text-align: center">Slack</td>
+      <td style="text-align: center">E+I</td>
+      <td style="text-align: center">3/7</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><a href="https://github.com/rigetticomputing/pyquil">Forest - pyQuil</a></td>
+      <td style="text-align: center"><span style="font-size:20px;">❌</span></td>
+      <td style="text-align: center"><span style="font-size:35px;color:green;">✓</span></td>
+      <td style="text-align: center">46</td>
+      <td style="text-align: center">Slack</td>
+      <td style="text-align: center">Slack</td>
+      <td style="text-align: center">E+I</td>
+      <td style="text-align: center">3/7</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><a href="https://github.com/quantumlib/OpenFermion">OpenFermion</a></td>
+      <td style="text-align: center"><span style="font-size:20px;">❌</span></td>
+      <td style="text-align: center"><span style="font-size:35px;color:green;">✓</span></td>
+      <td style="text-align: center">26</td>
+      <td style="text-align: center">-</td>
+      <td style="text-align: center">-</td>
+      <td style="text-align: center">E+I</td>
+      <td style="text-align: center">3/7</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><a href="https://github.com/ProjectQ-Framework/ProjectQ">ProjectQ</a></td>
+      <td style="text-align: center"><span style="font-size:20px;">❌</span></td>
+      <td style="text-align: center"><span style="font-size:35px;color:green;">✓</span></td>
+      <td style="text-align: center">10</td>
+      <td style="text-align: center">-</td>
+      <td style="text-align: center">-</td>
+      <td style="text-align: center">E+I</td>
+      <td style="text-align: center">3/7</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><a href="https://github.com/Quantomatic/pyzx">PyZX</a></td>
+      <td style="text-align: center"><span style="font-size:20px;">❌</span></td>
+      <td style="text-align: center"><span style="font-size:20px;">❌</span></td>
+      <td style="text-align: center">3</td>
+      <td style="text-align: center">-</td>
+      <td style="text-align: center">-</td>
+      <td style="text-align: center">-</td>
+      <td style="text-align: center">3/7</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><a href="https://github.com/BBN-Q/QGL.jl">QGL.jl</a></td>
+      <td style="text-align: center"><span style="font-size:20px;">❌</span></td>
+      <td style="text-align: center"><span style="font-size:20px;">❌</span></td>
+      <td style="text-align: center">3</td>
+      <td style="text-align: center">-</td>
+      <td style="text-align: center">-</td>
+      <td style="text-align: center">E+I</td>
+      <td style="text-align: center">3/7</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><a href="https://github.com/dwavesystems/qbsolv">Qbsolv</a></td>
+      <td style="text-align: center"><span style="font-size:20px;">❌</span></td>
+      <td style="text-align: center"><span style="font-size:35px;color:green;">✓</span></td>
+      <td style="text-align: center">18</td>
+      <td style="text-align: center">Forum</td>
+      <td style="text-align: center">-</td>
+      <td style="text-align: center">E+I</td>
+      <td style="text-align: center">5/7</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><a href="https://github.com/Qiskit/aqua">Qiskit Aqua</a></td>
+      <td style="text-align: center"><span style="font-size:20px;">❌</span></td>
+      <td style="text-align: center"><span style="font-size:35px;color:green;">✓</span></td>
+      <td style="text-align: center">14</td>
+      <td style="text-align: center">Forum</td>
+      <td style="text-align: center">-</td>
+      <td style="text-align: center">E+I</td>
+      <td style="text-align: center">7/7</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><a href="https://github.com/Qiskit/qiskit-terra">Qiskit Terra</a></td>
+      <td style="text-align: center"><span style="font-size:35px;color:green;">✓</span></td>
+      <td style="text-align: center"><span style="font-size:35px;color:green;">✓</span></td>
+      <td style="text-align: center">67</td>
+      <td style="text-align: center">Forum, Slack</td>
+      <td style="text-align: center">Slack</td>
+      <td style="text-align: center">E+I</td>
+      <td style="text-align: center">7/7</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><a href="https://github.com/QISKit/qiskit-tutorial">Qiskit Tutorials</a></td>
+      <td style="text-align: center"><span style="font-size:20px;">❌</span></td>
+      <td style="text-align: center"><span style="font-size:20px;">❌</span></td>
+      <td style="text-align: center">37</td>
+      <td style="text-align: center">-</td>
+      <td style="text-align: center">-</td>
+      <td style="text-align: center">E+I</td>
+      <td style="text-align: center">3/7</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><a href="https://github.com/Qiskit/qiskit-js">Qiskit.js</a></td>
+      <td style="text-align: center"><span style="font-size:20px;">❌</span></td>
+      <td style="text-align: center"><span style="font-size:35px;color:green;">✓</span></td>
+      <td style="text-align: center">4</td>
+      <td style="text-align: center">Forum</td>
+      <td style="text-align: center">-</td>
+      <td style="text-align: center">E</td>
+      <td style="text-align: center">7/7</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><a href="https://github.com/vm6502q/qrack">Qrack</a></td>
+      <td style="text-align: center"><span style="font-size:20px;">❌</span></td>
+      <td style="text-align: center"><span style="font-size:35px;color:green;">✓</span></td>
+      <td style="text-align: center">2</td>
+      <td style="text-align: center">-</td>
+      <td style="text-align: center">-</td>
+      <td style="text-align: center">E+I</td>
+      <td style="text-align: center">3/7</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><a href="https://github.com/artiste-qb-net/quantum-fog">Quantum Fog</a></td>
+      <td style="text-align: center"><span style="font-size:20px;">❌</span></td>
+      <td style="text-align: center"><span style="font-size:20px;">❌</span></td>
+      <td style="text-align: center">2</td>
+      <td style="text-align: center">-</td>
+      <td style="text-align: center">-</td>
+      <td style="text-align: center">E</td>
+      <td style="text-align: center">3/7</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><a href="https://github.com/vsoftco/qpp">Quantum++</a></td>
+      <td style="text-align: center"><span style="font-size:20px;">❌</span></td>
+      <td style="text-align: center"><span style="font-size:35px;color:green;">✓</span></td>
+      <td style="text-align: center">3</td>
+      <td style="text-align: center">Gitter</td>
+      <td style="text-align: center">-</td>
+      <td style="text-align: center">E</td>
+      <td style="text-align: center">5/7</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><a href="https://github.com/artiste-qb-net/qubiter">Qubiter</a></td>
+      <td style="text-align: center"><span style="font-size:20px;">❌</span></td>
+      <td style="text-align: center"><span style="font-size:20px;">❌</span></td>
+      <td style="text-align: center">2</td>
+      <td style="text-align: center">-</td>
+      <td style="text-align: center">-</td>
+      <td style="text-align: center">E</td>
+      <td style="text-align: center">3/7</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><a href="https://github.com/Strilanc/Quirk">Quirk</a></td>
+      <td style="text-align: center"><span style="font-size:20px;">❌</span></td>
+      <td style="text-align: center"><span style="font-size:35px;color:green;">✓</span></td>
+      <td style="text-align: center">3</td>
+      <td style="text-align: center">-</td>
+      <td style="text-align: center">-</td>
+      <td style="text-align: center">E</td>
+      <td style="text-align: center">4/7</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><a href="https://github.com/rigetticomputing/reference-qvm">reference-qvm</a></td>
+      <td style="text-align: center"><span style="font-size:20px;">❌</span></td>
+      <td style="text-align: center"><span style="font-size:35px;color:green;">✓</span></td>
+      <td style="text-align: center">8</td>
+      <td style="text-align: center">-</td>
+      <td style="text-align: center">-</td>
+      <td style="text-align: center">E+I</td>
+      <td style="text-align: center">3/7</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><a href="https://github.com/epiqc/ScaffCC">ScaffCC</a></td>
+      <td style="text-align: center"><span style="font-size:20px;">❌</span></td>
+      <td style="text-align: center"><span style="font-size:35px;color:green;">✓</span></td>
+      <td style="text-align: center">7</td>
+      <td style="text-align: center">-</td>
+      <td style="text-align: center">-</td>
+      <td style="text-align: center">E</td>
+      <td style="text-align: center">3/7</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><a href="https://github.com/xanaduai/strawberryfields">Strawberry Fields</a></td>
+      <td style="text-align: center"><span style="font-size:20px;">❌</span></td>
+      <td style="text-align: center"><span style="font-size:35px;color:green;">✓</span></td>
+      <td style="text-align: center">5</td>
+      <td style="text-align: center">Slack</td>
+      <td style="text-align: center">Slack</td>
+      <td style="text-align: center">E+I</td>
+      <td style="text-align: center">7/7</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><a href="https://github.com/ORNL-QCI/xacc">XACC</a></td>
+      <td style="text-align: center"><span style="font-size:20px;">❌</span></td>
+      <td style="text-align: center"><span style="font-size:20px;">❌</span></td>
+      <td style="text-align: center">6</td>
+      <td style="text-align: center">-</td>
+      <td style="text-align: center">-</td>
+      <td style="text-align: center">E</td>
+      <td style="text-align: center">4/7</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><a href="https://github.com/ornl-qci/xacc-vqe">XACC VQE</a></td>
+      <td style="text-align: center"><span style="font-size:20px;">❌</span></td>
+      <td style="text-align: center"><span style="font-size:20px;">❌</span></td>
+      <td style="text-align: center">2</td>
+      <td style="text-align: center">-</td>
+      <td style="text-align: center">-</td>
+      <td style="text-align: center">E</td>
+      <td style="text-align: center">3/7</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="callout callout--info">
+    <p><strong>Let us know if you disagree with some of these results.</strong>
+    If you're maintaining one of the projects above and you think that we did a mistake in our evaluation then we want to hear from you! Please open an issue on <a href="https://github.com/qosf/qosf.org">our GitHub page</a>.
+    </p>
+</div>
+
+:ET

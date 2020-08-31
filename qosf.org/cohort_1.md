@@ -14,13 +14,6 @@ buttons:
       external_url: true
       icon: stackoverflow
 
-# Author box
-author:
-    title: Michał Stęchły
-    title_url: 'https://www.mustythoughts.com/about'
-    external_url: true
-    description: Michał authored and supported OS implementations and research of several quantum computing algorithms and is currently a Quantum Software Engineer at Zapata Computing.
-
 # Micro navigation
 micro_nav: false
 

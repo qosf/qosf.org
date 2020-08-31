@@ -10,13 +10,16 @@ title: Quantum Computing Mentorship Program
 description: Connecting quantum enthusiasts with mentors from academia & industry.
 buttons:
     - content: Apply for mentorship
-      url: '(https://forms.gle/yjY7inLeZYq6YAYx6)'
+      url: 'https://forms.gle/yjY7inLeZYq6YAYx6'
       external_url: true
       icon: stackoverflow
-    - content: Check out the project showcase for cohort one
-      url: 'qc_mentorship_cohort_1'
-      external_url: false
-      icon: github
+
+# Author box
+author:
+    title: Cohort 1 showcase
+    title_url: LINK_COHORT_1
+    external_url: false
+    description: Take a look at the list of open source projects and contributions from the first cohort of the Quantum Computing Mentorship Program.
 
 # Micro navigation
 micro_nav: false
@@ -92,7 +95,7 @@ Most (but not all) projects will probably fall into one of two categories:
 
 Some mentors have already proposed ideas for projects ([see here](https://docs.google.com/document/d/1OV15csKKZTSGn9z7kwhPD7bVk4dkD67hr00UtDEgu7o/edit?usp=sharing)) and if you're interested in doing such project, you can indicate it in the application form. These projects might also have more specific (and higher) skill requirements than the program overall.
 
-You can also take a look at [the list of the projects from the 1st cohort]({% link qosf.org/qc_mentorship_cohort_1.md %}) to get a better idea how such projects could look like.
+You can also take a look at [the list of the projects from the 1st cohort](LINK_COHORT_1) to get a better idea how such projects could look like.
 
 ### Finalizing
 
