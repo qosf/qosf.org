@@ -42,7 +42,7 @@ GEM
       nokogiri (~> 1.10)
     jekyll-watch (2.2.1)
       listen (~> 3.0)
-    json (1.8.6)
+    json (2.3.1)
     kramdown (1.17.0)
     liquid (4.0.3)
     listen (3.2.1)
@@ -56,18 +56,18 @@ GEM
       jekyll-seo-tag (~> 2.1)
     msgpack (1.2.10)
     msgpack (1.2.10-x64-mingw32)
-    multi_json (1.14.1)
-    nokogiri (1.10.8)
+    multi_json (1.15.0)
+    nokogiri (1.10.10)
       mini_portile2 (~> 2.4.0)
-    nokogiri (1.10.8-x64-mingw32)
+    nokogiri (1.10.10-x64-mingw32)
       mini_portile2 (~> 2.4.0)
     pathutil (0.16.2)
       forwardable-extended (~> 2.6)
-    polytexnic (1.5.13)
-      json (~> 1.8.1)
+    polytexnic (1.5.16)
+      json (~> 2.3.0)
       kramdown (~> 1.17)
       msgpack (~> 1.2.0)
-      nokogiri (~> 1.8)
+      nokogiri (~> 1.10.8)
       pygments.rb (~> 1.2.1)
     public_suffix (4.0.1)
     pygments.rb (1.2.1)
@@ -86,7 +86,6 @@ GEM
       concurrent-ruby (~> 1.0)
     tzinfo-data (1.2020.1)
       tzinfo (>= 1.0.0)
-    wdm (0.1.1)
 
 PLATFORMS
   ruby
@@ -99,7 +98,6 @@ DEPENDENCIES
   jekyll-target-blank
   minima (~> 2.0)
   tzinfo-data
-  wdm (~> 0.1.0)
 
 BUNDLED WITH
    2.1.4
