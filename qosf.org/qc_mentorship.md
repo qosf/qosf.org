@@ -171,6 +171,6 @@ First, you will have a call with your mentor to get to know each other and decid
 We do accept groups of up to 3 people. In such a case, we require you to provide some information about the projects you have done together. Please fill in a separate application form for each of the team members. Also, each of the team members should solve and submit screening tasks separately.
 
 
-If you have any other questions, don't hesitate to [reach out](qosf.mentorship@gmail.com). 
+If you have any other questions, don't hesitate to [reach out](mailto:qosf.mentorship@gmail.com). 
 
 ---
