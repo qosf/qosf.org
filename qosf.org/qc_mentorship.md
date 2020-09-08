@@ -150,7 +150,7 @@ For QOSF’s second cohort (starting October 2020), the program mentors are:
 - [Mark Skillbeck](https://www.linkedin.com/in/mark-skilbeck-5418b317b/), Rigetti Computing
 - [Tushar Mittal](https://www.linkedin.com/in/tushar-mittal/), Rigetti Computing
 - [Anastasia Marchenkova](https://www.linkedin.com/in/amarchenkova/), Bleximo Corporation
-- [Sarah Keiser](https://www.sckaiser.com/), PhD Quantum Information (University of Waterloo)
+- [Sarah Kaiser](https://www.sckaiser.com/), Q# Community
 - And many more! 
 
 
