@@ -2,6 +2,9 @@
 # Page settings
 layout: evaluation_template
 keywords:
+left_illustration: illustrations/analysis_left_side.png
+right_illustration: illustrations/analysis_right_side.png
+custom_css: analysis.css
 comments: false
 
 # Hero section

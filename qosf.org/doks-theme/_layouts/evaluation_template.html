@@ -7,6 +7,12 @@
 	<body class="{{ site.doks.color_theme }}" data-spy="scroll" data-target=".js-scrollspy">
 		{% include site-header.html %}
 		<div class="hero-subheader">
+            {% if page.left_illustration %}
+                <img src="{{ site.baseurl }}/assets/img/{{ page.left_illustration }}" alt="" class='left-illustration'>
+            {% endif %}
+            {% if page.right_illustration %}
+                <img src="{{ site.baseurl }}/assets/img/{{ page.right_illustration }}" alt="" class='right-illustration'>
+            {% endif %}
 			<div class="container">
 				<div class="row">
 					<div class="col-md-9">
