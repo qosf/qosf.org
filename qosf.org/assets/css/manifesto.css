@@ -1,0 +1,107 @@
+/*
+ * manifesto.css
+ * Copyright (C) 2019 markf94
+ *
+ * Distributed under terms of the MIT license.
+ */
+
+.left-illustration {
+    width: 20vw;
+    position: absolute;
+    left: 4rem;
+    top: 13rem;
+}
+
+.right-illustration {
+    width: 35vw;
+    position: absolute;
+    right: 7rem;
+    top: 13rem;
+}
+
+/* don't display the illustration for screens with less than 1270px wide */
+@media only screen and (max-width: 1270px) {
+
+    .left-illustration, .right-illustration {
+            display: none !important;
+    }
+
+}
+
+/* covering the 1280x1024 and the 1366x768 */
+/* both illustrations on top of each other since there is no space in the left margin */
+@media only screen and (min-width: 1271px) and (max-width: 1400px) {
+
+    .left-illustration {
+        width: 20vw;
+        position: absolute;
+        right: 12rem;
+        left: auto !important;
+        top: 11.5rem;
+    }
+
+    .right-illustration {
+        width: 35vw;
+        position: absolute;
+        right: 6rem;
+        top: 22rem;
+    }
+
+}
+
+/* both illustrations still on top of each other but slightly bigger than before */
+@media only screen and (min-width: 1401px) and (max-width: 1600px) {
+
+    .left-illustration {
+        width: 20vw;
+        position: absolute;
+        right: 12rem;
+        left: auto !important;
+        top: 9.5rem;
+    }
+
+    .right-illustration {
+        width: 35vw;
+        position: absolute;
+        right: 5rem;
+        top: 21rem;
+    }
+
+}
+
+/* now we have enough width in order to put the illustrations on both sides of the heading */
+@media only screen and (min-width: 1601px) and (max-width: 1919px) {
+
+    .left-illustration {
+        width: 13vw;
+        position: absolute;
+        left: 2rem;
+        top: 16rem;
+    }
+
+    .right-illustration {
+        width: 25vw;
+        position: absolute;
+        right: 12rem;
+        top: 16rem;
+    }
+
+}
+
+/* covering the 1920x1080 */
+@media only screen and (min-width: 1920px) and (max-width: 2100px) {
+
+    .left-illustration {
+        width: 17vw;
+        position: absolute;
+        left: 3rem;
+        top: 15rem;
+    }
+
+    .right-illustration {
+        width: 30vw;
+        position: absolute;
+        right: 9rem;
+        top: 15rem;
+    }
+}
