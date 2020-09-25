@@ -1,0 +1,82 @@
+/*
+ * learning.css
+ * Copyright (C) 2019 markf94
+ *
+ * Distributed under terms of the MIT license.
+ */
+
+.left-illustration {
+    width: 18vw;
+    position: absolute;
+    left: 5rem;
+    top: 13rem;
+}
+
+.right-illustration {
+    width: 20vw;
+    position: absolute;
+    right: 6rem;
+    top: 13rem;
+}
+
+/* don't display the illustration for screens with less than 1270px wide */
+@media only screen and (max-width: 1660px) {
+
+    .left-illustration, .right-illustration {
+            display: none !important;
+    }
+
+}
+
+/* show only the left illustration */
+@media only screen and (min-width: 1661px) and (max-width: 1774px) {
+
+    .left-illustration {
+        width: 13vw;
+        position: absolute;
+        left: 2rem;
+        top: 16rem;
+    }
+
+    .right-illustration {
+        display: none !important;
+    }
+
+}
+
+/* wide enough to show both illustrations */
+@media only screen and (min-width: 1775px) and (max-width: 1919px) {
+
+    .left-illustration {
+        width: 13vw;
+        position: absolute;
+        left: 4rem;
+        top: 16rem;
+    }
+
+    .right-illustration {
+        width: 15vw;
+        position: absolute;
+        right: 3rem;
+        top: 16rem;
+    }
+
+}
+
+/* covering the 1920x1080 */
+@media only screen and (min-width: 1920px) and (max-width: 2200px) {
+
+    .left-illustration {
+        width: 14vw;
+        position: absolute;
+        left: 5rem;
+        top: 16rem;
+    }
+
+    .right-illustration {
+        width: 17vw;
+        position: absolute;
+        right: 4rem;
+        top: 16rem;
+    }
+}

@@ -2,6 +2,9 @@
 # Page settings
 layout: default
 keywords:
+left_illustration: illustrations/learning_left_side.png
+right_illustration: illustrations/learning_right_side.png
+custom_css: learning.css
 comments: false
 
 # Hero section
