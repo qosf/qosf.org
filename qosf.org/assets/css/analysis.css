@@ -1,0 +1,97 @@
+/*
+ * analysis.css
+ * Copyright (C) 2019 markf94
+ *
+ * Distributed under terms of the MIT license.
+ */
+
+.left-illustration {
+    width: 16vw;
+    position: absolute;
+    left: 4rem;
+    top: 13rem;
+}
+
+.right-illustration {
+    width: 27vw;
+    position: absolute;
+    right: 5rem;
+    top: 10rem;
+}
+
+/* don't display the illustration for screens with less than 1270px wide */
+@media only screen and (max-width: 1270px) {
+
+    .left-illustration, .right-illustration {
+            display: none !important;
+    }
+
+}
+
+/* covering the 1280x1024 and the 1366x768 */
+/* show only the right illustration */
+@media only screen and (min-width: 1271px) and (max-width: 1400px) {
+
+    .left-illustration {
+            display: none !important;
+    }
+
+    .right-illustration {
+        width: 25vw;
+        position: absolute;
+        right: 4rem;
+        top: 17rem;
+    }
+
+}
+
+/* still only show the right illustration but slightly different positioning */
+@media only screen and (min-width: 1401px) and (max-width: 1700px) {
+
+    .left-illustration {
+            display: none !important;
+    }
+
+    .right-illustration {
+        width: 25vw;
+        position: absolute;
+        right: 3rem;
+        top: 14rem;
+    }
+}
+
+/* now we have enough width in order to put the illustrations on both sides of the heading */
+@media only screen and (min-width: 1701px) and (max-width: 1919px) {
+
+    .left-illustration {
+        width: 13vw;
+        position: absolute;
+        left: 2rem;
+        top: 16rem;
+    }
+
+    .right-illustration {
+        width: 25vw;
+        position: absolute;
+        right: 5rem;
+        top: 14rem;
+    }
+}
+
+/* covering the 1920x1080 */
+@media only screen and (min-width: 1920px) and (max-width: 2100px) {
+
+    .left-illustration {
+        width: 17vw;
+        position: absolute;
+        left: 2rem;
+        top: 15rem;
+    }
+
+    .right-illustration {
+        width: 30vw;
+        position: absolute;
+        right: 4rem;
+        top: 13rem;
+    }
+}
