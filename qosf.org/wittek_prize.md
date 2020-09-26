@@ -1,6 +1,8 @@
 ---
 # Page settings
 layout: default
+right_illustration: illustrations/wittek_prize_right_side.png
+custom_css: wittek_prize.css
 keywords:
 comments: false
 

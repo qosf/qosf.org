@@ -1,0 +1,66 @@
+/*
+ * wittek_prize.css
+ * Copyright (C) 2019 markf94
+ *
+ * Distributed under terms of the MIT license.
+ */
+
+
+.right-illustration {
+    width: 27vw;
+    position: absolute;
+    right: 23rem;
+    top: 11rem;
+}
+
+/* don't display the illustration for screens with less than 1270px wide */
+@media only screen and (max-width: 999px) {
+
+    .right-illustration {
+            display: none !important;
+    }
+
+}
+
+@media only screen and (min-width: 1000px) and (max-width: 1200px) {
+
+    .right-illustration {
+        width: 27vw;
+        position: absolute;
+        right: 5rem;
+        top: 20rem;
+    }
+
+}
+
+@media only screen and (min-width: 1201px) and (max-width: 1700px) {
+
+    .right-illustration {
+        width: 27vw;
+        position: absolute;
+        right: 9rem;
+        top: 15.5rem;
+    }
+}
+
+/* now we have enough width in order to put the illustrations on both sides of the heading */
+@media only screen and (min-width: 1701px) and (max-width: 1919px) {
+
+    .right-illustration {
+        width: 27vw;
+        position: absolute;
+        right: 11rem;
+        top: 13rem;
+    }
+}
+
+/* covering the 1920x1080 */
+@media only screen and (min-width: 1920px) and (max-width: 2200px) {
+
+    .right-illustration {
+        width: 27vw;
+        position: absolute;
+        right: 14rem;
+        top: 13rem;
+    }
+}
