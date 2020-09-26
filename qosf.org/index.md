@@ -60,4 +60,8 @@ grid_navigation:
       excerpt: Most recent results of our monthly evaluation of curated open quantum software projects.
       cta: View results
       url: 'evaluation'
+    - title: Wittek Quantum Prize.
+      excerpt: Read more about our efforts to reward unsung heroes of the quantum open source software.
+      cta: Learn more
+      url: 'wittek_prize'
 ---
