@@ -32,6 +32,7 @@
 									<a href="{{ button.url }}" class="btn btn--dark btn--rounded btn--w-icon" style='margin-bottom: -50px'>
 										{% if button.icon %}<i class="icon icon--{{ button.icon }}"></i>{% endif %}
 										{{ button.content }}
+										{% if button.faicon %}<i style="padding-left:5px;" class="fas fa-{{ button.faicon }}"></i>{% endif %}
 									</a>
                                     {% endif %}
 								{% endfor %}
