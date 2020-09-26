@@ -1,39 +1,65 @@
 /*
- * custom_styles.css
+ * index.css
  * Copyright (C) 2019 markf94
  *
  * Distributed under terms of the MIT license.
  */
 
 .left-illustration {
-    width: 15vw;
+    width: 20vw;
     position: absolute;
     left:0;
     top: 6.625rem;
 }
 
 .right-illustration {
-    width: 15vw;
+    width: 20vw;
     position: absolute;
     right:0;
     top: 6.625rem;
 }
 
-.hackathon-illustration {
-    width: 25vw;
-    position: absolute;
-    right:0;
-    top: 10.625rem;
-}
 
-@media only screen and (max-width: 1550px) {
-    .hackathon-illustration .left-illustration, .right-illustration {
+/* don't display the illustration for screens with less than 1270px wide */
+@media only screen and (max-width: 1730px) {
+
+    .left-illustration, .right-illustration {
             display: none !important;
     }
+
 }
 
-@media only screen and (min-width: 1850px) {
-    .left-illustration, .right-illustration {
-            width: 20vw !important;
+@media only screen and (min-width: 1731px) and (max-width: 1900px) {
+
+    .left-illustration {
+        width: 18vw;
+        position: absolute;
+        left:0;
+        top: 6.625rem;
+    }
+
+    .right-illustration {
+        width: 18vw;
+        position: absolute;
+        right:0;
+        top: 6.625rem;
+    }
+
+}
+
+@media only screen and (min-width: 1901px) and (max-width: 2100px) {
+
+    .left-illustration {
+        width: 20vw;
+        position: absolute;
+        left:0;
+        top: 6.625rem;
+    }
+
+    .right-illustration {
+        width: 20vw;
+        position: absolute;
+        right:0;
+        top: 6.625rem;
     }
 }
