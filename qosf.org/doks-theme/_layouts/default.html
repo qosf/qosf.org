@@ -5,7 +5,7 @@
 	</head>
 	<body class="{{ site.doks.color_theme }}" data-spy="scroll" data-target=".js-scrollspy">
 		{% include site-header.html %}
-		<div class="hero-subheader">
+		<div class="hero-subheader blue-box">
             {% if page.left_illustration %}
                 <img src="{{ site.baseurl }}/assets/img/{{ page.left_illustration }}" alt="" class='left-illustration'>
             {% endif %}
@@ -65,6 +65,9 @@
 					{% endif %}
 				</div><!-- /.row -->
 			</div><!-- /.container -->
+            {% if page.bottom_illustration %}
+                <img src="{{ site.baseurl }}/assets/img/{{ page.bottom_illustration }}" alt="" class='bottom-illustration'>
+            {% endif %}
 		</div><!-- /.hero-subheader -->
 		<div class="section">
 			<div class="container">
