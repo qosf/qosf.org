@@ -1,6 +1,9 @@
 ---
 # Page settings
 layout: default
+left_illustration: illustrations/project_list_left_side.png
+right_illustration: illustrations/project_list_right_side.png
+custom_css: project_list.css
 keywords:
 comments: false
 
