@@ -2,6 +2,9 @@
 # Page settings
 layout: default
 keywords:
+left_illustration: illustrations/what_is_os_left_side.png
+right_illustration: illustrations/what_is_os_right_side.png
+custom_css: what_is_os.css
 comments: false
 
 # Hero section
