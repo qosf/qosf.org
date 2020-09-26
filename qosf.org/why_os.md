@@ -1,6 +1,8 @@
 ---
 # Page settings
 layout: default
+bottom_illustration: illustrations/why_os.png
+custom_css: why_os.css
 keywords:
 comments: false
 
