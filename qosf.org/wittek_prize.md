@@ -8,7 +8,7 @@ comments: false
 
 # Hero section
 title: Wittek Quantum Prize for Open Source Software
-description: Wittek Quantum Prize is dedicated to life and memory of Peter Wittek, PhD. Read more about the story behind the prize [in our blog post](http://todo).
+description: Wittek Quantum Prize is dedicated to the life and memory of Peter Wittek. Read more about the story behind the prize [in our blog post](http://todo).
 buttons:
     - content: Nominate an individual
       url: 'https://form.typeform.com/to/b2CSyv7w'
@@ -20,21 +20,37 @@ micro_nav: false
 
 ---
 
-## 2020 Wittek Quantum Prize for Open Source Software
+{::nomarkdown}<p><span class="firstcharacter">T</span></p>{:/}he Wittek Quantum Prize is dedicated to [Peter Wittek](https://peterwittek.com/) - a pioneer in the field of open quantum software who went missing on a mountaineering expedition in the Himalayas last year. The prize is a collaboration between the [Unitary Fund](https://unitary.fund) and the Quantum Open Source Foundation and it aims to reward an otherwise unnoticed individual for their outstanding high-impact contribution to the field of open source quantum software.  
 
-With each passing year, open source software is more firmly establishing itself as the bedrock upon which the modern technology is built. Internet giants and small startups alike are leveraging existing open source projects as components of their software products and infrastructure, enabling them to launch new products at a greater speed and a lower cost than ever before.
-
-Despite its crucial function, work on open source software is often underappreciated and underfunded, relying on the passionate work of individual volunteers. Even critical core infrastructures projects can grow in popularity (like OpenSSL, the foundation of much of web's cryptography, had until recently its development team [a two person development team and a dog](https://twitter.com/matthew_d_green/status/453501860457230336)).
-
-There is something intrinsically rewarding about developing open source projects: pursuing novel, intellectually stimulating ideas, sharing the results one's craft and, for established projects, becoming part of a community of like-minded individuals. However, with success comes responsibility and work on a growing open source project also includes responding to user requests, fixing bugs, implmenting new features, maitaining compatibility with your dependencies, implementing tests or writing documentation. The projects which handle the transtion well have potential to become important cornerstones of their respective ecosystems.
+{::nomarkdown}</br>{:/}
 
 The field of quantum computing is in large building upon the successfully established open source development models, and we are happy to report that open source software has been embraced, by academia, industry players alike. However, we are still in the early days of establishing the technology stack for future quantum software developers and while some of the components of the critical infrastructure is developed by larger development teams with commercial backing, there are plentiful individuals who are helping shape the building blocks of the foundations upon which the quantum computing software industry is going to rely in the decades to come.
 
-In order to recognize the work of these unsung heroes, developers and maintainers, often unaware of the magnitude of the impact their work is having on the community, QOSF is partnering with [Unitary Fund](https://unitary.fund) in order to award 4000 US$ prize for open source software contributor / maintainer among crowd-sourced nominees. The winner of the prize is going to be selected by the Unitary's Fund advisory board, which kindly agreed to act as independent evaluation committee.
+In order to recognize the work of these unsung heroes, developers and maintainers, often unaware of the magnitude of the impact their work is having on the community, **QOSF is partnering with [Unitary Fund](https://unitary.fund) in order to award a**
+{::nomarkdown}<h3 align='center' style="margin-top: -5px"><b>US$4000 prize</b></h3>{:/}
+**to a software contributor/maintainer among crowd-sourced nominees**. The winner of the prize is going to be selected by the Unitary's Fund advisory board, which kindly agreed to act as independent evaluation committee.
+
 
 ## Nominations
 
-In order to identify potential recipients of the Wittek Quantum Prize for Open Source Software we need your help! If you know an individual you'd like to nominate for the prize (including yourself), please fill the [following short form](https://form.typeform.com/to/b2CSyv7w) (expected time 10-15 minutes). The window for nominations closes on midnight of Nov 15th, 2020.
+In order to identify potential recipients of the Wittek Quantum Prize for Open Source Software we need your help! If you know an individual you'd like to nominate for the prize (including yourself), please fill out the nomination form by clicking on the button below:
+
+{::nomarkdown}<center><a href="https://form.typeform.com/to/b2CSyv7w" class="btn btn--dark btn--rounded btn--w-icon" style="position: relative;" target="_blank" rel="noopener noreferrer">Fill out the nomination form (10-15 minutes)<i style="padding-left:5px;" class="fas fa-trophy"></i></a></center>{:/} 
+
+{::nomarkdown}<center style="margin-top: -20px;"><b><i>Nominations will be accepted until midnight of Nov 30th, 2020.</b></i></center>{:/}
+
+### Who should you consider nominating?
+
+✅ An individual who has had substantial impact on the quantum open source ecosystem. Ideally, this person is someone who usually goes unnoticed due to the nature of their work but who deserves to be highlighted for their enthusiastic & diligent support of open quantum software.
+
+✅ Yourself! Self-nominations are more than welcome.
+
+### Who should you NOT nominate?
+
+❌ teams or groups of individuals (e.g. "the team behind XYZ", "company B", etc.)
+
+❌ software packages (Qiskit, Cirq, etc.)
+
 
 ## Frequently asked questions
 
@@ -45,10 +61,13 @@ No, the Wittek Quantum Prize for Open Source Software is awarded to individuals.
 No, but they should be a contributor to one or more open source projects in the space of quantum computing.
 
 ### What about nominating freely available education materials (i.e. blog posts, books) or other community work (i.e. organizing conferences)?
-This years' edition of the Wittek Quantum Prize is only in the category of "Open Source Software", however, we are looking into expanding the scope for the next year. Get in touch if you would like to [support our efforts](mailto:funding@qosf.org).
+This year's edition of the Wittek Quantum Prize is awarded only in the category of "Open Source Software", however, we are looking into expanding the scope for the next year. Get in touch if you would like to [support our efforts](mailto:funding@qosf.org).
 
 ### How many individuals are being awarded?
 We are going to award a single individual.
 
 ### Is this a one-off event?
-The Wittek Quantum Prize is going to be awarded annually. If your nominee did not make the selection this year, please reconsider nominating them for the next years edition.
+The Wittek Quantum Prize is going to be awarded annually. If your nominee did not make the selection this year, please consider nominating them again for next year's edition.
+
+### When do nominations close?
+Nominations will be accepted until midnight of Nov 30th, 2020.
