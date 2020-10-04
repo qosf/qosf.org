@@ -8,7 +8,7 @@ comments: false
 
 # Hero section
 title: Wittek Quantum Prize for Open Source Software
-description: Wittek Quantum Prize is dedicated to the life and memory of Peter Wittek. Read more about the story behind the prize [in our blog post](http://todo).
+description: Wittek Quantum Prize is dedicated to the life and memory of Peter Wittek. Read more about the story behind the prize [in our blog post](https://medium.com/qosf/announcing-the-2020-wittek-quantum-prize-for-open-source-software-f578f03823b1).
 buttons:
     - content: Nominate an individual
       url: 'https://wittekprize.com'
@@ -20,16 +20,9 @@ micro_nav: false
 
 ---
 
-{::nomarkdown}<p><span class="firstcharacter">T</span></p>{:/}he Wittek Quantum Prize is dedicated to [Peter Wittek](https://peterwittek.com/) - a pioneer in the field of open quantum software who went missing on a mountaineering expedition in the Himalayas last year. The prize is a collaboration between the [Unitary Fund](https://unitary.fund) and the Quantum Open Source Foundation and it aims to reward an otherwise unnoticed individual for their outstanding high-impact contribution to the field of open source quantum software.  
-
-{::nomarkdown}</br>{:/}
-
-The field of quantum computing is in large building upon the successfully established open source development models, and we are happy to report that open source software has been embraced, by academia, industry players alike. However, we are still in the early days of establishing the technology stack for future quantum software developers and while some of the components of the critical infrastructure is developed by larger development teams with commercial backing, there are plentiful individuals who are helping shape the building blocks of the foundations upon which the quantum computing software industry is going to rely in the decades to come.
-
-In order to recognize the work of these unsung heroes, developers and maintainers, often unaware of the magnitude of the impact their work is having on the community, **QOSF is partnering with [Unitary Fund](https://unitary.fund) in order to award a**
+In order to recognize the work of the unsung heroes, developers and maintainers, often unaware of the magnitude of the impact their work is having on the quantum software community, **QOSF is partnering with [Unitary Fund](https://unitary.fund) in order to award a**
 {::nomarkdown}<h3 align='center' style="margin-top: -5px"><b>US$4000 prize</b></h3>{:/}
 **to a software contributor/maintainer among crowd-sourced nominees**. The winner of the prize is going to be selected by the Unitary's Fund advisory board, which kindly agreed to act as independent evaluation committee.
-
 
 ## Nominations
 
@@ -51,6 +44,13 @@ In order to identify potential recipients of the Wittek Quantum Prize for Open S
 
 ❌ Software packages (Qiskit, Cirq, etc.)
 
+## About the prize
+
+The Wittek Quantum Prize is dedicated to [Peter Wittek](https://peterwittek.com/) - a pioneer in the field of open quantum software who went missing on a mountaineering expedition in the Himalayas last year. The prize is a collaboration between the [Unitary Fund](https://unitary.fund) and the Quantum Open Source Foundation and it aims to reward an otherwise unnoticed individual for their outstanding high-impact contribution to the field of open source quantum software.  
+
+The field of quantum computing is in large building upon the successfully established open source development models, and we are happy to report that open source software has been embraced, by academia, industry players alike. However, we are still in the early days of establishing the technology stack for future quantum software developers and while some of the components of the critical infrastructure is developed by larger development teams with commercial backing, there are plentiful individuals who are helping shape the building blocks of the foundations upon which the quantum computing software industry is going to rely in the decades to come.
+
+Read the full story in our [Medium blog post](https://medium.com/qosf/announcing-the-2020-wittek-quantum-prize-for-open-source-software-f578f03823b1).
 
 ## Frequently asked questions
 
