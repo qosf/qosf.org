@@ -37,7 +37,7 @@ In order to identify potential recipients of the Wittek Quantum Prize for Open S
 
 {::nomarkdown}<center><a href="https://form.typeform.com/to/b2CSyv7w" class="btn btn--dark btn--rounded btn--w-icon" style="position: relative;" target="_blank" rel="noopener noreferrer">Fill out the nomination form (10-15 minutes)<i style="padding-left:5px;" class="fas fa-trophy"></i></a></center>{:/} 
 
-{::nomarkdown}<center style="margin-top: -20px;"><b><i>Nominations will be accepted until midnight of Nov 30th, 2020.</b></i></center>{:/}
+{::nomarkdown}<center style="margin-top: -20px;"><b><i>Nominations will be accepted until 11:59PM EST on Nov 30th, 2020.</b></i></center>{:/}
 
 ### Who should you consider nominating?
 
@@ -47,9 +47,9 @@ In order to identify potential recipients of the Wittek Quantum Prize for Open S
 
 ### Who should you NOT nominate?
 
-❌ teams or groups of individuals (e.g. "the team behind XYZ", "company B", etc.)
+❌ Teams or groups of individuals (e.g. "the team behind XYZ", "company B", etc.)
 
-❌ software packages (Qiskit, Cirq, etc.)
+❌ Software packages (Qiskit, Cirq, etc.)
 
 
 ## Frequently asked questions
