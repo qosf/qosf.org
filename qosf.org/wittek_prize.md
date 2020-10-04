@@ -11,7 +11,7 @@ title: Wittek Quantum Prize for Open Source Software
 description: Wittek Quantum Prize is dedicated to the life and memory of Peter Wittek. Read more about the story behind the prize [in our blog post](http://todo).
 buttons:
     - content: Nominate an individual
-      url: 'https://form.typeform.com/to/b2CSyv7w'
+      url: 'https://wittekprize.com'
       external_url: true
       faicon: trophy
 
@@ -35,17 +35,17 @@ In order to recognize the work of these unsung heroes, developers and maintainer
 
 In order to identify potential recipients of the Wittek Quantum Prize for Open Source Software we need your help! If you know an individual you'd like to nominate for the prize (including yourself), please fill out the nomination form by clicking on the button below:
 
-{::nomarkdown}<center><a href="https://form.typeform.com/to/b2CSyv7w" class="btn btn--dark btn--rounded btn--w-icon" style="position: relative;" target="_blank" rel="noopener noreferrer">Fill out the nomination form (10-15 minutes)<i style="padding-left:5px;" class="fas fa-trophy"></i></a></center>{:/} 
+{::nomarkdown}<center><a href="https://wittekprize.com" class="btn btn--dark btn--rounded btn--w-icon" style="position: relative;" target="_blank" rel="noopener noreferrer">Fill out the nomination form (10-15 minutes)<i style="padding-left:5px;" class="fas fa-trophy"></i></a></center>{:/} 
 
 {::nomarkdown}<center style="margin-top: -20px;"><b><i>Nominations will be accepted until 11:59PM EST on Nov 30th, 2020.</b></i></center>{:/}
 
-### Who should you consider nominating?
+#### Who should you nominate?
 
 ✅ An individual who has had substantial impact on the quantum open source ecosystem. Ideally, this person is someone who usually goes unnoticed due to the nature of their work but who deserves to be highlighted for their enthusiastic & diligent support of open quantum software.
 
 ✅ Yourself! Self-nominations are more than welcome.
 
-### Who should you NOT nominate?
+#### Who should you NOT nominate?
 
 ❌ Teams or groups of individuals (e.g. "the team behind XYZ", "company B", etc.)
 
