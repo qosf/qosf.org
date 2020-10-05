@@ -22,7 +22,7 @@ micro_nav: false
 
 In order to recognize the work of the unsung heroes, developers and maintainers, often unaware of the magnitude of the impact their work is having on the quantum software community, **QOSF is partnering with [Unitary Fund](https://unitary.fund) in order to award a**
 {::nomarkdown}<h3 align='center' style="margin-top: -5px"><b>US$4000 prize</b></h3>{:/}
-**to a software contributor/maintainer among crowd-sourced nominees**. The winner of the prize is going to be selected by the Unitary's Fund advisory board, which kindly agreed to act as independent evaluation committee.
+**to a software contributor/maintainer among crowd-sourced nominees**. The winner of the prize is going to be selected by the Unitary's Fund advisory board, which kindly agreed to act as an independent evaluation committee.
 
 ## Nominations
 
@@ -57,7 +57,7 @@ Read the full story in our [Medium blog post](https://medium.com/qosf/announcing
 ### Can I nominate teams?
 No, the Wittek Quantum Prize for Open Source Software is awarded to individuals.
 
-### Does the nominee have to be the original author of an open source project?
+### Does the nominee have to be an original author of an open source project?
 No, but they should be a contributor to one or more open source projects in the space of quantum computing.
 
 ### What about nominating freely available education materials (i.e. blog posts, books) or other community work (i.e. organizing conferences)?
@@ -70,4 +70,4 @@ We are going to award a single individual.
 The Wittek Quantum Prize is going to be awarded annually. If your nominee did not make the selection this year, please consider nominating them again for next year's edition.
 
 ### When do nominations close?
-Nominations will be accepted until midnight of Nov 30th, 2020.
+Nominations will be accepted until midnight of Nov 30th, 2020, [anywhere on Earth (UTC-12)](https://datetime360.com/timezone-aoe/).
