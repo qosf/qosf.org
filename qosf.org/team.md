@@ -67,6 +67,29 @@ micro_nav: false
 <div class='row'>
     <div class='col-md-4'>
         <br>
+        <img style='border-radius:50%;' src='/assets/img/team/maggie.png' alt='Maggie Li' width="200px">
+    </div>
+    <div class='col-md-8' style='text-align: justify;'>
+       <b>Maggie Li</b> loves all things open source, from science to software,
+       as a believer in innovation through collaboration. She stepped into the
+       world of open source software as a quantum computing amateur by
+       contributing to <a
+       href="https://github.com/XanaduAI/pennylane">PennyLane's</a>
+       library/tutorials, thanks to QOSF's Quantum Mentorship Program. Outside
+       of quantum computing, she also enjoys UI/UX design and hopes to
+       intersect the two in the future to make quantum computing education more
+       accessible to younger quantum enthusiasts like high school students.
+       Recently, she also interned at the Bank of Canada's Quantum Lab as a
+       summer student research assistant.
+    </div>
+</div>
+
+<br>
+<br>
+
+<div class='row'>
+    <div class='col-md-4'>
+        <br>
         <br>
         <img style='border-radius:50%;' src='/assets/img/team/peter.jpg' alt='Peter Wittek' width="200px">
     </div>
