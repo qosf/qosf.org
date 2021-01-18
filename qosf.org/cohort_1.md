@@ -10,7 +10,7 @@ title: Quantum Computing Mentorship Program Cohort One Showcase
 description: Connecting quantum enthusiasts with mentors from academia & industry.
 buttons:
     - content: Apply for mentorship
-      url: 'https://forms.gle/3mE7gMHoQc84R6Vr8'
+      url: 'https://forms.gle/rPBAQLfnU5acAV2j8'
       external_url: true
       icon: stackoverflow
 
