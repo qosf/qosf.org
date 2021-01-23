@@ -32,6 +32,7 @@ You’re invited to participate in our Quantum Computing Mentorship Program.
 
 With the support of a mentor who is an expert in the field and a global community of like-minded people, you’ll complete an open-source project to contribute to quantum computing software as an individual or in a team of up to 3 members. 
 
+
 ## Why?
 
 The idea for this program comes from the fact that many people from diverse backgrounds want to learn more about quantum computing but they face many challenges, such as:
@@ -42,14 +43,14 @@ The idea for this program comes from the fact that many people from diverse back
 
 By pairing people with mentors we want to help them overcome these hurdles and create interesting projects, which will, in turn, will help others.
 
-One of the program’s organizers (Michał Stęchły) shared some "behind the scenes" information about the program on his blog. If you're interested, you can read the story behind the [program](https://www.mustythoughts.com/qc-mentorship-program-backstory) or about how the application process looks like from our [perspective](https://www.mustythoughts.com/qosf-mentorship-application.html).
+If you're interested, you can learn more about the [story behind the program](https://www.mustythoughts.com/qc-mentorship-program-backstory) and [how the application process looks like from our perspective](https://www.mustythoughts.com/qosf-mentorship-application.html) on one of the program's organizer's (Michał Stęchły) blog. 
 
 
-## Project Highlights 
+## Project Highlights
 
-Cohort one (March 2020 - June 2020) [mentorship projects](TODO).
+Cohort one (March 2020 to June 2020): [mentorship projects]({{ 'cohort_1' | absolute_url }}).
 
-Cohort two (September 2020 - January 2021) [mentorship projects](TODO). 
+Cohort two (September 2020 to January 2021): mentorship projects will be shared on our [Twitter](https://twitter.com/qosfoundation) prior to being published on our website, as the cohort has just finished.
 
 
 ## Timeline 
@@ -98,7 +99,7 @@ Most (but not all) projects will probably fall into one of two categories:
 - Contribution to existing software projects.
 - Research projects – implementing papers, reproducing results, etc.
 
-You can also take a look at the list of projects from the [first cohort](TODO) or the [second cohort](TODO) to get a better idea how such projects could look like.
+You can also take a look at the list of projects from the [first cohort]({{ 'cohort_1' | absolute_url }}) to get a better idea how such projects could look like.
 
 ### Finalizing
 
@@ -138,7 +139,7 @@ That’s why we want the participants to be highly motivated and committed – i
 
 What would a mentorship program be without the mentors? We have invited a diverse group of professionals, from both industry and academia to be mentors in this program. 
 
-We are still finalizing who the mentors for the upcoming cohort will be, but so far we had mentors such as:
+We are still finalizing who the mentors for the upcoming cohort will be. In previous cohorts, we have had mentors such as:
 
 - [Ntwali Bashige](https://twitter.com/nbashige), Zapata Computing 
 - [Peter Korponaic](https://www.linkedin.com/in/petar-korponaic), Quantastica 
@@ -166,6 +167,7 @@ We are still finalizing who the mentors for the upcoming cohort will be, but so 
 
 You can find link to the application form [here](https://forms.gle/rPBAQLfnU5acAV2j8).
 
+
 ## FAQ
 
 ### How will the work with mentors look like?
@@ -175,6 +177,6 @@ First, you will have a call with your mentor to get to know each other and decid
 We do accept groups of up to 3 people. In such a case, we require you to provide some information about the projects you have done together. Please fill in a separate application form for each of the team members. Also, each of the team members should solve and submit screening tasks separately.
 
 
-If you have any other questions, don't hesitate to [reach out](TODO). 
+If you have any other questions, don't hesitate to [reach out](mailto:mentorship@qosf.org). 
 
 ---
