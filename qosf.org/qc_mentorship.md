@@ -143,7 +143,7 @@ We are still finalizing who the mentors for the upcoming cohort will be. In prev
 
 - [Ntwali Bashige](https://twitter.com/nbashige), Zapata Computing 
 - [Peter Korponaic](https://www.linkedin.com/in/petar-korponaic), Quantastica 
-- [Tom Lubowe](https://www.linkedin.com/in/tom-l-17814775/), Rigetti Computing
+- [Tom Lubowe](https://www.linkedin.com/in/tom-l-17814775/), Xanadu
 - [Alba Ceverta Lierta](https://albacl.github.io/), UofT (Alan Aspuru-Guzik Group) 
 - [Pierre-Luc Dallaire-Demers](https://www.linkedin.com/in/pierre-luc-dallaire-demers-006540116/), Zapata Computing
 - [William Simons](https://www.linkedin.com/in/william-simon-197310112), Zapata Computing 
