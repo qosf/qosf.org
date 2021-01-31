@@ -6,15 +6,15 @@ This Privacy Policy is applicable to the Quantum Open Source Foundation (“QOSF
 
 There may be links from our Sites to other websites.  This Privacy Policy applies only to our Sites and not to any third party activities, including third party websites linked from our Site.  We are not responsible for the privacy practices or content of such third parties.  We encourage you to read the privacy statements of those third parties.   
 
-Although you are not required to register to access our Sites, you may be asked to provide us with personal information when you visit certain sections of our Sites. (Note that registration is required to access certain products.). Your use of our Sites signifies your acknowledgement and consent to our Privacy Policy. If you do not agree to this Privacy Policy, please do not continue to use our Sites.  We do collect personal information when you sign up for the Mentorship Program. If you do not agree with this privacy policy and our use of your personal infomation, do not sign up for the Mentorship program. 
+Although you are not required to register to access our Sites, you may be asked to provide us with personal information when you visit certain sections of our Sites. (Note that registration is required to access certain programs.). Your use of our Sites signifies your acknowledgement and consent to our Privacy Policy. If you do not agree to this Privacy Policy, please do not continue to use our Sites.  We do collect personal information when you sign up for the Mentorship Program. If you do not agree with this privacy policy and our use of your personal infomation, do not sign up for the Mentorship program. 
 
 ## Collection of Personal Information
 
-We collect information that you voluntarily provide to us such as your name, mailing address or email.  We may also ask you to provide additional information such as your phone number if you want to obtain additional services, information, participate in an event or to resolve concerns.
+We collect information that you voluntarily provide to us such as your name, mailing address or email. 
 
 ## The Ways QOSF Uses Information
 
-Before forwarding us any personal information, please be advised that any information gathered on our Sites may be used in the aggregate for research and development relating to our Sites and/or for future site or program development and, if you ask us to, to send you promotional materials. In particular, we may use information gathered about you for the following purposes: to monitor interest in our range of products and to assist us to tailor the content of our Sites to your needs by collecting information about your preferences; to create a profile relating to you in order to show you the content that might be of interest to you and to display the content according to your preferences; to protect, investigate and deter against fraudulent, unauthorized or illegal activity; and, in circumstances where you have indicated that you wish to receive additional information, to send you information about us and informational material about our products.
+Before forwarding us any personal information, please be advised that any information gathered on our Sites may be used in the aggregate for research and development relating to our Sites and/or for future site or program development and, if you ask us to, to send you promotional materials. In particular, we may use information gathered about you for the following purposes: to monitor interest in our range of programss and to assist us to tailor the content of our Sites to your needs by collecting information about your preferences; to create a profile relating to you in order to show you the content that might be of interest to you and to display the content according to your preferences; to protect, investigate and deter against fraudulent, unauthorized or illegal activity; and, in circumstances where you have indicated that you wish to receive additional information, to send you information about us and informational material about our programs.
 
 ## Information We May Share:
 
@@ -26,11 +26,11 @@ As required by law and when we believe that disclosure is necessary to protect o
 
 ## Marketing and Informational Releases
 
-With the permission of an online visitor, information submitted at the time of submission or registration may be used for marketing purposes by the Foundation provided notice of this fact is made available online. If you object to such use for any reason, you may change it or opt-out by contacting us at mentorship@qosf.org.
+With the permission of an online visitor, information submitted at the time of submission or registration may be used for marketing purposes by the Foundation provided notice of this fact is made available online. If you object to such use for any reason, you may change it or opt-out by contacting us at info@qosf.org.
 
 ## Additional Terms for Certain Websites
 
-The following additional information applies to our Sites that require registration. Generally, you are not required to provide personal information as a condition of using our Sites, except as may be necessary to provide you with a product or service that you have requested. 
+The following additional information applies to our Sites that require registration. Generally, you are not required to provide personal information as a condition of using our Sites, except as may be necessary to provide you with a program or service that you have requested. 
 
 ## Protection of information
 
