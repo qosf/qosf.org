@@ -177,7 +177,7 @@ First, you will have a call with your mentor to get to know each other and decid
 We do accept groups of up to 3 people. In such a case, we require you to provide some information about the projects you have done together. Please fill in a separate application form for each of the team members. Also, each of the team members should solve and submit screening tasks separately.
 
 
-If you would like to learn how QOSF uses your information please check out our [Privacy Policy](https://docs.google.com/document/d/1LL68ebWDLJa3x2gJS77MXNWy4lgAVGLs3z903tzeqJg/edit?usp=sharing).
+If you would like to learn how QOSF uses your information please check out our [Privacy Policy](qosf.org/privacypolicy.md).
 If you have any other questions, don't hesitate to [reach out](mailto:mentorship@qosf.org). 
 
 ---
