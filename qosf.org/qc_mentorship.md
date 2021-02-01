@@ -179,4 +179,4 @@ We do accept groups of up to 3 people. In such a case, we require you to provide
 
 If you have any other questions, don't hesitate to [reach out](mailto:mentorship@qosf.org). 
 
----
+And if you want, you can find more information about how we handle your data in our [privacy policy]({{ 'privacy_policy' | absolute_url }}).
