@@ -4,11 +4,11 @@ layout: default
 keywords:
 comments: false
 
-# Hero section
-title: QOSF Privacy Policy
-description: Learn how we handle your data
-
 ---
+
+# QOSF Privacy Policy
+
+## Introduction 
 
 This Privacy Policy is applicable to the Quantum Open Source Foundation (“QOSF” or the “Foundation”) and sets out our policy on the gathering and use of information on this site and our other sites (collectively “Sites”). QOSF is committed to providing safe websites for all visitors and has implemented this Privacy Policy to demonstrate our commitment to your privacy. QOSF complies with Canadian Federal and Provincial privacy laws and regulations including the Personal Information Protection and Electronic Documents Act.  The Foundation also complies with EU GDPR Privacy Practices. This Privacy Policy will describe how our organization uses the personal data we collect from you when you use our sites or programs.
 
