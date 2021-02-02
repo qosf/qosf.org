@@ -22,7 +22,7 @@ We collect information that you voluntarily provide to us such as your name, mai
 
 ## The Ways QOSF Uses Information
 
-Before forwarding us any personal information, please be advised that any information gathered on our Sites may be used in the aggregate for research and development relating to our Sites and/or for future site or program development and, if you ask us to, to send you promotional materials. In particular, we may use information gathered about you for the following purposes: to monitor interest in our range of programss and to assist us to tailor the content of our Sites to your needs by collecting information about your preferences; to create a profile relating to you in order to show you the content that might be of interest to you and to display the content according to your preferences; to protect, investigate and deter against fraudulent, unauthorized or illegal activity; and, in circumstances where you have indicated that you wish to receive additional information, to send you information about us and informational material about our programs.
+Before forwarding us any personal information, please be advised that any information gathered on our Sites may be used in the aggregate for research and development relating to our Sites and/or for future site or program development and, if you ask us to, to send you promotional materials. In particular, we may use information gathered about you for the following purposes: to monitor interest in our range of programs and to assist us to tailor the content of our Sites to your needs by collecting information about your preferences; to create a profile relating to you in order to show you the content that might be of interest to you and to display the content according to your preferences; to protect, investigate and deter against fraudulent, unauthorized or illegal activity; and, in circumstances where you have indicated that you wish to receive additional information, to send you information about us and informational material about our programs.
 
 ## Information We May Share:
 
@@ -59,4 +59,3 @@ If we alter our Privacy Policy, any changes will be posted on this page of our S
 ## Acceptance of our Privacy Policy
 
 By using this Site or any other Foundation Programs, you signify your acceptance of our Privacy Policy, and you adhere to the terms and conditions posted on the Site. By submitting your information, you agree that it will be governed by our Privacy Policy.
-
