@@ -17,45 +17,29 @@ buttons:
 # Micro navigation
 micro_nav: false
 
-permalink: /cohort_1/
+permalink: /mentorship_cohort_1/
 
 ---
 
-## Mentorship Program Cohort 1 Project Showcase 
+## Quantum Mentorship Program Cohort 1 Project Showcase 
 
-This is a showcase of all the projects created during the first cohort of our quantum computing mentorship project! Mentees and mentors worked on a open-source project, with the support of a community of like-minded people from all around the world. 
-
-### Timeline of the Program
-
-Here is a quick overview of the program!
-
-| Program                                                 | Timeframe (2020) |
-----------------------------------------------------------|------------------|
-| Program applications released                           | February         | 
-| Applications review                                     | February/March   |
-| Project scope defined with a mini-proposal              | March            |
-| Mentees and mentors work on projects                    | April - June     |
-| Program wrap-up and open-source projects released!      | June             |
-
-### Project Showcase! 
-
-In total, there were 9 projects completed. However, there are still a couple more that were delayed by unforeseen circumstances! 
+This is a showcase of all the projects created during the first cohort of our quantum computing mentorship program. Mentees and mentors worked on a open-source project, with the support of a community of like-minded people from all around the world. In total, there were 9 projects completed! 
 
 ---
 
-**QML Contribution to Pennylane**  
+##### **QML Contribution to Pennylane**  
   
 *Project description*: I see the interaction between machine learning and quantum computing as a very exciting field, so my project revolved around lowering the barrier for hybrid classical-quantum ML. My main contribution has been the addition of a "cost" module with a loss function to the Pennylane library, so that circuits with trainable parameters can be trained more easily. I am already working together with the Pennylane team to develop more utilities and ML-related features.    
     
 *Mentee*: **[Nicola Vitucci](https://twitter.com/nvitucci)** - I currently work as a Big Data engineer in London, and most of my professional life after my PhD revolved around "all things data". I am in love with QC because I am a programming, graph, ML, linear algebra, and Open Source professional geek! 
 
-*Mentors*: Big thanks go to **[Tom Lubowe](https://twitter.com/TomLubowe)** from Rigetti for supporting the project, and to [Josh Izaac](https://twitter.com/3rdquantization) and [Tom Bromley](https://www.linkedin.com/in/thomas-bromley-a53a28130/) from Xanadu for discussing and reviewing my code! 
+*Mentors*: Big thanks go to **[Tom Lubowe](https://twitter.com/TomLubowe)** from Xanadu for supporting the project, and to [Josh Izaac](https://twitter.com/3rdquantization) and [Tom Bromley](https://www.linkedin.com/in/thomas-bromley-a53a28130/) from Xanadu for discussing and reviewing my code! 
 
 *Links*: [Contribution](https://github.com/XanaduAI/pennylane/pull/642), [Notebook with Examples](https://github.com/nvitucci/notebook_qc/tree/dev).
 
 ---
    
-**Applying Quantum Natural Gradient to Accelerate VQE**  
+##### **Applying Quantum Natural Gradient to Accelerate VQE**  
   
 *Project description*: Recently, several works have proposed and benchmarked quantum natural gradients which have the potential to accelerate the classical optimization loop in variational quantum algorithms. For our QOSF project, we contributed to the open-source quantum machine learning framework PennyLane to enable quantum natural gradients for VQE/VQE-like problems. We additionally provide notebooks that demonstrate VQE calculations of small molecules that leverage quantum natural gradients. 
     
@@ -69,7 +53,7 @@ In total, there were 9 projects completed. However, there are still a couple mor
 
 ---
   
-**Financial Portfolio Rebalancing Using Variational Algorithms**  
+##### **Financial Portfolio Rebalancing Using Variational Algorithms**  
   
 *Project description*: For my project I implemented the algorithm from *[M. Hodson et. al., 2019](https://arxiv.org/abs/1911.05296)*. that solves the financial portfolio rebalancing problem using variational quantum algorithms. Following the paper, I implemented the algorithm with both soft and with hard constraints and used different optimization algorithms to compare the results.  The project was carried out by myself under the mentorship of Guoming Wang. 
     
@@ -81,7 +65,7 @@ In total, there were 9 projects completed. However, there are still a couple mor
 
 ---
   
-**Cost-Function-Dependent Barren Plateuas in Shallow Quantum Neural Networks**  
+##### **Cost-Function-Dependent Barren Plateuas in Shallow Quantum Neural Networks**  
   
 *Project description*: In this tutorial, we’ve implemented the work presented by *[Cerezo et al., 2020](https://arxiv.org/abs/2001.00550) in Cost-Function-Dependent Barren Plateaus in Shallow Quantum Neural Networks* and expanded upon it to create a cost-aware optimization strategy to optimize quantum neural networks while avoiding barren plateaus.
     
@@ -93,7 +77,7 @@ In total, there were 9 projects completed. However, there are still a couple mor
 
 ---
   
-**Quantum computer Simulator with Ability to Simulate Noise via Kraus Operators**  
+##### **Quantum Computer Simulator with Ability to Simulate Noise via Kraus Operators**  
   
 *Project description*: My project is a quantum computer simulator with the ability to simulate noise via Kraus operators. The project is written in programming language Julia.
     
@@ -105,7 +89,7 @@ In total, there were 9 projects completed. However, there are still a couple mor
 
 ---
   
-**VQE Algorithm on Quantum Mechanical Solids**  
+##### **VQE Algorithm on Quantum Mechanical Solids**  
   
 *Project description*: This project is a deep dive into the question: what will quantum computers be useful for? We focus on the VQE algorithm on quantum mechanical solids, making simplifications until we arrive at a cornerstone of condensed matter physics: the Hubbard model. One property we zero in on is magnetism and its close connection with spin; by the end, we discover the ground state and then predict its magnetic properties.
     
@@ -113,11 +97,11 @@ In total, there were 9 projects completed. However, there are still a couple mor
 
 *Mentor*: **[Ntwali Bashige](https://twitter.com/nbashige)** is a Quantum Software Engineer at [Zapata Computing](https://www.zapatacomputing.com/). 
 
-*Links*: [Project Webpage and Tutorial](http://www.warrenalphonso.com/qc/hubbard), [Github Repo](https://github.com/warrenalphonso/qc-mentorship).
+*Links*: [Project Webpage and Tutorial](https://warrenalphonso.github.io/qc/hubbard), [Github Repo](https://github.com/warrenalphonso/qc-mentorship).
 
 ---
   
-**Implementing a SWAP-based BidiREctional Heuristic Search algorithm (SABRE)**  
+##### **Implementing a SWAP-based BidiREctional Heuristic Search algorithm (SABRE)**  
   
 *Project description*: Due to limited connections between physical qubits, most two-qubit gates cannot be directly implemented on Noisy Intermediate-Scale Quantum (NISQ) devices. A dynamic remapping of logical to physical qubits is needed to enable execution of two qubit gates in a quantum algorithm on a NISQ device. In this project, we have implemented a SWAP-based BidiREctional heuristic search algorithm (SABRE), proposed in the paper *[Tackling the Qubit Mapping Problem for NISQ-Era Quantum Devices](https://arxiv.org/pdf/1809.02573.pdf)* by Gushu Li, Yufei Ding, and Yuan Xie that is applicable to NISQ devices with arbitrary qubit connections. Our goal with this implementation is to be able to provide a tool that can be used by quantum programmers to explore the qubit mapping problem on their own physical qubit connections or predefined chip architectures.
     
@@ -129,7 +113,7 @@ In total, there were 9 projects completed. However, there are still a couple mor
 
 ---
 
-**Quantum Algorithms for Simulating Ground State of Quantum Many Body Systems** 
+##### **Quantum Algorithms for Simulating Ground State of Quantum Many Body Systems** 
 
 *Project description*: I studied how quantum algorithms can help in simulating the ground state  of quantum many body systems. Most of the algorithms currently at disposal (in the so-called NISQ era) to simulate the ground state of a given quantum Hamiltonian are based on variational approaches. While simple in principle, this class of methods require a good physical understanding of the system at hand, in order to make a reasonable (and reasonably simple) Ansatz for the target state.
 
@@ -143,7 +127,7 @@ On the other hand, the so-called imaginary time evolution algorithm ensures the 
 
 ---
 
-**Exploring Different designs and computational analysis of Grover's Algorithm** 
+##### **Exploring Different Designs and Computational Analysis of Grover's Algorithm** 
 
 *Project description*: The project is the exploration of the designs of Grover's algorithm (ancilla and non-ancilla qubits). Also, we have done complexity analysis of each design on different qubit-number designs to see how the complexity changes by increasing the number of qubits of the length code of the element to be searched for.
 
