@@ -23,7 +23,7 @@ permalink: /mentorship_cohort_1/
 
 ## Quantum Mentorship Program Cohort 1 Project Showcase 
 
-This is a showcase of all the projects created during the first cohort of our quantum computing mentorship program. Mentees and mentors worked on a open-source project, with the support of a community of like-minded people from all around the world. In total, there were 9 projects completed! 
+This is a showcase of all the projects created during the first cohort of our Quantum Computing Mentorship program. Mentees and mentors worked on a open-source project, with the support of a community of Plike-minded people from all around the world. In total, there were 9 projects completed! 
 
 ---
 
