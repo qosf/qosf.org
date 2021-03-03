@@ -73,7 +73,7 @@ This is a showcase of all the projects created during the second cohort of our Q
 
 ---
   
-##### **QuEST Open Source Simualtor Benchmark**  
+##### **QuEST Open Source Simulator Benchmark**  
   
 *Project description*: As part of my project, I contributed to the Quantum Benchmarks repository. I benchmarked the QuEST open source simulator. I also benchmarked the existing simulators in the repository against the Quantum Fourier Transform algorithm. Additionally, I built a web application to present the result of both the new and existing benchmarks. 
     
