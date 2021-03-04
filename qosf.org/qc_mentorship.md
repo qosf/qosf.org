@@ -50,7 +50,7 @@ If you're interested, you can learn more about the [story behind the program](ht
 
 Cohort one (March 2020 to June 2020): [mentorship projects]({{ 'mentorship_cohort_1' | absolute_url }}).
 
-Cohort two (September 2020 to January 2021): [mentorship projects]({{ 'mentorship_cohort_2' | absolute_url }}).
+Cohort two (October 2020 to January 2021): [mentorship projects]({{ 'mentorship_cohort_2' | absolute_url }}).
 
 
 ## Timeline 
