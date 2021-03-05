@@ -6,7 +6,7 @@ keywords:
 comments: false
 
 # Hero section
-title: Quantum Computing Mentorship Program Cohort One Showcase 
+title: Quantum Computing Mentorship Program Cohort Two Showcase 
 description: Connecting quantum enthusiasts with mentors from academia & industry.
 buttons:
     - content: Apply for mentorship
