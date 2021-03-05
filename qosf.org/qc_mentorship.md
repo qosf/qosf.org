@@ -48,9 +48,9 @@ If you're interested, you can learn more about the [story behind the program](ht
 
 ## Project Highlights
 
-Cohort one (March 2020 to June 2020): [mentorship projects]({{ 'cohort_1' | absolute_url }}).
+Cohort one (March 2020 to June 2020): [mentorship projects]({{ 'mentorship_cohort_1' | absolute_url }}).
 
-Cohort two (September 2020 to January 2021): mentorship projects will be shared on our [Twitter](https://twitter.com/qosfoundation) prior to being published on our website, as the cohort has just finished.
+Cohort two (October 2020 to January 2021): [mentorship projects]({{ 'mentorship_cohort_2' | absolute_url }}).
 
 
 ## Timeline 
@@ -99,7 +99,7 @@ Most (but not all) projects will probably fall into one of two categories:
 - Contribution to existing software projects.
 - Research projects – implementing papers, reproducing results, etc.
 
-You can also take a look at the list of projects from the [first cohort]({{ 'cohort_1' | absolute_url }}) to get a better idea how such projects could look like.
+You can also take a look at the list of projects from the [first cohort]({{ 'mentorship_cohort_1' | absolute_url }}) or [second cohort]({{ 'mentorship_cohort_2' | absolute_url }}) to get a better idea how such projects could look like.
 
 ### Finalizing
 
