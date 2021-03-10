@@ -89,9 +89,9 @@ This is a showcase of all the projects created during the second cohort of our Q
   
 *Project description*: This project implemented support for the PyZX package into Tequila platform. Also, an introductory tutorial was created to show what you can do with the ZX-calculus. Additionally, basic import/export for OpenQASM code was included, and made a small tutorial on it.
     
-*Mentee*: **[Jakob Kottmann](https://twitter.com/JakobKottmann)** is currently a postdoctoral fellow at The Matter Lab at the University of Toronto.
+*Mentee*: **[Claudia Zendejas-Morales](https://twitter.com/clausia)** is a physicist and a software engineer with experience in different programming languages who pursues to continue her path on graduate studies on quantum computation and quantum information to become a researcher in this area. She has been collaborating with some communities around the world involved in these topics.
 
-*Mentor*: **[Claudia Zendejas-Morales](https://twitter.com/clausia)** is a physicist and a software engineer with experience in different programming languages who pursues to continue her path on graduate studies on quantum computation and quantum information to become a researcher in this area. She has been collaborating with some communities around the world involved in these topics.
+*Mentor*: **[Jakob Kottmann](https://twitter.com/JakobKottmann)** is currently a postdoctoral fellow at The Matter Lab at the University of Toronto.
 
 *Links*: [Tequila Contribution](https://github.com/aspuru-guzik-group/tequila/pull/112), [OpenQASM Conversions Tutorial](https://github.com/aspuru-guzik-group/tequila-tutorials/blob/main/OpenQASMConversions.ipynb), [PyZX Tequila Tutorial](https://github.com/aspuru-guzik-group/tequila-tutorials/blob/main/PyZXwithTequila.ipynb).
 
