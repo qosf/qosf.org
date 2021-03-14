@@ -11,7 +11,7 @@ comments: false
 title: QOSF Manifesto
 description: Our core beliefs and mission statement and why you should get excited about us.
 buttons:
-    - content: Become a supporter
+    - content: Sign up for the newsletter
       url: 'https://mailchi.mp/762c19baab5a/qosf-supporter'
       external_url: true
       icon: home

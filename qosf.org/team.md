@@ -8,7 +8,7 @@ comments: false
 title: Our Team
 description: Overview of the main people behind QOSF. We're always looking for new people so hit us up if you're interested!
 buttons:
-    - content: Become a supporter
+    - content: Sign up for the newsletter
       url: 'https://mailchi.mp/762c19baab5a/qosf-supporter'
       external_url: true
       icon: home

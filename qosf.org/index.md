@@ -11,7 +11,7 @@ permalink: /
 title: Quantum Open Source Foundation
 description: Supporting the development and standardization of open tools for quantum computing.
 buttons:
-    - content: Become a supporter
+    - content: Sign up for the newsletter
       url: 'https://mailchi.mp/762c19baab5a/qosf-supporter'
       external_url: true
       icon: home
