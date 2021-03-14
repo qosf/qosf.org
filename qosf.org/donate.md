@@ -4,6 +4,7 @@ layout: default
 keywords:
 left_illustration: illustrations/homepage_left_side.png
 right_illustration: illustrations/homepage_right_side.png
+custom_css: index.css
 comments: false
 
 # Hero section
