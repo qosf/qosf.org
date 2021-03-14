@@ -99,81 +99,10 @@ micro_nav: false
 </div>
 
 # Contributors
-<br>
-<a href="https://github.com/bencbartlett">Ben Bartlett</a>
-<br>
-<a href="https://github.com/kernelpanik23">Cluster2k</a>
-<br>
-<a href="https://github.com/quaxquax">Henning Dekant</a>
-<br>
-<a href="https://github.com/indisoluble">Enrique de la Torre</a>
-<br>
-<a href="https://github.com/amirebrahimi">Amir Ebrahimi</a>
-<br>
-<a href="https://github.com/jaygambetta">Jay Gambetta</a>
-<br>
-<a href="https://github.com/vsoftco">Vlad Gheorghiu</a>
-<br>
-<a href="https://github.com/dangirsh">Dan Girsh</a>
-<br>
-<a href="https://github.com/boegel">Kenneth Hoste</a>
-<br>
-<a href="https://github.com/terrorfisch">Simon Humpohl</a>
-<br>
-<a href="https://github.com/rabaniten">Raban Iten</a>
-<br>
-<a href="https://github.com/josh146">Josh Izaac</a>
-<br>
-<a href="https://github.com/haykkh">Hayk Khachatryan</a>
-<br>
-<a href="https://github.com/Roger-luo">Roger Luo</a>
-<br>
-<a href="https://github.com/stared">Piotr Migdał</a>
-<br>
-<a href="https://github.com/tcNickolas">Mariia Mykhailova</a>
-<br>
-<a href="https://github.com/ken-nakanishi">Ken Nakanishi</a>
-<br>
-<a href="https://github.com/mlxd">Lee James O'Riordan</a>
-<br>
-<a href="https://github.com/JoelPasvolsky">Joel Pasvolsky</a>
-<br>
-<a href="https://github.com/prince-ph0en1x">Aritra Sarkar</a>
-<br>
-<a href="https://github.com/Travis-S-IBM">Travis Scholten</a>
-<br>
-<a href="https://github.com/nathanshammah">Nathan Shammah</a>
-<br>
-<a href="https://github.com/rsln-s">Ruslan Shaydulin</a>
-<br>
-<a href="https://github.com/WrathfulSpatula">Daniel Strano</a>
-<br>
-<a href="https://github.com/silky">Noon van der Silk</a>
-<br>
-<a href="https://github.com/alexandrevicenzi">Alexandre Vicenzi</a>
-<br>
-<a href="https://github.com/desireevl">Desiree Vogt-Lee</a>
-<br>
-<a href="https://github.com/grey-area">Andrew Webb</a>
-<br>
-<a href="https://github.com/amitabhyadav">Amitabh Yadav</a>
-<br>
-<a href="https://github.com/subwayHareArmy">Ayush Yembarwar</a>
-<br>
-<a href="https://github.com/willzeng">Will Zeng</a>
-
 
 <div class="callout callout--info">
-    <p><strong>A big thank you to all of you who are making QOSF possible!</strong>
+    <p><strong>A big thank you to all the engaged Github/Gitlab contributors on all of our various repos! You are making QOSF possible!</strong>
     Become a QOSF contributor by opening an issue or submitting a pull request on our <a href="https://github.com/qosf">GitHub</a> or <a href="https://gitlab.com/qosf">GitLab</a> page.
-    </p>
-</div>
-
-# Advisors
-
-<div class="callout callout--info">
-    <p><strong>Become a QOSF advisor!</strong>
-    We're currently looking for driven people in industry and academia to establish an independent committee. The main objective of the committee will be to decide which open source projects should obtain QOSF grants. If you're interested in being part of this, feel free to send us a short motivational text via <a href="mailto:applications@qosf.org">email</a>.
     </p>
 </div>
 
