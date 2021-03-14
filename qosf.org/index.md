@@ -14,13 +14,13 @@ buttons:
     - content: Sign up for the newsletter
       url: 'https://mailchi.mp/762c19baab5a/qosf-supporter'
       external_url: true
-      icon: home
+      icon: fa-envelope-open-text
     - icon: slack
       content: Join our Slack
       url: 'https://qosf.org/join'
       external_url: true
     - icon: gitlab
-      content: Follow us on GitLab &nbsp;
+      content: Follow us on GitLab
       url: 'https://gitlab.com/qosf'
       external_url: true
     - icon: github

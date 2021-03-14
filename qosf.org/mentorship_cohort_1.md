@@ -12,7 +12,7 @@ buttons:
     - content: Apply for mentorship
       url: 'https://forms.gle/rPBAQLfnU5acAV2j8'
       external_url: true
-      icon: stackoverflow
+      icon: fa-file-import
     - icon: payment
       content: Donate to QOSF
       url: 'https://qosf.org/donate'
