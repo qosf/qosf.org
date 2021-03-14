@@ -2,14 +2,13 @@
 # Page settings
 layout: default
 keywords:
-left_illustration: illustrations/manifesto_left_side.png
-right_illustration: illustrations/manifesto_right_side.png
-custom_css: manifesto.css
+left_illustration: illustrations/homepage_left_side.png
+right_illustration: illustrations/homepage_right_side.png
 comments: false
 
 # Hero section
-title: Donate
-description: Support our mission
+title: Donate to QOSF
+description: Support our mission, help us keep the lights on and expand to new exciting initiatives!
 
 # Micro navigation
 micro_nav: false
@@ -19,7 +18,13 @@ micro_nav: false
 # Donate
 
 Interested in supporting QOSF's mission? Setup a one-time / recurring donation
-to support our initiatives:
+to support our initiatives.
+
+By donating, your funds will be used to:
+* Cover the operational and administrative expenses with the Foundation
+* Hardware and cloud computing costs
+* Support our core intitiatives
+* Expand our activities
 
 <div class="justify-content-center">
   <a class="custom-dbox-popup" href="https://donorbox.org/qosf-2021-fundraise">
