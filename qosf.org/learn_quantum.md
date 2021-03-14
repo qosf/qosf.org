@@ -43,7 +43,7 @@ Tutorial for D-Wave System's SDK.
 #### [Documentation for Strawberry Fields](https://strawberryfields.readthedocs.io/en/latest/)
 Background information on the photonic continuous-variable approach to quantum computation, as well as tutorials for Xanadu's SDK.
 
-#### [IBM Q Full User Guide](https://quantumexperience.ng.bluemix.net/qx/tutorial?sectionId=full-user-guide&page=introduction)
+#### [IBM Q Full User Guide](https://quantum-computing.ibm.com/docs/)
 Short tutorials providing a gentle introduction to quantum computing and IBM Q.
 
 #### [John Preskill's Notes on Quantum Computation](http://www.theory.caltech.edu/~preskill/ph219/index.html#lecture)
