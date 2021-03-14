@@ -2,6 +2,10 @@
  * Icons (objects/_icons.scss)
  */
 
+/* import Font Awesome by relying on the jekyll-font-awesome-sass gem */
+$fa-font-path: "fonts/font-awesome/";
+@import 'font-awesome';
+
 /* ----- General ----- */
 @font-face {
 	font-family: 'icons';
