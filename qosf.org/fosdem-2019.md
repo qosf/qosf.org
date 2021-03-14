@@ -12,6 +12,11 @@ buttons:
       url: 'https://mailchi.mp/762c19baab5a/qosf-supporter'
       external_url: true
       icon: home
+    - icon: slack
+      content: Join our Slack
+      url: 'https://qosf.org/join'
+      external_url: true
+
 ---
 
 ## FOSDEM&#39;19 Quantum Computing

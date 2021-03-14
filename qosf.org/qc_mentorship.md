@@ -13,6 +13,10 @@ buttons:
       url: 'https://forms.gle/rPBAQLfnU5acAV2j8'
       external_url: true
       icon: stackoverflow
+    - icon: slack
+      content: Join our Slack
+      url: 'https://qosf.org/join'
+      external_url: true
 
 # Author box -- to add in when the URL is fixed
 #author:
