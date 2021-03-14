@@ -13,7 +13,7 @@ buttons:
       url: 'https://forms.gle/rPBAQLfnU5acAV2j8'
       external_url: true
       icon: fa-file-import
-    - icon: payment
+    - icon: fa-hand-holding-heart
       content: Donate to QOSF
       url: 'https://qosf.org/donate'
 

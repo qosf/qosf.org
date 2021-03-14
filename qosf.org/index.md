@@ -27,7 +27,7 @@ buttons:
       content: Follow us on GitHub
       url: 'https://github.com/qosf'
       external_url: true
-    - icon: payment
+    - icon: fa-hand-holding-heart
       content: Donate to QOSF
       url: 'https://qosf.org/donate'
 
