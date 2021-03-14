@@ -19,6 +19,9 @@ buttons:
       content: Join our Slack
       url: 'https://qosf.org/join'
       external_url: true
+    - icon: payment
+      content: Donate to QOSF
+      url: 'https://qosf.org/donate'
 
 # Author box
 author:
