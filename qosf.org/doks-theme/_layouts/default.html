@@ -26,15 +26,24 @@
 								{% if page.description %}
                                 <p class="hero-subheader__desc">{{ page.description | markdownify }}</p>
 								{% endif %}
-                                {% for button in page.buttons %}
+								{% for button in page.buttons %}
 									{% if button.external_url == true %}
-                                    <br>
-									<a href="{{ button.url }}" class="btn btn--dark btn--rounded btn--w-icon" style='margin-bottom: -50px'>
+									<a href="{{ button.url }}" class="btn btn--dark btn--rounded btn--w-icon">
 										{% if button.icon %}<i class="icon icon--{{ button.icon }}"></i>{% endif %}
 										{{ button.content }}
-										{% if button.faicon %}<i style="padding-left:5px;" class="fas fa-{{ button.faicon }}"></i>{% endif %}
 									</a>
-                                    {% endif %}
+                                        {% if forloop.index == 1 %}
+                                        </br>
+                                        {% endif %}
+									{% else %}
+									<a href="{% if jekyll.environment == 'production' %}{{ site.doks.baseurl }}{% endif %}{{ button.url }}" class="btn btn--dark btn--rounded btn--w-icon">
+										{% if button.icon %}<i class="icon icon--{{ button.icon }}"></i>{% endif %}
+										{{ button.content }}
+									</a>
+                                        {% if forloop.index == 1 %}
+                                        </br>
+                                        {% endif %}
+									{% endif %}
 								{% endfor %}
 							</div><!-- /.align-inner -->
 						</div><!-- /.align-container -->
