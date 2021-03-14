@@ -4,9 +4,16 @@ layout: default
 keywords:
 comments: false
 
----
+# Hero section
+title: Our Privacy Policy
+description: Detailed information about how we handle your data.
 
-# QOSF Privacy Policy
+# Micro navigation
+micro_nav: false
+
+permalink: /privacy_policy/
+
+---
 
 ## Introduction 
 
