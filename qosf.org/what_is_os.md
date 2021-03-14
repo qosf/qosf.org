@@ -11,7 +11,7 @@ comments: false
 title: What is open source...
 description: ...and why it's not about <i>just</i> putting code out there
 buttons:
-    - content: Become a supporter
+    - content: Sign up for the newsletter
       url: 'https://mailchi.mp/762c19baab5a/qosf-supporter'
       external_url: true
       icon: home

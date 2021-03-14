@@ -11,7 +11,7 @@ comments: false
 title: Learning Resources on Quantum Computing
 description: A curated selection of the best free learning resources on quantum computing for all skill levels.
 buttons:
-    - content: Become a supporter
+    - content: Sign up for the newsletter
       url: 'https://mailchi.mp/762c19baab5a/qosf-supporter'
       external_url: true
       icon: home

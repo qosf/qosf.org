@@ -11,7 +11,7 @@ comments: false
 title: Quantum software project evaluation
 description: Most recent results of our monthly evaluation of curated open quantum software projects.
 buttons:
-    - content: Become a supporter
+    - content: Sign up for the newsletter
       url: 'https://mailchi.mp/762c19baab5a/qosf-supporter'
       external_url: true
       icon: home
