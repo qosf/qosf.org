@@ -22,16 +22,28 @@
 								{% for button in page.buttons %}
 									{% if button.external_url == true %}
 									<a href="{{ button.url }}" class="btn btn--dark btn--rounded btn--w-icon">
-										{% if button.icon %}<i class="icon icon--{{ button.icon }}"></i>{% endif %}
 										{{ button.content }}
+                                        {% if button.icon %}
+                                            {% if button.icon contains 'fa' %}
+                                                &nbsp;&nbsp;<i class="fas fa-icon {{ button.icon }} fa-lg"></i>
+										    {% else %}
+                                                <i class="icon icon--{{ button.icon }}"></i>
+                                            {% endif %}
+                                        {% endif %}
 									</a>
                                         {% if forloop.index == 1 %}
                                         </br>
                                         {% endif %}
 									{% else %}
 									<a href="{% if jekyll.environment == 'production' %}{{ site.doks.baseurl }}{% endif %}{{ button.url }}" class="btn btn--dark btn--rounded btn--w-icon">
-										{% if button.icon %}<i class="icon icon--{{ button.icon }}"></i>{% endif %}
 										{{ button.content }}
+										{% if button.icon %}
+                                            {% if button.icon contains 'fa' %}
+                                                &nbsp;&nbsp;<i class="fas fa-icon {{ button.icon }} fa-large"></i>
+										    {% else %}
+                                                <i class="icon icon--{{ button.icon }}"></i>
+                                            {% endif %}
+                                        {% endif %}
 									</a>
                                         {% if forloop.index == 1 %}
                                         </br>
