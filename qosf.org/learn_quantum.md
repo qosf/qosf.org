@@ -76,6 +76,9 @@ Explanation of quantum machine learning algorithms.
 #### [Quirk](http://algassert.com/quirk)
 Browser-based drag-and-drop quantum circuit simulator that reacts, simulates, and animates in real-time.
 
+#### [Quantum Odyssey](https://www.quarksinteractive.com#)
+High budget educational video game, fully narrated that uses visual methods to teach about writing quantum algorithms
+
 # Massive Open Online Courses
 
 #### [MIT Quantum Information Sciences](https://ocw.mit.edu/courses/media-arts-and-sciences/mas-865j-quantum-information-science-spring-2006/lecture-notes/)
@@ -212,3 +215,5 @@ Slack Channel for quantum computing discussions. Generate an invite for
 this channel here: [Quantum Computing Slack -
 Invite](https://quantum-computing.herokuapp.com).
 
+#### [Quantum Odyssey](https://www.quarksinteractive.com#)
+Discord Channel for Quantum Odyssey puzzle-solving enthusiasts and quantum computing discussions. [Discord](https://discord.gg/mZHJYFX4mG).
