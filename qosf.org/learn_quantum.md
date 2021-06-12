@@ -58,7 +58,7 @@ Worked examples on quantum algorithm problems.
 #### [QISKit Tutorials](https://github.com/QISKit/qiskit-tutorial)
 Jupyter notebooks simply demonstrating how to use QISKit.
 
-#### [Quantum Algorithm Zoo](http://math.nist.gov/quantum/zoo/)
+#### [Quantum Algorithm Zoo](https://quantumalgorithmzoo.org/)
 Comprehensive catalog of quantum algorithms.
 
 #### [Quantum Computing Playground](http://www.quantumplayground.net/#/home)
@@ -105,6 +105,12 @@ A web class for _high school students_. Organized by [QuSoft](http://www.qusoft.
 #### [Quantum Machine Learning](https://www.edx.org/course/quantum-machine-learning)
 Hands-on introduction to quantum computing and quantum-enhanced machine learning, complete with a [code repo](https://gitlab.com/qosf/qml-mooc/).
 
+#### [Quantum Computing. Less Formulas - More Understanding](https://www.coursera.org/learn/quantum-computing-lfmu)
+An introductory course on Quantum Computing, focusing more on concepts.
+
+#### [Quantum Technology: Detectors and Networking](https://www.edx.org/micromasters/purduex-quantum-technology-detectors-and-networking?index=product&queryID=b3d92b1eebc019dc082bb40feca0f978&position=3)
+An online program from Purdue University teaching the funcamentals of quantum networking,
+detectors and sensors and applied quantum computing. 
 
 # Development Tools
 
