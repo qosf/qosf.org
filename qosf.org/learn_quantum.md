@@ -109,7 +109,7 @@ Hands-on introduction to quantum computing and quantum-enhanced machine learning
 An introductory course on Quantum Computing, focusing more on concepts.
 
 #### [Quantum Technology: Detectors and Networking](https://www.edx.org/micromasters/purduex-quantum-technology-detectors-and-networking?index=product&queryID=b3d92b1eebc019dc082bb40feca0f978&position=3)
-An online program from Purdue University teaching the funcamentals of quantum networking,
+An online program from Purdue University teaching the fundamentals of quantum networking,
 detectors and sensors and applied quantum computing. 
 
 # Development Tools
