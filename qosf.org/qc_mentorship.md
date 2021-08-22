@@ -59,6 +59,8 @@ Cohort one (March 2020 to June 2020): [mentorship projects]({{ 'mentorship_cohor
 
 Cohort two (October 2020 to January 2021): [mentorship projects]({{ 'mentorship_cohort_2' | absolute_url }}).
 
+Cohort two (March 2021 to June 2021): [mentorship projects]({{ 'mentorship_cohort_3' | absolute_url }}).
+
 
 ## Timeline 
 
@@ -89,7 +91,7 @@ To take part in the program, you need to fill in an application form. Link to th
 
 We know that just reading someone’s CV is not enough. We also know that reading the description of this program might not be enough for you to tell whether it’s something you would enjoy. That’s why we will send “homework tasks” to people who filled in the application. You will have 2 weeks to complete them, from the moment you submit your application. It will be the second step of the assessment process.
 
-To get an idea of what to expect from these tasks, you can find the assessment tasks from the first cohort [here](https://docs.google.com/document/d/1lo_qy6Y7jhwBMWpQuecxAFG3L_4soYkpq0TaLq42o-A/edit?usp=sharing) and the second cohort [here](https://docs.google.com/document/d/1Ow3v8Y4rYBdgxXNxKV9ZUAM4bwL6211U6DWCcByZ4A4/edit?usp=sharing).
+To get an idea of what to expect from these tasks, you can find the assessment tasks from the first cohort [here](https://docs.google.com/document/d/1lo_qy6Y7jhwBMWpQuecxAFG3L_4soYkpq0TaLq42o-A/edit?usp=sharing), the second cohort [here](https://docs.google.com/document/d/1Ow3v8Y4rYBdgxXNxKV9ZUAM4bwL6211U6DWCcByZ4A4/edit?usp=sharing) and the third cohort [here](https://docs.google.com/document/d/1944peQceYXhRA4Usp6ub_l2ms1xj8mXgseCgWpyBZOA/edit?usp=sharing).
 
 ### Mentor and project assignment
 
@@ -106,7 +108,7 @@ Most (but not all) projects will probably fall into one of two categories:
 - Contribution to existing software projects.
 - Research projects – implementing papers, reproducing results, etc.
 
-You can also take a look at the list of projects from the [first cohort]({{ 'mentorship_cohort_1' | absolute_url }}) or [second cohort]({{ 'mentorship_cohort_2' | absolute_url }}) to get a better idea how such projects could look like.
+You can also take a look at the list of projects from the [first cohort]({{ 'mentorship_cohort_1' | absolute_url }}), [second cohort]({{ 'mentorship_cohort_2' | absolute_url }})  or [third cohort]({{ 'mentorship_cohort_3' | absolute_url }}) to get a better idea how such projects could look like.
 
 ### Finalizing
 
