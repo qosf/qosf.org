@@ -33,13 +33,11 @@ This is a showcase of all the projects created during the third cohort of our Qu
 ##### **A Julia package on Quantum Optimal Control (QOptCtrl.jl)**  
   
 *Project description*: This project aims at developing a general purpose Julia package for implementing quantum gates in the presence of noise or other physical/hardware restrictions.
+A few examples are engineering an arbitrary single qubit gate in the presence of stochastic fluctuation in frequency parameters, engineering a pulse sequence to effectively decouple a system of interacting spins, or, designing an optimum pulse sequence to rotate an ensemble of electrons in the presence of an inhomogeneous magnetic field.
 
-A few examples are engineering an arbitrary single qubit gate in the presence of stochastic fluctuation in frequency parameters, engineering a pulse sequence to effectively decouple a system of interacting spins, or, designing an optimum pulse sequence to rotate an ensemble of electrons in the presence of an inhomogeneous magnetic field
+*Mentee*: **[Mostafa Atallah](https://twitter.com/M_Ataallah)** A first-year Physics master student at Cairo University, Main research interests are Quantum Information, Quantum Computation and Quantum Machine Learning  [linkedin](https://www.linkedin.com/in/mostafa-atallah-540334120/) [facebook](https://www.facebook.com/mostafa.atallah.1996). 
 
-
-*Mentee*: **[Mostafa Atallah](https://twitter.com/M_Ataallah)** A first-year Physics master student at Cairo University, Main research interests are Quantum Information, Quantum Computation and Quantum Machine Learning. Check out his [linkedin](https://www.linkedin.com/in/mostafa-atallah-540334120/) [facebook](https://www.facebook.com/mostafa.atallah.1996). 
-
-*Mentor*: **Razieh Annabestani** A Strategic Partner Alliance Manager at Zapata Computing and a senior scientist with 10+ years experience in physics, quantum information processing, mathematical modelling and numerical simulations and two years experimental experience in spectroscopy.  She has a PhD in Quantum Information and Computation from the University of Waterloo, Canada.
+*Mentor*: **Razieh Annabestani** A Strategic Partner Alliance Manager at Zapata Computing, and a senior scientist with 10+ years experience in physics, quantum information processing, mathematical modelling and numerical simulations and two years experimental experience in spectroscopy.  She has a PhD in Quantum Information and Computation from the University of Waterloo, Canada.
 
 *Links*: [Repository](https://github.com/Mostafa-Atallah2020/QOptCtrl.jl).
 
@@ -240,91 +238,77 @@ To achieve this functionality,  the extension will parse through the function bo
 
 --- 
 
-##### **Improving the Compilation Process in Tequila**
+##### **[a NEAT quantum error decoder](https://arxiv.org/abs/2101.08093)**
 
-*Project description*: Tequila is an open source framework for developing quantum variational algorithms. The project focused on simplifications and optimizations in Tequila's native compiler as well as integrating tket, a state of the art compiler by Cambridge Quantum Computing, for circuit optimization. 
+*Project description*: The aim of my project was to implement a new method of quantum error decoding provided by H. Théveniaut and E.van Nieuwenburg in their paper from January. It uses NEAT to evolve artificial neural networks for correcting the errors occuring to physical qubits of the toric code without introducing a logical error for reasonable noise levels. While I haven't finished the implementation, I learned a lot about the toric code as well as NEAT. My report is a gentle introduction for beginners to both of them which they can use to grasp crucial ideas on these topics. It also prepares ground for implementing the neural network training, which I'm going to add in the future.
 
-*Mentee*: **[Georgios Tsilimigkounakis](https://twitter.com/tsgeorgios)** is an undergraduate computer science student interested in quantum software.
+*Mentee*: **[Filip Rękawek](https://www.linkedin.com/in/filip-rekawek/)**  is an undergrad at University of Warsaw enrolled in an inter-faculty programme Mathematics and Natural Sciences. Besides quantum computing, his interests embrace mathematical logic and quantum physics.
 
-*Mentor*: **[Jakob Kottmann](https://twitter.com/JakobKottmann)** is a postdoctoral fellow at The Matter Lab at the University of Toronto.
+*Mentor*: **Dario Rosa**  is a theoretical physicist working on quantum chaos and quantum many-body systems. He is based in Korea at the Institute for Basic Science in Daejeon and is interested in the applications of quantum computing to condensed matter and quantum many-body problems
 
-*Links*: [Tequila Contribution](https://github.com/aspuru-guzik-group/tequila/pull/112), [Tutorial](https://github.com/georgios-ts/tequila-tutorials/blob/qsof/Compiler_Tutorial.ipynb)
-
---- 
-
-##### **Exact Quantum Simulation of Quantum Many Body Systems with Tequila**
-
-*Project description*: Quantum many-body systems are generally hard to solve both analytically and numerically. The computational complexity grows exponentially along with the systems’ size when it comes to simulating quantum many-body systems on a classical computer. Nonetheless, we can construct quantum simulation algorithms to simulate exactly solvable models exactly. An exact quantum simulation will allow us to access not only the ground state but also the full spectrum of many-body systems. In this project, we use Tequila, an open-source package for quantum algorithms, to build quantum circuits that simulate quantum many-body systems exactly. We perform the quantum simulations on both simulators and real IBMQ devices. 
-
-*Mentee*: **[Meng Hua](https://www.linkedin.com/in/meng-hua-715a627b/)** is a physics Ph.D. student in Prof. Jeffrey Teo's group at the University of Virginia. Her research focus on topological quantum matter and topological phases. She is a quantum computing enthusiast and an amateur Go player.
-
-*Mentor*: **[Alba Cervera Lierta](https://twitter.com/albaclierta)** is a postdoctoral researcher at the Alán Aspuru-Guzik group at the University of Toronto. She obtained her PhD in quantum information at the University of Barcelona. Her backgroud includes particle physics, multipartite entanglement and quantum computation. She is currently working on near-term quantum algorithms suited for the NISQ era.
-
-*Links*: [Repository](https://github.com/AnnaMHua/QOSF_Tequila)
+*Links*: [Repository](https://github.com/filomath/Quantum-Error-Decoding-using-NEAT)
 
 --- 
 
-##### **Quantum Computing for Vehicle Routing Problems**
+##### **Study of quantum algorithms for monte carlo**
 
-*Project description*: In the logistics industry there is a huge challenge to optimize distribution. This includes choosing how to route a fleet of vehicles to pick up goods at several central depots and distribute them to a number of clients. If we’re now talking about vaccine distribution the stakes are even higher. This project aims to apply a quantum solution to the problem of optimal vaccine distribution. Using actual vaccination locations in Colombia, this project uses a combination of classical k-means clustering and a quantum solution to the Travelling Salesman Problem (TSP) to find a valid solution to the vaccine distribution problem. The project is available both in spanish and english. 
+*Project description*: In this project we studied how we can implement quantum algorithms for speeding up Monte Carlo techniques. Michele started from understanding algorithms for amplitude amplification and estimation, and then learned how to apply them in the context of Monte Carlo. We also discussed practical problems where Quantum Monte Carlo can be applied successfully, and we plan to explore further some problems, like the problem of estimating the trace distance between distributions.
 
-*Mentee*: **[Catalina Albornoz](https://www.linkedin.com/in/catalinaalbornoz/)** is passionate about quantum computing and sustainability. Currently as an IBM Quantum ambassador, she works on developing the Latin American quantum ecosystem. Catalina is an Electronics and Mechanical Engineer and MSc. in Electronics from Los Andes University and has a Diplôme d’Ingénieur from IMT Atlantique.
+*Mentee*: **[Michele Vischi](https://www.linkedin.com/in/michele-vischi-1274b4151)** is a PhD student on Quantum Computing at the University of Trieste. He got his bachelor’s in math and his master’s in physics at Udine and Trieste respectively. He works on decoherence in quantum devices. He wants to learn quantum algorithms. He is a true quantum enthusiast [twitter](https://mobile.twitter.com/Michele06426778).
 
-*Mentor*: **[Vesselin G. Gueorguiev](https://www.linkedin.com/in/vgg-consulting/)** is a physics researcher affiliated with the Ronin Institute for Independent Scholarship and the Institute for Advanced Physical Studies.
+*Mentor*: **Alessandro Luongo** got a PhD in quantum machine learning and now is a researcher in quantum algorithms at the Centre for Quantum Technologies of Singapore.
 
-*Links*: [Repository](https://github.com/CatalinaAlbornoz/Quantum_Vehicle_Routing)
+*Links*: [Contribution](https://quantumalgorithms.org/chap-montecarlo.html)
 
 --- 
 
-##### **Hybrid Quantum-Classical Machine Learning Algorithm for K-means Clustering***
+##### **Study of some quantum algorithms (graphs)**
 
-*Project description*: This project is an implementation of Grover's search algorithm for finding the minimum (Durr-Hoyer) and k-means clustering using coresets. It is inspired by [this paper](https://arxiv.org/abs/2004.00026).
+*Project description*: In this project we studied quantum algorithms for graph related problems. Adrian focused on the problem of connectivity on undirected graphs, learning the difference between quantum query complexity and time complexity of an algorithm. He also explored similar techniques for quantum algorithms for finding minimum spanning trees on weighted graphs. 
+
+*Mentee*: **[Adrian Lee](https://www.linkedin.com/in/adrian-lee-b1257714b/)**  is passionate about helping others to grow in the society. Inspired by his academic background in physics (BSc 2015) and mathematics (MSc 2017), he is interested in closing the gap between academia and industries by applying his knowledge in quantum computing.
+
+*Mentor*: **Alessandro Luongo** got a PhD in quantum machine learning and now is a researcher in quantum algorithms at the Centre for Quantum Technologies of Singapore.
+
+*Links*: [Contribution](https://quantumalgorithms.org/chap-graphs.html)
+
+--- 
+
+##### **Study of quantum algorithms for perceptrons***
+
+*Project description*: The project consisted in writing a new chapter for [website](https://quantumalgorithms.org), enhancing the open-source book with an explanation of the quantum Perceptron algorithm. Samantha got acquainted with the classical Perceptron algorithm first and then analyzed its quantum counterpart, writing the new chapter.
+
+*Mentee*: **[ Sam's ](https://www.linkedin.com/in/s-buck)** pursuing her MSc in experimental nuclear physics at the University of Guelph. In 2019 she received a Mitacs Accelerate research award to work on the quantum simulations division at 1QBit. Future interests entail research at the intersection of quantum machine learning and quantum computing towards initiatives in nuclear physics.
+
+*Mentor*: **Armando** is a Ph.D. student in Quantum Machine Learning at Politecnico di Milano. He has a computer science background, with a focus on cybersecurity and data analysis. His research currently covers provable speed-ups for data representation algorithms, though his interests in quantum algorithms/computation are broader. 
+
+*Links*: [Repository](https://github.com/Scinawa/quantumalgorithms.org)
+
+--- 
+
+##### **Continuous Variable Quantum Algorithms: an Introduction**
+
+*Project description*: Quantum computing is usually associated with discrete quantum states and physical quantities possessing discrete eigenvalue spectrum. However, quantum computing in general is any computation accomplished by the exploitation of quantum properties of physical quantities, discrete or otherwise. It has been shown that physical quantities with continuous eigenvalue spectrum can be used for quantum computing as well. Currently, continuous variable quantum computing is a rapidly developing field both theoretically and experimentally. In this pedagogical introduction we present the basic theoretical concepts behind it and the tools for algorithm development. The paper targets readers with discrete quantum computing background, who are new to continuous variable quantum computing.
 
 *Mentees*: 
-- **[Anton Simen](https://www.linkedin.com/in/anton-simen-227059114/)** is pursuing a bachelor's degree in Engineering Physics at the Federal University of Latin American Integration. Anton has also been an undergraduate researcher in the field of quantum algorithm development for the past two years.
-- **[Mauro Nooblath](https://www.linkedin.com/in/mauro-nooblath-503526150/)** is an undergraduate student of  Engineering Physics from the Federal University of Latin American Integration (UNILA) since 2016. His research interests are in quantum machine learning and quantum cryptography.
+- **[Robin Coleman](https://www.linkedin.com/in/robin-coleman-98b19614b/)**  is a PhD student at University of Guelph studying nuclear structure away from stability. M.S. in Physics and B.S. in Engineering Physics. His QC interests are mostly in using quantum computing to solve currently prohibitive physics problems as well as investigating current algorithms and theoretical limits of quantum computing.
+- **[Sam](https://www.linkedin.com/in/s-buck/)** is pursuing her MSc in experimental nuclear physics at the University of Guelph. In 2019 she received a Mitacs Accelerate research award to work on the quantum simulations division at 1QBit. Future interests entail research at the intersection of quantum machine learning and quantum computing towards initiatives in nuclear physics.
 
-*Mentor*: **[Ethan Hansen](https://twitter.com/1ethanhansen)** is a Product Marketing Specialist at Zapata Computing and the host of the podcast Quantum Computing Now. He is a quantum computing enthusiast and is self-taught (for now!) Within the field of QC. He also enjoys exploring the intersection with machine learning and cybersecurity.
 
-*Links*: [Repository](https://github.com/AntonSimen06/QOSF_project)
+*Mentor*: **Hayk** is a theoretical physicist who defended his PhD at Yerevan State University while the mentorship program was in progress. He is currently working as a quantum software engineer at IQM.
 
---- 
-
-##### **Variational Embeddings in Quantum Machine Learning**
-
-*Project description*: Machine Learning is a potential application for near-term intermediate scale quantum computers with possible speed-ups over their classical counterparts. Quantum classifiers are quantum circuits that can be trained to classify data in two stages; 1) Embedding: the input data is encoded into quantum states, embedding it to a high-dimensional Hilbert space. 2) Measurement: A quantum measurement of the circuit to discriminate between classes. Usually, the measurement part of the circuit is trained but in a [recent paper](https://arxiv.org/abs/2001.03622) an alternate approach has been adopted where the embedding part of the circuit is trained instead, freeing up more precious resources. In this work, we benchmark various embeddings and cost functions and propose improvements.
-
-*Mentees*: 
-- **[Narges Alavi Samani](https://www.linkedin.com/in/narges-alavi-samani/)** received her M.Sc. in Computer Science at Université Paris Diderot joint with École Normale Supérieure and École Polytechnique, France. Narges did her Master’s thesis at Sorbonne University with a focus on Quantum Machine Learning. Her research interests lie at the intersection of Quantum Computing and Machine Learning.
-- **[Mudassir Moosa](https://www.linkedin.com/in/mudassir-moosa/)** is currently a postdoc in physics at Cornell University. Mudassir's research interests are in applications of quantum information in high energy theory.
-- **[Syed Raza](https://www.linkedin.com/in/syedraza22/)** is a Senior Data Scientist at a credit risk consulting firm based in Washington DC. He recently graduated with a PhD in Physics from University of Virginia with a focus on Topological Quantum Computation. Syed is interested in Quantum Machine Learning and its applications.
-
-*Mentor*: **[Aroosa Ijaz](https://www.linkedin.com/in/aroosaijaz/)** a graduate student in QML at the Vector Institute. Aroosa has previously worked at Xanadu as a quantum machine learning scientist. Her education specializes in quantum information, quantum computing and quantum optics.
-
-*Links*: [Repository](https://github.com/mudassirmoosa/variational_embedding_circuits), [Report](https://github.com/mudassirmoosa/variational_embedding_circuits/tree/master/Report)
+*Links*: [Paper](https://arxiv.org/abs/2107.02151)
 
 --- 
 
-##### **The Schwinger Model and Quantum Computing**
+##### **Brief Introduction to Quantum Option Pricing**
 
-*Project description*: Quantum field theories are the mathematical description of the physical world and underlie the Standard Model of Particle Physics (SM). Quantum computers bear the possibility of contributing to progress in fundamental particle physics. With this project, the Lattice Schwinger model is chosen to explain the fundamental steps underlying QFT theories. The goal is to show, using the Schwinger model, how quantum field theories can be simulated on a quantum device with using descriptions and language suitable for those without a background in particle physics and quantum field theories.
+*Project description*: 
 
-*Mentee*: **[Annabel Kropf](https://www.linkedin.com/in/annabel-kropf-83a919204/)** is a graduate student from the Technical University of Munich. She wrote her master thesis in experimental particle physics, where she worked at the Institut Laue-Langevin in Grenoble assisting a year-long measurement campaign aimed at measuring the decay spectrum of nuclear beta decay to identify novel terms beyond the Standard Model. Her background includes particle physics and statistical physics. 
+*Mentee*: **[Henry Makhanov](https://www.linkedin.com/in/henry-makhanov/)**  is a MS in CS student at The University of Texas at Austin and a current participant at the Creative Destruction Lab. Henry completed his undergraduate degree in Economics at The University of British Columbia. He is interested in applying quantum computing to the study of stochastic processes [github](https://github.com/edenian/).
 
-*Mentor*: **[Alba Cervera Lierta](https://twitter.com/albaclierta)** is a postdoctoral researcher at the Alán Aspuru-Guzik group at the University of Toronto. She obtained her PhD in quantum information at the University of Barcelona. Her backgroud includes particle physics, multipartite entanglement and quantum computation. She is currently working on near-term quantum algorithms suited for the NISQ era.
+*Mentor*: **Dr. Maria Kieferova**, is an SQA postdoctoral fellow at the UTS Centre for Quantum Software and Information and the ARC Centre of Excellence for Quantum Computation and Communication Technology.  Maria completed her undergraduate and masters degree at Comenius University in Slovakia and her PhD at IQC, University of Waterloo and Macquarie University. She is interested in developing quantum algorithms, namely for machine learning and quantum simulations.
 
-*Links*: [Repository](https://github.com/mudassirmoosa/variational_embedding_circuits), [Report](https://github.com/mudassirmoosa/variational_embedding_circuits/tree/master/Report)
-
----
-
-##### **Pennylane and pytket Integration**  
-  
-*Project description*: The aim is to develop an open source package in Python which uses the Tket framework to compile quantum circuits and which takes advantage of the automatic differentiation ability of PennyLane. 
-    
-*Mentee*: **[Kimara Naicker](https://twitter.com/kimara31)** is a PhD researcher at the University of KwaZulu-Natal and a member of the Centre for Quantum Technology Research Group. Her research focuses on applications of machine learning techniques to the description of open quantum system dynamics. 
-
-*Mentor*: **[Seyon Sivarajah](https://twitter.com/SeyonSivarajah)** is technical product lead Cambridge Quantum Computing's quantum software development platform tket. His work involves researching, designing and developing state of the art solutions for maximising the use of near term quantum computers.
-
-*Links*: [Repository](https://github.com/kimaranaicker/pytket-pennylane).
+*Links*: [Contribution](https://henrymakhanov.medium.com/brief-introduction-to-quantum-option-pricing-7f8c2f3bbbb4)
 
 ---
