@@ -102,7 +102,9 @@ The output of this project is a [new chapter](https://quantumalgorithms.org) whe
     
 *Mentee*: **[Aike Liu](http://www.linkedin.com/in/aike-liu-505547123)** Theoretical Physics, Graduate Student at California Institute of Technology.
 
-*Mentor*: **Derek Bolt** Principal Engineer at Amazon Braket. **Yunong Shi**: Research Scientist at Amazon Braket.
+*Mentors*: 
+- **Derek Bolt** Principal Engineer at Amazon Braket. 
+- **Yunong Shi**: Research Scientist at Amazon Braket.
 
 *Links*: [Repository](https://gitlab.com/AikeLiu/qosf_plugin).
 
@@ -129,7 +131,7 @@ The output of this project is a [new chapter](https://quantumalgorithms.org) whe
 
 *Mentee*: **[Pavan Jayasinha](https://pavanjay.com/)** is an incoming UWaterloo undergraduate for computer engineering and summer intern at Zapata. Over the past year he has built a strong interest in building and learning quantum machine learning algorithms coupled with the underlying foundations.
 
-*Mentor*: **Yunong Shi*  is a research scientist at Amazon Braket
+*Mentor*: **Yunong Shi**  is a research scientist at Amazon Braket
 
 *Links*: [Repository](https://github.com/Sinestro38/qosf-qgan/tree/code-review-1).
 
