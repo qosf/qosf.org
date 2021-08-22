@@ -86,7 +86,7 @@ The output of this project is a [new chapter](https://quantumalgorithms.org) whe
   
 *Project description*: Implementing evolutionary algorithms to minimize the cost function so as to estimate the ground state for a model. The evolutionary algorithm part involves inserting/deleting/modifying quantum gates at random locations in the quantum circuit.
     
-*Mentee*: **[Saksham Sarwari](Twitter : https://twitter.com/sarwarisak)** , B.Tech. in Engineering Physics from Indian Institute of Technology, Roorkee, India. Currently working in General Electric as a Software Developer [linkedin](https://www.linkedin.com/in/sarwarisak/). 
+*Mentee*: **[Saksham Sarwari](https://twitter.com/sarwarisak)** , B.Tech. in Engineering Physics from Indian Institute of Technology, Roorkee, India. Currently working in General Electric as a Software Developer [linkedin](https://www.linkedin.com/in/sarwarisak/). 
 
 *Mentor*: **Dario Rosa**  is a Senior Researcher and Junior Research Team Leader at Institute for Basic Science (IBS), Daejeon, South Korea
 
