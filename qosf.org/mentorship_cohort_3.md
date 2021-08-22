@@ -84,53 +84,53 @@ The output of this project is a [new chapter](https://quantumalgorithms.org) whe
 
 ---
 
-##### **Solovay-Kitaev Algorithm and Fault-Tolerance**  
+##### **Gradient-free quantum optimization using Evolutionary Algorithms**  
   
-*Project description*: This project consists of an implementation of the Solovay-Kitaev algorithm from a paper by [C. Dawson and M. Nielsen](https://arxiv.org/abs/quant-ph/0505030) for the open source framework Qiskit. The Solovay-Kitaev theorem states that any single qubit gate can be approximated to arbitrary precision by a set of fixed single-qubit gates, if the set generates a dense subset in SU(2). This is an important result, since it means that any single-qubit gate can be expressed in terms of a discrete, universal gate set that we know how to implement fault-tolerantly. Therefore, the Solovay-Kitaev algorithm allows us to take any non-fault tolerant circuit and rephrase it in a fault-tolerant manner.
+*Project description*: Implementing evolutionary algorithms to minimize the cost function so as to estimate the ground state for a model. The evolutionary algorithm part involves inserting/deleting/modifying quantum gates at random locations in the quantum circuit.
     
-*Mentee*: **[Lisa Noorlander](https://github.com/LNoorl)** is a software engineer with a background in physics and mathematics. 
+*Mentee*: **[Saksham Sarwari](Twitter : https://twitter.com/sarwarisak)** , B.Tech. in Engineering Physics from Indian Institute of Technology, Roorkee, India. Currently working in General Electric as a Software Developer [linkedin](https://www.linkedin.com/in/sarwarisak/). 
 
-*Mentor*: **[Julien Gacon](https://www.linkedin.com/in/julien-gacon/)** is a predoctoral researcher at IBM Quantum in Stefan Woerner’s group in Zurich. He’s currently working on application-aware circuit compilation and develops the open-source framework Qiskit. 
+*Mentor*: **Dario Rosa**  is a Senior Researcher and Junior Research Team Leader at Institute for Basic Science (IBS), Daejeon, South Korea
 
-*Links*: [Qiskit Contribution](https://github.com/Qiskit/qiskit-terra/pull/5657).
+*Links*: [Repository](https://github.com/sarwarisak/Quantum-Optimization-using-Evolutionary-Algorithms).
 
 ---
   
 
   
-##### **PyZX and Tequila Integration**  
+##### **Implement a Qiskit Braket-plugin**  
   
-*Project description*: This project implemented support for the PyZX package into Tequila platform. Also, an introductory tutorial was created to show what you can do with the ZX-calculus. Additionally, basic import/export for OpenQASM code was included, and made a small tutorial on it.
+*Project description*: This project aims at building a Qiskit-Braket plugin which provided Qiskit users access to Amazon Braket devices. Upon installing the package, costumers are able to code their quantum circuits, submit the job to a AWS quantum device, and retrieve and analysis the results through the Qiskit framework. The basis workflow as described has been achieved. We are currently reviewing the existing code, and we will continue to expand the utilities of our plugin to incorporate more features from the Qiskit library. 
     
-*Mentee*: **[Claudia Zendejas-Morales](https://twitter.com/clausia)** is a physicist and a software engineer with experience in different programming languages who pursues to continue her path on graduate studies on quantum computation and quantum information to become a researcher in this area. She has been collaborating with some communities around the world involved in these topics.
+*Mentee*: **[Aike Liu](http://www.linkedin.com/in/aike-liu-505547123)** Theoretical Physics, Graduate Student at California Institute of Technology.
 
-*Mentor*: **[Jakob Kottmann](https://twitter.com/JakobKottmann)** is currently a postdoctoral fellow at The Matter Lab at the University of Toronto.
+*Mentor*: **Derek Bolt** Principal Engineer at Amazon Braket. Yunong Shi: Research Scientist at Amazon Braket.to.
 
-*Links*: [Tequila Contribution](https://github.com/aspuru-guzik-group/tequila/pull/112), [OpenQASM Conversions Tutorial](https://github.com/aspuru-guzik-group/tequila-tutorials/blob/main/OpenQASMConversions.ipynb), [PyZX Tequila Tutorial](https://github.com/aspuru-guzik-group/tequila-tutorials/blob/main/PyZXwithTequila.ipynb).
-
----
-
-##### **Layerwise Learning for Quantum Neural Networks** 
-
-*Project description*: In this project we've implemented a strategy presented by [Skolik et al., 2020](https://arxiv.org/pdf/2006.14904.pdf) for effectively quantum neural networks. In layerwise learning the strategy is to gradually increase the number of parameters by adding a few layers and training them while freezing the parameters of previous layers already trained. An easy way for understanding this technique is to think that we're dividing the problem into smaller circuits to successfully avoid to fall into Barren Plateaus. Here, we provide a proof-of-concept for the implementation of this technique in Pennylane's Pytorch interface. 
-
-*Mentee*: **[Felipe Oyarce](https://www.linkedin.com/in/fioyarce/)** is a Machine Learning Developer at NotCo. Master in Quantum Optics and a Quantum Computing Enthusiast. Inspired in technological solutions to real-world problems. 
-
-*Mentor*: **[Theodor Isacsson](https://twitter.com/thisacs)** is a Quantum Software Developer at Xanadu, enthusiastic about pushing the limits of quantum computing software and expanding its usability and usefulness in the field. Outside of work he’s an avid traveller, enjoying adventurous trips, hiking and exploring the world.
-
-*Links*: [Repository](https://github.com/felipeoyarce/layerwise-learning).
+*Links*: [Repository](https://gitlab.com/AikeLiu/qosf_plugin).
 
 ---
 
-##### **Effect of Entanglement on Model Training in Quantum Machine Learning** 
+##### **An Exploration of the Vehicle Routing Problem (VRP)** 
 
-*Project description*: Classical neural networks encode higher dimensional vectors(inputs) to lower dimensional vectors(outputs), but the reverse is not possible. Recent research has shown us that scrambling of information from a small subsystem to a larger one is feasible. In our QOSF project, we analyse the effect of entanglement as a variational circuit trains and also study the role of various entropies to characterize entanglement.
+*Project description*: The major challenge of the logistics industry is to come up with the optimal delivery plan for hundreds and thousands of delivery clients with a given number of available vehicles. This mathematical problem is known as the Vehicle Routing Problem (VRP). In this project, we look at the case of the VRP with a single depot and a fixed number of vehicles and try to minimize the total distance covered by the vehicles using D-Wave Systems. We compare various quantum algorithms against each other using different D-Wave solvers. We also compare D-Wave results against the classical CPLEX and IBM Qiskit results.
 
-*Mentee*: **[Syed Farhan Ahmad](https://twitter.com/syedfarhanrvce)** is an Undergraduate Quantum Researcher completing his Bachelor of Engineering in Electronics and Communication from RVCE, Bangalore, India. He is also an IBM GRM intern and loves to work on QC and AI projects. You can learn more about his work on his [personal website](https://born-2learn.github.io/).
+*Mentee*: **[Shantom Borah](https://github.com/arkonaire)** is a final year undergraduate at BITS Pilani, India, currently in the final stages of completing his double majors in Physics and Electrical & Electronics Engineering. Other than Quantum Computation and Information, he is also interested in Digital Electronics, Signal Processing, and Artificial Intelligence for games [linkedin](https://in.linkedin.com/in/shantom-borah-69811a149 ). 
 
-*Mentor*: **[Amira Abbas](https://twitter.com/AmiraMorphism)** is a predoc researcher in the Quantum Research Group at the University of KwaZulu-Natal and part of the IBM Quantum Computing Research team in Zurich, as well as the IBM Quantum Education team in South Africa. Amira holds an undergraduate degree in actuarial science, an honours degree in quantitative finance, a masters degree in physics and is a recipient of Google's PhD Fellowship. She is an active member of numerous community driven initiatives centred around strengthening science and technology in Africa.
+*Mentor*: **[Dr. Vesselin G. Gueorguiev](https://www.linkedin.com/in/vgg-consulting/)**  is a physics [researcher](https://www.researchgate.net/profile/Vesselin_Gueorguiev2) affiliated with the Ronin Institute for [Independent Scholarship](http://ronininstitute.org/research-scholars/vesselin-gueorguiev/) and the [Institute for Advanced Physical Studies](http://iaps.institute/people/). His team AlphaQ won the [2020 CDL Quantum Hackathon](https://github.com/VGGatGitHub/Hackathon2020). He is active in AI and ML Hackathon space as well [personal website](https://devpost.com/vggconsulting). In 2020 he was one of the mentors  for cohort#2 of the QOSF - see project [QOSF cohort#2] (https://github.com/VGGatGitHub?tab=projects&q=is:closed).
 
-*Links*: [Repository](https://github.com/born-2learn/Entanglement_in_QML), [Blog Post](https://born-2learn.github.io/posts/2021/01/effect-of-entanglement-on-model-training/).
+*Links*: [Repository](https://github.com/VGGatGitHub/QOSF-cohort3).
+
+---
+
+##### **Exploring financial applications of qGANs through Braket** 
+
+*Project description*: This project takes an empirical stab at answering the question: which hyperparameters are optimal for quantum generative adversarial learning. With the application of learning consecutive equity prices, we built a proof-of-concept quantum generative adversarial network and a simple quantum neural network to accomplish the task of predicting the next four days of prices given fifteen prior days of prices. We evaluate quantum model capacity, convergence characteristics, training efficency, and more on the basis of 7 hyperparameters we tuned.
+
+*Mentee*: **[Pavan Jayasinha](https://pavanjay.com/)** is an incoming UWaterloo undergraduate for computer engineering and summer intern at Zapata. Over the past year he has built a strong interest in building and learning quantum machine learning algorithms coupled with the underlying foundations.
+
+*Mentor*: **Yunong Shi*  is a research scientist at Amazon Braket
+
+*Links*: [Repository](https://github.com/Sinestro38/qosf-qgan/tree/code-review-1).
 
 ---
 
