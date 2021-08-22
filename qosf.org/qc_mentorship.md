@@ -59,7 +59,7 @@ Cohort one (March 2020 to June 2020): [mentorship projects]({{ 'mentorship_cohor
 
 Cohort two (October 2020 to January 2021): [mentorship projects]({{ 'mentorship_cohort_2' | absolute_url }}).
 
-Cohort two (March 2021 to June 2021): [mentorship projects]({{ 'mentorship_cohort_3' | absolute_url }}).
+Cohort three (March 2021 to June 2021): [mentorship projects]({{ 'mentorship_cohort_3' | absolute_url }}).
 
 
 ## Timeline 
