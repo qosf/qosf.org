@@ -141,7 +141,7 @@ The output of this project is a [new chapter](https://quantumalgorithms.org) whe
 
 *Project description*: Quantum Amplitude Estimation (QAE) is a core subroutine in quantum computation with various applications, including Monte Carlo integration. Quantum computers can potentially utilize QAE to achieve quadratic speed-up compared to classical Monte Carlo. In the conventional approach, the Quantum Phase Estimation (QPE) algorithm is used for amplitude estimation; however, QPE requires expensive controlled operations as well as a Fourier transform, which currently lead to difficulties with implementation in near-term quantum devices. In response to this, some alternative lower depth algorithms have been developed. In this project, I focused on implementing a parallelized and distributed version of the Power Law algorithm for QAE, which should further reduce the current hardware challenges by interconnecting small quantum computers as opposed to relying on a single big quantum computer.
 
-*Mentee*: **[Andrea Ricciardi](www.linkedin.com/in/andrea-ricciardi-5887b983)**  is a mathematician with 5+ years of professional experience as Algorithmic Trader and Developer. He is fascinated with quantum computation and the impact it could have on the world we live in. 
+*Mentee*: **[Andrea Ricciardi](https://www.linkedin.com/in/andrea-ricciardi-5887b983/)**  is a mathematician with 5+ years of professional experience as Algorithmic Trader and Developer. He is fascinated with quantum computation and the impact it could have on the world we live in. 
 
 *Mentor*: **Stephen Diadamo**  is a PhD student at the Technical University of Munich. His work focuses on quantum communication systems design, such as protocol design and simulation of quantum networks, distributed quantum computing, and quantum information theory. He developed and maintains several related open-source repos including QuNetSim and Interlin-q.
 
@@ -165,7 +165,7 @@ The output of this project is a [new chapter](https://quantumalgorithms.org) whe
 
 *Project description*: Currently, implementing a quantum algorithm in the Amazon Braket SDK requires manually constructing its corresponding quantum circuit using gates. The aim of my project is to develop a feature that supports adding quantum operations that are more useful for building quantum algorithms. Moreover, it should allow us to compartmentalize quantum circuits into distinct sub operations when visualizing. The basic design of this feature has been completed, and operations for constructing the Greenberger-Horne-Zeilinger state, Quantum Fourier Transform, and Quantum Phase Estimation have been added. The code is currently being reviewed, and more operations and utilities will be added in the future.
 
-*Mentee*: **[Jerry Huang](https://twitter.com/HdezNay)**  is an undergraduate student studying applied and computational mathematics at the California Institute of Technology.
+*Mentee*: **[Jerry Huang](https://www.linkedin.com/in/jerry-huang-243a671b2/)**  is an undergraduate student studying applied and computational mathematics at the California Institute of Technology.
 
 *Mentors*: 
 - **Derek Bolt**, Principal Engineer in Amazon Braket. 
@@ -190,54 +190,53 @@ To achieve this functionality,  the extension will parse through the function bo
 
 --- 
 
-##### **Python Libraries for Quantum Computing Visualizations and Workflows**
+##### **Quantum key distribution and information reconciliation**
 
-*Project description*: A trio of projects including qonduit, pulseMaker and pyQuirk - a visualization library, tools, and workflow utilizing the best of what’s available, introducing a novel UI for pulse-level control, and currently supports Qiskit and Cirq with more quantum computing integrations planned.
+*Project description*: Simulating Quantum Key Distribution Protocols with NetSquid
 
-*Mentees*: 
-- **[Diego Serrano](https://twitter.com/diemilioser)** obtained the BSc in EE from the Pontificia Universidad Javeriana, and an MSc & PhD in EE from Georgia Tech. He is currently a Director of Engineering at Panasonic, he dedicates his spare time to learn about quantum computing with hopes of someday contributing to the field.
-- **[Amir Ebrahimi](https://twitter.com/amir_e)** currently resides in the Bay Area, CA and is working at Unity in ML/DL on Barracuda. He received his BSc in CS from Georgia Tech and is pursuing a MSc in CS from UT Austin. He is bootstrapping in quantum computing until he can perform active research in the field.
-- **[Aditya Giridharan](https://twitter.com/_aditya_giri)** graduated with a Bachelor’s degree in Computer Science in 2019, and currently works as a Software Engineer at Citrix R&D in Bangalore. His interests are primarily in Theoretical Computer Science and Mathematics, with a focus on Quantum Algorithms and Complexity.
+*Mentee*: **[Christopher Um](https://www.linkedin.com/in/christopher-u-116b50181/)** , an incoming college freshman at Cornell University. 
 
-*Mentor*: **[Tushar Mittal](https://www.linkedin.com/in/tushar-mittal/)** received his B.S. in Chemical Biology from the UC Berkeley. He is a product leader in the quantum computing space working for companies like Rigetti Computing and IBM to deliver developer, cloud and business service offerings for early adopters. He is currently based in the Bay Area.
+*Mentor*: **Stephen DiAdamo**  PhD student at Technical University of Munich (TUM). He has done previous research in quantum software research with NetSquid. 
 
-*Links*: [qonduit](https://github.com/adgt/qonduit), [pulseMaker](https://github.com/adgt/pulseMaker), [pyQuirk](https://github.com/adgt/pyQuirk)
+*Links*: [Repository](https://github.com/stephendiadamo/qkd_error_recon/tree/master/qkd/protocols)
 
 ---
 
-##### **Interlin-q: a Distributed Quantum Enabled Simulator**
+##### **Study the capacity of quantum neural networks**
 
-*Project description*: Interlin-q is a distributed quantum-enabled simulator which imitates the master-slave centralised-control distributed quantum computing system with interconnect communication between the nodes. This open source framework performs the mapping of quantum algorithms designed for monolithic systems to arbitrary distributed quantum computing architectures and moreover simulates the communication and scheduling protocols and finally executes the final distributed quantum circuits over the different nodes. Interlin-q can be used for designing and analysing novel distributed quantum algorithms for various distributed quantum computing architectures. We also demonstrate how algorithms such as quantum phase estimation can be executed over various distributed topologies using Interlin-q. The method used to accomplish this is based on the paper [Distributed Quantum Computing and Network Control for Accelerated VQE](https://arxiv.org/abs/2101.02504).
+*Project description*: This project aims to extend the work done by Schuld et al. in [link](https://arxiv.org/abs/2008.08605) by implementing a quantum circuit -> partial fourier series converter to allow for easy access to the fourier coefficients that different quantum circuits give rise to, and ultimately draw inferences about the properties of different quantum ansatze with regards to their expressibiliy as quantum neural networks, and the kernels they give rise to as quantum kernel methods.
 
-*Mentee*: **[Rhea Parekh](https://www.linkedin.com/in/rheaparekh12/)** is a physics undergraduate student from the Indian institute of Technology Roorkee. She is really passionate about quantum cryptography, quantum networks, quantum algorithms as well as software engineering. She is also one of the contributors and maintainers of the Quantum Protocol Zoo.
+*Mentee*: **[Sashwat Anagolum](https://github.com/SashwatAnagolum)** is a undergraduate student at Penn State University interested in quantum computing, machine learning, and everything in between [linkedin](https://www.linkedin.com/in/sashwatanagolum/).
 
-*Mentor*: **[Stephen DiAdamo](https://www.linkedin.com/in/stephendiadamo/)** is a PhD student from the Technical University of Munich where his research focus is designing quantum communication systems. His work involves simulation and protocol design for quantum networks, distributed quantum computing, and quantum information theory. He developed and currently maintains QuNetSim, a quantum network simulation framework.
+*Mentor*: **Yunong Shi**, research scientist at Amazon Braket
 
-*Links*: [Repository](https://github.com/Interlin-q/Interlin-q/), [Documentation](https://interlin-q.github.io/Interlin-q/) [Tutorial](https://github.com/Interlin-q/Interlin-q/blob/master/examples/distributed_quantum_phase_estimation_notebook.ipynb)
+*Links*: [Repository](https://github.com/SashwatAnagolum/qnn_fourier_series)
 
 ---
 
-##### **VQE for Quadratic Hamiltonians in Compressed Space**
+##### **Quantum Generative Models: interplay between depth, topology and accuracy **
 
-*Project description*: We have used the fact that matchgate circuits can be simulated in a quantum computer using a logarithmic number of qubits to implement Variational Quantum Eigensolvers for quadratic Hamiltonians in compressed space. We have found an algorithm to compress a 1D homogeneous quadratic Hamiltonian and an appropriate ansatz for the VQE algorithm, and we plan to keep working on the problem. The result is a Python package with classes ready to be used with Qiskit's variational eigensolvers.
+*Project description*: Implementation of new qubit topologies for Quantum Circuit Born Machine ansatz in the Orquestra quantum environment
 
-*Mentee*: **[Guillermo Blázquez-Cruz](https://twitter.com/gblzq)** has been working as a Data Engineer for +3 years after earning an MsC in Particle Physics. 
+*Mentee*: **[Ben Foxman](https://www.linkedin.com/in/benfoxman1)**, I'm a Rising Junior at Yale University, majoring in mathematics and computer science. I'm currently interning at Fidelity Investments in the Quantitative Research Division. In my free time, I enjoy playing chess, piano, and tennis. 
 
-*Mentor*: **[Pierre-Luc Dallaire-Demers](https://twitter.com/dallairedemers)** is a Quantum Research Scientist at Zapata Computing.
+*Mentor*: **Marta Mauri**, I'm a Quantum Software Engineer at Zapata Computing, where I landed soon after my Physics MSc. My main interests revolve around Quantum Machine Learning and Hybrid Quantum-Classical Algorithms. I'm passionate about developing software to face fundamentals research questions and love working on quantum algorithms for real world applications
 
-*Links*: [Repository](https://github.com/gblazq/cVQE)
+*Links*: [Repository](https://github.com/zapatacomputing/z-quantum-qcbm/pull/45)
 
 --- 
 
-##### **Quantum Intermediate Representation**
+##### ** Benchmarking quantum convolutional neural networks for classical data**
 
-*Project description*: In this project we study the potential of Quantum Intermediate Representation, an Intermediate Representation for quantum computing programming languages developed by Microsoft. Even if it only supports Q# and QKD for the moment, it has the potential of being used as a toolchain together with any other language. More precisely, we have been investigating how to program a full workflow that translates a Q# program to QIR and back to a quantum simulator – with the idea of running it on real quantum hardware on the future. 
+*Project description*: In this project, we benchmark the classification performance of fully parametrized Quantum Convolutional Neural Network (QCNN) for classical pattern recognition problems. In particular, we investigate the classification accuracy of QCNN designs with various quantum data embedding methods, structures of the parametrized  quantum circuit, classical data pre-processing methods, and loss functions on a number of standard classical datasets.
 
-*Mentee*: **[Esther Cruz Rico](https://twitter.com/esthercrrico)** is a PhD candidate in Quantum Computing, working at Max-Planck Institute for Quantum Computing and BMW group. 
+*Mentees*: 
+- **[Tak Hur](https://takh04.github.io)**  is a Quantum Computing enthusiast majoring Msci Physics with Theoretical Physics at Imperial College London. His current research interests are Quantum Information Theory, Quantum Simulation of physical systems, and Quantum Machine Learning.
+- **[Leeseok Kim](https://www.linkedin.com/in/leeseok-kim/)**  graduated from Cornell University in 2021 with a B.A. in Physics and Mathematics, and will begin the Master’s program in Engineering Physics at Cornell University from Fall 2021. He is interested in intersections of physics, mathematics, and computer science, especially in quantum machine learning and quantum simulations.
 
-*Mentor*: **[Sarah Kaiser](https://twitter.com/crazy4pi314)** is an experimental quantum physicist who excels at building partnerships and communities. She has over 10 years experience specializing in quantum technology, experimental design, and science communication. Working with Python, lasers, and lathes is her jam.
+*Mentor*: **Daniel K. Park**  is a Research Professor at Sungkyunkwan University (SKKU) in Korea working on quantum information processing. Before joining SKKU in 2021, he worked at KAIST as a post-doc for 3 years, and then as a research assistant professor for 2 years. He obtained his Ph.D degree in Physics-Quantum Information in 2015 at University of Waterloo & Institute for Quantum Computing.
 
-*Links*: [Repository](https://github.com/esthercruz/qosf_mentorship_project), [Blog Post](https://qsharp.community/blog/intermediate-representation-for-quantum-computing/)
+*Links*: [Repository](https://github.com/takh04/QOSF_release)
 
 --- 
 
