@@ -102,7 +102,7 @@ The output of this project is a [new chapter](https://quantumalgorithms.org) whe
     
 *Mentee*: **[Aike Liu](http://www.linkedin.com/in/aike-liu-505547123)** Theoretical Physics, Graduate Student at California Institute of Technology.
 
-*Mentor*: **Derek Bolt** Principal Engineer at Amazon Braket. **Yunong Shi**: Research Scientist at Amazon Braket.to.
+*Mentor*: **Derek Bolt** Principal Engineer at Amazon Braket. **Yunong Shi**: Research Scientist at Amazon Braket.
 
 *Links*: [Repository](https://gitlab.com/AikeLiu/qosf_plugin).
 
