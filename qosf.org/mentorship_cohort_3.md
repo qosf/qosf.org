@@ -49,7 +49,7 @@ A few examples are engineering an arbitrary single qubit gate in the presence of
 
 *Project description*: Project is related to the demonstration of hierarchical Extreme Quantum Machine Learning with Neural Tensor Networks in the NISQ Era. In this project, the mentee's introduced the framework of combining classical neural networks and different quantum variants of tensor networks such as tree tensor or multi-entangled renormalization ansatz for classifying the images. 
  
-*Mentee*: 
+*Mentees*: 
 - **[Pinaki Sen](https://www.linkedin.com/in/pinaki-sen/)** is a junior year Electrical Engineering Undergrad. Besides, he is exploring and learning Machine Learning and Quantum Computing. 
 - **[Alberto Maldonado Romo](https://www.linkedin.com/in/albertomaldonadoromo/)** is a PhD student in Computer Science at the Centro de Investigación en Computación, Instituto Politecnico Nacional, Mexico, where he has collaborated with the Fermilab and CERN research centres on the GeantV project, and did his Master’s thesis on quantum image processing. Alberto is an admin of the Quantum Universal Education not-forprofit, he has conducted workshops and webinars on introduction to quantum computing, designed comics introducing beginning quantum computing concepts, and created tutorials in five different quantum programming languages. 
 
@@ -114,9 +114,12 @@ The output of this project is a [new chapter](https://quantumalgorithms.org) whe
 
 *Project description*: The major challenge of the logistics industry is to come up with the optimal delivery plan for hundreds and thousands of delivery clients with a given number of available vehicles. This mathematical problem is known as the Vehicle Routing Problem (VRP). In this project, we look at the case of the VRP with a single depot and a fixed number of vehicles and try to minimize the total distance covered by the vehicles using D-Wave Systems. We compare various quantum algorithms against each other using different D-Wave solvers. We also compare D-Wave results against the classical CPLEX and IBM Qiskit results.
 
-*Mentee*: **[Shantom Borah](https://github.com/arkonaire)** is a final year undergraduate at BITS Pilani, India, currently in the final stages of completing his double majors in Physics and Electrical & Electronics Engineering. Other than Quantum Computation and Information, he is also interested in Digital Electronics, Signal Processing, and Artificial Intelligence for games [linkedin](https://in.linkedin.com/in/shantom-borah-69811a149 ). 
+*Mentees*: 
+- **[Shantom Borah](https://github.com/arkonaire)** is a final year undergraduate at BITS Pilani, India, currently in the final stages of completing his double majors in Physics and Electrical & Electronics Engineering. Other than Quantum Computation and Information, he is also interested in Digital Electronics, Signal Processing, and Artificial Intelligence for games [linkedin](https://in.linkedin.com/in/shantom-borah-69811a149 ). 
+- **[Avneesh Verma](https://vectorbolt.github.io/landing-page.html )**  is a 17-year-old at Richmond Hill High School in Canada who loves quantum computing and STEM education. He likes making animated videos to explain concepts in math and science [github](https://github.com/VectorBolt) [youtube](https://www.youtube.com/channel/UCN3uzbzGgzp75Cl2Ai73QSA) [linkedin](https://www.linkedin.com/in/avneesh-verma/). 
+- **[Aniket Sanjay Sinha](https://www.linkedin.com/in/sinha-aniket/)** has recently graduated from the Indian Institute of Information Technology Ranchi with a Bachelor of Technology in Electronics and Communications Engineering (class of 2021). His interest lies in learning and developing algorithms to use current and near-term quantum computers to solve real-world problems [github](https://github.com/Aniket-235).
 
-*Mentor*: **[Dr. Vesselin G. Gueorguiev](https://www.linkedin.com/in/vgg-consulting/)**  is a physics [researcher](https://www.researchgate.net/profile/Vesselin_Gueorguiev2) affiliated with the Ronin Institute for [Independent Scholarship](http://ronininstitute.org/research-scholars/vesselin-gueorguiev/) and the [Institute for Advanced Physical Studies](http://iaps.institute/people/). His team AlphaQ won the [2020 CDL Quantum Hackathon](https://github.com/VGGatGitHub/Hackathon2020). He is active in AI and ML Hackathon space as well [personal website](https://devpost.com/vggconsulting). In 2020 he was one of the mentors  for cohort#2 of the QOSF - see project [QOSF cohort#2] (https://github.com/VGGatGitHub?tab=projects&q=is:closed).
+*Mentor*: **[Dr. Vesselin G. Gueorguiev](https://www.linkedin.com/in/vgg-consulting/)**  is a physics [researcher](https://www.researchgate.net/profile/Vesselin_Gueorguiev2) affiliated with the Ronin Institute for [Independent Scholarship](http://ronininstitute.org/research-scholars/vesselin-gueorguiev/) and the [Institute for Advanced Physical Studies](http://iaps.institute/people/). His team AlphaQ won the [2020 CDL Quantum Hackathon](https://github.com/VGGatGitHub/Hackathon2020). He is active in AI and ML Hackathon space as well [personal website](https://devpost.com/vggconsulting). In 2020 he was one of the mentors  for cohort#2 of the QOSF - see project [QOSF cohort#2](https://github.com/VGGatGitHub?tab=projects&q=is:closed).
 
 *Links*: [Repository](https://github.com/VGGatGitHub/QOSF-cohort3).
 
@@ -134,53 +137,56 @@ The output of this project is a [new chapter](https://quantumalgorithms.org) whe
 
 ---
 
-##### **Applying the Variational Quantum Eigensolver to the FeMo Cofactor of Nitrogenase** 
+##### **Parallel and distributed low-depth algorithms for quantum amplitude estimation** 
 
-*Project description*: Our project investigates the feasibility of using VQE on complex molecules by applying it to the FeMo cofactor of nitrogenase. Most of the experimental work on VQE has been for relatively small molecules, such as BeH2. We attempt to perform the same experiments on the ~200 electron FeMo cofactor, with the aim of identifying roadblocks one may encounter with larger molecules. The project is firstly a pedagogical exercise for ourselves, as we were both interested in immediate applications of NISQ computers for real-world quantum chemistry calculations. The secondary goal was to identify difficulties that may exist for VQE at larger scales, so that software stacks may be more equipped to handle these molecules as quantum devices mature.
+*Project description*: Quantum Amplitude Estimation (QAE) is a core subroutine in quantum computation with various applications, including Monte Carlo integration. Quantum computers can potentially utilize QAE to achieve quadratic speed-up compared to classical Monte Carlo. In the conventional approach, the Quantum Phase Estimation (QPE) algorithm is used for amplitude estimation; however, QPE requires expensive controlled operations as well as a Fourier transform, which currently lead to difficulties with implementation in near-term quantum devices. In response to this, some alternative lower depth algorithms have been developed. In this project, I focused on implementing a parallelized and distributed version of the Power Law algorithm for QAE, which should further reduce the current hardware challenges by interconnecting small quantum computers as opposed to relying on a single big quantum computer.
 
-*Mentees*: 
-- **[Minsik Cho](http://linkedin.com/in/chominsik)** is an undergraduate student concentrating in chemical physics at Brown University. His main research interests are in computational chemistry.
-- **[Roy Tu](https://royktu.com/)** is a cybersecurity consultant based in Seattle. He previously worked with a startup on building plasmonic mercury sensors, and is interested in the applications of quantum computers for problems in computational chemistry.
+*Mentee*: **[Andrea Ricciardi](www.linkedin.com/in/andrea-ricciardi-5887b983)**  is a mathematician with 5+ years of professional experience as Algorithmic Trader and Developer. He is fascinated with quantum computation and the impact it could have on the world we live in. 
 
-*Mentor*: **[Vesselin G. Gueorguiev](https://www.linkedin.com/in/vgg-consulting/)** is a physics researcher affiliated with the Ronin Institute for Independent Scholarship and the Institute for Advanced Physical Studies.
+*Mentor*: **Stephen Diadamo**  is a PhD student at the Technical University of Munich. His work focuses on quantum communication systems design, such as protocol design and simulation of quantum networks, distributed quantum computing, and quantum information theory. He developed and maintains several related open-source repos including QuNetSim and Interlin-q.
 
-*Links*: [Repository](https://github.com/roytu/QOSF-FeMoco2020/), [Blog Post](https://roytu.github.io/QOSF-FeMoco2020/).
+*Links*: [Repository](https://github.com/andrea-ricciardi/qosf_project), [Paper](http://arxiv.org/abs/2106.06841).
 
 ---
 
-##### **Finding a Common Algorithm for Calculating Eigenvalue and Eigenvector of a Hermitian Matrix**
+##### **Variational Quantum Circuits as General Function Approximators**
 
-*Project description*: The traditional way of finding the minimum eigenvalue of a hermitian matrix consists of the Semi-Classical method where we use Classical Optimization and variational principles to find the lowest eigenvalue of a matrix. This project tries to find a new method to find the lowest eigenvalue without optimization. The Project focuses on finding the eigenvector for 2x2 Hermitian Matrics.
+*Project description*: Tequila is an open source framework for developing variational quantum algorithms. The project focused on developing and implementing General Function Generators using variational quantum circuits in Tequila. Different techniques were explored and studied to train these variational quantum circuits. Additionally, tutorials were contributed to the Tequila repository which show the use of the generators to create 1-dimensional and 2-dimensional functions.
 
-*Mentee*: **[Rohit Prasad](https://www.linkedin.com/in/rohit-prasad-codie-5845b11a9/)** is a physics major student from the Indian Institute of Science Education and Research, Kolkata currently completing his masters degree. 
+*Mentee*: **[Tanya Garg](https://www.linkedin.com/in/tanyagarg0/)**  is an engineering physics undergraduate student at the Indian Institute of Technology, Roorkee. She is really interested in quantum computing especially quantum communication and quantum algorithms.
 
-*Mentor*: **[Petar Korponaić](https://twitter.com/perhane)** is a software engineer and entrepreneur, founder at Quantastica, and quantum computing enthusiast with 25+ years of experience in information technology, he is author and contributor in many projects including “quantum-circuit” - open source quantum circuit simulator and automatic converter between quantum programming languages.
+*Mentor*: **Jakob Kottmann** is currently a postdoctoral fellow at The Matter Lab at the University of Toronto.
 
-*Links*: [Repository](https://github.com/CodieKev/Quantum_Eigen_Sweat.git), [Tutorial](https://youtu.be/D4DyquIWlh8).
+*Links*: [Repository](https://github.com/tgag17/General-Function-Generators).
 
 ---
 
-##### **Zero Noise Extrapolation for VQE Algorithms**
+##### **Implement high-level quantum algorithms in Braket**
 
-*Project description*: Quantum error mitigation techniques provide a promising way to deal with noise problems in today’s Noisy Intermediate Scale Quantum Computing (NISQ). These techniques have been reported and used in literature to improve results running on current devices. Thus, the goal of the project was to reproduce the results from [N. Klco et al., 2018](https://arxiv.org/abs/1803.03326) using the [Mitiq](https://mitiq.readthedocs.io/en/latest/README.html) python toolkit to implement zero noise extrapolation of VQE results with a custom folding function and to create a Jupyter Notebook tutorial illustrating the use of the tool.
+*Project description*: Currently, implementing a quantum algorithm in the Amazon Braket SDK requires manually constructing its corresponding quantum circuit using gates. The aim of my project is to develop a feature that supports adding quantum operations that are more useful for building quantum algorithms. Moreover, it should allow us to compartmentalize quantum circuits into distinct sub operations when visualizing. The basic design of this feature has been completed, and operations for constructing the Greenberger-Horne-Zeilinger state, Quantum Fourier Transform, and Quantum Phase Estimation have been added. The code is currently being reviewed, and more operations and utilities will be added in the future.
 
-*Mentee*: **[Javier Naya Hernandez](https://twitter.com/HdezNay)** is a first year MSc Physics student at ETH Zürich. His interested in quantum optics and quantum information. 
+*Mentee*: **[Jerry Huang](https://twitter.com/HdezNay)**  is an undergraduate student studying applied and computational mathematics at the California Institute of Technology.
 
-*Mentor*: **[Matthias Degroote](https://twitter.com/whynotquantum)** is a quantum computing scientist at Boehringer Ingelheim. He is interested in solving quantum many-body systems in the best possible way.
+*Mentors*: 
+- **Derek Bolt**, Principal Engineer in Amazon Braket. 
+- **Yunong Shi**, Research Scientist in Amazon Braket.
 
-*Links*: [Repository](https://github.com/JavierNaya/QOSF_Mentorship)
+*Links*: [Repository](https://github.com/jrrhuang/amazon-braket-sdk-python/tree/composite-operator), [Notebook](https://github.com/jrrhuang/amazon-braket-sdk-python/blob/composite-operator/examples/composite_operator_examples.ipynb)
 
 --- 
 
-##### **Python Library for Higher Spin States and Symmetrized Quantum Circuits**
+##### **Implement a Braket Jupyter notebook text editor plugin**
 
-*Project description*: Spheres is an open source python library which provides a set of tools for working with and visualizing higher spin states. Using Majorana's "stellar representation" (of a spin-j state as a constellation of 2j points or "stars" on the sphere), spheres allows you to easily generate circuits preparing spin-j states on qubit-based quantum computers (in the form of permutation symmetric multiqubit states), as well as on photonic quantum computers (in the guise of double harmonic oscillator states). Interfaces with qutip, qiskit, strawberryfields, and pytket. Explore the stabilization of quantum computations via symmetrization, examine the structure of structured Gaussian beams, and harness vpython and matplotlib to bring the geometry of quantum states to life!
+*Project description*: In this project we created a Jupyter notebook extension for Amazon Braket that can inform users the compatibility of hardware providers with the circuits they intend to run with just a simple click of button in the notebook and a line of code.
+To achieve this functionality,  the extension will parse through the function body and generate the corresponding Abstract Syntax Tree (AST), then it analyzes the AST to extract useful information in the circuit to match hardware provider capabilities.The extension is implemented in JavaScript and leverages the ANTLR parsing framework. 
 
-*Mentee*: **[Matthew Weiss](https://www.linkedin.com/in/heyredhat/)** is a writer and computer programmer who spends most of his time thinking about quantum computation and the philosophy of quantum mechanics. BA from Brown University, MFA from the Iowa Writers Workshop. He leads the Brooklyn Quantum Meetup. 
+*Mentees*: 
+- **[Sehmimul Hoque](https://www.linkedin.com/in/sehmimul-hoque-420419178/)** I am an undergraduate student from Bangladesh, pursuing Mathematical Physics and Combinatorics and Optimization at the University of Waterloo. I like studying about Quantum Computing/Physics and am looking for research opportunities. I am currently doing research at the Institute for Quantum Computing of UWaterloo on Quantum Cryptography.
+- **[Matt Wright](https://www.linkedin.com/in/matt-queens/)** I am an undergraduate student at Queen's University studying Engineering Physics, specializing in Computing. I am fascinated by quantum computing and its vast applications and am interested in pursuing graduate studies in the field. I founded a quantum computing division in my school's AI club and am working to share this incredible technology with others.
 
-*Mentor*: **[Vesselin G. Gueorguiev](https://www.linkedin.com/in/vgg-consulting/)** is a physics researcher affiliated with the Ronin Institute for Independent Scholarship and the Institute for Advanced Physical Studies.
+*Mentor*: **Yunong Shi**, research scientist at Amazon Braket
 
-*Links*: [Repository](https://github.com/heyredhat/spheres)
+*Links*: [Repository](https://github.com/shiyunon/jupyter_contrib_nbextensions/tree/master/src/jupyter_contrib_nbextensions/nbextensions/bracket_extension)
 
 --- 
 
