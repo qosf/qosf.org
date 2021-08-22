@@ -214,7 +214,7 @@ To achieve this functionality,  the extension will parse through the function bo
 
 ---
 
-##### **Quantum Generative Models: interplay between depth, topology and accuracy **
+##### **Quantum Generative Models: interplay between depth, topology and accuracy**
 
 *Project description*: Implementation of new qubit topologies for Quantum Circuit Born Machine ansatz in the Orquestra quantum environment
 
@@ -226,7 +226,7 @@ To achieve this functionality,  the extension will parse through the function bo
 
 --- 
 
-##### ** Benchmarking quantum convolutional neural networks for classical data**
+##### **Benchmarking quantum convolutional neural networks for classical data**
 
 *Project description*: In this project, we benchmark the classification performance of fully parametrized Quantum Convolutional Neural Network (QCNN) for classical pattern recognition problems. In particular, we investigate the classification accuracy of QCNN designs with various quantum data embedding methods, structures of the parametrized  quantum circuit, classical data pre-processing methods, and loss functions on a number of standard classical datasets.
 
@@ -240,7 +240,7 @@ To achieve this functionality,  the extension will parse through the function bo
 
 --- 
 
-##### **[a NEAT quantum error decoder](https://arxiv.org/abs/2101.08093)**
+##### **[A NEAT quantum error decoder](https://arxiv.org/abs/2101.08093)**
 
 *Project description*: The aim of my project was to implement a new method of quantum error decoding provided by H. Théveniaut and E.van Nieuwenburg in their paper from January. It uses NEAT to evolve artificial neural networks for correcting the errors occuring to physical qubits of the toric code without introducing a logical error for reasonable noise levels. While I haven't finished the implementation, I learned a lot about the toric code as well as NEAT. My report is a gentle introduction for beginners to both of them which they can use to grasp crucial ideas on these topics. It also prepares ground for implementing the neural network training, which I'm going to add in the future.
 
@@ -276,11 +276,11 @@ To achieve this functionality,  the extension will parse through the function bo
 
 --- 
 
-##### **Study of quantum algorithms for perceptrons***
+##### **Study of quantum algorithms for perceptrons**
 
 *Project description*: The project consisted in writing a new chapter for [website](https://quantumalgorithms.org), enhancing the open-source book with an explanation of the quantum Perceptron algorithm. Samantha got acquainted with the classical Perceptron algorithm first and then analyzed its quantum counterpart, writing the new chapter.
 
-*Mentee*: **[ Sam's ](https://www.linkedin.com/in/s-buck)** pursuing her MSc in experimental nuclear physics at the University of Guelph. In 2019 she received a Mitacs Accelerate research award to work on the quantum simulations division at 1QBit. Future interests entail research at the intersection of quantum machine learning and quantum computing towards initiatives in nuclear physics.
+*Mentee*: **[ Samantha Buck ](https://www.linkedin.com/in/s-buck)** is pursuing her MSc in experimental nuclear physics at the University of Guelph. In 2019 she received a Mitacs Accelerate research award to work on the quantum simulations division at 1QBit. Future interests entail research at the intersection of quantum machine learning and quantum computing towards initiatives in nuclear physics.
 
 *Mentor*: **Armando** is a Ph.D. student in Quantum Machine Learning at Politecnico di Milano. He has a computer science background, with a focus on cybersecurity and data analysis. His research currently covers provable speed-ups for data representation algorithms, though his interests in quantum algorithms/computation are broader. 
 
@@ -294,7 +294,7 @@ To achieve this functionality,  the extension will parse through the function bo
 
 *Mentees*: 
 - **[Robin Coleman](https://www.linkedin.com/in/robin-coleman-98b19614b/)**  is a PhD student at University of Guelph studying nuclear structure away from stability. M.S. in Physics and B.S. in Engineering Physics. His QC interests are mostly in using quantum computing to solve currently prohibitive physics problems as well as investigating current algorithms and theoretical limits of quantum computing.
-- **[Sam](https://www.linkedin.com/in/s-buck/)** is pursuing her MSc in experimental nuclear physics at the University of Guelph. In 2019 she received a Mitacs Accelerate research award to work on the quantum simulations division at 1QBit. Future interests entail research at the intersection of quantum machine learning and quantum computing towards initiatives in nuclear physics.
+- **[Samantha Buck](https://www.linkedin.com/in/s-buck/)** is pursuing her MSc in experimental nuclear physics at the University of Guelph. In 2019 she received a Mitacs Accelerate research award to work on the quantum simulations division at 1QBit. Future interests entail research at the intersection of quantum machine learning and quantum computing towards initiatives in nuclear physics.
 
 
 *Mentor*: **Hayk** is a theoretical physicist who defended his PhD at Yerevan State University while the mentorship program was in progress. He is currently working as a quantum software engineer at IQM.
