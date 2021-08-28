@@ -151,6 +151,7 @@ That’s why we want the participants to be highly motivated and committed – i
 ## Mentors
 
 What would a mentorship program be without the mentors? We have invited a diverse group of professionals, from both industry and academia to be mentors in this program. 
+If you think you could be a mentor, please fill in [this form](https://forms.gle/9n1B2rHXvC96FvWL9), there are more details about the requirements in the form.
 
 We are still finalizing who the mentors for the upcoming cohort will be. In previous cohorts, we have had mentors such as:
 
