@@ -13,6 +13,10 @@ buttons:
       url: 'https://forms.gle/rPBAQLfnU5acAV2j8'
       external_url: true
       icon: fa-file-import
+    - content: Apply to be a mentor
+      url: 'https://forms.gle/9n1B2rHXvC96FvWL9'
+      external_url: true
+      icon: fa-file-import
     - icon: slack
       content: Join our Slack
       url: 'https://qosf.org/join'
