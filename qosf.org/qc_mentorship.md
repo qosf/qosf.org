@@ -72,11 +72,11 @@ The program is running in cohorts. Here is the timeline for the next cohort, whi
 
 | Program milestone                                           | Timeframe                                                           |
 --------------------------------------------------------------|---------------------------------------------------------------------|
-| Program applications released                               | Application deadline is February 7th, 2021                          | 
-| Applications review                                         | February 2021                                                       |
-| Pairing mentors with mentees and defining projects’ scope   | Early March 2021                                                    |
-| Mentees and mentors work on projects                        | March 2021 - June 2021                                              |
-| Program wrap-up and promotion of all open-source projects   | Late June 2021                                                      |
+| Program applications released                               | Application deadline is September 15th, 2021                          | 
+| Applications review                                         | September 2021                                                       |
+| Pairing mentors with mentees and defining projects’ scope   | Early October 2021                                                    |
+| Mentees and mentors work on projects                        | October 2021 - January 2022                                              |
+| Program wrap-up and promotion of all open-source projects   | Late January 2021                                                      |
     
 
 ## How does it work?
@@ -189,6 +189,10 @@ First, you will have a call with your mentor to get to know each other and decid
 
 ### We would like to apply as a team
 We do accept groups of up to 3 people. In such a case, we require you to provide some information about the projects you have done together. Please fill in a separate application form for each of the team members. Also, each of the team members should solve and submit screening tasks separately.
+
+### How can I prepare for the tasks ?
+
+QOSF performs monthly challenges in different fields of quantum computing that can help you to improve your skills, you can find the challenges [here](https://github.com/qosf/monthly-challenges )
 
 
 If you have any other questions, don't hesitate to [reach out](mailto:mentorship@qosf.org). 
