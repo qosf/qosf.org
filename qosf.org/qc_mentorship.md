@@ -76,7 +76,7 @@ The program is running in cohorts. Here is the timeline for the next cohort, whi
 | Applications review                                         | September 2021                                                       |
 | Pairing mentors with mentees and defining projects’ scope   | Early October 2021                                                    |
 | Mentees and mentors work on projects                        | October 2021 - January 2022                                              |
-| Program wrap-up and promotion of all open-source projects   | Late January 2021                                                      |
+| Program wrap-up and promotion of all open-source projects   | Late January 2022                                                     |
     
 
 ## How does it work?
