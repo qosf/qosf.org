@@ -6,7 +6,7 @@ keywords:
 comments: false
 
 # Hero section
-title: Quantum Computing Mentorship Program Cohort Two Showcase 
+title: Quantum Computing Mentorship Program Cohort Three Showcase 
 description: Connecting quantum enthusiasts with mentors from academia & industry.
 buttons:
     - content: Apply for mentorship
@@ -305,7 +305,7 @@ To achieve this functionality,  the extension will parse through the function bo
 
 ##### **Brief Introduction to Quantum Option Pricing**
 
-*Project description*: 
+*Project description*: This project is about Quantum finance where  collect a substantial amount of information on a quantum algorithm for pricing European options to American options, where we can make a brief pedagogical introduction to Quantum Option Pricing. First, we will talk about the field of quantitative finance and introduce the financial instruments called options. We are going to outline how the American options are priced classically and follow by introducing the prevailing quantum approach in pricing European Options.
 
 *Mentee*: **[Henry Makhanov](https://www.linkedin.com/in/henry-makhanov/)**  is a MS in CS student at The University of Texas at Austin and a current participant at the Creative Destruction Lab. Henry completed his undergraduate degree in Economics at The University of British Columbia. He is interested in applying quantum computing to the study of stochastic processes [github](https://github.com/edenian/).
 
