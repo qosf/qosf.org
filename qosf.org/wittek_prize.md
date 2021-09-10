@@ -10,27 +10,27 @@ comments: false
 title: Wittek Quantum Prize for Open Source Software
 description: Wittek Quantum Prize is dedicated to the life and memory of Peter Wittek. Read more about the story behind the prize [in our blog post](https://medium.com/qosf/announcing-the-2020-wittek-quantum-prize-for-open-source-software-f578f03823b1).
 buttons:
-    - content: Nominate an individual
+    - content: Check out the official website
       url: 'https://wittekprize.com'
       external_url: true
-      faicon: trophy
+      icon: fa-window-maximize
 
 # Micro navigation
 micro_nav: false
 
 ---
 
-In order to recognize the work of the unsung heroes, developers and maintainers, often unaware of the magnitude of the impact their work is having on the quantum software community, **QOSF is partnering with [Unitary Fund](https://unitary.fund) in order to award a**
+In a partnership between QOSF and the [Unitary Fund](https://unitary.fund), we want to recognize the work of the unsung heroes, developers and maintainers behind the software projects we all use. They are often unaware of the impact their work is having on the quantum software community and thus we are awarding a
 {::nomarkdown}<h3 align='center' style="margin-top: -5px"><b>US$4000 prize</b></h3>{:/}
-**to a software contributor/maintainer among crowd-sourced nominees**. The winner of the prize is going to be selected by the Unitary's Fund advisory board, which kindly agreed to act as an independent evaluation committee.
+**to a software contributor/maintainer among crowd-sourced nominees on an annual basis**. The winner of the prize is going to be selected by the Unitary's Fund advisory board, which kindly agreed to act as an independent evaluation committee.
 
 ## Nominations
 
 In order to identify potential recipients of the Wittek Quantum Prize for Open Source Software we need your help! If you know an individual you'd like to nominate for the prize (including yourself), please fill out the nomination form by clicking on the button below:
 
-{::nomarkdown}<center><a href="https://wittekprize.com" class="btn btn--dark btn--rounded btn--w-icon" style="position: relative;" target="_blank" rel="noopener noreferrer">Fill out the nomination form (10-15 minutes)<i style="padding-left:5px;" class="fas fa-trophy"></i></a></center>{:/} 
+{::nomarkdown}<center><a href="https://wittekprize.com/nominations" class="btn btn--dark btn--rounded btn--w-icon" style="position: relative;" target="_blank" rel="noopener noreferrer">Fill out the nomination form (10-15 minutes)<i style="padding-left:5px;" class="fas fa-trophy"></i></a></center>{:/} 
 
-{::nomarkdown}<center style="margin-top: -20px;"><b><i>Nominations will be accepted until 11:59PM EST on Nov 30th, 2020.</b></i></center>{:/}
+{::nomarkdown}<center style="margin-top: -20px;"><b><i>Nominations will be accepted until 11:59PM Anywhere on Earth (AoE) on Nov 1st, 2021.</b></i></center>{:/}
 
 #### Who should you nominate?
 
@@ -70,4 +70,4 @@ We are going to award a single individual.
 The Wittek Quantum Prize is going to be awarded annually. If your nominee did not make the selection this year, please consider nominating them again for next year's edition.
 
 ### When do nominations close?
-Nominations will be accepted until midnight of Nov 30th, 2020, [anywhere on Earth (UTC-12)](https://datetime360.com/timezone-aoe/).
+Nominations will be accepted until 11:59PM [anywhere on Earth (UTC-12)](https://datetime360.com/timezone-aoe/) on Nov 1st, 2021.
