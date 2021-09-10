@@ -20,6 +20,15 @@
 }
 
 
+@media only screen and (min-width: 770px) {
+
+    .banner {
+        margin-top: -5rem;
+        margin-bottom: 2rem !important;
+    }
+
+}
+
 /* don't display the illustration for screens with less than 1270px wide */
 @media only screen and (max-width: 1730px) {
 

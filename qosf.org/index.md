@@ -72,4 +72,9 @@ grid_navigation:
       excerpt: Read more about our efforts to reward unsung heroes of the quantum open source software.
       cta: Learn more
       url: 'wittek_prize'
+    - title: Quantum Software Meetups.
+      excerpt: Meet the people and projects behind quantum software and get involved yourself.
+      cta: Learn more
+      url: 'qsm'
+
 ---
