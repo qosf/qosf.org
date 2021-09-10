@@ -1,0 +1,86 @@
+/*
+ * qsm.css
+ * Copyright (C) 2019 markf94
+ *
+ * Distributed under terms of the MIT license.
+ */
+
+.firstcharacter {
+  float: left;
+  font-family: Georgia;
+  font-size: 75px;
+  line-height: 60px;
+  padding-top: 4px;
+  padding-right: 8px;
+  padding-left: 3px;
+}
+
+.right-illustration {
+    width: 22vw;
+    position: absolute;
+    right: 23rem;
+    top: 8rem;
+}
+
+/* don't display the illustration for screens with less than 1270px wide */
+@media only screen and (max-width: 999px) {
+
+    .right-illustration {
+            display: none !important;
+    }
+
+}
+
+@media only screen and (min-width: 1000px) and (max-width: 1200px) {
+
+    .right-illustration {
+        width: 22vw;
+        position: absolute;
+        right: 5rem;
+        top: 17rem;
+    }
+
+}
+
+@media only screen and (min-width: 1201px) and (max-width: 1700px) {
+
+    .right-illustration {
+        width: 22vw;
+        position: absolute;
+        right: 9rem;
+        top: 12.5rem;
+    }
+}
+
+/* now we have enough width in order to put the illustrations on both sides of the heading */
+@media only screen and (min-width: 1701px) and (max-width: 1919px) {
+
+    .right-illustration {
+        width: 22vw;
+        position: absolute;
+        right: 11rem;
+        top: 10rem;
+    }
+}
+
+/* covering the 1920x1080 */
+@media only screen and (min-width: 1920px) and (max-width: 2200px) {
+
+    .right-illustration {
+        width: 22vw;
+        position: absolute;
+        right: 14rem;
+        top: 10rem;
+    }
+}
+
+/* covering the 2500+ in width */
+@media only screen and (min-width: 2500px) {
+
+    .right-illustration {
+        width: 15vw;
+        position: absolute;
+        right: 14rem;
+        top: 10rem;
+    }
+}
