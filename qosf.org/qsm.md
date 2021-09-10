@@ -8,7 +8,7 @@ comments: false
 
 # Hero section
 title: Quantum Software Meetup
-description: A monthly virtual quantum developer meetup co-hosted with the <a href="https://unitary.fund">Unitary Fund</a>. Meet the people and projects behind quantum software and learn how you can get involved!
+description: A monthly virtual quantum developer meetup co-hosted with the [Unitary Fund](https://unitary.fund). Meet the people and projects behind quantum software and learn how you can get involved!
 buttons:
     - content: Join us on Gathertown
       url: 'https://unitary.fund/meetup'
