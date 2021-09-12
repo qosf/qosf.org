@@ -10,7 +10,7 @@ title: Quantum Computing Mentorship Program
 description: Connecting quantum enthusiasts with mentors from academia & industry.
 buttons:
     - content: Apply for mentorship
-      url: 'https://forms.gle/Eirje5t61eHaPNx86'
+      url: 'https://forms.gle/z3FRmje71LtkSNh49'
       external_url: true
       icon: fa-file-import
     - content: Apply to be a mentor
@@ -177,9 +177,9 @@ We are still finalizing who the mentors for the upcoming cohort will be. In prev
 
 - The goal of the program is to create an open-source project related to quantum computing.
 - Experts from industry and academia will help you build this project.
-- The deadline for the application is February 7th, 2021.
+- The deadline for the application is September 15th, 2021.
 
-You can find link to the application form [here](https://forms.gle/rPBAQLfnU5acAV2j8).
+You can find link to the application form [here](https://forms.gle/z3FRmje71LtkSNh49).
 
 
 ## FAQ

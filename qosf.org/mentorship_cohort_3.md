@@ -10,7 +10,7 @@ title: Quantum Computing Mentorship Program Cohort Three Showcase
 description: Connecting quantum enthusiasts with mentors from academia & industry.
 buttons:
     - content: Apply for mentorship
-      url: 'https://forms.gle/rPBAQLfnU5acAV2j8'
+      url: 'https://forms.gle/z3FRmje71LtkSNh49'
       external_url: true
       icon: fa-file-import
     - icon: fa-hand-holding-heart
@@ -305,7 +305,7 @@ To achieve this functionality,  the extension will parse through the function bo
 
 ##### **Brief Introduction to Quantum Option Pricing**
 
-*Project description*: This project is about Quantum quantitative finance. We collected a substantial amount of relevant information on the topic and compiled a brief pedagogical introduction to Quantum Option Pricing. First, we will talk about the field of quantitative finance and introduce the financial instruments called options, along with the crucial Monte Carlo method for pricing American options - the Longstaff-Schwartz algorithm. We will then introduce the recently discovered quantum approach for pricing European Options. We conclude by outlining the direction for future research and development of the project after the conclusion of the QOSF Mentorship Program.
+*Project description*: This project is about quantum quantitative finance. We collected a substantial amount of relevant information on the topic and compiled a brief pedagogical introduction to Quantum Option Pricing. First, we will talk about the field of quantitative finance and introduce the financial instruments called options, along with the crucial Monte Carlo method for pricing American options - the Longstaff-Schwartz algorithm. We will then introduce the recently discovered quantum approach for pricing European Options. We conclude by outlining the direction for future research and development of the project after the conclusion of the QOSF Mentorship Program.
 
 *Mentee*: **[Henry Makhanov](https://www.linkedin.com/in/henry-makhanov/)**  is a MS in CS student at The University of Texas at Austin and a current participant at the Creative Destruction Lab. Henry completed his undergraduate degree in Economics at The University of British Columbia. He is interested in applying quantum computing to the study of stochastic processes [github](https://github.com/edenian/).
 
