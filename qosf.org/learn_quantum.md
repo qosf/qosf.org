@@ -22,6 +22,10 @@ buttons:
     - icon: fa-hand-holding-heart
       content: Donate to QOSF
       url: 'https://qosf.org/donate'
+    - icon: github
+      content: Try our monthly challenges!
+      url: https://github.com/qosf/monthly-challenges/
+      external_url: true
 
 # Author box
 author:
