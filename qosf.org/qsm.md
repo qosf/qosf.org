@@ -24,4 +24,4 @@ The quantum open source software community is growing as fast as we can build an
 
 ## Upcoming meetings
 
-<img src='/assets/img/qsmeetup.png' alt='QSM September 2021' width="100%">
+<img src='/assets/img/qsmeetup.png' alt='QSM December 2021' width="100%">
