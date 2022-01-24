@@ -24,33 +24,23 @@ In a partnership between QOSF and the [Unitary Fund](https://unitary.fund), we w
 {::nomarkdown}<h3 align='center' style="margin-top: -5px"><b>US$4000 prize</b></h3>{:/}
 **to a software contributor/maintainer among crowd-sourced nominees on an annual basis**. The winner of the prize is going to be selected by the Unitary's Fund advisory board, which kindly agreed to act as an independent evaluation committee.
 
-## Nominations
-
-In order to identify potential recipients of the Wittek Quantum Prize for Open Source Software we need your help! If you know an individual you'd like to nominate for the prize (including yourself), please fill out the nomination form by clicking on the button below:
-
-{::nomarkdown}<center><a href="https://wittekprize.com/nominations" class="btn btn--dark btn--rounded btn--w-icon" style="position: relative;" target="_blank" rel="noopener noreferrer">Fill out the nomination form (10-15 minutes)<i style="padding-left:5px;" class="fas fa-trophy"></i></a></center>{:/} 
-
-{::nomarkdown}<center style="margin-top: -20px;"><b><i>Nominations will be accepted until 11:59PM Anywhere on Earth (AoE) on Nov 1st, 2021.</b></i></center>{:/}
-
-#### Who should you nominate?
-
-✅ An individual who has had substantial impact on the quantum open source ecosystem. Ideally, this person is someone who usually goes unnoticed due to the nature of their work but who deserves to be highlighted for their enthusiastic & diligent support of open quantum software.
-
-✅ Yourself! Self-nominations are more than welcome.
-
-#### Who should you NOT nominate?
-
-❌ Teams or groups of individuals (e.g. "the team behind XYZ", "company B", etc.)
-
-❌ Software packages (Qiskit, Cirq, etc.)
-
 ## About the prize
 
-The Wittek Quantum Prize is dedicated to [Peter Wittek](https://peterwittek.com/) - a pioneer in the field of open quantum software who went missing on a mountaineering expedition in the Himalayas last year. The prize is a collaboration between the [Unitary Fund](https://unitary.fund) and the Quantum Open Source Foundation and it aims to reward an otherwise unnoticed individual for their outstanding high-impact contribution to the field of open source quantum software.  
+The Wittek Quantum Prize is dedicated to [Peter Wittek](https://peterwittek.com/) - a pioneer in the field of open quantum software who went missing on a mountaineering expedition in the Himalayas last year. The prize is a collaboration between the [Unitary Fund](https://unitary.fund) and the Quantum Open Source Foundation and it aims to reward an otherwise unnoticed individual for their outstanding high-impact contribution to the field of open source quantum software.
 
 The field of quantum computing is in large building upon the successfully established open source development models, and we are happy to report that open source software has been embraced, by academia, industry players alike. However, we are still in the early days of establishing the technology stack for future quantum software developers and while some of the components of the critical infrastructure is developed by larger development teams with commercial backing, there are plentiful individuals who are helping shape the building blocks of the foundations upon which the quantum computing software industry is going to rely in the decades to come.
 
 Read the full story in our [Medium blog post](https://medium.com/qosf/announcing-the-2020-wittek-quantum-prize-for-open-source-software-f578f03823b1).
+
+## Previous winners
+
+{::nomarkdown}<h4 style="margin-top: -5px"><b>2021</b></h3>{:/}
+
+[Victory Omole](https://github.com/vtomole) for his outstanding contributions to Google's Cirq library and other open source projects.
+
+{::nomarkdown}<h4 style="margin-top: -5px"><b>2020</b></h3>{:/}
+
+[Roger Luo](https://github.com/Roger-luo) for his work on Yao.jl and for his commitment to create and foster a quantum software ecosystem in Julia..
 
 ## Frequently asked questions
 
