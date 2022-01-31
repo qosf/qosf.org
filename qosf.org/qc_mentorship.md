@@ -14,7 +14,7 @@ buttons:
       external_url: true
       icon: fa-file-import
     - content: Apply to be a mentor
-      url: 'https://forms.gle/9n1B2rHXvC96FvWL9'
+      url: 'https://forms.gle/Zgt8mP3WrSGEJzNQ7'
       external_url: true
       icon: fa-file-import
     - icon: slack
@@ -179,7 +179,7 @@ We are still finalizing who the mentors for the upcoming cohort will be. In prev
 - Experts from industry and academia will help you build this project.
 - The deadline for the application is September 15th, 2021.
 
-You can find link to the application form [here](https://forms.gle/z3FRmje71LtkSNh49).
+You can find link to the application form [here](https://forms.gle/sdjZWmWDjijtgTU67).
 
 
 ## FAQ
