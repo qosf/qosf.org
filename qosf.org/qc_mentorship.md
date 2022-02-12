@@ -72,9 +72,6 @@ The program is running in cohorts. Here is the timeline for the next cohort, i.e
 
 | Program milestone                                           | Timeframe                                                           |
 --------------------------------------------------------------|---------------------------------------------------------------------|
-| Program applications released for mentees                   | February 14th, 2022                                                 | 
-| Program applications closed for mentees                     | February 27th, 2022                                                 | 
-| Deadline for finishing the screening tasks for mentees      | March 13th, 2022                                                    | 
 | Applications review                                         | March 14th-21st, 2022                                               |
 | Pairing mentors with mentees and defining projects’ scope   | March 22nd - 29th, 2022                                             |
 | Mentees and mentors work on projects                        | March 30th, 2022 - June 29th, 2022                                  |
@@ -158,7 +155,7 @@ If you think you could be a mentor, please fill in [this form](https://forms.gle
 Here is the list of confirmed mentors for cohort 5th (March - June, 2022):
 
 - Jakob Kottmann, Physics Institute of the  Free University of Berlin
-- Alberto Maldonado Romo
+- Alberto Maldonado Romo, Instituto politécnico nacional, Mexico
 - Petar Korponaić, Quantastica
 - Stephen DiAdamo, Cisco Systems
 - Alessandro Luongo, Centre for Quantum Technologies
