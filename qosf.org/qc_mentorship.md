@@ -72,6 +72,8 @@ The program is running in cohorts. Here is the timeline for the next cohort, i.e
 
 | Program milestone                                           | Timeframe                                                           |
 --------------------------------------------------------------|---------------------------------------------------------------------|
+| Program applications released for mentees                   | February 14th, 2022                                                 | 
+| Program applications closed for mentees                     | February 27th, 2022                                                 | 
 | Applications review                                         | March 14th-21st, 2022                                               |
 | Pairing mentors with mentees and defining projects’ scope   | March 22nd - 29th, 2022                                             |
 | Mentees and mentors work on projects                        | March 30th, 2022 - June 29th, 2022                                  |
