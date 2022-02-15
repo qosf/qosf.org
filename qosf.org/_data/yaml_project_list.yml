@@ -298,9 +298,19 @@
   - description: Framework for analyzing both classical and quantum Bayesian Networks.
     name: QFog
     url: https://github.com/artiste-qb-net/quantum-fog
-  - description: Library of various quantum algorithm implemented with [Qiskit](https://github.com/Qiskit/qiskit).
-    name: Qiskit Aqua
-    url: https://github.com/Qiskit/qiskit-aqua
+  - description: Qiskit component for chemistry and physics problems including ground state energy computations, excited states and dipole moments of molecule, both open and closed-shell.
+    name: Qiskit Nature
+    url: https://github.com/Qiskit/qiskit-nature
+  - description: Qiskit component that covers the whole range from high-level modeling of optimization problems.
+    name: Qiskit Optimization
+    url: https://github.com/Qiskit/qiskit-optimization
+  - description: Qiskit component that contains classification algorithms such as QSVM and VQC (Variational Quantum Classifier). There is also QGAN (Quantum Generative Adversarial Network)
+    name: Qiskit Machine Learning
+    url: https://github.com/Qiskit/qiskit-machine-learning
+  - description: Qiskit component that contains uncertainty components for stock/securities problems, Ising translators for portfolio optimizations and data providers to source real or random data to finance experiments.
+algorithm.
+    name: Qiskit Finance
+    url: https://github.com/Qiskit/qiskit-finance
   - description: Jupyter notebook filled with tutorials for [Qiskit](https://github.com/QISKit/qiskit).
     name: Qiskit Tutorial
     url: https://github.com/QISKit/qiskit-tutorial
