@@ -116,9 +116,6 @@
       virtual quantum processors.
     name: Qrack
     url: https://github.com/vm6502q/qrack
-  - description: A web microservices based approach to distributing hybrid quantum / classical simulations.
-    name: Quantum Emulation Engine
-    url: https://gitlab.com/QuantumEmulator/distributedemulator
   - description: ' Quantum Exact Simulation Toolkit is a high performance multicore
       simulator of universal quantum circuits.'
     name: QuEST
