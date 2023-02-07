@@ -10,16 +10,16 @@ title: Quantum Computing Mentorship Program
 description: Connecting quantum enthusiasts with mentors from academia & industry.
 buttons:
     - content: Apply for mentorship(for applicants)
-      url: 'https://forms.gle/YSAWCpiYHGwnu6Ax6'
+      url: 'https://forms.gle/Z4J9TFePc8Pi1aQz5'
       external_url: true
       icon: fa-file-import
     - content: Apply to be a mentor
-      url: 'https://forms.gle/Zgt8mP3WrSGEJzNQ7'
+      url: 'https://forms.gle/eu6ZXdLveGCHscA88'
       external_url: true
       icon: fa-file-import
     - icon: slack
       content: Join our Slack
-      url: 'https://join.slack.com/t/qosf/shared_invite/zt-vb1ftjp1-D2gpVKEfl6Ifv9oXvk_xDw'
+      url: 'https://join.slack.com/t/qosf/shared_invite/zt-1n5ajr0sl-upEWLiUa~rCyiOrOS7e27w'
       external_url: true
     - icon: fa-hand-holding-heart
       content: Donate to QOSF
@@ -68,16 +68,16 @@ Cohort three (March 2021 to June 2021): [mentorship projects]({{ 'mentorship_coh
 
 ## Timeline 
 
-The program is running in cohorts. Here is the timeline for the next cohort, i.e., cohort 6th, which will start in October 2022. If you would like to be informed about updates, please follow us on [Twitter](https://twitter.com/qosfoundation), [LinkedIn](https://www.linkedin.com/company/qosf/) and [Facebook](https://www.facebook.com/quantumOSfoundation)!
+The program is running in cohorts. Here is the timeline for the next cohort, i.e., cohort 6th, which will start in March 2023. If you would like to be informed about updates, please follow us on [Twitter](https://twitter.com/qosfoundation), [LinkedIn](https://www.linkedin.com/company/qosf/) and [Facebook](https://www.facebook.com/quantumOSfoundation)!
 
 | Program milestone                                           | Timeframe                                                           |
 --------------------------------------------------------------|---------------------------------------------------------------------|
-| Program applications released for mentees                   | September 20th, 2022                                                | 
-| Program applications closed for mentees                     | October 4th, 2022                                                   | 
-| Applications review                                         | October 4th-21st, 2022                                              |
-| Pairing mentors with mentees and defining projects’ scope   | October 21st-28th, 2022                                             |
-| Mentees and mentors work on projects                        | November 1st, 2022 - January 31st, 2023                             |
-| Program wrap-up and promotion of all open-source projects   | Early February, 2023                                                |
+| Program applications released for mentees                   | February 14th, 2023                                                 | 
+| Program applications closed for mentees                     | February 27th, 2023                                                 | 
+| Applications review                                         | March 14th-21st, 2023                                               |
+| Pairing mentors with mentees and defining projects’ scope   | March 22nd-29th, 2023                                               |
+| Mentees and mentors work on projects                        | March 30th, 2023 - June 29th, 2023                                  |
+| Program wrap-up and promotion of all open-source projects   | Early July, 2023                                                    |
     
 
 ## How does it work?
@@ -152,7 +152,7 @@ That’s why we want the participants to be highly motivated and committed – i
 ## Mentors
 
 What would a mentorship program be without the mentors? We have invited a diverse group of professionals, from both industry and academia to be mentors in this program. 
-If you think you could be a mentor, please fill in [this form](https://forms.gle/JofmYaz9KRVZarJx5), there are more details about the requirements in the form.
+If you think you could be a mentor, please fill in [this form](https://forms.gle/eu6ZXdLveGCHscA88), there are more details about the requirements in the form.
 
 Here is the list of confirmed mentors for cohort 6th (October 2022 - Jan 2023):
 
@@ -184,9 +184,9 @@ In previous cohorts, we have had mentors such as:
 
 - The goal of the program is to create an open-source project related to quantum computing.
 - Experts from industry and academia will help you build this project.
-- The deadline for the application is October 4th, 2022.
+- The deadline for the application is February 27th, 2023.
 
-You can find link to the application form [here](https://forms.gle/YSAWCpiYHGwnu6Ax6).
+You can find link to the application form [here](https://forms.gle/sy8etY1ojQwhCpzV6).
 
 
 ## FAQ
