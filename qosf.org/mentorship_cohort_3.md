@@ -314,3 +314,15 @@ To achieve this functionality,  the extension will parse through the function bo
 *Links*: [Contribution](https://henrymakhanov.medium.com/brief-introduction-to-quantum-option-pricing-7f8c2f3bbbb4)
 
 ---
+
+##### **Quantum Image Encryption Algorithm**  
+
+*Project description*: This project is about using quantum computers to scramble and encrypt images. A new quantum algorithm to encrypt a classical image, represented as a quantum state through FRQI encoding, was developed. The algorithm uses quantum baker scrambling, and quantum discrete cosine transform to perform encryption. The algorithm was simulated using Qiskit, and the performance of encrypted images was analyzed. The outcome will be a research paper, and it is also planned to make the code open-source, in the form of a github repository, along with the paper.  
+ 
+*Mentee*: **[Dhruv Bhatnagar](https://www.linkedin.com/in/dhruv-bhatnagar-471abb113/)** Dhruv is a meritorious electronics engineering graduate from NSIT, University of Delhi, with professional experience in developing verification IP software. He is passionate about the great potential of quantum technology. Currently, he is pursuing a research MSc in Applied Physics at TU Delft, with strong focus on quantum computing.
+
+*Mentor*: **[Amandeep Singh Bhatia](https://www.linkedin.com/in/amandeep-singh-bhatia-ph-d-07b83822)** is developing quantum computational models and quantum algorithms with new artificial intelligence methods for physics, and novel quantum machine learning techniques. He received PhD degree in Computer Science Engineering at Thapar University in July 2020. He has more than five years of work experience in quantum computing and technologies. He has contributed to the progress of quantum automata theory and developed quantum computational models for Biology, Chemistry and Tensor network theory. Presently, contributing to the progress of quantum machine learning. 
+
+*Links*: The paper writing is in process.
+
+---
