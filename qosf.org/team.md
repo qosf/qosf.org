@@ -8,10 +8,6 @@ comments: false
 title: Our Team
 description: Overview of the main people behind QOSF. We're always looking for new people so hit us up if you're interested!
 buttons:
-    - content: Sign up for the newsletter
-      url: 'https://mailchi.mp/762c19baab5a/qosf-supporter'
-      external_url: true
-      icon: home
     - icon: slack
       content: Join our Slack
       url: 'https://qosf.org/join'
@@ -63,7 +59,7 @@ micro_nav: false
         <img style='border-radius:50%;' src='/assets/img/team/michal.png' alt='Michał Stęchły' width="200px">
     </div>
     <div class='col-md-8' style='text-align: justify;'>
-       <b>Michał Stęchły</b> got into open source thanks to quantum computing - when he discovered he can contribute to the quantum computing community as a newcomer to the field, he immediately fell in love with the idea. He authored and supported open source implementations and research of several quantum computing algorithms. Michał has also a blog <a href="www.mustythoughts.com">"Musty Thoughts"</a>, which aims to help people get into the realm of quantum computing. Professionally, he is a Quantum Software Engineer at <a href="www.zapatacomputing.com">Zapata Computing</a>.
+       <b>Michał Stęchły</b> got into open source thanks to quantum computing - when he discovered he can contribute to the quantum computing community as a newcomer to the field, he immediately fell in love with the idea. He authored and supported open source implementations and research of several quantum computing algorithms. Michał has also a blog <a href="https://www.mustythoughts.com">"Musty Thoughts"</a>, which aims to help people get into the realm of quantum computing. Professionally, he is a Quantum Software Engineer at <a href="https://www.zapatacomputing.com">Zapata Computing</a>.
 
     </div>
 </div>
