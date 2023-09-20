@@ -10,7 +10,7 @@ title: Quantum Computing Mentorship Program
 description: Connecting quantum enthusiasts with mentors from academia & industry.
 buttons:
     - content: Apply for mentorship (for applicants)
-      url: 'https://forms.gle/Z4J9TFePc8Pi1aQz5'
+      url: 'https://forms.gle/9qcEd7HSUVZieeyNA'
       external_url: true
       icon: fa-file-import
     - content: Apply to be a mentor
@@ -68,16 +68,16 @@ Cohort three (March 2021 to June 2021): [mentorship projects]({{ 'mentorship_coh
 
 ## Timeline 
 
-The program is running in cohorts. Here is the timeline for the next cohort, i.e., cohort 6th, which will start in March 2023. If you would like to be informed about updates, please follow us on [Twitter](https://twitter.com/qosfoundation), [LinkedIn](https://www.linkedin.com/company/qosf/) and [Facebook](https://www.facebook.com/quantumOSfoundation)!
+The program is running in cohorts. Here is the timeline for the next cohort, i.e., cohort 8th, which will start in September 2023. If you would like to be informed about updates, please follow us on [Twitter](https://twitter.com/qosfoundation), [LinkedIn](https://www.linkedin.com/company/qosf/) and [Facebook](https://www.facebook.com/quantumOSfoundation)!
 
 | Program milestone                                           | Timeframe                                                           |
 --------------------------------------------------------------|---------------------------------------------------------------------|
-| Program applications released for mentees                   | February 14th, 2023                                                 | 
-| Program applications closed for mentees                     | February 27th, 2023                                                 | 
-| Applications review                                         | March 14th-21st, 2023                                               |
-| Pairing mentors with mentees and defining projects’ scope   | March 22nd-29th, 2023                                               |
-| Mentees and mentors work on projects                        | March 30th, 2023 - June 29th, 2023                                  |
-| Program wrap-up and promotion of all open-source projects   | Early July, 2023                                                    |
+| Program applications released for mentees                   | September 22nd, 2023                                                | 
+| Program applications closed for mentees                     | October 6th, 2023                                                   | 
+| Applications review                                         | October 6th-23rd, 2023                                              |
+| Pairing mentors with mentees and defining projects’ scope   | October 23rd-30th, 2023                                             |
+| Mentees and mentors work on projects                        | November 1st, 2023 - January 31st, 2024                             |
+| Program wrap-up and promotion of all open-source projects   | February, 2024                                                      |
     
 
 ## How does it work?
@@ -96,7 +96,13 @@ To take part in the program, you need to fill in an application form. Link to th
 
 We know that just reading someone’s CV is not enough. We also know that reading the description of this program might not be enough for you to tell whether it’s something you would enjoy. That’s why we will send “homework tasks” to people who filled in the application. You will have 2 weeks to complete them, from the moment you submit your application. It will be the second step of the assessment process.
 
-To get an idea of what to expect from these tasks, you can find the assessment tasks from the first cohort [here](https://docs.google.com/document/d/1lo_qy6Y7jhwBMWpQuecxAFG3L_4soYkpq0TaLq42o-A/edit?usp=sharing), the second cohort [here](https://docs.google.com/document/d/1Ow3v8Y4rYBdgxXNxKV9ZUAM4bwL6211U6DWCcByZ4A4/edit?usp=sharing) and the third cohort [here](https://docs.google.com/document/d/1944peQceYXhRA4Usp6ub_l2ms1xj8mXgseCgWpyBZOA/edit?usp=sharing).
+To get an idea of what to expect from these tasks, you can find the assessment tasks from the previous cohorts:
+1.[1st Cohort](https://docs.google.com/document/d/1lo_qy6Y7jhwBMWpQuecxAFG3L_4soYkpq0TaLq42o-A/edit?usp=sharing)
+2.[2nd Cohort](https://docs.google.com/document/d/1Ow3v8Y4rYBdgxXNxKV9ZUAM4bwL6211U6DWCcByZ4A4/edit?usp=sharing)
+3.[3rd Cohort](https://docs.google.com/document/d/1944peQceYXhRA4Usp6ub_l2ms1xj8mXgseCgWpyBZOA/edit?usp=sharing)
+4.[4th Cohort](https://docs.google.com/document/d/1kG2YwNwYclN06iI506rlfrmLCZqFFmS7r_TxjVNLAa8/edit?usp=sharing)
+5.[6th Cohort](https://docs.google.com/document/d/1r7QpnUi0LC_VYPLD7o6Mc37bTsOjKibZ/edit?usp=sharing&ouid=108705151841689674364&rtpof=true&sd=true)
+6.[7th Cohort](https://docs.google.com/document/d/1KBot_q-CQ7FSmAXK45PDHNu8VKedOEbh/edit?usp=sharing&ouid=108705151841689674364&rtpof=true&sd=true)
 
 ### Mentor and project assignment
 
@@ -184,9 +190,9 @@ In previous cohorts, we have had mentors such as:
 
 - The goal of the program is to create an open-source project related to quantum computing.
 - Experts from industry and academia will help you build this project.
-- The deadline for the application is February 27th, 2023.
+- The deadline for the application is October 6th, 2023.
 
-You can find link to the application form [here](https://forms.gle/sy8etY1ojQwhCpzV6).
+You can find link to the application form [here](https://forms.gle/9qcEd7HSUVZieeyNA).
 
 
 ## FAQ
