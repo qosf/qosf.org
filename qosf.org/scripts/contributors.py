@@ -28,6 +28,8 @@ def update_team_md(snippets):
         content = file.read()
 
     # Define the start and end markers and the regex pattern to find the section
+    # Current implementation breaks if we have multiple html unnumbered lists
+    # Easy to fix if needed
     start_marker = "<ul>"
     end_marker = "</ul>"
     pattern = re.compile(f"({re.escape(start_marker)}).*?({re.escape(end_marker)})", re.DOTALL)
@@ -39,15 +41,6 @@ def update_team_md(snippets):
     # Write the updated content back to the file
     with open("qosf.org/team.md", "w", encoding='utf-8') as file:
         file.write(new_content)
-
-"""def generate_start_section():
-    print("<div class="callout callout--info">
-    <p><strong>A big thank you to all the engaged Github/Gitlab contributors on all of our various repos! You are making QOSF possible!</strong>
-    Become a QOSF contributor by opening an issue or submitting a pull request on our <a href="https://github.com/qosf">GitHub</a> or <a href="https://gitlab.com/qosf">GitLab</a> page.
-    </p></div>")
-
-def generate_end_section():
-    print("")"""
 
 def main():
     repos = get_repos(ORGANIZATION)
