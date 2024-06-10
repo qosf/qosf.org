@@ -60,7 +60,6 @@ micro_nav: false
     </div>
     <div class='col-md-8' style='text-align: justify;'>
        <b>Michał Stęchły</b> got into open source thanks to quantum computing - when he discovered he can contribute to the quantum computing community as a newcomer to the field, he immediately fell in love with the idea. He authored and supported open source implementations and research of several quantum computing algorithms. Michał has also a blog <a href="https://www.mustythoughts.com">"Musty Thoughts"</a>, which aims to help people get into the realm of quantum computing. Professionally, he is a Quantum Software Engineer at <a href="https://www.zapatacomputing.com">Zapata Computing</a>.
-
     </div>
 </div>
 
@@ -74,7 +73,6 @@ micro_nav: false
     </div>
     <div class='col-md-8' style='text-align: justify;'>
        <b>Maggie Li</b> loves all things open source, from science to software, as a believer in innovation through collaboration. She stepped into the world of open source software as a quantum computing amateur by contributing to <a href="https://github.com/XanaduAI/pennylane">PennyLane</a>, thanks to QOSF's Quantum Mentorship Program. Outside of quantum computing, she cares about healthcare and education accessibility.
-
     </div>
 </div>
 
@@ -91,6 +89,7 @@ micro_nav: false
         <b>Peter Wittek<sup>&#8224;</sup></b> was a life-long fan of free and open source software who got furious every time he had to fill in a PDF form that did not work on Linux. When he was not preaching about the importance of open source software, he pursued research on the borderline of artificial intelligence and quantum physics as an Assistant Professor in the University of Toronto, and as an affiliate in the Vector Institute for Artificial Intelligence and the Perimeter Institute for Theoretical Physics. He also was the Academic Director of the Quantum Stream in the Creative Destruction Lab, where he saw dozens of startups exploring ideas using quantum computers and the corresponding software stack. In September 2019, he disappeared in an avalanche during a mountaineering expedition on Mt. Trishul in the Himalayas.
     </div>
 </div>
+<br>
 
 # Contributors
 
@@ -98,6 +97,84 @@ micro_nav: false
     <p><strong>A big thank you to all the engaged Github/Gitlab contributors on all of our various repos! You are making QOSF possible!</strong>
     Become a QOSF contributor by opening an issue or submitting a pull request on our <a href="https://github.com/qosf">GitHub</a> or <a href="https://gitlab.com/qosf">GitLab</a> page.
     </p>
+	<p> Contributor list:
+	<ul><li>00mjk</li>
+		<li>1ucian0</li>
+		<li>BillyLjm</li>
+		<li>InfamousPlatypus</li>
+		<li>JoelPasvolsky</li>
+		<li>MaldoAlberto</li>
+		<li>MariaBat</li>
+		<li>MarkCunningham0410</li>
+		<li>Qottmann</li>
+		<li>Qubit1718</li>
+		<li>Roger-luo</li>
+		<li>SSdevelop</li>
+		<li>Shiro-Raven</li>
+		<li>Sinestro38</li>
+		<li>TerraVenil</li>
+		<li>TheGupta2012</li>
+		<li>Travis-S-IBM</li>
+		<li>VoicuTomut</li>
+		<li>aditya-giri</li>
+		<li>amirebrahimi</li>
+		<li>artix41</li>
+		<li>bestquark</li>
+		<li>boegel</li>
+		<li>contepablod</li>
+		<li>crazy4pi314</li>
+		<li>dangirsh</li>
+		<li>dependabot[bot]</li>
+		<li>desireevl</li>
+		<li>dhruvbhq</li>
+		<li>diemilio</li>
+		<li>dlyongemallo</li>
+		<li>dstrain115</li>
+		<li>dudalev</li>
+		<li>efratshabtai</li>
+		<li>enakai00</li>
+		<li>georgios-ts</li>
+		<li>giorgosgiapis</li>
+		<li>hay-k</li>
+		<li>hillmich</li>
+		<li>iamvamsikrishnad</li>
+		<li>ihincks</li>
+		<li>johnzl-777</li>
+		<li>josh146</li>
+		<li>kodaj</li>
+		<li>ksjin-git</li>
+		<li>lazyoracle</li>
+		<li>lkuligin</li>
+		<li>lvignoli</li>
+		<li>lzylili</li>
+		<li>mariaschuld</li>
+		<li>markf94</li>
+		<li>miguefalvarez</li>
+		<li>mkalis</li>
+		<li>mstechly</li>
+		<li>oscarhiggott</li>
+		<li>peguerosdc</li>
+		<li>peterwittek</li>
+		<li>prince-ph0en1x</li>
+		<li>rryoung98</li>
+		<li>rsln-s</li>
+		<li>saravsak</li>
+		<li>scarrazza</li>
+		<li>sikfeng</li>
+		<li>silky</li>
+		<li>spakin</li>
+		<li>stared</li>
+		<li>stewdio</li>
+		<li>tbabej</li>
+		<li>tjstavenger-pnnl</li>
+		<li>tlubowe</li>
+		<li>vic023</li>
+		<li>vprusso</li>
+		<li>vsoftco</li>
+		<li>willzeng</li>
+		<li>yardolabs</li>
+		<li>yourball</li></ul>
+	</p>
 </div>
 
 # Donors
