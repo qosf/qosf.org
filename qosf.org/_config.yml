@@ -30,12 +30,8 @@ doks:
                 image:
             copyright: 'The content of this website is released under the <a href="https://github.com/qosf/qosf.org/blob/master/LICENSE">CC0 1.0 Universal</a> license.'
         social_list:
-            - network_name: facebook
-              profile_url: 'https://www.facebook.com/quantumOSfoundation'
-            - network_name: twitter
-              profile_url: 'https://www.twitter.com/qosfoundation'
-            - network_name: instagram
-              profile_url: 'https://www.instagram.com/qosfoundation/'
+            - network_name: linkedin
+              profile_url: 'https://www.linkedin.com/company/qosf'
             - network_name: youtube
               profile_url: 'https://www.youtube.com/channel/UCcEdG3UB19AZMxHymhefh1Q'
     google_analytics:
