@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 44">
+  <defs>
+    <style>.cls-1{fill:#0d0d36;}</style>
+  </defs>
+  <title>rigetti-shape-blue</title>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Layer_1-2" data-name="Layer 1">
+      <g id="Symbols">
+        <g id="icon_dark-blue" data-name="icon/dark-blue">
+          <path id="Shape" class="cls-1" d="M15.88,0A15.92,15.92,0,0,0,0,16V44H34a6,6,0,0,0,6-6V0ZM31.42,33.09A3.4,3.4,0,0,1,28,36.51H24.64V29.68h6.78Zm0-20A3.39,3.39,0,0,1,28,16.49h-7a3.4,3.4,0,0,0-3.39,3.41h0V33.08a3.41,3.41,0,0,1-3.4,3.42H8.58V19.91A3.4,3.4,0,0,1,12,16.5h2.28a3.4,3.4,0,0,0,3.4-3.41V10.92A3.41,3.41,0,0,1,21,7.5H31.41v5.58Z"></path>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

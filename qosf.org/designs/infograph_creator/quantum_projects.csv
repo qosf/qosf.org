@@ -1,0 +1,20 @@
+Name,Languages,Url,Description,Architectures,#Sdk,#Hardware,#Sims,@BrandLogo,@CompanyLogo
+Qiskit,Python OpenQASM,qiskit.org,"Open-source SDK for quantum computing at the level of pulses, circuits, and algorithms.",Cloud Superconducting,TRUE,TRUE,TRUE,qiskit.png,ibm.png
+Braket,"Python, OpenQASM",aws.amazon.com/braket/,Fully managed quantum computing service for building quantum algorithms.,Cloud Superconducting Ion-Trapped,TRUE,TRUE,TRUE,braket.png,aws.png
+Cirq,"Python, OpenQASM",quantumai.google/cirq,"Framework for creating, editing, and invoking Noisy Intermediate Scale Quantum (NISQ) circuits.",,TRUE,FALSE,TRUE,cirq.png,google.png
+Forest,Python Quil,rigetti.com/forest,"Rigetti’s software library for writing, simulating, compiling and executing quantum programs.",Superconducting,TRUE,TRUE,TRUE,forest.png,rigetti.png
+PennyLane,Python,pennylane.ai,"Cross-platform library for quantum computing, machine learning, and chemistry.",,TRUE,FALSE,TRUE,pennylane.png,xanadu.png
+Ocean,Python,ocean.dwavesys.com,D-Wave’s Ocean SDK for solving real-world problems with quantum and hybrid solutions.,Annealing,TRUE,TRUE,TRUE,ocean.png,dwave.png
+OpenQL,Python OpenQL,openql.org,Open-source quantum programming language for quantum hardware.,,TRUE,FALSE,TRUE,openql.png,openql.png
+ProjectQ,Python,projectq.ch,Open-source software framework for quantum computing.,,TRUE,TRUE,TRUE,projectq.png,projectq.png
+Q#,Q#,microsoft.com/qsharp,Microsoft's quantum programming language.,,TRUE,FALSE,TRUE,azure.png,microsoft.png
+Silq,Silq,silq.ethz.ch,High-level programming language for quantum computing.,,TRUE,FALSE,TRUE,silq.png,ethz.png
+Strawberry Fields,Python,strawberryfields.ai,"Full-stack library for designing, simulating, and optimizing quantum optical circuits.",,TRUE,FALSE,TRUE,strawberry.png,xanadu.png
+staq,C++,github.com/softwareQinc/staq,Compiler and optimizer for quantum circuits.,,TRUE,FALSE,TRUE,staq.png,softwareqinc.jpg
+Cliffords.jl,Julia,github.com/BBN-Q/Cliffords.jl,Library for simulating Clifford circuits.,,TRUE,FALSE,TRUE,cliffords.png,bbn.png
+JKQ-DDSIM,C++,github.com/iic-jku/ddsim,Quantum circuit simulator based on decision diagrams.,,TRUE,FALSE,TRUE,tlm.png,munich.png
+Liqui|>,F#,stationq.github.io/Liquid,Microsoft's software architecture and tools for quantum computing.,,TRUE,FALSE,TRUE,liqui.png,microsoft.png
+Qiskit Aer,Python,github.com/Qiskit/qiskit-aer,High-performance simulators for quantum circuits.,,TRUE,FALSE,TRUE,qiskit.png,qiskit.png
+QuEST,C,github.com/QuEST-Kit/QuEST,Quantum Exact Simulation Toolkit.,,TRUE,FALSE,TRUE,quest.png,questcorp.png
+QuSpin,Python,github.com/weinbe58/QuSpin,Library for simulating quantum many-body systems.,,TRUE,FALSE,TRUE,quspin.png,quspincorp.png
+QuTiP,Python,qutip.org,Quantum Toolbox in Python for simulating quantum systems.,,TRUE,FALSE,TRUE,qutip.png,qutipcorp.png
