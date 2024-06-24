@@ -47,7 +47,6 @@ sass:
 plugins:
 - jekyll-latex
 - jekyll-target-blank
-- jekyll-font-awesome-sass
 
 font-awesome:
   assets: true
