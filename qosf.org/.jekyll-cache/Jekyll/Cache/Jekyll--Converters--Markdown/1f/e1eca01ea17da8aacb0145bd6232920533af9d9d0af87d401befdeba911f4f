@@ -1,0 +1,43 @@
+I"X<h2 id="the-worlds-first-conference-for-quantum-software-engineers">The world’s first conference for quantum software engineers</h2>
+
+<hr />
+
+<p>Open source software for quantum computing is growing faster than ever and it becomes increasingly difficult to stay on top of the newest developments. The inaugural quantum track at FOSDEM aims to bring together quantum software engineers from academia &amp; industry as well as traditional open source developers in order to provide a space to share new developments, features and libraries for quantum computing applications. Think of it as PyCon for quantum computing!</p>
+
+<p>The main themes of the event are:</p>
+
+<ul>
+  <li>to promote existing quantum computing open source projects and foster
+collaboration between new and existing developers</li>
+  <li>to flatten down the learning curve and break perceived barriers that prevent
+developers from entering the field of quantum software development</li>
+  <li>to ensure that the field is dominated by high-quality, community driven FOSS
+open source software, standards and protocols</li>
+</ul>
+
+<p>Past speakers included:</p>
+
+<ul>
+  <li>Robert Smith (Rigetti)</li>
+  <li>Shahnawaz Ahmed (QuTip)</li>
+  <li>Alexander Condello &amp; Radomir Stevanovic (D-Wave)</li>
+  <li>Nathan Killoran &amp; Josh Izaac (Xanadu)</li>
+  <li>Kevin Kissell (Google)</li>
+  <li>Mark Mattingley-Scott (IBM)</li>
+  <li>Will Zeng (Unitary Fund)</li>
+</ul>
+
+<p>You can find the schedule for this year at <a href="https://fosdem.org/2020/schedule/track/quantum_computing/">the official FOSDEM page</a>.</p>
+
+<h1 id="organizers">Organizers</h1>
+
+<ul>
+  <li><a href="https://github.com/tbabej">Tomas Babej</a> - QOSF &amp; ProteinQure</li>
+  <li><a href="https://github.com/markf94">Mark Fingerhuth</a> - QOSF &amp; ProteinQure</li>
+  <li><a href="https://github.com/willzeng">Will Zeng</a> - Unitary Fund</li>
+  <li><a href="https://github.com/mstechly">Michal Stechly</a> - QOSF &amp; Zapata Computing</li>
+</ul>
+
+<h1 id="sponsors">Sponsors</h1>
+<p><a href="https://unitary.fund"><img src="https://unitary.fund/logos/logo.png" alt="Unitary Fund" /></a></p>
+:ET

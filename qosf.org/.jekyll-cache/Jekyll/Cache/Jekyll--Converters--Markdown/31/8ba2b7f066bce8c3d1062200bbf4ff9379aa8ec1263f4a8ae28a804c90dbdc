@@ -1,0 +1,913 @@
+I"߅<p>
+
+    <h1 id="quantum-full-stack-libraries">Quantum full-stack libraries</h1>
+    
+        
+            <h4 id="braket"><a href="https://github.com/aws/amazon-braket-sdk-python">Braket</a></h4>
+        
+        <p><a href="https://aws.amazon.com/braket/">Amazon’s</a> fully managed quantum computing service for building quantum algorithms.</p>
+
+    
+        
+            <h4 id="cirq"><a href="https://github.com/quantumlib/Cirq">Cirq</a></h4>
+        
+        <p>Framework for creating, editing, and invoking Noisy Intermediate Scale Quantum (NISQ) circuits.</p>
+
+    
+        
+            <h4 id="forest"><a href="https://github.com/rigetticomputing/pyquil">Forest</a></h4>
+        
+        <p><a href="https://www.rigetti.com/">Rigetti</a>’s software library for writing, simulating, compiling and executing quantum programs.</p>
+
+    
+        
+            <h4 id="ocean"><a href="https://github.com/dwavesystems/dwave-ocean-sdk">Ocean</a></h4>
+        
+        <p><a href="https://www.dwavesys.com/home">D-Wave System</a>’s suite of tools for solving hard problems with quantum computers.</p>
+
+    
+        
+            <h4 id="openql"><a href="https://github.com/QE-Lab/OpenQL">OpenQL</a></h4>
+        
+        <p>Compiler framework with algorithm libraries, optimizer, scheduler, QEC, mapping, micro-code generator.</p>
+
+    
+        
+            <h4 id="projectq"><a href="https://github.com/ProjectQ-Framework/ProjectQ">ProjectQ</a></h4>
+        
+        <p>Hardware-agnostic framework with compiler and simulator with emulation capabilities.</p>
+
+    
+        
+            <h4 id="qsharp"><a href="https://www.microsoft.com/en-us/quantum/development-kit">Q#</a></h4>
+        
+        <p>Microsoft’s quantum programming language with Visual Studio integration.</p>
+
+    
+        
+            <h4 id="qiskit"><a href="https://qiskit.org/">Qiskit</a></h4>
+        
+        <p>Framework for noisy quantum computers at the level of pulses, circuits, and algorithms (supported by IBM).</p>
+
+    
+        
+            <h4 id="silq"><a href="https://silq.ethz.ch/">Silq</a></h4>
+        
+        <p>Silq is a high-level quantum programming language with safe uncomputation and intuitive semantics.</p>
+
+    
+        
+            <h4 id="strawberry-fields"><a href="https://github.com/xanaduai/strawberryfields">Strawberry Fields</a></h4>
+        
+        <p><a href="https://www.xanadu.ai">Xanadu</a>’s software library for photonic quantum computing.</p>
+
+    
+        
+            <h4 id="tequila"><a href="https://github.com/aspuru-guzik-group/tequila">Tequila</a></h4>
+        
+        <p>An Extensible Quantum Information and Learning Architecture developed by Alan Aspuru-Guzik’s group (UofT).</p>
+
+    
+        
+            <h4 id="xacc"><a href="https://github.com/ORNL-QCI/xacc">XACC</a></h4>
+        
+        <p><a href="https://arxiv.org/abs/1710.01794">Extreme-scale programming model for quantum acceleration within high-performance computing</a>.</p>
+
+    
+        
+            <h4 id="staq"><a href="https://github.com/softwareqinc/staq">staq</a></h4>
+        
+        <p><a href="https://arxiv.org/abs/1912.06070">Full stack quantum processing toolkit</a>.</p>
+
+    
+
+    <h1 id="quantum-simulators">Quantum simulators</h1>
+    
+        
+            <h4 id="black-stone"><a href="https://github.com/thephoeron/black-stone">BLACK-STONE</a></h4>
+        
+        <p>Specification and implementation of quantum common lisp, for gate-model quantum computers.</p>
+
+    
+        
+            <h4 id="cliffords.jl"><a href="https://github.com/BBN-Q/Cliffords.jl">Cliffords.jl</a></h4>
+        
+        <p>Efficient calculation of Clifford circuits in Julia.</p>
+
+    
+        
+            <h4 id="intel-quantum-simulator"><a href="https://github.com/intel/intel-qs">Intel Quantum Simulator</a></h4>
+        
+        <p>Distributed qubit register quantum simulator using OpenMP and MPI.</p>
+
+    
+        
+            <h4 id="jkq-ddsim"><a href="https://github.com/iic-jku/ddsim">JKQ-DDSIM</a></h4>
+        
+        <p>Error-free quantum simulator using decision diagrams as underlying data structure. (<a href="https://arxiv.org/abs/1707.00865">arXiv</a> / <a href="https://ieeexplore.ieee.org/document/8355954">IEEE</a>)</p>
+
+    
+        
+            <h4 id="liquid"><a href="http://stationq.github.io/Liquid/">Liqui|&gt;</a></h4>
+        
+        <p>Toolsuite for quantum simulation developed by <a href="https://www.microsoft.com/en-us/research/group/quantum-architectures-and-computation-group-quarc/">Microsoft QuArC</a>.</p>
+
+    
+        
+            <h4 id="piqs"><a href="https://github.com/nathanshammah/piqs">PIQS</a></h4>
+        
+        <p>Efficient simulation of open quantum dynamics of identical qubits.</p>
+
+    
+        
+            <h4 id="qcgpu"><a href="https://github.com/QCGPU/qcgpu-rust">QCGPU</a></h4>
+        
+        <p>High-performance GPU-accelerated quantum computer simulation outlined in this <a href="https://arxiv.org/pdf/1805.00988.pdf">arXiv paper</a>.</p>
+
+    
+        
+            <h4 id="qcl"><a href="https://github.com/aviggiano/qcl">QCL</a></h4>
+        
+        <p>High level, hardware-agnostic programming language for quantum computers (syntax like C or Pascal).</p>
+
+    
+        
+            <h4 id="qcircuits"><a href="https://github.com/grey-area/qcircuits">QCircuits</a></h4>
+        
+        <p>User-friendly quantum circuit simulator designed for students and newcomers to quantum computing.</p>
+
+    
+        
+            <h4 id="qocs"><a href="https://github.com/dillanchang/QOCS">QOCS</a></h4>
+        
+        <p>Quantum OCaml Circuit Simulator is a functional approach to simulating quantum gates.</p>
+
+    
+        
+            <h4 id="qsimulator.jl"><a href="https://github.com/BBN-Q/QSimulator.jl">QSimulator.jl</a></h4>
+        
+        <p>Unitary and Lindbladian evolution in Julia.</p>
+
+    
+        
+            <h4 id="qtop"><a href="https://github.com/jacobmarks/QTop">QTop</a></h4>
+        
+        <p>Simulation and visualization of topological quantum computers.</p>
+
+    
+        
+            <h4 id="qvm"><a href="https://github.com/rigetti/qvm">QVM</a></h4>
+        
+        <p>Rigetti’s high-performance quantum virtual machine.</p>
+
+    
+        
+            <h4 id="qwire"><a href="https://github.com/jpaykin/QWIRE">QWIRE</a></h4>
+        
+        <p>A quantum circuit language and formal verification tool <a href="https://dl.acm.org/citation.cfm?id=3009894">described in this paper</a>.</p>
+
+    
+        
+            <h4 id="qibo"><a href="https://github.com/Quantum-TII/qibo">Qibo</a></h4>
+        
+        <p>Framework for quantum simulation with hardware acceleration, including multi-GPU support.</p>
+
+    
+        
+            <h4 id="qiskit-aer"><a href="https://github.com/Qiskit/qiskit-aer">Qiskit Aer</a></h4>
+        
+        <p>High performance simulator for quantum circuits that includes noise models (supported by IBM).</p>
+
+    
+        
+            <h4 id="qlmp"><a href="https://github.com/wintershammer/QImp">Qlmp</a></h4>
+        
+        <p>Interpreter for the functional quantum programming language Qumin.</p>
+
+    
+        
+            <h4 id="qrack"><a href="https://github.com/vm6502q/qrack">Qrack</a></h4>
+        
+        <p>Comprehensive qubit and gate implementation for developing universal virtual quantum processors.</p>
+
+    
+        
+            <h4 id="quest"><a href="https://github.com/aniabrown/QuEST">QuEST</a></h4>
+        
+        <p>Quantum Exact Simulation Toolkit is a high performance multicore simulator of universal quantum circuits.</p>
+
+    
+        
+            <h4 id="qunetsim"><a href="https://github.com/tqsd/QuNetSim">QuNetSim</a></h4>
+        
+        <p>A quantum network simulation framework.</p>
+
+    
+        
+            <h4 id="qupy"><a href="https://github.com/ken-nakanishi/qupy">QuPy</a></h4>
+        
+        <p>Quantum circuit simulator for both CPU and GPU.</p>
+
+    
+        
+            <h4 id="qusim"><a href="https://github.com/adamisntdead/QuSimPy">QuSim</a></h4>
+        
+        <p>Ideal noise-free multi-qubit simulator written in 150 lines of code.</p>
+
+    
+        
+            <h4 id="quspin"><a href="https://github.com/weinbe58/QuSpin">QuSpin</a></h4>
+        
+        <p>Exact diagonalization and dynamics of arbitrary boson, fermion and spin many-body systems.</p>
+
+    
+        
+            <h4 id="qutip"><a href="http://qutip.org/">QuTiP</a></h4>
+        
+        <p>User-friendly and efficient numerical simulations of a wide variety of open quantum systems.</p>
+
+    
+        
+            <h4 id="quac"><a href="https://github.com/0tt3r/QuaC">QuaC</a></h4>
+        
+        <p>Parallel time-dependent open quantum systems solver.</p>
+
+    
+        
+            <h4 id="quantum-circuit-simulator"><a href="https://github.com/perak/quantum-circuit">Quantum Circuit Simulator</a></h4>
+        
+        <p>Smoothly runs 20+ qubit simulations in browser or on node.js server.</p>
+
+    
+        
+            <h4 id="quantum-javascript-(q.js)"><a href="Q.js">Quantum JavaScript (Q.js)</a></h4>
+        
+        <p>Drag-and-drop circuit editor, simulator, documented API, text-as-circuit DSL, concept primers.</p>
+
+    
+        
+            <h4 id="quantum-virtual-machine"><a href="https://github.com/rigetticomputing/reference-qvm">Quantum Virtual Machine</a></h4>
+        
+        <p>Reference implementation of Rigetti’s Quantum Virtual Machine.</p>
+
+    
+        
+            <h4 id="quantum++"><a href="https://github.com/softwareqinc/qpp">Quantum++</a></h4>
+        
+        <p><a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0208073">High-performance general purpose quantum simulator (can simulate d-dimensional qudits)</a>.</p>
+
+    
+        
+            <h4 id="quantuminfo.jl"><a href="https://github.com/BBN-Q/QuantumInfo.jl">QuantumInfo.jl</a></h4>
+        
+        <p>Julia library for quantum information related calculations.</p>
+
+    
+        
+            <h4 id="quantumutils"><a href="https://github.com/QuantumUtils/quantum-utils-mathematica">QuantumUtils</a></h4>
+        
+        <p>Tools for quantum control, simulation, channel representation conversion, and perturbations.</p>
+
+    
+        
+            <h4 id="quintuple"><a href="https://github.com/corbett/QuantumComputing">Quintuple</a></h4>
+        
+        <p>Simulating the 5-qubit processor of the <a href="https://quantumexperience.ng.bluemix.net/qx/experience">IBM Quantum Experience</a>.</p>
+
+    
+        
+            <h4 id="quipper"><a href="https://github.com/thephoeron/quipper-language">Quipper</a></h4>
+        
+        <p>Scalable functional programming language for quantum computing based on <a href="https://arxiv.org/abs/cs/0404056">Quantum Lambda Calculus</a>.</p>
+
+    
+        
+            <h4 id="quirk"><a href="https://github.com/Strilanc/Quirk">Quirk</a></h4>
+        
+        <p>Drag-and-drop quantum circuit simulator in your browser.</p>
+
+    
+        
+            <h4 id="randomquantum.jl"><a href="https://github.com/BBN-Q/RandomQuantum.jl">RandomQuantum.jl</a></h4>
+        
+        <p>Package for generating random quantum states and processes.</p>
+
+    
+        
+            <h4 id="squanch"><a href="https://github.com/att-innovate/squanch">SQUANCH</a></h4>
+        
+        <p>A distributed simulation framework for quantum networks and channels.</p>
+
+    
+        
+            <h4 id="sequencing"><a href="https://github.com/sequencing-dev/sequencing">SeQuencing</a></h4>
+        
+        <p>Construct and simulate realistic quantum control sequences using QuTiP.</p>
+
+    
+        
+            <h4 id="simulaqron"><a href="https://github.com/StephanieWehner/SimulaQron">SimulaQron</a></h4>
+        
+        <p>Application level simulator of a quantum network.</p>
+
+    
+        
+            <h4 id="swiftquantumcomputing"><a href="https://github.com/indisoluble/SwiftQuantumComputing">SwiftQuantumComputing</a></h4>
+        
+        <p>Quantum circuit simulator with a bit of genetic programming.</p>
+
+    
+        
+            <h4 id="tnqvm"><a href="https://github.com/ornl-qci/tnqvm">TNQVM</a></h4>
+        
+        <p>Tensor Network QPU Simulator for Eclipse <a href="https://github.com/ORNL-QCI/xacc">XACC</a>.</p>
+
+    
+        
+            <h4 id="yao.jl"><a href="https://github.com/QuantumBFS/Yao.jl">Yao.jl</a></h4>
+        
+        <p>Extensible, Efficient Quantum Algorithm Design for Humans.</p>
+
+    
+        
+            <h4 id="jquil"><a href="https://github.com/QCHackers/jquil">jquil</a></h4>
+        
+        <p>A Java library for quantum programming using <a href="https://en.wikipedia.org/wiki/Quil_(instruction_set_architecture)">Quil</a>.</p>
+
+    
+        
+            <h4 id="jsquil"><a href="https://github.com/mapmeld/jsquil">jsquil</a></h4>
+        
+        <p>JavaScript interface for writing <a href="https://en.wikipedia.org/wiki/Quil_(instruction_set_architecture)">Quil</a> programs.</p>
+
+    
+        
+            <h4 id="libquantumjava"><a href="https://github.com/gbanegas/libQuantumJava">libQuantumJava</a></h4>
+        
+        <p>Crude translation from the C implementation of <code class="highlighter-rouge">libquantum</code> to a Java version.</p>
+
+    
+        
+            <h4 id="qsim"><a href="https://github.com/haykkh/qSim">qSim</a></h4>
+        
+        <p>High level, elementary simulation library.</p>
+
+    
+
+    <h1 id="quantum-annealing">Quantum annealing</h1>
+    
+        
+            <h4 id="c-to-d-wave"><a href="https://github.com/lanl/c2dwave">C-to-D-Wave</a></h4>
+        
+        <p>Compile a very small subset of C to a D-Wave Hamiltonian function</p>
+
+    
+        
+            <h4 id="qa-prolog"><a href="https://github.com/lanl/QA-Prolog">QA Prolog</a></h4>
+        
+        <p>Compile a subset of <a href="https://en.wikipedia.org/wiki/Prolog">Prolog</a> to a D-Wave Hamiltonian function</p>
+
+    
+        
+            <h4 id="qmasm"><a href="https://github.com/lanl/qmasm/">QMASM</a></h4>
+        
+        <p>Quantum macro assembler for D-Wave systems</p>
+
+    
+        
+            <h4 id="qbsolv"><a href="https://github.com/dwavesystems/qbsolv">Qbsolv</a></h4>
+        
+        <p>QUBO solver with <a href="https://www.dwavesys.com">D-Wave</a> or classical tabu solver backend.</p>
+
+    
+        
+            <h4 id="virtual-hardware-embedding"><a href="https://github.com/ORNL-QCI/aqc-virtual-embedding">Virtual Hardware Embedding</a></h4>
+        
+        <p>Virtual Hardware Embedding Suite for adiabatic quantum computing.</p>
+
+    
+        
+            <h4 id="chimera_embedding"><a href="https://github.com/dwavesystems/chimera-embedding">chimera_embedding</a></h4>
+        
+        <p>Algorithms to generate native-structured embeddings for Chimera graphs.</p>
+
+    
+        
+            <h4 id="dimod"><a href="https://github.com/dwavesystems/dimod">dimod</a></h4>
+        
+        <p>Shared API for Ising and QUBO problems.</p>
+
+    
+        
+            <h4 id="dwave-cloud-client"><a href="https://github.com/dwavesystems/dwave-cloud-client">dwave-cloud-client</a></h4>
+        
+        <p>Min. implementation of the REST interface to communicate with D-Wave’s Solver API.</p>
+
+    
+        
+            <h4 id="dwave-system"><a href="https://github.com/dwavesystems/dwave-system">dwave-system</a></h4>
+        
+        <p>API for easily incorporating D-Wave quantum annealers as samplers in the <a href="https://ocean.dwavesys.com/">Ocean</a> software stack.</p>
+
+    
+        
+            <h4 id="dwave_neal"><a href="https://github.com/dwavesystems/dwave-neal">dwave_neal</a></h4>
+        
+        <p>An implementation of a simulated annealing sampler.</p>
+
+    
+        
+            <h4 id="dwave_networkx"><a href="https://github.com/dwavesystems/dwave_networkx">dwave_networkx</a></h4>
+        
+        <p>Exploration and analysis of network graphs.</p>
+
+    
+        
+            <h4 id="dwavebinarycsp"><a href="https://github.com/dwavesystems/dwavebinarycsp">dwavebinarycsp</a></h4>
+        
+        <p>Map constraint satisfaction problems with binary variables to binary quadratic models.</p>
+
+    
+        
+            <h4 id="edif2qmasm"><a href="https://github.com/lanl/edif2qmasm/">edif2qmasm</a></h4>
+        
+        <p>Compile <a href="https://en.wikipedia.org/wiki/Verilog">Verilog</a>, <a href="https://en.wikipedia.org/wiki/VHDL">VHDL</a>, and other hardware-description languages to a D-Wave Hamiltonian function</p>
+
+    
+        
+            <h4 id="embedding_utilities"><a href="https://github.com/dwavesystems/dwave_embedding_utilities">embedding_utilities</a></h4>
+        
+        <p>Mapping samples between original and embedded graph.</p>
+
+    
+        
+            <h4 id="micro_client_sapi_dimod"><a href="https://github.com/dwavesystems/dwave_micro_client_dimod">micro_client_sapi_dimod</a></h4>
+        
+        <p><a href="https://github.com/dwavesystems/dimod">Dimod</a> wrapper for the D-Wave Micro Client.</p>
+
+    
+        
+            <h4 id="minorminer"><a href="https://github.com/dwavesystems/minorminer">minorminer</a></h4>
+        
+        <p>Heuristic tool for minor graph embedding.</p>
+
+    
+        
+            <h4 id="penaltymodel"><a href="https://github.com/dwavesystems/penaltymodel">penaltymodel</a></h4>
+        
+        <p>Utilities and interfaces for using penalty models.</p>
+
+    
+        
+            <h4 id="sapi_dimod"><a href="https://github.com/dwavesystems/dwave_sapi_dimod">sapi_dimod</a></h4>
+        
+        <p><a href="https://github.com/dwavesystems/dimod">Dimod</a> wrapper for D-Wave’s Solver API (SAPI).</p>
+
+    
+
+    <h1 id="quantum-algorithms">Quantum algorithms</h1>
+    
+        
+            <h4 id="adapt"><a href="https://github.com/BBN-Q/Adapt">Adapt</a></h4>
+        
+        <p>Algorithms for adaptive refinement of measurements.</p>
+
+    
+        
+            <h4 id="arline-quantum"><a href="https://github.com/ArlineQ/arline_quantum">Arline Quantum</a></h4>
+        
+        <p>Library with implementation of quantum gates and hardware, a part of <a href="https://github.com/ArlineQ/arline_benchmarks">Arline Benchmarks</a> project.</p>
+
+    
+        
+            <h4 id="fermilib"><a href="https://github.com/ProjectQ-Framework/FermiLib">FermiLib</a></h4>
+        
+        <p>Software for analyzing fermionic quantum simulation algorithms with <a href="https://github.com/ProjectQ-Framework/ProjectQ">ProjectQ</a>.</p>
+
+    
+        
+            <h4 id="grove"><a href="https://github.com/rigetticomputing/grove">Grove</a></h4>
+        
+        <p>Quantum algorithms implemented using <a href="https://www.rigetti.com/">Rigetti</a>’s <a href="https://github.com/rigetticomputing/pyquil">pyQuil</a>.</p>
+
+    
+        
+            <h4 id="openfermion"><a href="https://github.com/quantumlib/OpenFermion">OpenFermion</a></h4>
+        
+        <p>Compiling and analyzing quantum algorithm for quantum chemistry simulations.</p>
+
+    
+        
+            <h4 id="pennylane"><a href="https://github.com/XanaduAI/pennylane">PennyLane</a></h4>
+        
+        <p>Library for quantum ML, automatic differentiation and optimization of hybrid computations.</p>
+
+    
+        
+            <h4 id="qfog"><a href="https://github.com/artiste-qb-net/quantum-fog">QFog</a></h4>
+        
+        <p>Framework for analyzing both classical and quantum Bayesian Networks.</p>
+
+    
+        
+            <h4 id="qiskit-nature"><a href="https://github.com/Qiskit/qiskit-nature">Qiskit Nature</a></h4>
+        
+        <p>Qiskit component for chemistry and physics problems including ground state energy computations, excited states and dipole moments of molecule, both open and closed-shell.</p>
+
+    
+        
+            <h4 id="qiskit-optimization"><a href="https://github.com/Qiskit/qiskit-optimization">Qiskit Optimization</a></h4>
+        
+        <p>Qiskit component that covers the whole range from high-level modeling of optimization problems.</p>
+
+    
+        
+            <h4 id="qiskit-machine-learning"><a href="https://github.com/Qiskit/qiskit-machine-learning">Qiskit Machine Learning</a></h4>
+        
+        <p>Qiskit component that contains classification algorithms such as QSVM and VQC (Variational Quantum Classifier). There is also QGAN (Quantum Generative Adversarial Network)</p>
+
+    
+        
+            <h4 id="qiskit-finance"><a href="https://github.com/Qiskit/qiskit-finance">Qiskit Finance</a></h4>
+        
+        <p>Qiskit component that contains uncertainty components for stock/securities problems, Ising translators for portfolio optimizations and data providers to source real or random data to finance experiments.</p>
+
+    
+        
+            <h4 id="qiskit-tutorial"><a href="https://github.com/QISKit/qiskit-tutorial">Qiskit Tutorial</a></h4>
+        
+        <p>Jupyter notebook filled with tutorials for <a href="https://github.com/QISKit/qiskit">Qiskit</a>.</p>
+
+    
+        
+            <h4 id="quantum-katas"><a href="https://github.com/Microsoft/QuantumKatas">Quantum Katas</a></h4>
+        
+        <p>Programming exercises for learning Q# and quantum computing.</p>
+
+    
+        
+            <h4 id="quantum-tsp"><a href="https://github.com/mstechly/quantum_tsp_tutorials">Quantum TSP</a></h4>
+        
+        <p>Tutorials on solving Travelling Salesman Problem using quantum computing (QAOA).</p>
+
+    
+        
+            <h4 id="quantumflow"><a href="https://github.com/rigetti/quantumflow">QuantumFlow</a></h4>
+        
+        <p>Quantum Algorithms Development Toolkit e.g. allowing for backpropagation with QAOA.</p>
+
+    
+        
+            <h4 id="quantumtomography.jl"><a href="https://github.com/BBN-Q/QuantumTomography.jl">QuantumTomography.jl</a></h4>
+        
+        <p>Julia package to perform quantum state and process tomography.</p>
+
+    
+        
+            <h4 id="quantum_edward"><a href="https://github.com/artiste-qb-net/Quantum_Edward">Quantum_Edward</a></h4>
+        
+        <p>Python tools for supervised learning by Quantum Neural Networks</p>
+
+    
+        
+            <h4 id="vqf"><a href="https://github.com/mstechly/vqf">VQF</a></h4>
+        
+        <p>Implementation of Variational Quantum Factoring algorithm (in pyQuil)</p>
+
+    
+        
+            <h4 id="xacc-examples"><a href="https://github.com/ORNL-QCI/xacc-examples">XACC Examples</a></h4>
+        
+        <p>Example code using <a href="https://github.com/ORNL-QCI/xacc">XACC</a> for quantum computing.</p>
+
+    
+        
+            <h4 id="xacc-qchem"><a href="https://github.com/ORNL-QCI/xacc-qchem-benchmarks">XACC QChem</a></h4>
+        
+        <p>QPU Benchmarks for Quantum Chemistry via <a href="https://github.com/ORNL-QCI/xacc">XACC</a>, <a href="http://www.psicode.org/">Psi4</a> and <a href="https://github.com/quantumlib/OpenFermion">OpenFermion</a>.</p>
+
+    
+        
+            <h4 id="xacc-vqe"><a href="https://github.com/ornl-qci/xacc-vqe">XACC VQE</a></h4>
+        
+        <p>Variational quantum eigensolver built on <a href="https://github.com/ORNL-QCI/xacc">XACC</a> for distributed, and shared memory systems.</p>
+
+    
+
+    <h1 id="quantum-compilers">Quantum compilers</h1>
+    
+        
+            <h4 id="arline-benchmarks"><a href="https://github.com/ArlineQ/arline_benchmarks">Arline Benchmarks</a></h4>
+        
+        <p>Automated benchmarking platform for quantum compilers, quantum hardware and quantum algorithms.</p>
+
+    
+        
+            <h4 id="mitiq"><a href="https://github.com/unitaryfund/mitiq">Mitiq</a></h4>
+        
+        <p>Cross-platform, error-mitigating quantum compiler from <a href="https://unitary.fund/">Unitary Fund</a>.</p>
+
+    
+        
+            <h4 id="pyzx"><a href="https://github.com/Quantomatic/pyzx">PyZX</a></h4>
+        
+        <p>Python library for quantum circuit rewriting and optimisation using the ZX-calculus.</p>
+
+    
+        
+            <h4 id="qgl.jl"><a href="https://github.com/BBN-Q/QGL.jl">QGL.jl</a></h4>
+        
+        <p>A performance orientated <a href="https://github.com/BBN-Q/QGL">QGL</a> compiler.</p>
+
+    
+        
+            <h4 id="qgl2-compiler"><a href="https://github.com/BBN-Q/pyqgl2">QGL2 Compiler</a></h4>
+        
+        <p>Language compiler for imperative Quantum Gate Language (<a href="https://github.com/BBN-Q/QGL">QGL</a>).</p>
+
+    
+        
+            <h4 id="qiskit-terra"><a href="https://github.com/Qiskit/qiskit-terra">Qiskit Terra</a></h4>
+        
+        <p>Python library for quantum circuit rewriting and optimization (supported by IBM).</p>
+
+    
+        
+            <h4 id="qubiter"><a href="https://github.com/artiste-qb-net/qubiter">Qubiter</a></h4>
+        
+        <p>Quantum compiler with Python wrapper for <a href="http://www.netlib.org/lapack/README-CSD.html">LAPACK’s CS Decomposition</a> to build a binary tree of matrices.</p>
+
+    
+        
+            <h4 id="scaffcc"><a href="https://github.com/epiqc/ScaffCC">ScaffCC</a></h4>
+        
+        <p>Compilation, analysis and optimization framework for the Scaffold quantum programming language.</p>
+
+    
+        
+            <h4 id="universalqcompiler"><a href="https://github.com/Q-Compiler/UniversalQCompiler">UniversalQCompiler</a></h4>
+        
+        <p>Synthesis of isometries (including unitaries and state preparation), channels and POVMs.</p>
+
+    
+        
+            <h4 id="quilc"><a href="https://github.com/rigetti/quilc">quilc</a></h4>
+        
+        <p>Rigetti’s optimizing Quil compiler.</p>
+
+    
+
+    <h1 id="quantum-assembly">Quantum assembly</h1>
+    
+        
+            <h4 id="blackbird"><a href="https://github.com/XanaduAI/blackbird">Blackbird</a></h4>
+        
+        <p>Open-source quantum instruction language currently used for Xanadu’s photonic hardware.</p>
+
+    
+        
+            <h4 id="openqasm"><a href="https://github.com/QISKit/openqasm">OpenQASM</a></h4>
+        
+        <p>Open-source quantum assembly language.</p>
+
+    
+        
+            <h4 id="qmasm"><a href="https://github.com/lanl/qmasm">QMASM</a></h4>
+        
+        <p>A quantum macro assembler for D-Wave’s quantum annealers.</p>
+
+    
+        
+            <h4 id="quil"><a href="https://arxiv.org/abs/1608.03355">Quil</a></h4>
+        
+        <p>An open hybrid quantum/classical instruction set currently used by Rigetti. <a href="https://github.com/rigetticomputing/pyquil/tree/master/pyquil/_parser">Parser</a></p>
+
+    
+
+    <h1 id="quantum-and-post-quantum-cryptography">Quantum and post-quantum cryptography</h1>
+    
+        
+            <h4 id="qrl"><a href="https://github.com/theQRL/QRL/">QRL</a></h4>
+        
+        <p><a href="https://theqrl.org/">Quantum Resistant Ledger</a> utilizing hash-based one-time merkle tree signature scheme instead of ECDSA.</p>
+
+    
+        
+            <h4 id="liboqs"><a href="https://github.com/open-quantum-safe/liboqs">liboqs</a></h4>
+        
+        <p>C library for quantum-resistant cryptographic algorithms.</p>
+
+    
+        
+            <h4 id="openssh"><a href="https://github.com/open-quantum-safe/openssh-portable">openssh</a></h4>
+        
+        <p>OpenSSH with quantum-safe key exchange algorithms.</p>
+
+    
+        
+            <h4 id="openssl"><a href="https://github.com/open-quantum-safe/openssl">openssl</a></h4>
+        
+        <p>OpenSSL with quantum-safe cryptographic algorithms.</p>
+
+    
+
+    <h1 id="experimental-quantum-computing">Experimental quantum computing</h1>
+    
+        
+            <h4 id="artiq"><a href="https://github.com/m-labs/artiq">ARTIQ</a></h4>
+        
+        <p>Next-generation control system for quantum information experiments.</p>
+
+    
+        
+            <h4 id="pyqlab"><a href="https://github.com/BBN-Q/PyQLab">PyQLab</a></h4>
+        
+        <p>Library for instrument control and superconducting QIP experiments.</p>
+
+    
+        
+            <h4 id="qflow-lite"><a href="https://github.com/jpzwolak/QFlow-lite">QFlow-lite</a></h4>
+        
+        <p>Machine Learning tools for autotuning quantum dot experiments.</p>
+
+    
+        
+            <h4 id="qgl"><a href="https://github.com/BBN-Q/QGL">QGL</a></h4>
+        
+        <p>Domain-specific language embedded in Python for specifying pulse sequences.</p>
+
+    
+        
+            <h4 id="qlab"><a href="https://github.com/BBN-Q/Qlab">Qlab</a></h4>
+        
+        <p>Measurement and control software for superconducting qubits.</p>
+
+    
+        
+            <h4 id="qlab.jl"><a href="https://github.com/BBN-Q/Qlab.jl">Qlab.jl</a></h4>
+        
+        <p>Generic lab tools in Julia.</p>
+
+    
+        
+            <h4 id="quince"><a href="https://github.com/BBN-Q/Quince">Quince</a></h4>
+        
+        <p>Node-based GUI that allows for graphical configuration of qubit experiments in Auspex.</p>
+
+    
+        
+            <h4 id="qupulse"><a href="https://github.com/qutech/qupulse">qupulse</a></h4>
+        
+        <p>Quantum computing pulse parametrization and sequencing framework (formerly qc-toolkit).</p>
+
+    
+
+    <h1 id="quantum-fun">Quantum fun</h1>
+    
+        
+            <h4 id="entanglion"><a href="https://github.com/Entanglion/entanglion">Entanglion</a></h4>
+        
+        <p>The world’s first open source quantum computing board game. For 2 players.</p>
+
+    
+        
+            <h4 id="qsel"><a href="https://github.com/dabacon/qsel">QSEL</a></h4>
+        
+        <p>Quantum programming language putting entanglement and superposition front and center.</p>
+
+    
+        
+            <h4 id="quantum-awesomeness"><a href="https://github.com/decodoku/A_Game_to_Benchmark_Quantum_Computers">Quantum Awesomeness</a></h4>
+        
+        <p><a href="https://medium.com/@decodoku/understanding-quantum-computers-through-a-simple-puzzle-game-a290dde89fb2">Simple puzzles to benchmark various quantum processor</a>.</p>
+
+    
+        
+            <h4 id="quantum-battleships"><a href="https://github.com/decodoku/Battleships_with_complementary_measurements">Quantum Battleships</a></h4>
+        
+        <p><a href="https://medium.com/@decodoku/how-to-program-a-quantum-computer-part-2-f0d3eee872fe">Playing battleships with quantum measurements</a>.</p>
+
+    
+        
+            <h4 id="quantum-catsweeper"><a href="https://github.com/desireevl/quantum-catsweeper">Quantum Catsweeper</a></h4>
+        
+        <p>Quantum game loosely based on Minesweeper Flag.</p>
+
+    
+        
+            <h4 id="quantum-game-with-photons"><a href="https://github.com/stared/quantum-game">Quantum Game with Photons</a></h4>
+        
+        <p>Puzzle game in browser, with polarization, superposition, and measurement.</p>
+
+    
+        
+            <h4 id="quantum-music-composer-for-ibm-q"><a href="https://github.com/JavaFXpert/quantum-toy-piano-ibmq">Quantum Music Composer for IBM Q</a></h4>
+        
+        <p>Compose and perform quantum music with IBM Q.</p>
+
+    
+        
+            <h4 id="quantum-music-composer-for-rigetti"><a href="https://github.com/JavaFXpert/quantum-toy-piano">Quantum Music Composer for Rigetti</a></h4>
+        
+        <p>Compose and perform quantum music with Rigetti’s Forest.</p>
+
+    
+        
+            <h4 id="sudoq"><a href="https://github.com/subwayHareArmy/SudoQ">SudoQ</a></h4>
+        
+        <p>Sudoku solver that leverages a D-Wave Quantum Annealer.</p>
+
+    
+        
+            <h4 id="bloqit"><a href="https://github.com/kelzheng/bloqit">bloqit</a></h4>
+        
+        <p>A tiny qubit duel for your smart phone.</p>
+
+    
+        
+            <h4 id="feyn"><a href="https://mrdimosthenis.github.io/feyn">feyn</a></h4>
+        
+        <p>Puzzle game for the browser in which you need to find the combination of gates that the qubits need to pass.</p>
+
+    
+
+    <h1 id="quantum-tools">Quantum tools</h1>
+    
+        
+            <h4 id="ibm-q-bot"><a href="https://github.com/RQC-QApp/QuantumComputingBot">IBM Q bot</a></h4>
+        
+        <p>Bot for Slack and Telegram to monitor the load of IBM Q quantum computers.</p>
+
+    
+        
+            <h4 id="qi"><a href="https://github.com/rogercolbeck/QI">QI</a></h4>
+        
+        <p>Toolkit for common quantum information functions.</p>
+
+    
+        
+            <h4 id="quantumgraphs"><a href="https://github.com/ziofil/QuantumGraphs">QuantumGraphs</a></h4>
+        
+        <p>Grow and study random graphs by a continuous, randomly collapsing quantum walk.</p>
+
+    
+        
+            <h4 id="quil-syntax-highlighter"><a href="https://github.com/JavaFXpert/quil-syntax-highlighter">Quil syntax highlighter</a></h4>
+        
+        <p>Syntax highlighter for PyCharm.</p>
+
+    
+        
+            <h4 id="toqito"><a href="https://github.com/vprusso/toqito">toqito</a></h4>
+        
+        <p>Framework to study problems pertaining to entanglement theory, nonlocal games, and other aspects of quantum information.</p>
+
+    
+
+    <h1 id="abandoned-projects">Abandoned projects</h1>
+    
+        
+            <h4 id="pysimulator"><a href="https://github.com/BBN-Q/PySimulator">PySimulator</a></h4>
+        
+        <p>Python with C++ backend simulator for superconducting circuits.</p>
+
+    
+        
+            <h4 id="qacg"><a href="https://github.com/QCT-IQC/qacg">QACG</a></h4>
+        
+        <p>Quantum Arithmetic Circuit Generator in Haskell.</p>
+
+    
+        
+            <h4 id="qcviewer"><a href="https://github.com/QCT-IQC/QCViewer">QCViewer</a></h4>
+        
+        <p>A visual quantum circuit design and simulation tool.</p>
+
+    
+        
+            <h4 id="qiskit-js"><a href="https://github.com/Qiskit/qiskit-js">Qiskit-JS</a></h4>
+        
+        <p><a href="https://qiskit.org/">Quantum information software kit</a> for JavaScript (supported by IBM).</p>
+
+    
+        
+            <h4 id="squankum"><a href="https://github.com/jeffwass/Squankum">Squankum</a></h4>
+        
+        <p>Visual Java quantum simulator.</p>
+
+    
+        
+            <h4 id="libquantum"><a href="http://libquantum.de">libquantum</a></h4>
+        
+        <p>C library for quantum computing and quantum simulation.</p>
+
+    
+        
+            <h4 id="pqcs"><a href="https://qsoft.iqc.uwaterloo.ca/#software">pQCS</a></h4>
+        
+        <p><a href="https://uwspace.uwaterloo.ca/handle/10012/9267">Parallel quantum circuit synthesis</a> with optimal T-count.</p>
+
+    
+
+</p>
+:ET

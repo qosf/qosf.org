@@ -1,0 +1,165 @@
+I"%<h2 id="quantum-futures-hackathon">Quantum Futures Hackathon</h2>
+
+<p><em>Are you interested in learning more about quantum technologies and where it could take us? Do you enjoy collaborating on solutions to challenging problems? Whether you are an artist, a scientist or an engineer, whether you are a complete novice or have already fooled around with quantum technologies, this is for you.</em></p>
+
+<hr />
+
+<h2 id="overview">Overview</h2>
+
+<p>Toronto’s first Quantum Futures Hackathon is co-organized by CERN (the world’s largest particle accelerator) and QOSF. The Toronto leg of the hackathon will be held at the Fields Institute from Friday the 18th to Sunday the 20th of October 2019 whilst the Swiss leg will take place simultaneously at CERN IdeaSquare. <a href="https://docs.google.com/forms/d/e/1FAIpQLSeuOYCQLf6wGGB6nMrVsnK4fZs1zL1ioSgK7A-DSKZukTONHA/viewform?usp=sf_link">Register now</a> to secure your chance to explore one of the most promising technologies of our time. The hackathon is a follow up event to the Quantum Futures Workshop, which took place at CERN earlier this year.</p>
+
+<p>Participants will learn more about quantum computing by working in cross-disciplinary teams, exploring the emerging quantum-based technologies and developing their own contributions. Mentored by top scientists from both industry and academia, they will engage in a wide range of projects and challenges, such designing online games, developing solutions that help physicists at CERN, and quantum-generated artworks.</p>
+
+<p>You can pick freely what topic to work on and we will provide support for the open source software packages of all major quantum hardware providers, including</p>
+<ul>
+  <li><a href="https://github.com/quantumlib/Cirq">Cirq</a> from Google,</li>
+  <li><a href="https://qiskit.org/">Qiskit</a> from IBM,</li>
+  <li><a href="https://www.rigetti.com/forest">Forest</a> from Rigetti,</li>
+  <li><a href="https://ocean.dwavesys.com/">D-Wave’s Ocean</a> from D-Wave,</li>
+  <li><a href="https://strawberryfields.readthedocs.io/en/latest/">Strawberry Fields</a> and <a href="https://pennylane.readthedocs.io/en/latest/">PennyLane</a> from Xanadu,</li>
+  <li><a href="http://qutip.org/">QuTiP</a>,</li>
+  <li>and many more independent quantum open source projects that you might find helpful.</li>
+</ul>
+
+<p>The event is designed to bring together participants from all backgrounds and all levels of expertise – all you need to apply is an interest in learning more about quantum technology. If you are inclined to learn more from from engineers and researchers working on the forefront of quantum computing software and want to push the limits of quantum open source software, there’s no better place than here! To apply, simply fill out <a href="https://docs.google.com/forms/d/e/1FAIpQLSeuOYCQLf6wGGB6nMrVsnK4fZs1zL1ioSgK7A-DSKZukTONHA/viewform?usp=sf_link">our sign up sheet</a>.</p>
+
+<h2 id="schedule">Schedule</h2>
+
+<h3 id="friday-oct-18th">Friday, Oct 18th</h3>
+
+<p>The first day of the hackathon will consist of a gentle introduction to quantum computing, an overview of potential topics to work on and most importantly team formation. People can already start hacking but we encourage everyone to get a good night of sleep to have a productive weekend!</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Section</th>
+      <th>Start</th>
+      <th>End</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Arrival &amp; Registration</td>
+      <td>05:00 PM</td>
+      <td>05:30 PM</td>
+    </tr>
+    <tr>
+      <td>Introductory lecture on quantum computing &amp; software</td>
+      <td>05:30 PM</td>
+      <td>06:30 PM</td>
+    </tr>
+    <tr>
+      <td>Pizza &amp; getting to know each other</td>
+      <td>06:30 PM</td>
+      <td>07:30 PM</td>
+    </tr>
+    <tr>
+      <td>Overview of potential topics</td>
+      <td>07:30 PM</td>
+      <td>08:00 PM</td>
+    </tr>
+    <tr>
+      <td>Team formation and hackathon kickoff</td>
+      <td>08:00 PM</td>
+      <td>09:00 PM</td>
+    </tr>
+    <tr>
+      <td>Go home and sleep!</td>
+      <td>09:00 PM</td>
+      <td>–:– PM</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="saturday-oct-19th">Saturday, Oct 19th</h3>
+
+<p>The second day of the hackathon is supposed to be the most productive. The idea is to meet with your team and then hack away! You are more than welcome to use our awesome location - the Fields Institute - from 9AM to 9PM and we will make sure that you’re well fed!</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Section</th>
+      <th>Start</th>
+      <th>End</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Hacking</td>
+      <td>09:00 AM</td>
+      <td>09:00 PM</td>
+    </tr>
+    <tr>
+      <td>Light breakfast (Coffee, Tea &amp; Cereals)</td>
+      <td>09:00 AM</td>
+      <td>11:00 AM</td>
+    </tr>
+    <tr>
+      <td>Lunch (buffet style)</td>
+      <td>12:00 PM</td>
+      <td>02:00 PM</td>
+    </tr>
+    <tr>
+      <td>Dinner (buffet style)</td>
+      <td>06:00 PM</td>
+      <td>08:00 PM</td>
+    </tr>
+    <tr>
+      <td>Go home and sleep!</td>
+      <td>09:00 PM</td>
+      <td>–:– PM</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="sunday-oct-20th">Sunday, Oct 20th</h3>
+
+<p>The last hackathon day is usually pretty hectic! Once again, we gather at the Fields Institute at 9AM and you have until 6PM to finalize your projects and presentations. Then it’s time to present what your team achieved in the past days and celebrate your achievements!</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Section</th>
+      <th>Start</th>
+      <th>End</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Hacking</td>
+      <td>09:00 AM</td>
+      <td>06:00 PM</td>
+    </tr>
+    <tr>
+      <td>Light breakfast (Coffee, Tea &amp; Cereals)</td>
+      <td>09:00 AM</td>
+      <td>11:00 AM</td>
+    </tr>
+    <tr>
+      <td>Lunch (buffet style)</td>
+      <td>12:00 PM</td>
+      <td>02:00 PM</td>
+    </tr>
+    <tr>
+      <td>Final presentations &amp; dinner</td>
+      <td>06:00 PM</td>
+      <td>08:30 PM</td>
+    </tr>
+    <tr>
+      <td>Optional post-hackathon get-together</td>
+      <td>08:30 PM</td>
+      <td>10:30 PM</td>
+    </tr>
+  </tbody>
+</table>
+
+<h1 id="organizers">Organizers</h1>
+
+<ul>
+  <li><a href="https://github.com/tbabej">Tomas Babej</a> - QOSF and ProteinQure Inc.</li>
+  <li><a href="https://github.com/markf94">Mark Fingerhuth</a> - QOSF and ProteinQure Inc.</li>
+  <li><a href="https://gitlab.com/peterwittek">Peter Wittek</a> - QOSF, University of Toronto, Vector Institute and Perimeter Institute for Theoretical Physics</li>
+</ul>
+
+<p>Please take a moment to read the <a href="https://qosf.org/manifesto">QOSF manifesto</a> to learn what we’re all about.</p>
+:ET
