@@ -19,7 +19,7 @@ buttons:
       icon: fa-file-import
     - icon: slack
       content: Join our Slack
-      url: 'https://join.slack.com/t/qosf/shared_invite/zt-1n5ajr0sl-upEWLiUa~rCyiOrOS7e27w'
+      url: 'https://join.slack.com/t/qosf/shared_invite/zt-2nq2n0t9i-PyiiCKg1bAzRpNzLMM7pWg'
       external_url: true
     - icon: fa-hand-holding-heart
       content: Donate to QOSF
@@ -65,10 +65,12 @@ Cohort two (October 2020 to January 2021): [mentorship projects]({{ 'mentorship_
 
 Cohort three (March 2021 to June 2021): [mentorship projects]({{ 'mentorship_cohort_3' | absolute_url }}).
 
+Cohort four (October 2021 to January 2022): [mentorship projects]({{ 'mentorship_cohort_4' | absolute_url }}).
+
 
 ## Timeline 
 
-The program is running in cohorts. Here is the timeline for the next cohort, i.e., cohort 8th, which will start in September 2023. If you would like to be informed about updates, please follow us on [Twitter](https://twitter.com/qosfoundation), [LinkedIn](https://www.linkedin.com/company/qosf/) and [Facebook](https://www.facebook.com/quantumOSfoundation)!
+The program is running in cohorts. Here is the timeline for the next cohort, i.e., cohort 10th, which will start in October 2024. If you would like to be informed about updates, please follow us on [Twitter](https://twitter.com/qosfoundation), [LinkedIn](https://www.linkedin.com/company/qosf/) and [Facebook](https://www.facebook.com/quantumOSfoundation)!
 
 | Program milestone                                           | Timeframe                                                           |
 --------------------------------------------------------------|---------------------------------------------------------------------|
