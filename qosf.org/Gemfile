@@ -38,3 +38,5 @@ gem 'webrick', '~> 1.7'
 
 # REXML DoS vulnerability
 gem update rexml
+
+gem 'nokogiri'
