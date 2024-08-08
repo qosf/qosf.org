@@ -1,0 +1,314 @@
+I"��<h2 id="quantum-mentorship-program-cohort-3-project-showcase">Quantum Mentorship Program Cohort 3 Project Showcase</h2>
+
+<p>This is a showcase of all the projects created during the third cohort of our Quantum Computing Mentorship Program. Mentees and mentors worked on a open-source project, with the support of a community of like-minded people from all around the world. In total, there were 24 projects completed!</p>
+
+<hr />
+
+<h5 id="a-julia-package-on-quantum-optimal-control-qoptctrljl"><strong>A Julia package on Quantum Optimal Control (QOptCtrl.jl)</strong></h5>
+
+<p><em>Project description</em>: This project aims at developing a general purpose Julia package for implementing quantum gates in the presence of noise or other physical/hardware restrictions.
+A few examples are engineering an arbitrary single qubit gate in the presence of stochastic fluctuation in frequency parameters, engineering a pulse sequence to effectively decouple a system of interacting spins, or, designing an optimum pulse sequence to rotate an ensemble of electrons in the presence of an inhomogeneous magnetic field.</p>
+
+<p><em>Mentee</em>: <strong><a href="https://twitter.com/M_Ataallah">Mostafa Atallah</a></strong> A first-year Physics master student at Cairo University, Main research interests are Quantum Information, Quantum Computation and Quantum Machine Learning  <a href="https://www.linkedin.com/in/mostafa-atallah-540334120/">linkedin</a> <a href="https://www.facebook.com/mostafa.atallah.1996">facebook</a>.</p>
+
+<p><em>Mentor</em>: <strong>Razieh Annabestani</strong> A Strategic Partner Alliance Manager at Zapata Computing, and a senior scientist with 10+ years experience in physics, quantum information processing, mathematical modelling and numerical simulations and two years experimental experience in spectroscopy.  She has a PhD in Quantum Information and Computation from the University of Waterloo, Canada.</p>
+
+<p><em>Links</em>: <a href="https://github.com/Mostafa-Atallah2020/QOptCtrl.jl">Repository</a>.</p>
+
+<hr />
+
+<h5 id="quantum-autoencoder"><strong>Quantum autoencoder</strong></h5>
+
+<p><em>Project description</em>: Project is related to the demonstration of hierarchical Extreme Quantum Machine Learning with Neural Tensor Networks in the NISQ Era. In this project, the mentee’s introduced the framework of combining classical neural networks and different quantum variants of tensor networks such as tree tensor or multi-entangled renormalization ansatz for classifying the images.</p>
+
+<p><em>Mentees</em>:</p>
+<ul>
+  <li><strong><a href="https://www.linkedin.com/in/pinaki-sen/">Pinaki Sen</a></strong> is a junior year Electrical Engineering Undergrad. Besides, he is exploring and learning Machine Learning and Quantum Computing.</li>
+  <li><strong><a href="https://www.linkedin.com/in/albertomaldonadoromo/">Alberto Maldonado Romo</a></strong> is a PhD student in Computer Science at the Centro de Investigación en Computación, Instituto Politecnico Nacional, Mexico, where he has collaborated with the Fermilab and CERN research centres on the GeantV project, and did his Master’s thesis on quantum image processing. Alberto is an admin of the Quantum Universal Education not-forprofit, he has conducted workshops and webinars on introduction to quantum computing, designed comics introducing beginning quantum computing concepts, and created tutorials in five different quantum programming languages.</li>
+</ul>
+
+<p><em>Mentor</em>: <strong>Amandeep Singh Bhatia</strong> is developing quantum computational models and quantum algorithms with new artificial intelligence methods for physics, and novel quantum machine learning techniques. He received PhD degree in Computer Science Engineering at Thapar University in July 2020. He has more than five years of work experience in quantum computing and technologies. He has contributed to the progress of quantum automata theory and developed quantum computational models for Biology, Chemistry and Tensor network theory. Presently, contributing to the progress of quantum machine learning.</p>
+
+<p><em>Links</em>: The paper writing is in process.</p>
+
+<hr />
+
+<h5 id="quantum-error-correction"><strong>Quantum Error Correction</strong></h5>
+
+<p><em>Project description</em>: Mitiq is a Python toolkit for implementing error mitigation techniques on quantum computers. This project was focussed on making a meaningful contribution to Mitiq, which was accomplished by adding additional methods to Mitiq’s probabilistic error cancellation (PEC) module allowing it to be used in the same way as Mitiq’s zero-noise extrapolation (ZNE) module. In addition, other contributions were made including modifications to the organization of Mitiq’s tests, improvements to documentation, and identifying and correcting a bug in Windows-based documentation generation.</p>
+
+<p><em>Mentee</em>: <strong><a href="http://linkedin.com/in/andre-a-alves">Andre Alves</a></strong>  is an undergraduate computer engineering student whose return to university followed career hopping between the military, diplomacy, and entrepreneurship. He also holds an undergraduate degree in physics, and he plans to continue his studies and pursue an advance degree in quantum science, technology, and/or engineering.</p>
+
+<p><em>Mentor</em>: <strong>Tom Lubowe</strong> is a product and business development leader at Xanadu Quantum Technologies. He focuses on enabling users to learn and do more with the quantum software and hardware that is available today through Xanadu’s cloud offering. He hopes to make quantum computing accessible to the masses by reducing the barrier to entry while also ensuring that power users can get the most out of current technology. Tom is a mentor with QOSF and also helps with QOSF operations in his spare time. Prior to this he worked at 3 other quantum software and hardware startups where he focused on both business and product operations.</p>
+
+<p><em>Links</em>: <a href="https://github.com/unitaryfund/mitiq">Repository</a></p>
+
+<hr />
+
+<h5 id="study-of-many-quantum-algorithms"><strong>Study of many quantum algorithms</strong></h5>
+
+<p><em>Project description</em>: In this project we studied 2 techniques to prove lower bounds in the query complexity model of quantum algorithms. Trong focused on the polynomial method and the adversary method. 
+The output of this project is a <a href="https://quantumalgorithms.org">new chapter</a> where you can find a new (simpler) proof of the main theorem behind the adversary method written by Trong. While the polynomial method is arguably simpler, (you can find some lecture notes about it online), this is the first set of lecture notes where you can learn about the adversary method.</p>
+
+<p><em>Mentee</em>: <strong><a href="https://www.linkedin.com/in/trong-duong-0a75b6171/">Trong Duong</a></strong>  is finishing his second year at KAIST, where he majors in Mathematics and Electrical Engineering. His current research interest is quantum machine learning, specifically optimization for parametrized circuits. He also likes writing blog about quantum computing topics. He enjoys spending his spare time making cheesecake <a href="https://twitter.com/TrongDu27153458">twitter</a> <a href="https://myentangled.com/en/">personal website</a>.</p>
+
+<p><em>Mentor</em>: <strong>Alessandro Luongo</strong> got a PhD in quantum machine learning and now is a researcher in quantum algorithms at the Centre for Quantum Technologies of Singapore.</p>
+
+<p><em>Links</em>: <a href="https://github.com/Scinawa/quantumalgorithms.org/commit/dbadd206b1b1b38e8b4a160545971771f453f35e">Repository</a>, <a href="https://quantumalgorithms.org/lower-bounds-on-query-complexity-of-quantum-algorithms.html">Contribution</a></p>
+
+<hr />
+
+<h5 id="gradient-free-quantum-optimization-using-evolutionary-algorithms"><strong>Gradient-free quantum optimization using Evolutionary Algorithms</strong></h5>
+
+<p><em>Project description</em>: Implementing evolutionary algorithms to minimize the cost function so as to estimate the ground state for a model. The evolutionary algorithm part involves inserting/deleting/modifying quantum gates at random locations in the quantum circuit.</p>
+
+<p><em>Mentee</em>: <strong><a href="https://twitter.com/sarwarisak">Saksham Sarwari</a></strong> , B.Tech. in Engineering Physics from Indian Institute of Technology, Roorkee, India. Currently working in General Electric as a Software Developer <a href="https://www.linkedin.com/in/sarwarisak/">linkedin</a>.</p>
+
+<p><em>Mentor</em>: <strong>Dario Rosa</strong>  is a Senior Researcher and Junior Research Team Leader at Institute for Basic Science (IBS), Daejeon, South Korea</p>
+
+<p><em>Links</em>: <a href="https://github.com/sarwarisak/Quantum-Optimization-using-Evolutionary-Algorithms">Repository</a>.</p>
+
+<hr />
+
+<h5 id="implement-a-qiskit-braket-plugin"><strong>Implement a Qiskit Braket-plugin</strong></h5>
+
+<p><em>Project description</em>: This project aims at building a Qiskit-Braket plugin which provided Qiskit users access to Amazon Braket devices. Upon installing the package, costumers are able to code their quantum circuits, submit the job to a AWS quantum device, and retrieve and analysis the results through the Qiskit framework. The basis workflow as described has been achieved. We are currently reviewing the existing code, and we will continue to expand the utilities of our plugin to incorporate more features from the Qiskit library.</p>
+
+<p><em>Mentee</em>: <strong><a href="http://www.linkedin.com/in/aike-liu-505547123">Aike Liu</a></strong> Theoretical Physics, Graduate Student at California Institute of Technology.</p>
+
+<p><em>Mentors</em>:</p>
+<ul>
+  <li><strong>Derek Bolt</strong> Principal Engineer at Amazon Braket.</li>
+  <li><strong>Yunong Shi</strong>: Research Scientist at Amazon Braket.</li>
+</ul>
+
+<p><em>Links</em>: <a href="https://gitlab.com/AikeLiu/qosf_plugin">Repository</a>.</p>
+
+<hr />
+
+<h5 id="an-exploration-of-the-vehicle-routing-problem-vrp"><strong>An Exploration of the Vehicle Routing Problem (VRP)</strong></h5>
+
+<p><em>Project description</em>: The major challenge of the logistics industry is to come up with the optimal delivery plan for hundreds and thousands of delivery clients with a given number of available vehicles. This mathematical problem is known as the Vehicle Routing Problem (VRP). In this project, we look at the case of the VRP with a single depot and a fixed number of vehicles and try to minimize the total distance covered by the vehicles using D-Wave Systems. We compare various quantum algorithms against each other using different D-Wave solvers. We also compare D-Wave results against the classical CPLEX and IBM Qiskit results.</p>
+
+<p><em>Mentees</em>:</p>
+<ul>
+  <li><strong><a href="https://github.com/arkonaire">Shantom Borah</a></strong> is a final year undergraduate at BITS Pilani, India, currently in the final stages of completing his double majors in Physics and Electrical &amp; Electronics Engineering. Other than Quantum Computation and Information, he is also interested in Digital Electronics, Signal Processing, and Artificial Intelligence for games <a href="https://in.linkedin.com/in/shantom-borah-69811a149">linkedin</a>.</li>
+  <li><strong><a href="https://vectorbolt.github.io/landing-page.html">Avneesh Verma</a></strong>  is a 17-year-old at Richmond Hill High School in Canada who loves quantum computing and STEM education. He likes making animated videos to explain concepts in math and science <a href="https://github.com/VectorBolt">github</a> <a href="https://www.youtube.com/channel/UCN3uzbzGgzp75Cl2Ai73QSA">youtube</a> <a href="https://www.linkedin.com/in/avneesh-verma/">linkedin</a>.</li>
+  <li><strong><a href="https://www.linkedin.com/in/sinha-aniket/">Aniket Sanjay Sinha</a></strong> has recently graduated from the Indian Institute of Information Technology Ranchi with a Bachelor of Technology in Electronics and Communications Engineering (class of 2021). His interest lies in learning and developing algorithms to use current and near-term quantum computers to solve real-world problems <a href="https://github.com/Aniket-235">github</a>.</li>
+</ul>
+
+<p><em>Mentor</em>: <strong><a href="https://www.linkedin.com/in/vgg-consulting/">Dr. Vesselin G. Gueorguiev</a></strong>  is a physics <a href="https://www.researchgate.net/profile/Vesselin_Gueorguiev2">researcher</a> affiliated with the Ronin Institute for <a href="http://ronininstitute.org/research-scholars/vesselin-gueorguiev/">Independent Scholarship</a> and the <a href="http://iaps.institute/people/">Institute for Advanced Physical Studies</a>. His team AlphaQ won the <a href="https://github.com/VGGatGitHub/Hackathon2020">2020 CDL Quantum Hackathon</a>. He is active in AI and ML Hackathon space as well <a href="https://devpost.com/vggconsulting">personal website</a>. In 2020 he was one of the mentors  for cohort#2 of the QOSF - see project <a href="https://github.com/VGGatGitHub?tab=projects&amp;q=is:closed">QOSF cohort#2</a>.</p>
+
+<p><em>Links</em>: <a href="https://github.com/VGGatGitHub/QOSF-cohort3">Repository</a>.</p>
+
+<hr />
+
+<h5 id="exploring-financial-applications-of-qgans-through-braket"><strong>Exploring financial applications of qGANs through Braket</strong></h5>
+
+<p><em>Project description</em>: This project takes an empirical stab at answering the question: which hyperparameters are optimal for quantum generative adversarial learning. With the application of learning consecutive equity prices, we built a proof-of-concept quantum generative adversarial network and a simple quantum neural network to accomplish the task of predicting the next four days of prices given fifteen prior days of prices. We evaluate quantum model capacity, convergence characteristics, training efficency, and more on the basis of 7 hyperparameters we tuned.</p>
+
+<p><em>Mentee</em>: <strong><a href="https://pavanjay.com/">Pavan Jayasinha</a></strong> is an incoming UWaterloo undergraduate for computer engineering and summer intern at Zapata. Over the past year he has built a strong interest in building and learning quantum machine learning algorithms coupled with the underlying foundations.</p>
+
+<p><em>Mentor</em>: <strong>Yunong Shi</strong>  is a research scientist at Amazon Braket</p>
+
+<p><em>Links</em>: <a href="https://github.com/Sinestro38/qosf-qgan/tree/code-review-1">Repository</a>.</p>
+
+<hr />
+
+<h5 id="parallel-and-distributed-low-depth-algorithms-for-quantum-amplitude-estimation"><strong>Parallel and distributed low-depth algorithms for quantum amplitude estimation</strong></h5>
+
+<p><em>Project description</em>: Quantum Amplitude Estimation (QAE) is a core subroutine in quantum computation with various applications, including Monte Carlo integration. Quantum computers can potentially utilize QAE to achieve quadratic speed-up compared to classical Monte Carlo. In the conventional approach, the Quantum Phase Estimation (QPE) algorithm is used for amplitude estimation; however, QPE requires expensive controlled operations as well as a Fourier transform, which currently lead to difficulties with implementation in near-term quantum devices. In response to this, some alternative lower depth algorithms have been developed. In this project, I focused on implementing a parallelized and distributed version of the Power Law algorithm for QAE, which should further reduce the current hardware challenges by interconnecting small quantum computers as opposed to relying on a single big quantum computer.</p>
+
+<p><em>Mentee</em>: <strong><a href="https://www.linkedin.com/in/andrea-ricciardi-5887b983/">Andrea Ricciardi</a></strong>  is a mathematician with 5+ years of professional experience as Algorithmic Trader and Developer. He is fascinated with quantum computation and the impact it could have on the world we live in.</p>
+
+<p><em>Mentor</em>: <strong>Stephen Diadamo</strong>  is a PhD student at the Technical University of Munich. His work focuses on quantum communication systems design, such as protocol design and simulation of quantum networks, distributed quantum computing, and quantum information theory. He developed and maintains several related open-source repos including QuNetSim and Interlin-q.</p>
+
+<p><em>Links</em>: <a href="https://github.com/andrea-ricciardi/qosf_project">Repository</a>, <a href="http://arxiv.org/abs/2106.06841">Paper</a>.</p>
+
+<hr />
+
+<h5 id="variational-quantum-circuits-as-general-function-approximators"><strong>Variational Quantum Circuits as General Function Approximators</strong></h5>
+
+<p><em>Project description</em>: Tequila is an open source framework for developing variational quantum algorithms. The project focused on developing and implementing General Function Generators using variational quantum circuits in Tequila. Different techniques were explored and studied to train these variational quantum circuits. Additionally, tutorials were contributed to the Tequila repository which show the use of the generators to create 1-dimensional and 2-dimensional functions.</p>
+
+<p><em>Mentee</em>: <strong><a href="https://www.linkedin.com/in/tanyagarg0/">Tanya Garg</a></strong>  is an engineering physics undergraduate student at the Indian Institute of Technology, Roorkee. She is really interested in quantum computing especially quantum communication and quantum algorithms.</p>
+
+<p><em>Mentor</em>: <strong>Jakob Kottmann</strong> is currently a postdoctoral fellow at The Matter Lab at the University of Toronto.</p>
+
+<p><em>Links</em>: <a href="https://github.com/tgag17/General-Function-Generators">Repository</a>.</p>
+
+<hr />
+
+<h5 id="implement-high-level-quantum-algorithms-in-braket"><strong>Implement high-level quantum algorithms in Braket</strong></h5>
+
+<p><em>Project description</em>: Currently, implementing a quantum algorithm in the Amazon Braket SDK requires manually constructing its corresponding quantum circuit using gates. The aim of my project is to develop a feature that supports adding quantum operations that are more useful for building quantum algorithms. Moreover, it should allow us to compartmentalize quantum circuits into distinct sub operations when visualizing. The basic design of this feature has been completed, and operations for constructing the Greenberger-Horne-Zeilinger state, Quantum Fourier Transform, and Quantum Phase Estimation have been added. The code is currently being reviewed, and more operations and utilities will be added in the future.</p>
+
+<p><em>Mentee</em>: <strong><a href="https://www.linkedin.com/in/jerry-huang-243a671b2/">Jerry Huang</a></strong>  is an undergraduate student studying applied and computational mathematics at the California Institute of Technology.</p>
+
+<p><em>Mentors</em>:</p>
+<ul>
+  <li><strong>Derek Bolt</strong>, Principal Engineer in Amazon Braket.</li>
+  <li><strong>Yunong Shi</strong>, Research Scientist in Amazon Braket.</li>
+</ul>
+
+<p><em>Links</em>: <a href="https://github.com/jrrhuang/amazon-braket-sdk-python/tree/composite-operator">Repository</a>, <a href="https://github.com/jrrhuang/amazon-braket-sdk-python/blob/composite-operator/examples/composite_operator_examples.ipynb">Notebook</a></p>
+
+<hr />
+
+<h5 id="implement-a-braket-jupyter-notebook-text-editor-plugin"><strong>Implement a Braket Jupyter notebook text editor plugin</strong></h5>
+
+<p><em>Project description</em>: In this project we created a Jupyter notebook extension for Amazon Braket that can inform users the compatibility of hardware providers with the circuits they intend to run with just a simple click of button in the notebook and a line of code.
+To achieve this functionality,  the extension will parse through the function body and generate the corresponding Abstract Syntax Tree (AST), then it analyzes the AST to extract useful information in the circuit to match hardware provider capabilities.The extension is implemented in JavaScript and leverages the ANTLR parsing framework.</p>
+
+<p><em>Mentees</em>:</p>
+<ul>
+  <li><strong><a href="https://www.linkedin.com/in/sehmimul-hoque-420419178/">Sehmimul Hoque</a></strong> I am an undergraduate student from Bangladesh, pursuing Mathematical Physics and Combinatorics and Optimization at the University of Waterloo. I like studying about Quantum Computing/Physics and am looking for research opportunities. I am currently doing research at the Institute for Quantum Computing of UWaterloo on Quantum Cryptography.</li>
+  <li><strong><a href="https://www.linkedin.com/in/matt-queens/">Matt Wright</a></strong> I am an undergraduate student at Queen’s University studying Engineering Physics, specializing in Computing. I am fascinated by quantum computing and its vast applications and am interested in pursuing graduate studies in the field. I founded a quantum computing division in my school’s AI club and am working to share this incredible technology with others.</li>
+</ul>
+
+<p><em>Mentor</em>: <strong>Yunong Shi</strong>, research scientist at Amazon Braket</p>
+
+<p><em>Links</em>: <a href="https://github.com/shiyunon/jupyter_contrib_nbextensions/tree/master/src/jupyter_contrib_nbextensions/nbextensions/bracket_extension">Repository</a></p>
+
+<hr />
+
+<h5 id="quantum-key-distribution-and-information-reconciliation"><strong>Quantum key distribution and information reconciliation</strong></h5>
+
+<p><em>Project description</em>: Simulating Quantum Key Distribution Protocols with NetSquid</p>
+
+<p><em>Mentee</em>: <strong><a href="https://www.linkedin.com/in/christopher-u-116b50181/">Christopher Um</a></strong> , an incoming college freshman at Cornell University.</p>
+
+<p><em>Mentor</em>: <strong>Stephen DiAdamo</strong>  PhD student at Technical University of Munich (TUM). He has done previous research in quantum software research with NetSquid.</p>
+
+<p><em>Links</em>: <a href="https://github.com/stephendiadamo/qkd_error_recon/tree/master/qkd/protocols">Repository</a></p>
+
+<hr />
+
+<h5 id="study-the-capacity-of-quantum-neural-networks"><strong>Study the capacity of quantum neural networks</strong></h5>
+
+<p><em>Project description</em>: This project aims to extend the work done by Schuld et al. in <a href="https://arxiv.org/abs/2008.08605">link</a> by implementing a quantum circuit -&gt; partial fourier series converter to allow for easy access to the fourier coefficients that different quantum circuits give rise to, and ultimately draw inferences about the properties of different quantum ansatze with regards to their expressibiliy as quantum neural networks, and the kernels they give rise to as quantum kernel methods.</p>
+
+<p><em>Mentee</em>: <strong><a href="https://github.com/SashwatAnagolum">Sashwat Anagolum</a></strong> is a undergraduate student at Penn State University interested in quantum computing, machine learning, and everything in between <a href="https://www.linkedin.com/in/sashwatanagolum/">linkedin</a>.</p>
+
+<p><em>Mentor</em>: <strong>Yunong Shi</strong>, research scientist at Amazon Braket</p>
+
+<p><em>Links</em>: <a href="https://github.com/SashwatAnagolum/qnn_fourier_series">Repository</a></p>
+
+<hr />
+
+<h5 id="quantum-generative-models-interplay-between-depth-topology-and-accuracy"><strong>Quantum Generative Models: interplay between depth, topology and accuracy</strong></h5>
+
+<p><em>Project description</em>: Implementation of new qubit topologies for Quantum Circuit Born Machine ansatz in the Orquestra quantum environment</p>
+
+<p><em>Mentee</em>: <strong><a href="https://www.linkedin.com/in/benfoxman1">Ben Foxman</a></strong>, I’m a Rising Junior at Yale University, majoring in mathematics and computer science. I’m currently interning at Fidelity Investments in the Quantitative Research Division. In my free time, I enjoy playing chess, piano, and tennis.</p>
+
+<p><em>Mentor</em>: <strong>Marta Mauri</strong>, I’m a Quantum Software Engineer at Zapata Computing, where I landed soon after my Physics MSc. My main interests revolve around Quantum Machine Learning and Hybrid Quantum-Classical Algorithms. I’m passionate about developing software to face fundamentals research questions and love working on quantum algorithms for real world applications</p>
+
+<p><em>Links</em>: <a href="https://github.com/zapatacomputing/z-quantum-qcbm/pull/45">Repository</a></p>
+
+<hr />
+
+<h5 id="benchmarking-quantum-convolutional-neural-networks-for-classical-data"><strong>Benchmarking quantum convolutional neural networks for classical data</strong></h5>
+
+<p><em>Project description</em>: In this project, we benchmark the classification performance of fully parametrized Quantum Convolutional Neural Network (QCNN) for classical pattern recognition problems. In particular, we investigate the classification accuracy of QCNN designs with various quantum data embedding methods, structures of the parametrized  quantum circuit, classical data pre-processing methods, and loss functions on a number of standard classical datasets.</p>
+
+<p><em>Mentees</em>:</p>
+<ul>
+  <li><strong><a href="https://takh04.github.io">Tak Hur</a></strong>  is a Quantum Computing enthusiast majoring Msci Physics with Theoretical Physics at Imperial College London. His current research interests are Quantum Information Theory, Quantum Simulation of physical systems, and Quantum Machine Learning.</li>
+  <li><strong><a href="https://www.linkedin.com/in/leeseok-kim/">Leeseok Kim</a></strong>  graduated from Cornell University in 2021 with a B.A. in Physics and Mathematics, and will begin the Master’s program in Engineering Physics at Cornell University from Fall 2021. He is interested in intersections of physics, mathematics, and computer science, especially in quantum machine learning and quantum simulations.</li>
+</ul>
+
+<p><em>Mentor</em>: <strong>Daniel K. Park</strong>  is a Research Professor at Sungkyunkwan University (SKKU) in Korea working on quantum information processing. Before joining SKKU in 2021, he worked at KAIST as a post-doc for 3 years, and then as a research assistant professor for 2 years. He obtained his Ph.D degree in Physics-Quantum Information in 2015 at University of Waterloo &amp; Institute for Quantum Computing.</p>
+
+<p><em>Links</em>: <a href="https://github.com/takh04/QOSF_release">Repository</a></p>
+
+<hr />
+
+<h5 id="a-neat-quantum-error-decoder"><strong><a href="https://arxiv.org/abs/2101.08093">A NEAT quantum error decoder</a></strong></h5>
+
+<p><em>Project description</em>: The aim of my project was to implement a new method of quantum error decoding provided by H. Théveniaut and E.van Nieuwenburg in their paper from January. It uses NEAT to evolve artificial neural networks for correcting the errors occuring to physical qubits of the toric code without introducing a logical error for reasonable noise levels. While I haven’t finished the implementation, I learned a lot about the toric code as well as NEAT. My report is a gentle introduction for beginners to both of them which they can use to grasp crucial ideas on these topics. It also prepares ground for implementing the neural network training, which I’m going to add in the future.</p>
+
+<p><em>Mentee</em>: <strong><a href="https://www.linkedin.com/in/filip-rekawek/">Filip Rękawek</a></strong>  is an undergrad at University of Warsaw enrolled in an inter-faculty programme Mathematics and Natural Sciences. Besides quantum computing, his interests embrace mathematical logic and quantum physics.</p>
+
+<p><em>Mentor</em>: <strong>Dario Rosa</strong>  is a theoretical physicist working on quantum chaos and quantum many-body systems. He is based in Korea at the Institute for Basic Science in Daejeon and is interested in the applications of quantum computing to condensed matter and quantum many-body problems</p>
+
+<p><em>Links</em>: <a href="https://github.com/filomath/Quantum-Error-Decoding-using-NEAT">Repository</a></p>
+
+<hr />
+
+<h5 id="study-of-quantum-algorithms-for-monte-carlo"><strong>Study of quantum algorithms for monte carlo</strong></h5>
+
+<p><em>Project description</em>: In this project we studied how we can implement quantum algorithms for speeding up Monte Carlo techniques. Michele started from understanding algorithms for amplitude amplification and estimation, and then learned how to apply them in the context of Monte Carlo. We also discussed practical problems where Quantum Monte Carlo can be applied successfully, and we plan to explore further some problems, like the problem of estimating the trace distance between distributions.</p>
+
+<p><em>Mentee</em>: <strong><a href="https://www.linkedin.com/in/michele-vischi-1274b4151">Michele Vischi</a></strong> is a PhD student on Quantum Computing at the University of Trieste. He got his bachelor’s in math and his master’s in physics at Udine and Trieste respectively. He works on decoherence in quantum devices. He wants to learn quantum algorithms. He is a true quantum enthusiast <a href="https://mobile.twitter.com/Michele06426778">twitter</a>.</p>
+
+<p><em>Mentor</em>: <strong>Alessandro Luongo</strong> got a PhD in quantum machine learning and now is a researcher in quantum algorithms at the Centre for Quantum Technologies of Singapore.</p>
+
+<p><em>Links</em>: <a href="https://quantumalgorithms.org/chap-montecarlo.html">Contribution</a></p>
+
+<hr />
+
+<h5 id="study-of-some-quantum-algorithms-graphs"><strong>Study of some quantum algorithms (graphs)</strong></h5>
+
+<p><em>Project description</em>: In this project we studied quantum algorithms for graph related problems. Adrian focused on the problem of connectivity on undirected graphs, learning the difference between quantum query complexity and time complexity of an algorithm. He also explored similar techniques for quantum algorithms for finding minimum spanning trees on weighted graphs.</p>
+
+<p><em>Mentee</em>: <strong><a href="https://www.linkedin.com/in/adrian-lee-b1257714b/">Adrian Lee</a></strong>  is passionate about helping others to grow in the society. Inspired by his academic background in physics (BSc 2015) and mathematics (MSc 2017), he is interested in closing the gap between academia and industries by applying his knowledge in quantum computing.</p>
+
+<p><em>Mentor</em>: <strong>Alessandro Luongo</strong> got a PhD in quantum machine learning and now is a researcher in quantum algorithms at the Centre for Quantum Technologies of Singapore.</p>
+
+<p><em>Links</em>: <a href="https://quantumalgorithms.org/chap-graphs.html">Contribution</a></p>
+
+<hr />
+
+<h5 id="study-of-quantum-algorithms-for-perceptrons"><strong>Study of quantum algorithms for perceptrons</strong></h5>
+
+<p><em>Project description</em>: The project consisted in writing a new chapter for <a href="https://quantumalgorithms.org">website</a>, enhancing the open-source book with an explanation of the quantum Perceptron algorithm. Samantha got acquainted with the classical Perceptron algorithm first and then analyzed its quantum counterpart, writing the new chapter.</p>
+
+<p><em>Mentee</em>: <strong><a href="https://www.linkedin.com/in/s-buck"> Samantha Buck </a></strong> is pursuing her MSc in experimental nuclear physics at the University of Guelph. In 2019 she received a Mitacs Accelerate research award to work on the quantum simulations division at 1QBit. Future interests entail research at the intersection of quantum machine learning and quantum computing towards initiatives in nuclear physics.</p>
+
+<p><em>Mentor</em>: <strong>Armando</strong> is a Ph.D. student in Quantum Machine Learning at Politecnico di Milano. He has a computer science background, with a focus on cybersecurity and data analysis. His research currently covers provable speed-ups for data representation algorithms, though his interests in quantum algorithms/computation are broader.</p>
+
+<p><em>Links</em>: <a href="https://github.com/Scinawa/quantumalgorithms.org">Repository</a></p>
+
+<hr />
+
+<h5 id="continuous-variable-quantum-algorithms-an-introduction"><strong>Continuous Variable Quantum Algorithms: an Introduction</strong></h5>
+
+<p><em>Project description</em>: Quantum computing is usually associated with discrete quantum states and physical quantities possessing discrete eigenvalue spectrum. However, quantum computing in general is any computation accomplished by the exploitation of quantum properties of physical quantities, discrete or otherwise. It has been shown that physical quantities with continuous eigenvalue spectrum can be used for quantum computing as well. Currently, continuous variable quantum computing is a rapidly developing field both theoretically and experimentally. In this pedagogical introduction we present the basic theoretical concepts behind it and the tools for algorithm development. The paper targets readers with discrete quantum computing background, who are new to continuous variable quantum computing.</p>
+
+<p><em>Mentees</em>:</p>
+<ul>
+  <li><strong><a href="https://www.linkedin.com/in/robin-coleman-98b19614b/">Robin Coleman</a></strong>  is a PhD student at University of Guelph studying nuclear structure away from stability. M.S. in Physics and B.S. in Engineering Physics. His QC interests are mostly in using quantum computing to solve currently prohibitive physics problems as well as investigating current algorithms and theoretical limits of quantum computing.</li>
+  <li><strong><a href="https://www.linkedin.com/in/s-buck/">Samantha Buck</a></strong> is pursuing her MSc in experimental nuclear physics at the University of Guelph. In 2019 she received a Mitacs Accelerate research award to work on the quantum simulations division at 1QBit. Future interests entail research at the intersection of quantum machine learning and quantum computing towards initiatives in nuclear physics.</li>
+</ul>
+
+<p><em>Mentor</em>: <strong>Hayk</strong> is a theoretical physicist who defended his PhD at Yerevan State University while the mentorship program was in progress. He is currently working as a quantum software engineer at IQM.</p>
+
+<p><em>Links</em>: <a href="https://arxiv.org/abs/2107.02151">Paper</a></p>
+
+<hr />
+
+<h5 id="brief-introduction-to-quantum-option-pricing"><strong>Brief Introduction to Quantum Option Pricing</strong></h5>
+
+<p><em>Project description</em>: This project is about quantum quantitative finance. We collected a substantial amount of relevant information on the topic and compiled a brief pedagogical introduction to Quantum Option Pricing. First, we will talk about the field of quantitative finance and introduce the financial instruments called options, along with the crucial Monte Carlo method for pricing American options - the Longstaff-Schwartz algorithm. We will then introduce the recently discovered quantum approach for pricing European Options. We conclude by outlining the direction for future research and development of the project after the conclusion of the QOSF Mentorship Program.</p>
+
+<p><em>Mentee</em>: <strong><a href="https://www.linkedin.com/in/henry-makhanov/">Henry Makhanov</a></strong>  is a MS in CS student at The University of Texas at Austin and a current participant at the Creative Destruction Lab. Henry completed his undergraduate degree in Economics at The University of British Columbia. He is interested in applying quantum computing to the study of stochastic processes <a href="https://github.com/edenian/">github</a>.</p>
+
+<p><em>Mentor</em>: <strong>Dr. Maria Kieferova</strong>, is an SQA postdoctoral fellow at the UTS Centre for Quantum Software and Information and the ARC Centre of Excellence for Quantum Computation and Communication Technology.  Maria completed her undergraduate and masters degree at Comenius University in Slovakia and her PhD at IQC, University of Waterloo and Macquarie University. She is interested in developing quantum algorithms, namely for machine learning and quantum simulations.</p>
+
+<p><em>Links</em>: <a href="https://henrymakhanov.medium.com/brief-introduction-to-quantum-option-pricing-7f8c2f3bbbb4">Contribution</a></p>
+
+<hr />
+
+<h5 id="quantum-image-encryption-algorithm"><strong>Quantum Image Encryption Algorithm</strong></h5>
+
+<p><em>Project description</em>: This project is about using quantum computers to scramble and encrypt images. A new quantum algorithm to encrypt a classical image, represented as a quantum state through FRQI encoding, was developed. The algorithm uses quantum baker scrambling, and quantum discrete cosine transform to perform encryption. The algorithm was simulated using Qiskit, and the performance of encrypted images was analyzed. The outcome will be a research paper, and it is also planned to make the code open-source, in the form of a github repository, along with the paper.</p>
+
+<p><em>Mentee</em>: <strong><a href="https://www.linkedin.com/in/dhruv-bhatnagar-471abb113/">Dhruv Bhatnagar</a></strong> Dhruv is a meritorious electronics engineering graduate from NSIT, University of Delhi, with professional experience in developing verification IP software. He is passionate about the great potential of quantum technology. Currently, he is pursuing a research MSc in Applied Physics at TU Delft, with strong focus on quantum computing.</p>
+
+<p><em>Mentor</em>: <strong><a href="https://www.linkedin.com/in/amandeep-singh-bhatia-ph-d-07b83822">Amandeep Singh Bhatia</a></strong> is developing quantum computational models and quantum algorithms with new artificial intelligence methods for physics, and novel quantum machine learning techniques. He received PhD degree in Computer Science Engineering at Thapar University in July 2020. He has more than five years of work experience in quantum computing and technologies. He has contributed to the progress of quantum automata theory and developed quantum computational models for Biology, Chemistry and Tensor network theory. Presently, contributing to the progress of quantum machine learning.</p>
+
+<p><em>Links</em>: The paper writing is in process.</p>
+
+<hr />
+:ET

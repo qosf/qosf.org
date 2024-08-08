@@ -1,0 +1,183 @@
+I"b5<h1 id="learning">Learning</h1>
+
+<h4 id="documentation-for-forest-and-pyquil"><a href="http://pyquil.readthedocs.io/en/latest/">Documentation for Forest and pyQuil</a></h4>
+<p>Tutorials for Rigetti Computing’s SDK.</p>
+
+<h4 id="documentation-for-ocean"><a href="https://docs.ocean.dwavesys.com/en/latest/">Documentation for Ocean</a></h4>
+<p>Tutorial for D-Wave System’s SDK.</p>
+
+<h4 id="documentation-for-strawberry-fields"><a href="https://strawberryfields.readthedocs.io/en/latest/">Documentation for Strawberry Fields</a></h4>
+<p>Background information on the photonic continuous-variable approach to quantum computation, as well as tutorials for Xanadu’s SDK.</p>
+
+<h4 id="ibm-q-full-user-guide"><a href="https://quantum-computing.ibm.com/docs/">IBM Q Full User Guide</a></h4>
+<p>Short tutorials providing a gentle introduction to quantum computing and IBM Q.</p>
+
+<h4 id="john-preskills-notes-on-quantum-computation"><a href="http://www.theory.caltech.edu/~preskill/ph219/index.html#lecture">John Preskill’s Notes on Quantum Computation</a></h4>
+<p>Notes of Caltech’s Quantum Computation Course Physics 219/Computer Science 219 by John Preskill.</p>
+
+<h4 id="nielsen-and-chuang"><a href="https://workedproblems.wordpress.com/category/nielsenchuang/">Nielsen and Chuang</a></h4>
+<p>Worked examples on quantum algorithm problems.</p>
+
+<h4 id="qiskit-tutorials"><a href="https://github.com/QISKit/qiskit-tutorial">QISKit Tutorials</a></h4>
+<p>Jupyter notebooks simply demonstrating how to use QISKit.</p>
+
+<h4 id="quantum-algorithm-zoo"><a href="https://quantumalgorithmzoo.org/">Quantum Algorithm Zoo</a></h4>
+<p>Comprehensive catalog of quantum algorithms.</p>
+
+<h4 id="quantum-computing-playground"><a href="http://www.quantumplayground.net/#/home">Quantum Computing Playground</a></h4>
+<p>3D quantum state visualisation tool able to simulate up to 22 qubits.</p>
+
+<h4 id="quantum-katas"><a href="https://github.com/Microsoft/QuantumKatas/">Quantum Katas</a></h4>
+<p>Programming exercises for learning quantum computing and Q#.</p>
+
+<h4 id="quantum-machine-learning-for-data-scientists"><a href="https://arxiv.org/pdf/1804.10068.pdf">Quantum Machine Learning for Data Scientists</a></h4>
+<p>Explanation of quantum machine learning algorithms.</p>
+
+<h4 id="quirk"><a href="http://algassert.com/quirk">Quirk</a></h4>
+<p>Browser-based drag-and-drop quantum circuit simulator that reacts, simulates, and animates in real-time.</p>
+
+<h4 id="quantum-odyssey"><a href="https://www.quarksinteractive.com#">Quantum Odyssey</a></h4>
+<p>High budget educational video game, fully narrated that uses visual methods to teach about writing quantum algorithms</p>
+
+<h1 id="massive-open-online-courses">Massive Open Online Courses</h1>
+
+<h4 id="mit-quantum-information-sciences"><a href="https://ocw.mit.edu/courses/media-arts-and-sciences/mas-865j-quantum-information-science-spring-2006/lecture-notes/">MIT Quantum Information Sciences</a></h4>
+<p>Series of lecture notes on the MIT quantum information sciences course.</p>
+
+<h4 id="quantum-cryptography"><a href="https://www.edx.org/course/quantum-cryptography-caltechx-delftx-qucryptox-0">Quantum Cryptography</a></h4>
+<p>Learn how quantum communication provides security that is guaranteed by the laws of nature.</p>
+
+<h4 id="quantum-information-science-i-part-i"><a href="https://openlearninglibrary.mit.edu/courses/course-v1:MITx+8.370.1x+1T2018/about">Quantum Information Science I, Part I</a></h4>
+<p>Foundational course on quantum information and computation.</p>
+
+<h4 id="the-quantum-internet-and-quantum-computers-how-will-they-change-the-world"><a href="https://www.edx.org/course/quantum-internet-quantum-computers-how-delftx-qtm1x">The Quantum Internet and Quantum Computers: How Will They Change the World?</a></h4>
+<p>Learn the principles and promises behind developments in quantum computers and quantum internet and how they will impact our future.</p>
+
+<h4 id="understanding-quantum-computers"><a href="https://www.futurelearn.com/courses/intro-to-quantum-computing">Understanding Quantum Computers</a></h4>
+<p>Introduction to the key concepts of quantum computing with minimal mathematics.</p>
+
+<h4 id="quantum-quest"><a href="https://www.quantum-quest.nl/">Quantum Quest</a></h4>
+<p>A web class for <em>high school students</em>. Organized by <a href="http://www.qusoft.org/">QuSoft</a></p>
+
+<h4 id="quantum-machine-learning"><a href="https://www.edx.org/course/quantum-machine-learning">Quantum Machine Learning</a></h4>
+<p>Hands-on introduction to quantum computing and quantum-enhanced machine learning, complete with a <a href="https://gitlab.com/qosf/qml-mooc/">code repo</a>.</p>
+
+<h4 id="quantum-computing-less-formulas---more-understanding"><a href="https://online.spbu.ru/quantum-computing-less-formulas-more-understanding/">Quantum Computing. Less Formulas - More Understanding</a></h4>
+<p>An introductory course on Quantum Computing, focusing more on concepts.</p>
+
+<h4 id="quantum-technology-detectors-and-networking"><a href="https://www.edx.org/micromasters/purduex-quantum-technology-detectors-and-networking?index=product&amp;queryID=b3d92b1eebc019dc082bb40feca0f978&amp;position=3">Quantum Technology: Detectors and Networking</a></h4>
+<p>An online program from Purdue University teaching the fundamentals of quantum networking,
+detectors, sensors and applied quantum computing.</p>
+
+<h1 id="development-tools">Development Tools</h1>
+
+<p><a href="/project_list">Click here</a> for the most up-to-date list of all open source quantum software projects.</p>
+
+<h1 id="blogs">Blogs</h1>
+
+<h4 id="algorithmic-assertions"><a href="http://algassert.com/">Algorithmic Assertions</a></h4>
+<p>About quantum computing and computing in general by Craig Gidney - a member of Google Quantum Computing Team.</p>
+
+<h4 id="bits-of-quantum"><a href="http://blog.qutech.nl/">Bits of Quantum</a></h4>
+<p>By the QuTech institution, sharing their research and daily life.</p>
+
+<h4 id="decodoku"><a href="https://medium.com/@decodoku">Decodoku</a></h4>
+<p>Interesting posts on quantum computation, by James Wootton.</p>
+
+<h4 id="musty-thoughts"><a href="http://www.mustythoughts.com">Musty Thoughts</a></h4>
+<p>Blog by Michał Stęchły (<a href="https://www.zapatacomputing.com">Zapata Computing</a>, <a href="https://qosf.org">QOSF</a>).</p>
+
+<h4 id="quantum-frontiers"><a href="https://quantumfrontiers.com/">Quantum Frontiers</a></h4>
+<p>By the Quantum Institute for Quantum Information and Matter, sharing behind the scenes research insights.</p>
+
+<h4 id="quantum-weekly"><a href="https://quantumweekly.com/">Quantum Weekly</a></h4>
+<p>A weekly correlation of all things quantum - computing, cryptography, entanglement.</p>
+
+<h4 id="shtetl-optimized"><a href="https://www.scottaaronson.com/blog/">Shtetl Optimized</a></h4>
+<p>Blog by Scott Aaronson.</p>
+
+<h1 id="books">Books</h1>
+
+<h4 id="classical-and-quantum-computation"><a href="https://books.google.com.au/books/about/Classical_and_Quantum_Computation.html?id=TrMposZZ0MQC&amp;redir_esc=y">Classical and Quantum Computation</a></h4>
+<p>Introduction to fundamentals of classical and quantum computing.</p>
+
+<h4 id="problems-and-solutions-in-quantum-computing"><a href="https://www.worldscientific.com/worldscibooks/10.1142/6077#">Problems and Solutions in Quantum Computing</a></h4>
+<p>Easy to advanced quantum computing and information problems with detailed solutions.</p>
+
+<h4 id="quantum-computation-and-quantum-information"><a href="https://www.amazon.com/Quantum-Computation-Information-10th-Anniversary/dp/1107002176">Quantum Computation and Quantum Information</a></h4>
+<p>Comprehensive textbook for those with some prior knowledge in mathematics, computer science and physics.</p>
+
+<h4 id="quantum-computing-a-gentle-introduction"><a href="https://www.amazon.com/Quantum-Computing-Introduction-Engineering-Computation/dp/0262526670">Quantum Computing: A Gentle Introduction</a></h4>
+<p>Explains quantum computing with only basic college maths knowledge needed.</p>
+
+<h4 id="quantum-computing-explained"><a href="https://www.amazon.com/Quantum-Computing-Explained-David-McMahon/dp/0470096993">Quantum Computing Explained</a></h4>
+<p>Conversational approach to explaining quantum computing with worked solutions.</p>
+
+<h4 id="quantum-computing-for-computer-scientists"><a href="https://www.amazon.com/Quantum-Computing-Computer-Scientists-Yanofsky/dp/0521879965">Quantum Computing for Computer Scientists</a></h4>
+<p>Quantum computing explained using an approach accessible to undergraduate computer science students.</p>
+
+<h4 id="learn-quantum-computing-with-python-and-q"><a href="https://www.manning.com/books/learn-quantum-computing-with-python-and-q-sharp">Learn Quantum Computing with Python and Q#</a></h4>
+<p>Learn about quantum computing by building your own quantum simulator, implementing quantum algorithms, and applying quantum programming techniques to real-world examples including cryptography and chemistry.</p>
+
+<h1 id="papers">Papers</h1>
+
+<h4 id="opportunities-and-challenges-for-quantum-machine-learning"><a href="https://arxiv.org/abs/1708.09757">Opportunities and Challenges for Quantum Machine Learning</a></h4>
+<p>Opportunities and challenges for quantum-assisted machine learning in near-term quantum computers.</p>
+
+<h4 id="quantum-machine-learning-1"><a href="https://www.researchgate.net/publication/264825604_Quantum_Machine_Learning_What_Quantum_Computing_Means_to_Data_Mining">Quantum Machine Learning</a></h4>
+<p>Quantum machine learning and what quantum computing means to data mining.</p>
+
+<h4 id="making-quantum-computing-open-lessons-from-open-source-projects"><a href="https://arxiv.org/abs/1902.00991">Making Quantum Computing Open: Lessons from Open-Source Projects</a></h4>
+<p>An investigation of contributors to open-source quantum computing projects, their educational and professional backgrounds. Includes a survey with focus on what helped them succeed in the field.</p>
+
+<h1 id="videos">Videos</h1>
+
+<h4 id="introduction-to-quantum-programming"><a href="https://skillsmatter.com/skillscasts/11929-programming-the-world-s-first-quantum-computers-using-forest">Introduction to Quantum Programming</a></h4>
+<p>This talk is an introduction to modern quantum programming. It covers why you might want to program a quantum computer and how you would do so today, with a focus on the Forest Python SDK from Rigetti Computing. The only background assumed is linear algebra and complex numbers at the level of undergraduate computer science. Duration: 1 hour, 22 minutes.</p>
+
+<h4 id="quantum-computing-for-computer-scientists-1"><a href="https://www.youtube.com/watch?v=F_Riqjdh2oM">Quantum Computing for Computer Scientists</a></h4>
+<p>Microsoft Research Talk on introductory quantum computing for computer scientists. Duration: 1 hour, 28 minutes.</p>
+
+<h1 id="community">Community</h1>
+
+<h4 id="d-wave-leap-community"><a href="https://support.dwavesys.com/hc/en-us/community/topics">D-Wave Leap Community</a></h4>
+<p>D-Wave System’s Leap Community Forum.</p>
+
+<h4 id="ibm-q-community"><a href="https://quantumexperience.ng.bluemix.net/qx/community">IBM Q Community</a></h4>
+<p>IBM Quantum experience Community Forum.</p>
+
+<h4 id="ibm-q-qiskit-community"><a href="https://qiskit.slack.com/">IBM Q QISKit Community</a></h4>
+<p>Slack Channel for QISKit and quantum computing discussions.</p>
+
+<h4 id="q-community"><a href="https://qsharp.community/">Q# Community</a></h4>
+<p>An open-source community around quantum programming in Q#, including blogs, code repositories, and online meetups.</p>
+
+<h4 id="women-in-quantum-computing-and-applications"><a href="https://www.wiqca.dev/">Women In Quantum Computing and Applications</a></h4>
+<p>An inclusive meetup group based in Seattle, WA, USA (currently gathering remotely) that hosts talks and tutorial series.</p>
+
+<h4 id="mike--ike-subreddit"><a href="https://www.reddit.com/r/MikeAndIke/">Mike &amp; Ike Subreddit</a></h4>
+<p>Discussion about the book Quantum Computation and Quantum Information.</p>
+
+<h4 id="pennylane-discussion-forum"><a href="https://discuss.pennylane.ai">PennyLane Discussion Forum</a></h4>
+<p>Discussion forum for quantum machine learning, both using simulations and on near term hardware.</p>
+
+<h4 id="quantum-computing-stackexchange"><a href="http://quantumcomputing.stackexchange.com/">Quantum Computing StackExchange</a></h4>
+<p>Question and answer site for quantum computing.</p>
+
+<h4 id="quantum-information-and-quantum-computer-scientists-of-the-world-unite"><a href="https://www.facebook.com/groups/qinfo.scientists.unite/">Quantum Information and Quantum Computer Scientists of the World Unite</a></h4>
+<p>Facebook group for quantum research discussion.</p>
+
+<h4 id="rigetti-community"><a href="http://slack.rigetti.com/">Rigetti Community</a></h4>
+<p>Slack Channel for Rigetti and quantum computing discussions.</p>
+
+<h4 id="strawberry-fields-community"><a href="https://u.strawberryfields.ai/slack">Strawberry Fields Community</a></h4>
+<p>Slack channel for Xanadu and Strawberry Fields photonic/CV quantum computing discussions.</p>
+
+<h4 id="quantum-computing-slack-community"><a href="http://quantum-computing.slack.com/">Quantum Computing Slack Community</a></h4>
+<p>Slack Channel for quantum computing discussions. Generate an invite for
+this channel here: <a href="https://quantum-computing.herokuapp.com">Quantum Computing Slack -
+Invite</a>.</p>
+
+<h4 id="quantum-odyssey-1"><a href="https://www.quarksinteractive.com#">Quantum Odyssey</a></h4>
+<p>Discord Channel for Quantum Odyssey puzzle-solving enthusiasts and quantum computing discussions. <a href="https://discord.gg/mZHJYFX4mG">Discord</a>.</p>
+:ET

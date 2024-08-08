@@ -1,0 +1,269 @@
+I"=&<h2 id="fosdem19-quantum-computing">FOSDEM'19 Quantum Computing</h2>
+
+<p><em>Are you interested in Quantum Computing? Unsure where the industry’s heading? Is the
+hype justified? And when are quantum computers going to take over the world?</em></p>
+
+<p><strong>or</strong></p>
+
+<p><em>Are you a developer interested in jumping on the rising tide of the new
+computing paradigm?</em></p>
+
+<hr />
+
+<p>Join us for two packed days full of quantum computing, celebrating open source
+and fostering collaboration at <a href="https://fosdem.org/2019/">FOSDEM 2019</a> and
+learn answers to (not only!) those questions.</p>
+
+<p>The space of the open source software for quantum computing is blooming,
+with researchers and hardware providers alike investing in creating
+software infrastructure for this new computing paradigm.</p>
+
+<p>The main themes of the event are:</p>
+
+<ul>
+  <li>to flatten down the learning curve and break perceived barriers that prevent
+developers from entering the field of quantum software development</li>
+  <li>to promote existing quantum computing open source projects and foster
+collaboration between new and existing developers</li>
+  <li>to ensure that the field is dominated by high-quality, community driven FOSS
+open source software, standards and protocols</li>
+</ul>
+
+<p>All major hardware providers with open source development frameworks, including
+<a href="https://qiskit.org/">Qiskit</a> (IBM),
+<a href="https://www.rigetti.com/forest">Forest</a> (Rigetti), 
+<a href="https://ocean.dwavesys.com/">D-Wave’s Ocean</a> (D-Wave), 
+<a href="https://pennylane.readthedocs.io/en/latest/">PennyLane</a>,
+<a href="https://strawberryfields.readthedocs.io/en/latest/">Strawberry Fields</a> (Xanadu),
+<a href="http://qutip.org/">QuTiP</a>,
+<a href="https://github.com/quantumlib/Cirq">Cirq</a> (Google),
+and a vast number of academic and independent open source projects will be featured over the two days.</p>
+
+<p>If you are inclined to learn more from directly from engineers and researchers
+working on the forefront of quantum computing software, join the community and
+contribute to pushing the limits of the quantum computing open source, there’s no
+better place than here!</p>
+
+<h2 id="overview">Overview</h2>
+
+<h3 id="saturday-quantum-computing-devroom">Saturday: Quantum computing devroom</h3>
+<p>Saturday is devoted to quantum computing full-stack libraries and established, mature quantum computing projects.
+Attendees are free to come and go in-between the talks, but beware that rooms at FOSDEM can get crowded!
+This day will also include a discussion on the state of open source and possible directions going forward with respect to development of open source and open standards.</p>
+
+<h3 id="sunday-quantum-computing-workshop">Sunday: Quantum computing workshop</h3>
+<p>Sunday is hands-on day: we’re organizing a <strong>quantum computing workshop</strong>! In the morning, developers of 11 open source quantum computing projects in total will introduce attendees of the workshop to their projects.
+During the afternoon, participants of the workshop (yes, you!) will work in small groups with the developers of the selected project to work learn more about the respective projects, help improve the documentation or even work on their first contributions!</p>
+
+<p>Participants of the Quantum computing workshop are generally expected to attend the whole day - the space is limited. If you want a better chance to get a spot, <a href="https://docs.google.com/forms/d/e/1FAIpQLScmbT0L2lDeMOhcLmSEmif-dqkuCg_EV0S7RkP4RJxZy5ksyQ/viewform">pre-register here</a>.</p>
+
+<h2 id="schedule">Schedule</h2>
+
+<h3 id="saturday-feb-2nd">Saturday, Feb 2nd</h3>
+
+<p>During the first day of the conference, the quantum computing track is held in the room <a href="https://fosdem.org/2019/schedule/room/aw1121/">AW.121</a>.</p>
+
+<ul>
+  <li>Calendar: <a href="https://fosdem.org/2019/schedule/track/quantum_computing.ics">iCal</a>, <a href="https://fosdem.org/2019/schedule/track/quantum_computing.xcs">xCal</a></li>
+  <li>Duration: 10.30 – 19.00</li>
+  <li>Capacity: 82</li>
+</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th>Talk title</th>
+      <th>Start</th>
+      <th>End</th>
+      <th>Speaker</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>When open source meets quantum computing</td>
+      <td>10:30:00 AM</td>
+      <td>10:55:00 AM</td>
+      <td>Tomas Babej</td>
+    </tr>
+    <tr>
+      <td>Forest: An Open Source Quantum Software Development Kit</td>
+      <td>11:00:00 AM</td>
+      <td>11:45:00 AM</td>
+      <td>Robert Smith</td>
+    </tr>
+    <tr>
+      <td>Delivering Practical Quantum Computing</td>
+      <td>11:50:00 AM</td>
+      <td>12:20:00 PM</td>
+      <td>Murray Thom</td>
+    </tr>
+    <tr>
+      <td>D-Wave’s Software Development Kit</td>
+      <td>12:25:00 PM</td>
+      <td>12:55:00 PM</td>
+      <td>Alexander Condello</td>
+    </tr>
+    <tr>
+      <td>D-Wave Hybrid Framework</td>
+      <td>01:00:00 PM</td>
+      <td>01:30:00 PM</td>
+      <td>Radomir Stevanovic</td>
+    </tr>
+    <tr>
+      <td>What is IBMQ</td>
+      <td>01:35:00 PM</td>
+      <td>02:20:00 PM</td>
+      <td>Mark Mattingley-Scott</td>
+    </tr>
+    <tr>
+      <td>Qutip: Quantum simulations and collaborative code development</td>
+      <td>02:25:00 PM</td>
+      <td>03:10:00 PM</td>
+      <td>Shahnawaz Ahmed</td>
+    </tr>
+    <tr>
+      <td>Strawberry Fields - software for photonic quantum computing</td>
+      <td>03:15:00 PM</td>
+      <td>04:00:00 PM</td>
+      <td>Nathan Killoran</td>
+    </tr>
+    <tr>
+      <td>PennyLane - Automatic differentiation and ML of QC</td>
+      <td>04:05:00 PM</td>
+      <td>04:50:00 PM</td>
+      <td>Josh Izaac</td>
+    </tr>
+    <tr>
+      <td>Quantum Computing at Google and in the Cloud</td>
+      <td>04:55:00 PM</td>
+      <td>05:40:00 PM</td>
+      <td>Kevin D. Kissell</td>
+    </tr>
+    <tr>
+      <td>Promotion of open source and role of standardization in QC</td>
+      <td>05:45:00 PM</td>
+      <td>06:30:00 PM</td>
+      <td>Panel Discussion</td>
+    </tr>
+    <tr>
+      <td>Exponential speedup in progress</td>
+      <td>06:35:00 PM</td>
+      <td>07:00:00 PM</td>
+      <td>Mark Fingerhuth</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="sunday-feb-3rd">Sunday, Feb 3rd</h3>
+
+<p>During the second day of the conference, the quantum computing workshop is held in the room <a href="https://fosdem.org/2019/schedule/room/ub2147/">UB2.147</a>.</p>
+
+<ul>
+  <li>Calendar: <a href="https://fosdem.org/2019/schedule/track/quantum_computing_workshop.ics">iCal</a>, <a href="https://fosdem.org/2019/schedule/track/quantum_computing_workshop.xcs">xCal</a></li>
+  <li>Duration: 9.00 – 16.30</li>
+  <li>Capacity: 91</li>
+</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th>Workshop title</th>
+      <th>Start</th>
+      <th>End</th>
+      <th>Speaker</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Towards Practical Quantum Machine Learning with NISQAI</td>
+      <td>09:00:00 AM</td>
+      <td>09:20:00 AM</td>
+      <td>Ryan LaRose</td>
+    </tr>
+    <tr>
+      <td>Bayesforge: Elevating the QC Stack</td>
+      <td>09:20:00 AM</td>
+      <td>09:40:00 AM</td>
+      <td>Henning Dekant</td>
+    </tr>
+    <tr>
+      <td>An Open-Source General Compiler for Quantum Computers</td>
+      <td>09:40:00 AM</td>
+      <td>10:00:00 AM</td>
+      <td>Kaitlin Smith</td>
+    </tr>
+    <tr>
+      <td>Julia programming language for quantum software development</td>
+      <td>10:00:00 AM</td>
+      <td>10:20:00 AM</td>
+      <td>Piotr Gawron</td>
+    </tr>
+    <tr>
+      <td>QCL - A Programming Language for Quantum Computers</td>
+      <td>10:20:00 AM</td>
+      <td>10:40:00 AM</td>
+      <td>Andrew Savchenko</td>
+    </tr>
+    <tr>
+      <td>Curry: A probabilistic quantum programming language</td>
+      <td>10:40:00 AM</td>
+      <td>11:00:00 AM</td>
+      <td>Lucas Saldyt</td>
+    </tr>
+    <tr>
+      <td>PyZX: Graph-theoretic optimization of quantum circuits</td>
+      <td>11:20:00 AM</td>
+      <td>11:40:00 AM</td>
+      <td>John van de Wetering</td>
+    </tr>
+    <tr>
+      <td>An implementation of a classifier on Qiskit</td>
+      <td>11:40:00 AM</td>
+      <td>12:00:00 PM</td>
+      <td>Carsten Blank</td>
+    </tr>
+    <tr>
+      <td>Through the RevKit v3 implementation</td>
+      <td>12:00:00 PM</td>
+      <td>12:20:00 PM</td>
+      <td>Bruno Schmitt</td>
+    </tr>
+    <tr>
+      <td>Q-bug: Visualizing Quantum Circuits</td>
+      <td>12:20:00 PM</td>
+      <td>12:40:00 PM</td>
+      <td>Felix Tripier</td>
+    </tr>
+    <tr>
+      <td>SimulaQron — a simulator for developing quantum internet software</td>
+      <td>12:40:00 PM</td>
+      <td>13:00:00 PM</td>
+      <td>Axel Dahlberg</td>
+    </tr>
+    <tr>
+      <td>Contribution hackathon session</td>
+      <td>13:30:00 PM</td>
+      <td>16:30:00 PM</td>
+      <td>N/A</td>
+    </tr>
+  </tbody>
+</table>
+
+<h1 id="live-streaming-and-recordings">Live streaming and recordings</h1>
+
+<p>Live streaming <a href="https://fosdem.org/2019/schedule/streaming/">will be available</a>,
+with talks being recorded and hosted on the official <a href="https://video.fosdem.org/2019/">FOSDEM video archive</a>.</p>
+
+<h1 id="organizers">Organizers</h1>
+
+<ul>
+  <li><a href="https://github.com/tbabej">Tomas Babej</a> - ProteinQure Inc.</li>
+  <li><a href="https://github.com/markf94">Mark Fingerhuth</a> - ProteinQure Inc.</li>
+  <li><a href="https://gitlab.com/peterwittek">Peter Wittek</a> - University Of Toronto, Vector Institute, Perimeter Institute for Theoretical Physics</li>
+</ul>
+
+<h1 id="sponsors">Sponsors</h1>
+<p><a href="https://unitary.fund"><img src="https://unitary.fund/logos/logo.png" alt="Unitary Fund" /></a></p>
+
+<p>Please, take a moment to read the <a href="https://fosdem.org/2019/practical/conduct/">FOSDEM Code of Conduct</a>.</p>
+:ET

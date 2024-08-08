@@ -67,6 +67,15 @@ Cohort three (March 2021 to June 2021): [mentorship projects]({{ 'mentorship_coh
 
 Cohort four (October 2021 to January 2022): [mentorship projects]({{ 'mentorship_cohort_4' | absolute_url }}).
 
+Cohort five (March 2022 to June 2022): [mentorship projects]({{ 'mentorship_cohort_5' | absolute_url }}).
+
+Cohort six (October 2022 to January 2023): [mentorship projects]({{ 'mentorship_cohort_6' | absolute_url }}).
+
+Cohort seven (March 2023 to June 2023): [mentorship projects]({{ 'mentorship_cohort_7' | absolute_url }}).
+
+Cohort eight (October 2023 to January 2024): [mentorship projects]({{ 'mentorship_cohort_8' | absolute_url }}).
+
+Cohort nine (March 2024 to June 2024): [mentorship projects]({{ 'mentorship_cohort_9' | absolute_url }}).
 
 ## Timeline 
 
@@ -74,12 +83,12 @@ The program is running in cohorts. Here is the timeline for the next cohort, i.e
 
 | Program milestone                                           | Timeframe                                                           |
 --------------------------------------------------------------|---------------------------------------------------------------------|
-| Program applications released for mentees                   | September 22nd, 2023                                                | 
-| Program applications closed for mentees                     | October 6th, 2023                                                   | 
-| Applications review                                         | October 6th-23rd, 2023                                              |
-| Pairing mentors with mentees and defining projects’ scope   | October 23rd-30th, 2023                                             |
+| Program applications released for mentees                   | September 22nd, 2024                                                | 
+| Program applications closed for mentees                     | October 6th, 2024                                                   | 
+| Applications review                                         | October 6th-23rd, 2024                                              |
+| Pairing mentors with mentees and defining projects’ scope   | October 23rd-30th, 2024                                             |
 | Mentees and mentors work on projects                        | November 1st, 2023 - January 31st, 2024                             |
-| Program wrap-up and promotion of all open-source projects   | February, 2024                                                      |
+| Program wrap-up and promotion of all open-source projects   | February, 2025                                                      |
     
 
 ## How does it work?
