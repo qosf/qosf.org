@@ -50,6 +50,7 @@ for line in readme.content.decode().splitlines():
 
 for heading, lines in projects.items():
     for line in lines:
+        
         if line[:2] == '- ':
             project_name = re.search(r'\[(.*?)\]', line).group(1)
             project_description = re.search(r'^.*-.*- (.*)$', line).group(1)#.strip('\'')
