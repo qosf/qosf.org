@@ -18,7 +18,8 @@ import re
 import yaml
 import requests
 
-readme = requests.get('https://raw.githubusercontent.com/qosf/os_quantum_software/master/README.md', timeout=5)
+readme = requests.get('https://raw.githubusercontent.com/CalMacCQ/awesome-quantum-software/master/README.md', timeout=5)
+
 
 # Open Source Quantum Software Projects (OSQSP) dictionary
 OSQSP_list = []
@@ -49,7 +50,7 @@ for line in readme.content.decode().splitlines():
 
 for heading, lines in projects.items():
     for count, line in enumerate(lines):
-        if line[:2] == '- ' and count > 2:
+        if line[:2] == '- ':
             project_name = re.search(r'\[(.*?)\]', line).group(1)
             project_description = re.search(r'^.*-.*- (.*)$', line).group(1)#.strip('\'')
             project_url = re.search(r'\((.*?)\)', line).group(1)
@@ -67,5 +68,5 @@ for heading_dict in OSQSP_list:
 # finally dump it into a YAML file
 yaml_output = yaml.dump(OSQSP_list, default_flow_style=False)
 
-with open('../_data/yaml_project_list.yml', '+w') as output:
+with open('../_data/yaml_project_list.yml', '+w', encoding="utf-8") as output:
     output.write(yaml_output)
