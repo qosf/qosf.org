@@ -18,7 +18,7 @@ import re
 import yaml
 import requests
 
-readme = requests.get('https://raw.githubusercontent.com/qosf/os_quantum_software/master/README.md')
+readme = requests.get('https://raw.githubusercontent.com/qosf/os_quantum_software/master/README.md', timeout=5)
 
 # Open Source Quantum Software Projects (OSQSP) dictionary
 OSQSP_list = []
