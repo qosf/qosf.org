@@ -86,6 +86,9 @@
       computing ([arXiv paper](https://arxiv.org/abs/1710.01794)).
     name: XACC
     url: https://github.com/ORNL-QCI/xacc
+  - description: Programming language (interpreter) for classical-quantum hybrid computers.
+    name: avaloni
+    url: https://github.com/avalon-lang/avaloni
   - description: Quantum computing SDK.
     name: blueqat
     url: https://github.com/Blueqat/Blueqat
@@ -282,6 +285,12 @@
   - description: Drag-and-drop quantum circuit simulator in your browser.
     name: Quirk
     url: https://github.com/Strilanc/Quirk
+  - description: Modular toolkit for QC simulators. Quplexity offers essential mathematical
+      functions and logic relative to quantum computer simulation. Quplexity is written
+      in ARM(64) and x86 Assembly, which results in improved performance and "weight"
+      benefits.
+    name: Quplexity
+    url: https://github.com/MrGilli/Quplexity
   - description: A blazing fast Rust library for simulating quantum circuits. Only
       for quriust ones.
     name: Quriust
@@ -354,9 +363,19 @@
     name: tweedledum
     url: https://github.com/boschmitt/tweedledum
 - name: Quantum Analog Hamiltonian
-  projects: []
+  projects:
+  - description: Package for the quantum computation and quantum simulation based
+      on the neutral-atom architecture.
+    name: Bloqade
+    url: https://github.com/QuEraComputing/Bloqade.jl
+  - description: Python library for pulse-level/analog control of neutral atom devices.
+    name: Pulser
+    url: https://github.com/pasqal-io/Pulser
 - name: Quantum annealing
   projects:
+  - description: Compile a very small subset of C to a D-Wave Hamiltonian function
+    name: C-to-D-Wave
+    url: https://github.com/lanl/c2dwave
   - description: Compile a subset of [Prolog](https://en.wikipedia.org/wiki/Prolog)
       to a D-Wave Hamiltonian function
     name: QA Prolog
@@ -515,6 +534,10 @@
       [Psi4](http://www.psicode.org/) and [OpenFermion](https://github.com/quantumlib/OpenFermion).
     name: XACC QChem
     url: https://github.com/ORNL-QCI/xacc-qchem-benchmarks
+  - description: Variational quantum eigensolver built on [XACC](https://github.com/ORNL-QCI/xacc)
+      for distributed, and shared memory systems.
+    name: XACC VQE
+    url: https://github.com/ornl-qci/xacc-vqe
   - description: Quantum implementation of Shor's algorithm.
     name: myQShor
     url: https://github.com/Michaelvll/myQShor
@@ -535,6 +558,10 @@
       and related tool-set.
     name: BQSKit
     url: https://github.com/BQSKit
+  - description: AOT/JIT compiler for hybrid quantum computing beyond NISQ. Written
+      in MLIR. Python frontend via [PennyLane](https://pennylane.ai).
+    name: Catalyst
+    url: https://github.com/PennyLaneAI/catalyst
   - description: Cross-platform, error-mitigating quantum compiler from [Unitary Fund](https://unitary.fund/).
     name: Mitiq
     url: https://github.com/unitaryfund/mitiq
@@ -608,8 +635,18 @@
   - description: Quantastica's quantum programming language converter in Python.
     name: qconvert
     url: http://github.com/quantastica/qconvert
+  - description: Quantastica's quantum programming language converter in Javascript.
+    name: qconvert-js
+    url: http://github.com/quantastica/qconvert-js
 - name: Quantum assembly
   projects:
+  - description: Open-source quantum instruction language currently used for Xanadu's
+      photonic hardware.
+    name: Blackbird
+    url: https://github.com/XanaduAI/blackbird
+  - description: Open-source quantum assembly language.
+    name: OpenQASM
+    url: https://github.com/QISKit/openqasm
   - description: Quantum macro assembler for D-Wave's quantum annealers.
     name: QMASM
     url: https://github.com/lanl/qmasm
@@ -619,6 +656,10 @@
     url: https://arxiv.org/abs/1608.03355
 - name: Quantum control
   projects:
+  - description: Open-loop, closed-loop and automated Control, Calibration and Characterization
+      of quantum devices.
+    name: C3
+    url: https://github.com/q-optimize/c3
   - description: Python implementation of Krotov's method for quantum optimal control.
     name: Krotov
     url: https://github.com/qucontrol/krotov
@@ -631,9 +672,20 @@
     name: Quanlse
     url: https://github.com/baidu/Quanlse
 - name: Quantum interoperability
-  projects: []
+  projects:
+  - description: Unified platform for CPU, GPU, FPGA, and Quantum Computing.
+    name: Digital Soul
+    url: https://github.com/NeuralDreamResearch/DigitalSoul
+  - description: This is a package to improve interoperability between different quantum
+      computer software packages.
+    name: scikit-quant
+    url: https://github.com/scikit-quant/scikit-quant
 - name: Quantum error correction
   projects:
+  - description: Julia package for constructing and analyzing classical and quantum
+      error-correcting codes.
+    name: CodingTheory
+    url: https://github.com/esabo/CodingTheory
   - description: Python package for decoding quantum error correcting codes with minimum-weight
       perfect matching.
     name: PyMatching
@@ -674,6 +726,9 @@
       mechanism, PRNG, and key management functions.
     name: TQ42 Cryptography
     url: https://github.com/terra-quantum-public/tq42-pqc-oss
+  - description: C library for quantum-resistant cryptographic algorithms.
+    name: liboqs
+    url: https://github.com/open-quantum-safe/liboqs
   - description: OpenSSH with quantum-safe key exchange algorithms.
     name: openssh
     url: https://github.com/open-quantum-safe/openssh-portable
@@ -716,6 +771,9 @@
   - description: Measurement and control software for superconducting qubits.
     name: Qlab
     url: https://github.com/BBN-Q/Qlab
+  - description: Generic lab tools in Julia.
+    name: Qlab.jl
+    url: https://github.com/BBN-Q/Qlab.jl
   - description: ' Data acquisition platform focused on Quantum Computing and solid-state
       physics experiments.'
     name: Quantify
@@ -734,6 +792,10 @@
     url: https://github.com/scqubits/scqubits
 - name: Quantum fun
   projects:
+  - description: "The world\u2019s first open source quantum computing board game.\
+      \ For 2 players."
+    name: Entanglion
+    url: https://github.com/Entanglion/entanglion
   - description: Game that teaches quantum computing using Qiskit in a Minetest block
       world.
     name: QiskitBlocks
@@ -793,6 +855,10 @@
       arbitrary probability distributions.
     name: QRAND
     url: https://github.com/pedrorrivero/qrand
+  - description: Free Mathematica add-on for Dirac Bra-Ket Notation, Quantum Algebra,
+      Quantum Computing and the QHD approximation to the Heisenberg Equations of Motion.
+    name: Quantum
+    url: http://homepage.cem.itesm.mx/lgomez/quantum/
   - description: Grow and study random graphs by a continuous, randomly collapsing
       quantum walk.
     name: QuantumGraphs
@@ -838,12 +904,19 @@
     name: toqito
     url: https://github.com/vprusso/toqito
 - name: Quantum data
-  projects: []
+  projects:
+  - description: Quantum datasets for the training and development of QML algorithms.
+    name: QDataSet
+    url: https://github.com/eperrier/QDataSet
 - name: Abandoned projects
   projects:
   - description: 8 Qbit, Photonic Quantum Computer.
     name: 8Q
     url: https://github.com/Spooky-Manufacturing/8Q
+  - description: Specification and implementation of quantum common lisp, for gate-model
+      quantum computers.
+    name: BLACK-STONE
+    url: https://github.com/thephoeron/black-stone
   - description: Library for instrument control and superconducting QIP experiments.
     name: PyQLab
     url: https://github.com/BBN-Q/PyQLab
@@ -905,6 +978,9 @@
   - description: Visual Java quantum simulator.
     name: Squankum
     url: https://github.com/jeffwass/Squankum
+  - description: Quantum computing simulation library for GoLang.
+    name: goqu
+    url: https://github.com/cco3/goqu
   - description: Java library for quantum programming using [Quil](https://en.wikipedia.org/wiki/Quil_(instruction_set_architecture)).
     name: jquil
     url: https://github.com/QCHackers/jquil
