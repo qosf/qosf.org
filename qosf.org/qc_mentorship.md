@@ -89,7 +89,7 @@ The program is running in cohorts. Here is the timeline for the next cohort, i.e
 | Pairing mentors with mentees and defining projects’ scope   | November 18 - December 1, 2024       |
 | Mentees and mentors work on projects                        | December 9, 2024 - March 15, 2025   |
 | Program wrap-up, Final presentations                        | March 16-17, 2025     |
-| Promotion of all open-source projects                       | ApriL - May 2025|
+| Promotion of all open-source projects                       | April - May 2025|
     
 
 ## How does it work?
