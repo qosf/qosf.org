@@ -83,7 +83,9 @@ The program is running in cohorts. Here is the timeline for the next cohort, i.e
 
 | Program milestone                                           | Timeframe                                                           |
 --------------------------------------------------------------|---------------------------------------------------------------------|
-| Program applications released for mentees                   | October 7, 2024                     | 
+| Program applications released for mentors                   | October 2, 2024                     | 
+| Program applications released for mentees                   | October 7, 2024                     |
+| Program applications closed for mentors                     | October 15, 2024                    |
 | Program applications closed for mentees                     | October 28, 2024                    | 
 | Applications review                                         | October 28 - November 17, 2024       |
 | Pairing mentors with mentees and defining projects’ scope   | November 18 - December 1, 2024       |
