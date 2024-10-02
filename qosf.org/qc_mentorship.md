@@ -14,7 +14,7 @@ buttons:
       external_url: true
       icon: fa-file-import
     - content: Apply to be a mentor
-      url: 'https://forms.gle/hFxfqE2eWNKptQYX6'
+      url: 'https://forms.gle/NTa94uTJDGweNfuP7'
       external_url: true
       icon: fa-file-import
     - icon: slack
