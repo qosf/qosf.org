@@ -17,7 +17,7 @@ buttons:
       icon: fa-envelope-open-text
     - icon: slack
       content: Join our Slack
-      url: 'https://qosf.org/join'
+      url: 'https://join.slack.com/t/qosf/shared_invite/zt-2nq2n0t9i-PyiiCKg1bAzRpNzLMM7pWg'
       external_url: true
     - icon: gitlab
       content: Follow us on GitLab
