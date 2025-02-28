@@ -69,6 +69,9 @@
   - description: Toolsuite for quantum simulation developed by [Microsoft QuArC](https://www.microsoft.com/en-us/research/group/quantum-architectures-and-computation-group-quarc/).
     name: Liqui|>
     url: http://stationq.github.io/Liquid/
+  - description: Pauli propagation simulation of quantum circuits in the Heisenberg picture.
+    name: PauliPropagation.jl
+    url: https://github.com/MSRudolph/PauliPropagation.jl
   - description: Efficient simulation of open quantum dynamics of identical qubits.
     name: PIQS
     url: https://github.com/nathanshammah/piqs
