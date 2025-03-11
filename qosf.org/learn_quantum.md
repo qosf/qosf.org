@@ -11,14 +11,6 @@ comments: false
 title: Learning Resources on Quantum Computing
 description: A curated selection of the best free learning resources on quantum computing for all skill levels.
 buttons:
-    - content: Sign up for the newsletter
-      url: 'https://mailchi.mp/762c19baab5a/qosf-supporter'
-      external_url: true
-      icon: home
-    - icon: slack
-      content: Join our Slack
-      url: 'https://qosf.org/join'
-      external_url: true
     - icon: fa-hand-holding-heart
       content: Donate to QOSF
       url: 'https://qosf.org/donate'
@@ -74,41 +66,35 @@ Programming exercises for learning quantum computing and Q#.
 #### [Quantum Machine Learning for Data Scientists](https://arxiv.org/pdf/1804.10068.pdf)
 Explanation of quantum machine learning algorithms.
 
+#### [Quantum Odyssey](https://www.quarksinteractive.com#)
+High budget educational video game, fully narrated that uses visual methods to teach about writing quantum algorithms.
+
 #### [Quirk](http://algassert.com/quirk)
 Browser-based drag-and-drop quantum circuit simulator that reacts, simulates, and animates in real-time.
-
-#### [Quantum Odyssey](https://www.quarksinteractive.com#)
-High budget educational video game, fully narrated that uses visual methods to teach about writing quantum algorithms
 
 # Massive Open Online Courses
 
 #### [MIT Quantum Information Sciences](https://ocw.mit.edu/courses/media-arts-and-sciences/mas-865j-quantum-information-science-spring-2006/lecture-notes/)
 Series of lecture notes on the MIT quantum information sciences course.
 
-#### [Quantum Cryptography](https://www.edx.org/course/quantum-cryptography-caltechx-delftx-qucryptox-0)
-Learn how quantum communication provides security that is guaranteed by the laws of nature.
+#### [Quantum Computing. Less Formulas - More Understanding](https://online.spbu.ru/quantum-computing-less-formulas-more-understanding/)
+An introductory course on Quantum Computing, focusing more on concepts.
 
 #### [Quantum Information Science I, Part I](https://openlearninglibrary.mit.edu/courses/course-v1:MITx+8.370.1x+1T2018/about)
 Foundational course on quantum information and computation.
+
+#### [Quantum Quest](https://www.quantum-quest.nl/)
+A web class for high school students. Organized by QuSoft
+
+#### [Quantum Technology: Computing and Sensing](https://www.edx.org/masters/micromasters/purduex-quantum-technology-computing-and-sensin)
+An online program from Purdue University teaching the fundamentals of quantum detectors,
+sensors and applied quantum computing.
 
 #### [The Quantum Internet and Quantum Computers: How Will They Change the World?](https://www.edx.org/course/quantum-internet-quantum-computers-how-delftx-qtm1x)
 Learn the principles and promises behind developments in quantum computers and quantum internet and how they will impact our future.
 
 #### [Understanding Quantum Computers](https://www.futurelearn.com/courses/intro-to-quantum-computing)
 Introduction to the key concepts of quantum computing with minimal mathematics.
-
-#### [Quantum Quest](https://www.quantum-quest.nl/)
-A web class for _high school students_. Organized by [QuSoft](http://www.qusoft.org/)
-
-#### [Quantum Machine Learning](https://www.edx.org/course/quantum-machine-learning)
-Hands-on introduction to quantum computing and quantum-enhanced machine learning, complete with a [code repo](https://gitlab.com/qosf/qml-mooc/).
-
-#### [Quantum Computing. Less Formulas - More Understanding](https://online.spbu.ru/quantum-computing-less-formulas-more-understanding/)
-An introductory course on Quantum Computing, focusing more on concepts.
-
-#### [Quantum Technology: Detectors and Networking](https://www.edx.org/micromasters/purduex-quantum-technology-detectors-and-networking?index=product&queryID=b3d92b1eebc019dc082bb40feca0f978&position=3)
-An online program from Purdue University teaching the fundamentals of quantum networking,
-detectors, sensors and applied quantum computing. 
 
 # Development Tools
 
@@ -131,9 +117,6 @@ Blog by Michał Stęchły ([Zapata Computing](https://www.zapatacomputing.com), 
 #### [Quantum Frontiers](https://quantumfrontiers.com/)
 By the Quantum Institute for Quantum Information and Matter, sharing behind the scenes research insights.
 
-#### [Quantum Weekly](https://quantumweekly.com/)
-A weekly correlation of all things quantum - computing, cryptography, entanglement.
-
 #### [Shtetl Optimized](https://www.scottaaronson.com/blog/)
 Blog by Scott Aaronson.
 
@@ -142,14 +125,14 @@ Blog by Scott Aaronson.
 #### [Classical and Quantum Computation](https://books.google.com.au/books/about/Classical_and_Quantum_Computation.html?id=TrMposZZ0MQC&redir_esc=y)
 Introduction to fundamentals of classical and quantum computing.
 
+#### [Learn Quantum Computing with Python and Q#](https://www.manning.com/books/learn-quantum-computing-with-python-and-q-sharp)
+Learn about quantum computing by building your own quantum simulator, implementing quantum algorithms, and applying quantum programming techniques to real-world examples including cryptography and chemistry.
+
 #### [Problems and Solutions in Quantum Computing](https://www.worldscientific.com/worldscibooks/10.1142/6077#)
 Easy to advanced quantum computing and information problems with detailed solutions.
 
 #### [Quantum Computation and Quantum Information](https://www.amazon.com/Quantum-Computation-Information-10th-Anniversary/dp/1107002176)
 Comprehensive textbook for those with some prior knowledge in mathematics, computer science and physics.
-
-#### [Quantum Computing: A Gentle Introduction](https://www.amazon.com/Quantum-Computing-Introduction-Engineering-Computation/dp/0262526670)
-Explains quantum computing with only basic college maths knowledge needed.
 
 #### [Quantum Computing Explained](https://www.amazon.com/Quantum-Computing-Explained-David-McMahon/dp/0470096993)
 Conversational approach to explaining quantum computing with worked solutions.
@@ -157,10 +140,13 @@ Conversational approach to explaining quantum computing with worked solutions.
 #### [Quantum Computing for Computer Scientists](https://www.amazon.com/Quantum-Computing-Computer-Scientists-Yanofsky/dp/0521879965)
 Quantum computing explained using an approach accessible to undergraduate computer science students.
 
-#### [Learn Quantum Computing with Python and Q#](https://www.manning.com/books/learn-quantum-computing-with-python-and-q-sharp)
-Learn about quantum computing by building your own quantum simulator, implementing quantum algorithms, and applying quantum programming techniques to real-world examples including cryptography and chemistry.
+#### [Quantum Computing: A Gentle Introduction](https://www.amazon.com/Quantum-Computing-Introduction-Engineering-Computation/dp/0262526670)
+Explains quantum computing with only basic college maths knowledge needed.
 
 # Papers
+
+#### [Making Quantum Computing Open: Lessons from Open-Source Projects](https://arxiv.org/abs/1902.00991)
+An investigation of contributors to open-source quantum computing projects, their educational and professional backgrounds. Includes a survey with focus on what helped them succeed in the field.
 
 #### [Opportunities and Challenges for Quantum Machine Learning](https://arxiv.org/abs/1708.09757)
 Opportunities and challenges for quantum-assisted machine learning in near-term quantum computers.
@@ -168,13 +154,7 @@ Opportunities and challenges for quantum-assisted machine learning in near-term 
 #### [Quantum Machine Learning](https://www.researchgate.net/publication/264825604_Quantum_Machine_Learning_What_Quantum_Computing_Means_to_Data_Mining)
 Quantum machine learning and what quantum computing means to data mining.
 
-#### [Making Quantum Computing Open: Lessons from Open-Source Projects](https://arxiv.org/abs/1902.00991)
-An investigation of contributors to open-source quantum computing projects, their educational and professional backgrounds. Includes a survey with focus on what helped them succeed in the field.
-
 # Videos
-
-#### [Introduction to Quantum Programming](https://skillsmatter.com/skillscasts/11929-programming-the-world-s-first-quantum-computers-using-forest)
-This talk is an introduction to modern quantum programming. It covers why you might want to program a quantum computer and how you would do so today, with a focus on the Forest Python SDK from Rigetti Computing. The only background assumed is linear algebra and complex numbers at the level of undergraduate computer science. Duration: 1 hour, 22 minutes.
 
 #### [Quantum Computing for Computer Scientists](https://www.youtube.com/watch?v=F_Riqjdh2oM)
 Microsoft Research Talk on introductory quantum computing for computer scientists. Duration: 1 hour, 28 minutes.
@@ -184,17 +164,8 @@ Microsoft Research Talk on introductory quantum computing for computer scientist
 #### [D-Wave Leap Community](https://support.dwavesys.com/hc/en-us/community/topics)
 D-Wave System's Leap Community Forum.
 
-#### [IBM Q Community](https://quantumexperience.ng.bluemix.net/qx/community)
-IBM Quantum experience Community Forum.
-
-#### [IBM Q QISKit Community](https://qiskit.slack.com/)
-Slack Channel for QISKit and quantum computing discussions.
-
-#### [Q# Community](https://qsharp.community/)
-An open-source community around quantum programming in Q#, including blogs, code repositories, and online meetups.
-
-#### [Women In Quantum Computing and Applications](https://www.wiqca.dev/)
-An inclusive meetup group based in Seattle, WA, USA (currently gathering remotely) that hosts talks and tutorial series.
+#### ~~[IBM Q QISKit Community](https://qiskit.slack.com/)~~
+~~Slack Channel for QISKit and quantum computing discussions.~~
 
 #### [Mike & Ike Subreddit](https://www.reddit.com/r/MikeAndIke/)
 Discussion about the book Quantum Computation and Quantum Information.
@@ -202,22 +173,18 @@ Discussion about the book Quantum Computation and Quantum Information.
 #### [PennyLane Discussion Forum](https://discuss.pennylane.ai)
 Discussion forum for quantum machine learning, both using simulations and on near term hardware.
 
+#### ~~[Quantum Computing Slack Community](http://quantum-computing.slack.com/)~~
+~~Slack Channel for quantum computing discussions. Generate an invite for this channel here: [Quantum Computing Slack - Invite](https://quantum-computing.herokuapp.com).~~
+
 #### [Quantum Computing StackExchange](http://quantumcomputing.stackexchange.com/)
 Question and answer site for quantum computing.
 
 #### [Quantum Information and Quantum Computer Scientists of the World Unite](https://www.facebook.com/groups/qinfo.scientists.unite/)
 Facebook group for quantum research discussion.
 
-#### [Rigetti Community](http://slack.rigetti.com/)
-Slack Channel for Rigetti and quantum computing discussions.
+#### [Quantum Odyssey](https://discord.gg/mZHJYFX4mG)
+Discord Channel for Quantum Odyssey puzzle-solving enthusiasts and quantum computing discussions.
 
-#### [Strawberry Fields Community](https://u.strawberryfields.ai/slack)
-Slack channel for Xanadu and Strawberry Fields photonic/CV quantum computing discussions.
+#### ~~[Strawberry Fields Community](https://u.strawberryfields.ai/slack)~~
+~~Slack channel for Xanadu and Strawberry Fields photonic/CV quantum computing discussions.~~
 
-#### [Quantum Computing Slack Community](http://quantum-computing.slack.com/)
-Slack Channel for quantum computing discussions. Generate an invite for
-this channel here: [Quantum Computing Slack -
-Invite](https://quantum-computing.herokuapp.com).
-
-#### [Quantum Odyssey](https://www.quarksinteractive.com#)
-Discord Channel for Quantum Odyssey puzzle-solving enthusiasts and quantum computing discussions. [Discord](https://discord.gg/mZHJYFX4mG).
