@@ -72,6 +72,9 @@
   - description: Pauli propagation simulation of quantum circuits in the Heisenberg picture.
     name: PauliPropagation.jl
     url: https://github.com/MSRudolph/PauliPropagation.jl
+  - description: Many-body simulations in the Pauli strings representation.
+    name: PauliStrings.jl
+    url: https://github.com/nicolasloizeau/PauliStrings.jl
   - description: Efficient simulation of open quantum dynamics of identical qubits.
     name: PIQS
     url: https://github.com/nathanshammah/piqs
