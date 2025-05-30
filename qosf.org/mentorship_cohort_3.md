@@ -6,13 +6,21 @@ keywords:
 comments: false
 
 # Hero section
-title: Quantum Computing Mentorship Program Cohort Three Showcase 
-description: Connecting quantum enthusiasts with mentors from academia & industry.
+title: "ARCHIVED: Quantum Computing Mentorship Program Cohort Three Showcase"
+description: "Showcase of projects from the third cohort of our Quantum Computing Mentorship program. (Cohort concluded)"
 buttons:
-    - content: Apply for mentorship
-      url: 'https://forms.gle/z3FRmje71LtkSNh49'
-      external_url: true
+    - content: Learn about current Mentorship Programs
+      url: '/qc_mentorship'
+      external_url: false
       icon: fa-file-import
+    - content: Sign up for the newsletter
+      url: 'https://mailchi.mp/762c19baab5a/qosf-supporter'
+      external_url: true
+      icon: home
+    - icon: slack
+      content: Join our Slack
+      url: 'https://join.slack.com/t/qosf/shared_invite/zt-2nq2n0t9i-PyiiCKg1bAzRpNzLMM7pWg'
+      external_url: true
     - icon: fa-hand-holding-heart
       content: Donate to QOSF
       url: 'https://qosf.org/donate'
@@ -23,6 +31,10 @@ micro_nav: false
 permalink: /mentorship_cohort_3/
 
 ---
+
+<div style="background-color: #ffcccb; padding: 15px; border: 1px solid #ff726f; border-radius: 5px; margin-bottom: 20px;">
+  <strong>ARCHIVED CONTENT:</strong> This page describes projects from Cohort 3 of the Mentorship Program, which has concluded. The information below is for historical purposes. For information on current mentorship opportunities, please visit our <a href="/qc_mentorship">main mentorship page</a>.
+</div>
 
 ## Quantum Mentorship Program Cohort 3 Project Showcase 
 
@@ -74,11 +86,11 @@ A few examples are engineering an arbitrary single qubit gate in the presence of
 *Project description*: In this project we studied 2 techniques to prove lower bounds in the query complexity model of quantum algorithms. Trong focused on the polynomial method and the adversary method. 
 The output of this project is a [new chapter](https://quantumalgorithms.org) where you can find a new (simpler) proof of the main theorem behind the adversary method written by Trong. While the polynomial method is arguably simpler, (you can find some lecture notes about it online), this is the first set of lecture notes where you can learn about the adversary method.
 
-*Mentee*: **[Trong Duong](https://www.linkedin.com/in/trong-duong-0a75b6171/)**  is finishing his second year at KAIST, where he majors in Mathematics and Electrical Engineering. His current research interest is quantum machine learning, specifically optimization for parametrized circuits. He also likes writing blog about quantum computing topics. He enjoys spending his spare time making cheesecake [twitter](https://twitter.com/TrongDu27153458) [personal website](https://myentangled.com/en/).
+*Mentee*: **[Trong Duong](https://www.linkedin.com/in/trong-duong-0a75b6171/)**  is finishing his second year at KAIST, where he majors in Mathematics and Electrical Engineering. His current research interest is quantum machine learning, specifically optimization for parametrized circuits. He also likes writing blog about quantum computing topics. He enjoys spending his spare time making cheesecake [twitter](https://twitter.com/TrongDu27153458).
 
 *Mentor*: **Alessandro Luongo** got a PhD in quantum machine learning and now is a researcher in quantum algorithms at the Centre for Quantum Technologies of Singapore.
 
-*Links*: [Repository](https://github.com/Scinawa/quantumalgorithms.org/commit/dbadd206b1b1b38e8b4a160545971771f453f35e), [Contribution](https://quantumalgorithms.org/lower-bounds-on-query-complexity-of-quantum-algorithms.html )
+*Links*: [Repository](https://github.com/Scinawa/quantumalgorithms.org/commit/dbadd206b1b1b38e8b4a160545971771f453f35e)
 
 ---
 
@@ -86,7 +98,7 @@ The output of this project is a [new chapter](https://quantumalgorithms.org) whe
   
 *Project description*: Implementing evolutionary algorithms to minimize the cost function so as to estimate the ground state for a model. The evolutionary algorithm part involves inserting/deleting/modifying quantum gates at random locations in the quantum circuit.
     
-*Mentee*: **[Saksham Sarwari](https://twitter.com/sarwarisak)** , B.Tech. in Engineering Physics from Indian Institute of Technology, Roorkee, India. Currently working in General Electric as a Software Developer [linkedin](https://www.linkedin.com/in/sarwarisak/). 
+*Mentee*: **[Saksham Sarwari](https://twitter.com/sarwarisak)** , B.Tech. in Engineering Physics from Indian Institute of Technology, Roorkee, India. Currently working in General Electric as a Software Developer. 
 
 *Mentor*: **Dario Rosa**  is a Senior Researcher and Junior Research Team Leader at Institute for Basic Science (IBS), Daejeon, South Korea
 
@@ -131,9 +143,7 @@ The output of this project is a [new chapter](https://quantumalgorithms.org) whe
 
 *Mentee*: **[Pavan Jayasinha](https://pavanjay.com/)** is an incoming UWaterloo undergraduate for computer engineering and summer intern at Zapata. Over the past year he has built a strong interest in building and learning quantum machine learning algorithms coupled with the underlying foundations.
 
-*Mentor*: **Yunong Shi**  is a research scientist at Amazon Braket
-
-*Links*: [Repository](https://github.com/Sinestro38/qosf-qgan/tree/code-review-1).
+*Mentor*: **Yunong Shi**  is a research scientist at Amazon Braket.
 
 ---
 
@@ -235,8 +245,6 @@ To achieve this functionality,  the extension will parse through the function bo
 - **[Leeseok Kim](https://www.linkedin.com/in/leeseok-kim/)**  graduated from Cornell University in 2021 with a B.A. in Physics and Mathematics, and will begin the Master’s program in Engineering Physics at Cornell University from Fall 2021. He is interested in intersections of physics, mathematics, and computer science, especially in quantum machine learning and quantum simulations.
 
 *Mentor*: **Daniel K. Park**  is a Research Professor at Sungkyunkwan University (SKKU) in Korea working on quantum information processing. Before joining SKKU in 2021, he worked at KAIST as a post-doc for 3 years, and then as a research assistant professor for 2 years. He obtained his Ph.D degree in Physics-Quantum Information in 2015 at University of Waterloo & Institute for Quantum Computing.
-
-*Links*: [Repository](https://github.com/takh04/QOSF_release)
 
 --- 
 

@@ -5,7 +5,7 @@ keywords:
 comments: false
 
 # Hero section
-title: "FOSDEM&#39;20 - open source quantum computing"
+title: "ARCHIVED: FOSDEM&#39;20 - open source quantum computing"
 description: Two days dedicated to quantum open source at Europe's largest open source conference!
 buttons:
     - content: Sign up for the newsletter
@@ -14,13 +14,16 @@ buttons:
       icon: home
     - icon: slack
       content: Join our Slack
-      url: 'https://qosf.org/join'
+      url: 'https://join.slack.com/t/qosf/shared_invite/zt-2nq2n0t9i-PyiiCKg1bAzRpNzLMM7pWg'
       external_url: true
     - icon: fa-hand-holding-heart
       content: Donate to QOSF
       url: 'https://qosf.org/donate'
 
 ---
+<div style="background-color: #ffcccb; padding: 15px; border: 1px solid #ff726f; border-radius: 5px; margin-bottom: 20px;">
+  <strong>ARCHIVED CONTENT:</strong> This page describes the FOSDEM 2020 event, which has concluded. The information below is for historical purposes.
+</div>
 
 ## The world's first conference for quantum software engineers
 

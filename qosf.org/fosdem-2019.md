@@ -5,7 +5,7 @@ keywords:
 comments: false
 
 # Hero section
-title: "FOSDEM&#39;19 Quantum Computing"
+title: "ARCHIVED: FOSDEM&#39;19 Quantum Computing"
 description: Two days dedicated to Quantum computing at Europe's largest open source conference!
 buttons:
     - content: Sign up for the newsletter
@@ -14,14 +14,16 @@ buttons:
       icon: home
     - icon: slack
       content: Join our Slack
-      url: 'https://qosf.org/join'
+      url: 'https://join.slack.com/t/qosf/shared_invite/zt-2nq2n0t9i-PyiiCKg1bAzRpNzLMM7pWg'
       external_url: true
     - icon: fa-hand-holding-heart
       content: Donate to QOSF
       url: 'https://qosf.org/donate'
 
 ---
-
+<div style="background-color: #ffcccb; padding: 15px; border: 1px solid #ff726f; border-radius: 5px; margin-bottom: 20px;">
+  <strong>ARCHIVED CONTENT:</strong> This page describes the FOSDEM 2019 event, which has concluded. The information below is for historical purposes.
+</div>
 ## FOSDEM&#39;19 Quantum Computing
 
 _Are you interested in Quantum Computing? Unsure where the industry's heading? Is the
