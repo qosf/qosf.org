@@ -6,13 +6,21 @@ keywords:
 comments: false
 
 # Hero section
-title: Quantum Computing Mentorship Program Cohort Two Showcase 
-description: Connecting quantum enthusiasts with mentors from academia & industry.
+title: "ARCHIVED: Quantum Computing Mentorship Program Cohort Two Showcase"
+description: "Showcase of projects from the second cohort of our Quantum Computing Mentorship program. (Cohort concluded)"
 buttons:
-    - content: Apply for mentorship
-      url: 'https://forms.gle/z3FRmje71LtkSNh49'
-      external_url: true
+    - content: Learn about current Mentorship Programs
+      url: '/qc_mentorship'
+      external_url: false
       icon: fa-file-import
+    - content: Sign up for the newsletter
+      url: 'https://mailchi.mp/762c19baab5a/qosf-supporter'
+      external_url: true
+      icon: home
+    - icon: slack
+      content: Join our Slack
+      url: 'https://join.slack.com/t/qosf/shared_invite/zt-2nq2n0t9i-PyiiCKg1bAzRpNzLMM7pWg'
+      external_url: true
     - icon: fa-hand-holding-heart
       content: Donate to QOSF
       url: 'https://qosf.org/donate'
@@ -23,6 +31,10 @@ micro_nav: false
 permalink: /mentorship_cohort_2/
 
 ---
+
+<div style="background-color: #ffcccb; padding: 15px; border: 1px solid #ff726f; border-radius: 5px; margin-bottom: 20px;">
+  <strong>ARCHIVED CONTENT:</strong> This page describes projects from Cohort 2 of the Mentorship Program, which has concluded. The information below is for historical purposes. For information on current mentorship opportunities, please visit our <a href="/qc_mentorship">main mentorship page</a>.
+</div>
 
 ## Quantum Mentorship Program Cohort 2 Project Showcase 
 
@@ -60,7 +72,7 @@ This is a showcase of all the projects created during the second cohort of our Q
 
 *Mentor*: **Sumner Alperin-Lea** is a graduate student in the Aspuru-Guzik group at the University of Toronto, and one of the principal developers of Tequila. 
 
-*Links*: [Repository](https://github.com/aspuru-guzik-group/tequila/tree/devel), [Tutorial](https://github.com/aspuru-guzik-group/tequila-tutorials/blob/main/Tensorflow_Interface.ipynb)
+*Links*: [Repository](https://github.com/aspuru-guzik-group/tequila/tree/devel)
 
 ---
   
@@ -84,7 +96,7 @@ This is a showcase of all the projects created during the second cohort of our Q
 
 *Mentor*: **[Roger Luo](https://twitter.com/rogerluorl18)** is a graduate student at University of Waterloo, Perimeter Institute and a core member of JuliaCN - the Julia language localization organization for Chinese. He's interested in exploring quantum many body physics with machine learning and modern methods of programming. He is one of the creators of QuantumBFS/Yao.jl and many other open source packages in JuliaLang. He regularly contributes to various projects including FluxML/Zygote.jl, FluxML/Flux.jl and PyTorch. 
 
-*Links*: [Web Application](http://quantum-benchmark-app.s3-website-us-west-1.amazonaws.com/), [Contribution](https://github.com/codewithsk/quantum-benchmarks/tree/quest).
+*Links*: [Web Application](http://quantum-benchmark-app.s3-website-us-west-1.amazonaws.com/).
 
 ---
   
@@ -96,7 +108,7 @@ This is a showcase of all the projects created during the second cohort of our Q
 
 *Mentor*: **[Jakob Kottmann](https://twitter.com/JakobKottmann)** is currently a postdoctoral fellow at The Matter Lab at the University of Toronto.
 
-*Links*: [Tequila Contribution](https://github.com/aspuru-guzik-group/tequila/pull/112), [OpenQASM Conversions Tutorial](https://github.com/aspuru-guzik-group/tequila-tutorials/blob/main/OpenQASMConversions.ipynb), [PyZX Tequila Tutorial](https://github.com/aspuru-guzik-group/tequila-tutorials/blob/main/PyZXwithTequila.ipynb).
+*Links*: [Tequila Contribution](https://github.com/aspuru-guzik-group/tequila/pull/112), [OpenQASM Conversions Tutorial](https://github.com/aspuru-guzik-group/tequila-tutorials/blob/main/OpenQASMConversions.ipynb).
 
 ---
 
@@ -116,11 +128,11 @@ This is a showcase of all the projects created during the second cohort of our Q
 
 *Project description*: Classical neural networks encode higher dimensional vectors(inputs) to lower dimensional vectors(outputs), but the reverse is not possible. Recent research has shown us that scrambling of information from a small subsystem to a larger one is feasible. In our QOSF project, we analyse the effect of entanglement as a variational circuit trains and also study the role of various entropies to characterize entanglement.
 
-*Mentee*: **[Syed Farhan Ahmad](https://twitter.com/syedfarhanrvce)** is an Undergraduate Quantum Researcher completing his Bachelor of Engineering in Electronics and Communication from RVCE, Bangalore, India. He is also an IBM GRM intern and loves to work on QC and AI projects. You can learn more about his work on his [personal website](https://born-2learn.github.io/).
+*Mentee*: **[Syed Farhan Ahmad](https://twitter.com/syedfarhanrvce)** is an Undergraduate Quantum Researcher completing his Bachelor of Engineering in Electronics and Communication from RVCE, Bangalore, India. He is also an IBM GRM intern and loves to work on QC and AI projects.
 
 *Mentor*: **[Amira Abbas](https://twitter.com/AmiraMorphism)** is a predoc researcher in the Quantum Research Group at the University of KwaZulu-Natal and part of the IBM Quantum Computing Research team in Zurich, as well as the IBM Quantum Education team in South Africa. Amira holds an undergraduate degree in actuarial science, an honours degree in quantitative finance, a masters degree in physics and is a recipient of Google's PhD Fellowship. She is an active member of numerous community driven initiatives centred around strengthening science and technology in Africa.
 
-*Links*: [Repository](https://github.com/born-2learn/Entanglement_in_QML), [Blog Post](https://born-2learn.github.io/posts/2021/01/effect-of-entanglement-on-model-training/).
+*Links*: [Repository](https://github.com/born-2learn/Entanglement_in_QML).
 
 ---
 
@@ -256,8 +268,6 @@ This is a showcase of all the projects created during the second cohort of our Q
 *Mentee*: **[Catalina Albornoz](https://www.linkedin.com/in/catalinaalbornoz/)** is passionate about quantum computing and sustainability. Currently as an IBM Quantum ambassador, she works on developing the Latin American quantum ecosystem. Catalina is an Electronics and Mechanical Engineer and MSc. in Electronics from Los Andes University and has a Diplôme d’Ingénieur from IMT Atlantique.
 
 *Mentor*: **[Vesselin G. Gueorguiev](https://www.linkedin.com/in/vgg-consulting/)** is a physics researcher affiliated with the Ronin Institute for Independent Scholarship and the Institute for Advanced Physical Studies.
-
-*Links*: [Repository](https://github.com/CatalinaAlbornoz/Quantum_Vehicle_Routing)
 
 --- 
 
