@@ -6,13 +6,21 @@ keywords:
 comments: false
 
 # Hero section
-title: Quantum Computing Mentorship Program Cohort One Showcase 
-description: Connecting quantum enthusiasts with mentors from academia & industry.
+title: "ARCHIVED: Quantum Computing Mentorship Program Cohort One Showcase"
+description: "Showcase of projects from the first cohort of our Quantum Computing Mentorship program. (Cohort concluded)"
 buttons:
-    - content: Apply for mentorship
-      url: 'https://forms.gle/z3FRmje71LtkSNh49'
-      external_url: true
+    - content: Learn about current Mentorship Programs
+      url: '/qc_mentorship'
+      external_url: false
       icon: fa-file-import
+    - content: Sign up for the newsletter
+      url: 'https://mailchi.mp/762c19baab5a/qosf-supporter'
+      external_url: true
+      icon: home
+    - icon: slack
+      content: Join our Slack
+      url: 'https://join.slack.com/t/qosf/shared_invite/zt-2nq2n0t9i-PyiiCKg1bAzRpNzLMM7pWg'
+      external_url: true
     - icon: fa-hand-holding-heart
       content: Donate to QOSF
       url: 'https://qosf.org/donate'
@@ -23,6 +31,10 @@ micro_nav: false
 permalink: /mentorship_cohort_1/
 
 ---
+
+<div style="background-color: #ffcccb; padding: 15px; border: 1px solid #ff726f; border-radius: 5px; margin-bottom: 20px;">
+  <strong>ARCHIVED CONTENT:</strong> This page describes projects from Cohort 1 of the Mentorship Program, which has concluded. The information below is for historical purposes. For information on current mentorship opportunities, please visit our <a href="/qc_mentorship">main mentorship page</a>.
+</div>
 
 ## Quantum Mentorship Program Cohort 1 Project Showcase 
 
@@ -36,7 +48,7 @@ This is a showcase of all the projects created during the first cohort of our Qu
     
 *Mentee*: **[Nicola Vitucci](https://twitter.com/nvitucci)** - I currently work as a Big Data engineer in London, and most of my professional life after my PhD revolved around "all things data". I am in love with QC because I am a programming, graph, ML, linear algebra, and Open Source professional geek! 
 
-*Mentors*: Big thanks go to **[Tom Lubowe](https://twitter.com/TomLubowe)** from Xanadu for supporting the project, and to [Josh Izaac](https://twitter.com/3rdquantization) and [Tom Bromley](https://www.linkedin.com/in/thomas-bromley-a53a28130/) from Xanadu for discussing and reviewing my code! 
+*Mentors*: Big thanks go to **[Tom Lubowe](https://twitter.com/TomLubowe)** from Xanadu for supporting the project, and to [Josh Izaac](https://twitter.com/3rdquantization) and [Tom Bromley](https://www.linkedin.com/in/thomas-r-bromley-a53a28130/) from Xanadu for discussing and reviewing my code! 
 
 *Links*: [Contribution](https://github.com/XanaduAI/pennylane/pull/642), [Notebook with Examples](https://github.com/nvitucci/notebook_qc/tree/dev).
 
@@ -52,7 +64,7 @@ This is a showcase of all the projects created during the first cohort of our Qu
 
 *Mentor*: **[Sukin (Hannah) Sim](https://twitter.com/sukin_sim)** is a PhD student in Professor Alan Aspuru-Guzik’s research group interested in developing ways to make the best use of current and near-term quantum computers
 
-*Links*: [Tutorial](https://pennylane.ai/qml/demos/tutorial_vqe_qng.html), [Notebook with Examples](https://github.com/hsim13372/quantum_natural_gradient), [Contribution](https://github.com/XanaduAI/pennylane/pull/618).
+*Links*: [Notebook with Examples](https://github.com/hsim13372/quantum_natural_gradient), [Contribution](https://github.com/XanaduAI/pennylane/pull/618).
 
 ---
   
@@ -60,11 +72,11 @@ This is a showcase of all the projects created during the first cohort of our Qu
   
 *Project description*: For my project I implemented the algorithm from *[M. Hodson et. al., 2019](https://arxiv.org/abs/1911.05296)*. that solves the financial portfolio rebalancing problem using variational quantum algorithms. Following the paper, I implemented the algorithm with both soft and with hard constraints and used different optimization algorithms to compare the results.  The project was carried out by myself under the mentorship of Guoming Wang. 
     
-*Mentee*: **[Oscar Javier Hernandez](https://www.linkedin.com/in/oscar-javier-hernandez/)**. Check out his [company website](http://www.zorc-finance.com/).
+*Mentee*: **[Oscar Javier Hernandez](https://www.linkedin.com/in/oscar-javier-hernandez/)**. Check out his [company website](https://www.zorc-technology.com).
 
 *Mentor*: **[Guoming Wang](https://www.linkedin.com/in/guoming-wang-cs/)** is a Quantum Research Scientist at [Zapata Computing](https://www.zapatacomputing.com/).
 
-*Links*: [Notebook with Examples and Tutorial](https://github.com/OscarJHernandez/qc_mentorship_project), [Blog post](https://www.zorc-finance.com/post/optimal-portfolios-with-qaoa).
+*Links*: [Notebook with Examples and Tutorial](https://github.com/OscarJHernandez/qc_mentorship_project).
 
 ---
   
