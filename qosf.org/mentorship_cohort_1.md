@@ -62,7 +62,8 @@ This is a showcase of all the projects created during the first cohort of our Qu
     
 *Mentee*: **[Oscar Javier Hernandez](https://www.linkedin.com/in/oscar-javier-hernandez/)**. Check out his [company website](http://www.zorc-finance.com/).
 
-*Mentor*: **[Guoming Wang](https://www.linkedin.com/in/guoming-wang-cs/)** is a Quantum Research Scientist at [Zapata Computing](https://www.zapatacomputing.com/).
+*Mentor*: **[Guoming Wang](https://www.linkedin.com/in/guoming-wang-cs/)** is a 
+Senior Quantum Applications Architect at [PsiQuantum](https://www.psiquantum.com/).
 
 *Links*: [Notebook with Examples and Tutorial](https://github.com/OscarJHernandez/qc_mentorship_project), [Blog post](https://www.zorc-finance.com/post/optimal-portfolios-with-qaoa).
 
@@ -86,7 +87,7 @@ This is a showcase of all the projects created during the first cohort of our Qu
     
 *Mentee*: **[Eduard Smetanin](https://www.linkedin.com/in/eduard-smetanin-211b9972/)** is a Software Engineer with 15 years of experience with experience in various programming languages.
 
-*Mentor*: **[Ntwali Bashige](https://twitter.com/nbashige)** is a Quantum Software Engineer at [Zapata Computing](https://www.zapatacomputing.com/). 
+*Mentor*: **[Ntwali Bashige](https://twitter.com/nbashige)** is a Quantum Software Engineer.
 
 *Links*: [Notebook with Examples and Tutorial](https://github.com/eduardsmetanin/NoisyQuantumComputerSimulator).
 
@@ -98,7 +99,7 @@ This is a showcase of all the projects created during the first cohort of our Qu
     
 *Mentee*: **[Warren Alphonso](https://www.linkedin.com/in/warrenalphonso/)** is an undergraduate at UC Berkeley. 
 
-*Mentor*: **[Ntwali Bashige](https://twitter.com/nbashige)** is a Quantum Software Engineer at [Zapata Computing](https://www.zapatacomputing.com/). 
+*Mentor*: **[Ntwali Bashige](https://twitter.com/nbashige)** is a Quantum Software Engineer.
 
 *Links*: [Project Webpage and Tutorial](https://warrenalphonso.github.io/qc/hubbard), [Github Repo](https://github.com/warrenalphonso/qc-mentorship).
 

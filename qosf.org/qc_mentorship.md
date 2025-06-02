@@ -185,7 +185,7 @@ In previous cohorts, we have had mentors such as:
 - [Ntwali Bashige](https://twitter.com/nbashige), Zapata Computing 
 - [Peter Korponaic](https://www.linkedin.com/in/petar-korponaic), Quantastica 
 - [Tom Lubowe](https://www.linkedin.com/in/tom-l-17814775/), Xanadu
-- [Alba Ceverta Lierta](https://albacl.github.io/), UofT (Alan Aspuru-Guzik Group) 
+- [Alba Ceverta Lierta](https://www.linkedin.com/in/alba-cervera-lierta-phd-4506969b/), UofT (Alan Aspuru-Guzik Group) 
 - [Pierre-Luc Dallaire-Demers](https://www.linkedin.com/in/pierre-luc-dallaire-demers-006540116/), Zapata Computing
 - [William Simons](https://www.linkedin.com/in/william-simon-197310112), Zapata Computing 
 - [Theodor Issacson](https://www.linkedin.com/in/theodorisacsson/), Xanadu

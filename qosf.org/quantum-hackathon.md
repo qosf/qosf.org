@@ -31,7 +31,7 @@ You can pick freely what topic to work on and we will provide support for the op
 * [Cirq](https://github.com/quantumlib/Cirq) from Google,
 * [Qiskit](https://qiskit.org/) from IBM,
 * [Forest](https://www.rigetti.com/forest) from Rigetti,
-* [D-Wave's Ocean](https://ocean.dwavesys.com/) from D-Wave,
+* [D-Wave's Ocean](https://github.com/dwavesystems/dwave-ocean-sdk/) from D-Wave,
 * [Strawberry Fields](https://strawberryfields.readthedocs.io/en/latest/) and [PennyLane](https://pennylane.readthedocs.io/en/latest/) from Xanadu,
 * [QuTiP](http://qutip.org/),
 * and many more independent quantum open source projects that you might find helpful.

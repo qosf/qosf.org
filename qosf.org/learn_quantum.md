@@ -17,7 +17,7 @@ buttons:
       icon: home
     - icon: slack
       content: Join our Slack
-      url: 'https://qosf.org/join'
+      url: 'https://join.slack.com/t/qosf/shared_invite/zt-2nq2n0t9i-PyiiCKg1bAzRpNzLMM7pWg'
       external_url: true
     - icon: fa-hand-holding-heart
       content: Donate to QOSF
@@ -53,7 +53,7 @@ Background information on the photonic continuous-variable approach to quantum c
 #### [IBM Q Full User Guide](https://quantum-computing.ibm.com/docs/)
 Short tutorials providing a gentle introduction to quantum computing and IBM Q.
 
-#### [John Preskill's Notes on Quantum Computation](http://www.theory.caltech.edu/~preskill/ph219/index.html#lecture)
+#### [John Preskill's Notes on Quantum Computation](https://www.lorentz.leidenuniv.nl/quantumcomputers/literature/preskill_1_to_6.pdf)
 Notes of Caltech's Quantum Computation Course Physics 219/Computer Science 219 by John Preskill.
 
 #### [Nielsen and Chuang](https://workedproblems.wordpress.com/category/nielsenchuang/)
@@ -85,9 +85,6 @@ High budget educational video game, fully narrated that uses visual methods to t
 #### [MIT Quantum Information Sciences](https://ocw.mit.edu/courses/media-arts-and-sciences/mas-865j-quantum-information-science-spring-2006/lecture-notes/)
 Series of lecture notes on the MIT quantum information sciences course.
 
-#### [Quantum Cryptography](https://www.edx.org/course/quantum-cryptography-caltechx-delftx-qucryptox-0)
-Learn how quantum communication provides security that is guaranteed by the laws of nature.
-
 #### [Quantum Information Science I, Part I](https://openlearninglibrary.mit.edu/courses/course-v1:MITx+8.370.1x+1T2018/about)
 Foundational course on quantum information and computation.
 
@@ -99,9 +96,6 @@ Introduction to the key concepts of quantum computing with minimal mathematics.
 
 #### [Quantum Quest](https://www.quantum-quest.nl/)
 A web class for _high school students_. Organized by [QuSoft](http://www.qusoft.org/)
-
-#### [Quantum Machine Learning](https://www.edx.org/course/quantum-machine-learning)
-Hands-on introduction to quantum computing and quantum-enhanced machine learning, complete with a [code repo](https://gitlab.com/qosf/qml-mooc/).
 
 #### [Quantum Computing. Less Formulas - More Understanding](https://online.spbu.ru/quantum-computing-less-formulas-more-understanding/)
 An introductory course on Quantum Computing, focusing more on concepts.
@@ -173,9 +167,6 @@ An investigation of contributors to open-source quantum computing projects, thei
 
 # Videos
 
-#### [Introduction to Quantum Programming](https://skillsmatter.com/skillscasts/11929-programming-the-world-s-first-quantum-computers-using-forest)
-This talk is an introduction to modern quantum programming. It covers why you might want to program a quantum computer and how you would do so today, with a focus on the Forest Python SDK from Rigetti Computing. The only background assumed is linear algebra and complex numbers at the level of undergraduate computer science. Duration: 1 hour, 22 minutes.
-
 #### [Quantum Computing for Computer Scientists](https://www.youtube.com/watch?v=F_Riqjdh2oM)
 Microsoft Research Talk on introductory quantum computing for computer scientists. Duration: 1 hour, 28 minutes.
 
@@ -184,7 +175,7 @@ Microsoft Research Talk on introductory quantum computing for computer scientist
 #### [D-Wave Leap Community](https://support.dwavesys.com/hc/en-us/community/topics)
 D-Wave System's Leap Community Forum.
 
-#### [IBM Q Community](https://quantumexperience.ng.bluemix.net/qx/community)
+#### [IBM Q Community](https://www.ibm.com/quantum/community)
 IBM Quantum experience Community Forum.
 
 #### [IBM Q QISKit Community](https://qiskit.slack.com/)
@@ -208,16 +199,8 @@ Question and answer site for quantum computing.
 #### [Quantum Information and Quantum Computer Scientists of the World Unite](https://www.facebook.com/groups/qinfo.scientists.unite/)
 Facebook group for quantum research discussion.
 
-#### [Rigetti Community](http://slack.rigetti.com/)
-Slack Channel for Rigetti and quantum computing discussions.
-
 #### [Strawberry Fields Community](https://u.strawberryfields.ai/slack)
 Slack channel for Xanadu and Strawberry Fields photonic/CV quantum computing discussions.
-
-#### [Quantum Computing Slack Community](http://quantum-computing.slack.com/)
-Slack Channel for quantum computing discussions. Generate an invite for
-this channel here: [Quantum Computing Slack -
-Invite](https://quantum-computing.herokuapp.com).
 
 #### [Quantum Odyssey](https://www.quarksinteractive.com#)
 Discord Channel for Quantum Odyssey puzzle-solving enthusiasts and quantum computing discussions. [Discord](https://discord.gg/mZHJYFX4mG).
