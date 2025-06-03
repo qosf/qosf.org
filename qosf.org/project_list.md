@@ -28,6 +28,9 @@ micro_nav: false
 
 ---
 
+## How to Add Your Project
+Please read our [Contribution Guide](/CONTRIBUTING) before submitting new projects
+
 <p>
 {% for category in site.data.yaml_project_list %}
     <h1 id="{{ category.name | downcase | replace: ' ', '-' }}">{{ category.name }}</h1>
