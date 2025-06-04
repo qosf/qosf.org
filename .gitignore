@@ -1,3 +1,6 @@
 *.zip
 .ipynb_checkpoints
 .DS_Store
+vendor
+.jekyll-cache
+.bundle

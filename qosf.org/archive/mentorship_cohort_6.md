@@ -20,11 +20,11 @@ buttons:
 # Micro navigation
 micro_nav: false
 
-permalink: /mentorship_cohort_7/
+permalink: /archive/mentorship_cohort_6/
 
 ---
 
-## Quantum Mentorship Program Cohort 7 Project Showcase 
+## Quantum Mentorship Program Cohort 6 Project Showcase 
 
 This is a showcase of all the projects created during the third cohort of our Quantum Computing Mentorship Program. Mentees and mentors worked on a open-source project, with the support of a community of like-minded people from all around the world. In total, there were 24 projects completed!
 
