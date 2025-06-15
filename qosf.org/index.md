@@ -11,10 +11,6 @@ permalink: /
 title: Quantum Open Source Foundation
 description: Supporting the development and standardization of open tools for quantum computing.
 buttons:
-    - content: Sign up for the newsletter
-      url: 'https://mailchi.mp/762c19baab5a/qosf-supporter'
-      external_url: true
-      icon: fa-envelope-open-text
     - icon: slack
       content: Join our Slack
       url: 'https://join.slack.com/t/qosf/shared_invite/zt-2nq2n0t9i-PyiiCKg1bAzRpNzLMM7pWg'
@@ -27,9 +23,6 @@ buttons:
       content: Follow us on GitHub
       url: 'https://github.com/qosf'
       external_url: true
-    - icon: fa-hand-holding-heart
-      content: Donate to QOSF
-      url: 'https://qosf.org/donate'
 
 # Author box
 author:
@@ -75,6 +68,6 @@ grid_navigation:
     - title: Quantum Software Meetups.
       excerpt: Meet the people and projects behind quantum software and get involved yourself.
       cta: Learn more
-      url: 'qsm'
+      url: 'archive/qsm'
 
 ---

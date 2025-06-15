@@ -20,11 +20,9 @@ micro_nav: false
 
 ---
 
-{::nomarkdown}
-<div style="background-color: #f8d7da; color: #721c24; padding: 15px; border: 1px solid #f5c6cb; border-radius: 5px; margin-bottom: 20px; text-align: center;">
-  <strong>Notice:</strong> The Wittek Quantum Prize initiative is archived and no longer active.
+<div style="background-color: #f8d7da; color: #721c24; padding: 20px; border: 1px solid #f5c6cb; border-radius: 5px; margin-bottom: 30px; text-align: center; font-size: 1.1em;">
+  <strong>📌 Notice:</strong> The Wittek Quantum Prize initiative is <strong>archived</strong> and no longer active. We celebrate the amazing contributors who have received the award — <a href="#previous-winners" style="color: #721c24; text-decoration: underline;"><strong>see previous winners</strong></a>.
 </div>
-{:/nomarkdown}
 
 In a partnership between QOSF and the [Unitary Fund](https://unitary.fund), we want to recognize the work of the unsung heroes, developers and maintainers behind the software projects we all use. They are often unaware of the impact their work is having on the quantum software community and thus we are awarding a
 {::nomarkdown}<h3 align='center' style="margin-top: -5px"><b>US$4000 prize</b></h3>{:/}

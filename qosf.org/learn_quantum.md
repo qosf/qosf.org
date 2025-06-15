@@ -11,17 +11,10 @@ comments: false
 title: Learning Resources on Quantum Computing
 description: A curated selection of the best free learning resources on quantum computing for all skill levels.
 buttons:
-    - content: Sign up for the newsletter
-      url: 'https://mailchi.mp/762c19baab5a/qosf-supporter'
-      external_url: true
-      icon: home
     - icon: slack
       content: Join our Slack
       url: 'https://join.slack.com/t/qosf/shared_invite/zt-2nq2n0t9i-PyiiCKg1bAzRpNzLMM7pWg'
       external_url: true
-    - icon: fa-hand-holding-heart
-      content: Donate to QOSF
-      url: 'https://qosf.org/donate'
     - icon: github
       content: Try our monthly challenges!
       url: https://github.com/qosf/monthly-challenges/

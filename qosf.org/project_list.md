@@ -11,17 +11,10 @@ comments: false
 title: List of Open Quantum Projects
 description: Mirror of the curated list of open source developed quantum software projects hosted on [QOSF's GitHub page](https://github.com/qosf/os_quantum_software).
 buttons:
-    - content: Sign up for the newsletter
-      url: 'https://mailchi.mp/762c19baab5a/qosf-supporter'
-      external_url: true
-      icon: home
     - icon: slack
       content: Join our Slack
       url: 'https://join.slack.com/t/qosf/shared_invite/zt-2nq2n0t9i-PyiiCKg1bAzRpNzLMM7pWg'
       external_url: true
-    - icon: fa-hand-holding-heart
-      content: Donate to QOSF
-      url: 'https://qosf.org/donate'
 
 # Micro navigation
 micro_nav: false
