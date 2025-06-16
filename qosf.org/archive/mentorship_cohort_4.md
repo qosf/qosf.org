@@ -20,7 +20,7 @@ buttons:
 # Micro navigation
 micro_nav: false
 
-permalink: /mentorship_cohort_4/
+permalink: /archive/mentorship_cohort_4/
 
 ---
 

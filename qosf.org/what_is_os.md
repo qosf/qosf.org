@@ -11,17 +11,10 @@ comments: false
 title: What is open source...
 description: ...and why it's not about <i>just</i> putting code out there
 buttons:
-    - content: Sign up for the newsletter
-      url: 'https://mailchi.mp/762c19baab5a/qosf-supporter'
-      external_url: true
-      icon: home
     - icon: slack
       content: Join our Slack
-      url: 'https://qosf.org/join'
+      url: 'https://join.slack.com/t/qosf/shared_invite/zt-2nq2n0t9i-PyiiCKg1bAzRpNzLMM7pWg'
       external_url: true
-    - icon: fa-hand-holding-heart
-      content: Donate to QOSF
-      url: 'https://qosf.org/donate'
 
 # Micro navigation
 micro_nav: false
@@ -40,7 +33,7 @@ Therefore the act of including a licence with the code -- formally referred to a
 For choosing a licence, we recommend following resources:
 * [Choose an open source license](https://choosealicense.com/) 
 * [Open Source Initiative on Licences](https://opensource.org/licenses)
-* [How to choose a licence for your own work by Free Software Foundation](https://www.gnu.org/licenses/license-recommendations.en.html)
+* [How to choose a licence for your own work by Free Software Foundation](https://www.fsf.org/blogs/licensing/licensing-resource-series-how-to-choose-a-license-for-your-own-work)
 
 ### Permissive or copyleft
 In general, the open source software licences are divided into two groups -- so called permissive and copyleft.

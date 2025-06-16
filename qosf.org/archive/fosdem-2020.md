@@ -8,17 +8,10 @@ comments: false
 title: "FOSDEM&#39;20 - open source quantum computing"
 description: Two days dedicated to quantum open source at Europe's largest open source conference!
 buttons:
-    - content: Sign up for the newsletter
-      url: 'https://mailchi.mp/762c19baab5a/qosf-supporter'
-      external_url: true
-      icon: home
     - icon: slack
       content: Join our Slack
-      url: 'https://qosf.org/join'
+      url: 'https://join.slack.com/t/qosf/shared_invite/zt-2nq2n0t9i-PyiiCKg1bAzRpNzLMM7pWg'
       external_url: true
-    - icon: fa-hand-holding-heart
-      content: Donate to QOSF
-      url: 'https://qosf.org/donate'
 
 ---
 

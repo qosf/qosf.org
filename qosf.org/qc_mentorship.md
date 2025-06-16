@@ -59,21 +59,21 @@ If you're interested, you can learn more about the [story behind the program](ht
 
 ## Project Highlights
 
-Cohort one (March 2020 to June 2020): [mentorship projects]({{ 'mentorship_cohort_1' | absolute_url }}).
+Cohort one (March 2020 to June 2020): [mentorship projects]({{ 'archive/mentorship_cohort_1' | absolute_url }}).
 
-Cohort two (October 2020 to January 2021): [mentorship projects]({{ 'mentorship_cohort_2' | absolute_url }}).
+Cohort two (October 2020 to January 2021): [mentorship projects]({{ 'archive/mentorship_cohort_2' | absolute_url }}).
 
-Cohort three (March 2021 to June 2021): [mentorship projects]({{ 'mentorship_cohort_3' | absolute_url }}).
+Cohort three (March 2021 to June 2021): [mentorship projects]({{ 'archive/mentorship_cohort_3' | absolute_url }}).
 
-Cohort four (October 2021 to January 2022): [mentorship projects]({{ 'mentorship_cohort_4' | absolute_url }}).
+Cohort four (October 2021 to January 2022): [mentorship projects]({{ 'archive/mentorship_cohort_4' | absolute_url }}).
 
-Cohort five (March 2022 to June 2022): [mentorship projects]({{ 'mentorship_cohort_5' | absolute_url }}).
+Cohort five (March 2022 to June 2022): [mentorship projects]({{ 'archive/mentorship_cohort_5' | absolute_url }}).
 
-Cohort six (October 2022 to January 2023): [mentorship projects]({{ 'mentorship_cohort_6' | absolute_url }}).
+Cohort six (October 2022 to January 2023): [mentorship projects]({{ 'archive/mentorship_cohort_6' | absolute_url }}).
 
-Cohort seven (March 2023 to June 2023): [mentorship projects]({{ 'mentorship_cohort_7' | absolute_url }}).
+Cohort seven (March 2023 to June 2023): [mentorship projects]({{ 'archive/mentorship_cohort_7' | absolute_url }}).
 
-Cohort eight (October 2023 to January 2024): [mentorship projects]({{ 'mentorship_cohort_8' | absolute_url }}).
+Cohort eight (October 2023 to January 2024): [mentorship projects]({{ 'archive/mentorship_cohort_8' | absolute_url }}).
 
 Cohort nine (March 2024 to June 2024): [mentorship projects]({{ 'mentorship_cohort_9' | absolute_url }}).
 
@@ -185,7 +185,7 @@ In previous cohorts, we have had mentors such as:
 - [Ntwali Bashige](https://twitter.com/nbashige), Zapata Computing 
 - [Peter Korponaic](https://www.linkedin.com/in/petar-korponaic), Quantastica 
 - [Tom Lubowe](https://www.linkedin.com/in/tom-l-17814775/), Xanadu
-- [Alba Ceverta Lierta](https://albacl.github.io/), UofT (Alan Aspuru-Guzik Group) 
+- [Alba Ceverta Lierta](https://www.linkedin.com/in/alba-cervera-lierta-phd-4506969b/), UofT (Alan Aspuru-Guzik Group) 
 - [Pierre-Luc Dallaire-Demers](https://www.linkedin.com/in/pierre-luc-dallaire-demers-006540116/), Zapata Computing
 - [William Simons](https://www.linkedin.com/in/william-simon-197310112), Zapata Computing 
 - [Theodor Issacson](https://www.linkedin.com/in/theodorisacsson/), Xanadu

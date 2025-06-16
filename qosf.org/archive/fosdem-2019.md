@@ -8,17 +8,10 @@ comments: false
 title: "FOSDEM&#39;19 Quantum Computing"
 description: Two days dedicated to Quantum computing at Europe's largest open source conference!
 buttons:
-    - content: Sign up for the newsletter
-      url: 'https://mailchi.mp/762c19baab5a/qosf-supporter'
-      external_url: true
-      icon: home
     - icon: slack
       content: Join our Slack
-      url: 'https://qosf.org/join'
+      url: 'https://join.slack.com/t/qosf/shared_invite/zt-2nq2n0t9i-PyiiCKg1bAzRpNzLMM7pWg'
       external_url: true
-    - icon: fa-hand-holding-heart
-      content: Donate to QOSF
-      url: 'https://qosf.org/donate'
 
 ---
 
@@ -54,7 +47,7 @@ The main themes of the event are:
 All major hardware providers with open source development frameworks, including
 [Qiskit](https://qiskit.org/) (IBM),
 [Forest](https://www.rigetti.com/forest) (Rigetti), 
-[D-Wave's Ocean](https://ocean.dwavesys.com/) (D-Wave), 
+[D-Wave's Ocean](https://github.com/dwavesystems/dwave-ocean-sdk/) (D-Wave), 
 [PennyLane](https://pennylane.readthedocs.io/en/latest/),
 [Strawberry Fields](https://strawberryfields.readthedocs.io/en/latest/) (Xanadu),
 [QuTiP](http://qutip.org/),

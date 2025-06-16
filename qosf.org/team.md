@@ -10,7 +10,7 @@ description: Overview of the main people behind QOSF. We're always looking for n
 buttons:
     - icon: slack
       content: Join our Slack
-      url: 'https://qosf.org/join'
+      url: 'https://join.slack.com/t/qosf/shared_invite/zt-2nq2n0t9i-PyiiCKg1bAzRpNzLMM7pWg'
       external_url: true
     - icon: fa-hand-holding-heart
       content: Donate to QOSF
