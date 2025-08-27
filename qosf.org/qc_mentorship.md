@@ -10,7 +10,7 @@ title: Quantum Computing Mentorship Program
 description: Connecting quantum enthusiasts with mentors from academia & industry.
 buttons:
     - content: Apply for mentorship (for applicants)
-      url: 'https://forms.gle/fxiUALvWedAEGcSP6'
+      url: ''
       external_url: true
       icon: fa-file-import
     - content: Apply to be a mentor
@@ -83,15 +83,15 @@ The program is running in cohorts. Here is the timeline for the next cohort, i.e
 
 | Program milestone                                           | Timeframe                                                           |
 --------------------------------------------------------------|---------------------------------------------------------------------|
-| Program applications released for mentors                   | October 2, 2024                     | 
-| Program applications released for mentees                   | October 7, 2024                     |
-| Program applications closed for mentors                     | October 15, 2024                    |
-| Program applications closed for mentees                     | October 28, 2024                    | 
-| Applications review                                         | October 28 - November 17, 2024       |
-| Pairing mentors with mentees and defining projects’ scope   | November 18 - December 1, 2024       |
-| Mentees and mentors work on projects                        | December 9, 2024 - March 15, 2025   |
-| Program wrap-up, Final presentations                        | March 16-17, 2025     |
-| Promotion of all open-source projects                       | April - May 2025|
+| Program applications released for mentors                   | September 29, 2025                     | 
+| Program applications released for mentees                   | October 6, 2025                     |
+| Program applications closed for mentors                     | October 17, 2025                    |
+| Program applications closed for mentees                     | October 26, 2025                    | 
+| Applications review                                         | October 27 - November 16, 2025       |
+| Pairing mentors with mentees and defining projects’ scope   | November 17 - December 1, 2025       |
+| Mentees and mentors work on projects                        | December 8, 2025 - March 15, 2026   |
+| Program wrap-up, Final presentations                        | March 16-20, 2026     |
+| Promotion of all open-source projects                       | April - May 2026|
     
 
 ## How does it work?
