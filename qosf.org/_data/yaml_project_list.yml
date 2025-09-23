@@ -243,6 +243,9 @@
   - description: High level, elementary simulation library.
     name: qSim
     url: https://github.com/haykkh/qSim
+  - description: A scalable system based on a microservices architecture for simulating distributed quantum algorithms.
+    name: Quantum Emulation Engine
+    url: https://github.com/comp-phys-marc/distributed-emulator
 - name: Quantum annealing
   projects:
   - description: Compile a very small subset of C to a D-Wave Hamiltonian function
@@ -435,6 +438,15 @@
   - description: Open-source quantum assembly language.
     name: OpenQASM
     url: https://github.com/QISKit/openqasm
+  - description: QASM, the low-level programming language for quantum circuit specification, implemented in TypeScript for the web.
+    name: QASM-TS
+    url: https://github.com/comp-phys-marc/qasm-ts
+  - description: QMASM, the quantum macro assembly language for D-Wave's quantum annealers, implemented in TypeScript for the web.
+    name: QMASM-TS
+    URL: https://github.com/comp-phys-marc/qmasm-ts
+  - description: Blackbird, the low-level programming language for continuous-variable quantum computing, implemented in TypeScript for the web.
+    name: BLACKBIRD-TS
+    URL: https://github.com/comp-phys-marc/blackbird-ts
   - description: A quantum macro assembler for D-Wave's quantum annealers.
     name: QMASM
     url: https://github.com/lanl/qmasm
