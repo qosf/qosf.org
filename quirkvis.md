@@ -50,40 +50,39 @@ draw(qasm_str, theme="matrix", filename="path/to/file.svg")
 svg = draw(qasm_str, theme="matrix")
 ```
 
-## Personalization
-Check the themes json files to see how much you can customize, you can customize anything!
+## Themes and Customization
+### Creating full custom themes
 
-Then create your own theme, you don't need to overwrite all the file, you only have to change the values of interest, the rest if defaulted.
+The easiest way is to create a copy of [default.json](https://github.com/ljcamargo/quantum_quirkvis/blob/master/src/quantum_quirkvis/themes/default.json) and make the desired changes, then in python:
 
-- mytheme.json
+```python
+from quantum_quirkvis import draw
+draw(qasm, theme="mytheme.json", filename="output.svg")
+```
+
+or run directly from the console like this
+```sh
+qasmvis ghz.qasm -t mytheme.json -o ghz.svg
+```
+
+### Doing subtle customizations
+You don't need to copy edit entire file if you only wish a subtle change, for example, if you would rather use the classic square for the gates and keep the rest of the theme intact you just:
+
+squared_gates.json
 ```json
 {
-    "name": "default",
-    "styles": {
-        "background": "#777777",
+  "name":"squared_gates",
+  "shapes":{
+    "gate":{
+      "type":"rect",
+      "width":40,
+      "height":40
     }
+  }
 }
 ```
 
-then simply
-
-```python
-draw(qasm_str, theme="mytheme.json")
-```
-
-You can also use the cli provided which exposes the command **qasmvis** 
-
-```bash
-qasmvis ghz.qasm -t matrix -o ghz.svg
-```
-or
-```bash
-qasmvis ghz.qasm -t matrix > ghz.svg
-```
-or
-```bash
-cat ghz.qasm | qasmvis -t night > ghz.svg
-```
+the rest of the values gets defaulted to the default.json theme. The only limitation for now is that you cannot choose the parent theme, for example, if you would like to extend or edit the matrix theme, you would need to copy the full matrix.json file from source.
 
 ## Libraries
 The current package just requires pyqasm to parse the qasm files or string into the AST that is processed to create SVG with the selected theme.
