@@ -42,4 +42,4 @@ Space is limited to 75 attendees.
 
 ## Organizer
 
-This event is organized by [Sara Andotra & Alberto Maldonado]
+This event is organized by Sara Andotra & Alberto Maldonado Romo in collaboration with the Unitary Foundation and IBM.
