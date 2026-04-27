@@ -1,9 +1,9 @@
 ---
-layout: default
-title: NYU HACKday — unitaryHACK 2026
+layout: page
+title: UnitaryHACK day — unitaryHACK 2026
 ---
 
-# NYU HACKday — unitaryHACK 2026
+# UnitaryHACK day — unitaryHACK 2026
 
 Join us for a local in-person hacking day as part of [unitaryHACK 2026](https://unitaryhack.dev), a global open-source quantum computing hackathon.
 
