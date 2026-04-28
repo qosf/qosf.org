@@ -29,6 +29,8 @@ doks:
               item_url: '/evaluation'
             - item_name: Mentorship
               item_url: '/qc_mentorship'
+            - item_name: UnitaryHACK day
+              item_url: '/Unitaryhack_day'
     footer:
         content:
             logo:
