@@ -18,7 +18,6 @@ buttons:
 # Micro navigation
 micro_nav: false
 
----
 
 # Mission
 
