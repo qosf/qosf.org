@@ -24,6 +24,8 @@ buttons:
 # Micro navigation
 micro_nav: false
 
+permalink: /unitaryhack_day/
+
 ---
 
 ## General Overview
