@@ -1,7 +1,9 @@
 ---
-layout: page
-title: UnitaryHACK day — unitaryHACK 2026
----
+# Page settings
+layout: default
+keywords:
+comments: false
+
 
 # UnitaryHACK day — unitaryHACK 2026
 
