@@ -6,7 +6,7 @@ keywords:
 comments: false
 
 # Hero section
-title: UnitaryHACK Day — unitaryHACK 2026
+title: UnitaryHACK26 Day
 description: Join us for an in-person quantum hacking day as part of the global unitaryHACK open-source hackathon.
 buttons:
     - content: Register for the event
