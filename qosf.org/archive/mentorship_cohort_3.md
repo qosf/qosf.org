@@ -2,7 +2,7 @@
 
 # Page settings
 layout: default
-keywords:
+keywords: []
 comments: false
 
 # Hero section
