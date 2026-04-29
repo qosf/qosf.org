@@ -48,9 +48,9 @@ doks:
         disqus_forum_shortname: # Add your disqus forum shortname to activate comments
 
 # SASS settings
-sass:
-    sass_dir: ./doks-theme/_sass
-    style: compressed
+#sass:
+#    sass_dir: ./doks-theme/_sass
+#    style: compressed
 
 plugins:
 - jekyll-latex
