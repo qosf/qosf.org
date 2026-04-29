@@ -19,6 +19,8 @@ buttons:
 micro_nav: false
 
 
+---
+
 # Mission
 
 The Quantum Open Source Foundation, herein after referred to as QOSF, is charged to expand the role of open source software in quantum computing and improve the standardization and quality thereof. The main focus of the QOSF will be on software intended for use with current and near-term quantum computing technologies also often referred to as noisy intermediate scale quantum (NISQ) technologies. The QOSF will also pursue activities and financial support related to the exploration of upcoming open source software for fault-tolerant universal quantum computers on the scale of hundreds of logical qubits. A specific focus lies in the standardization of the low-level hardware interfaces and their compilation in order to allow for cross-compatibility of quantum programming languages. The objective of QOSF is to:
