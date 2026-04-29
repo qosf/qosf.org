@@ -28,11 +28,11 @@ micro_nav: false
 
 ## General Overview
 
-You’re invited to participate in our local **UnitaryHACK Day**, an in-person event that is part of the global hackathon organized by the :contentReference[oaicite:0]{index=0}.
+You’re invited to participate in our local **UnitaryHACK Day**, an in-person event that is part of the global hackathon organized by the:contentReference[oaicite:0]{index=0}.
 
 With the support of mentors and a community of quantum enthusiasts, you will collaborate on open-source projects, contribute to real repositories, and gain hands-on experience in quantum computing.
 
----
+
 
 ## Why attend?
 
@@ -44,7 +44,7 @@ Many people interested in quantum computing face challenges such as:
 
 This event aims to address these challenges by bringing people together in a collaborative space where learning, building, and networking happen simultaneously.
 
----
+
 
 ## Event Details
 
@@ -55,7 +55,7 @@ This event aims to address these challenges by bringing people together in a col
 | **Location** | 5 MetroTech Center, LC400 (4th Floor), Brooklyn, NY 11201 |
 | **Hosted by** | NYU Tandon School of Engineering |
 
----
+
 
 ## What is unitaryHACK?
 
@@ -67,7 +67,7 @@ During the event period (June 3–17, 2026), contributors can:
 - Collaborate with developers and researchers  
 - Earn bounties for accepted contributions  
 
----
+
 
 ## What is a HACKday?
 
@@ -85,7 +85,7 @@ At the NYU HACKday, participants will experience:
 - A talk from an IBM speaker  
 - Open hacking sessions with mentor support  
 
----
+
 
 ## Who should attend?
 
@@ -98,7 +98,7 @@ This event is open to:
 
 No matter your experience level, you are welcome. Whether you are making your first open-source contribution or already have experience, this event is designed to support your growth.
 
----
+
 
 ## How does it work?
 
@@ -108,7 +108,7 @@ No matter your experience level, you are welcome. Whether you are making your fi
 4. Work on open-source projects with mentor support  
 5. Submit contributions and collaborate with the community  
 
----
+
 
 ## Requirements
 
@@ -121,13 +121,13 @@ While expertise is not required, familiarity with:
 
 will help you get the most out of the experience.
 
----
+
 
 ### Motivation
 
 Participants are encouraged to actively engage during the event, collaborate with others, and explore open-source contributions. The goal is to create a productive and supportive environment for learning and building.
 
----
+
 
 ## Register
 
@@ -137,7 +137,7 @@ You can secure your spot here:
 
 **Note:** Space is limited to 75 participants.
 
----
+
 
 ## Organizer
 
@@ -148,7 +148,7 @@ This event is organized by:
 
 in collaboration with the :contentReference[oaicite:1]{index=1} and :contentReference[oaicite:2]{index=2}.
 
----
+
 
 ## Summary
 
@@ -157,6 +157,6 @@ in collaboration with the :contentReference[oaicite:1]{index=1} and :contentRefe
 - Contribute to open-source projects  
 - Learn from mentors and industry experts  
 
----
+
 
 If you have any questions, feel free to reach out or join the Slack community.
