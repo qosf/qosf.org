@@ -77,6 +77,9 @@ Cohort eight (October 2023 to January 2024): [mentorship projects]({{ 'archive/m
 
 Cohort nine (March 2024 to June 2024): [mentorship projects]({{ 'mentorship_cohort_9' | absolute_url }}).
 
+Cohort nine (December 2025 to April 2026): [mentorship projects]({{ 'mentorship_cohort_9' | absolute_url }}).
+
+
 ## Timeline 
 
 The program is running in cohorts. Here is the timeline for the next cohort, i.e., cohort 10th, which will start in October 2024. If you would like to be informed about updates, please follow us on [Twitter](https://twitter.com/qosfoundation), [LinkedIn](https://www.linkedin.com/company/qosf/) and [Facebook](https://www.facebook.com/quantumOSfoundation)!
