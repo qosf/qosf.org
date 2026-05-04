@@ -34,7 +34,7 @@ gem "wdm", "~> 0.1.0" if Gem.win_platform?
 gem 'jekyll-target-blank'
 
 # HTTP server toolkit required for Jekyll
-gem 'webrick', '~> 1.7'
+gem 'webrick', '~> 1.8'
 
 # REXML DoS vulnerability
 gem 'nokogiri'
