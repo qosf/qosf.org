@@ -77,7 +77,9 @@ Cohort eight (October 2023 to January 2024): [mentorship projects]({{ 'archive/m
 
 Cohort nine (March 2024 to June 2024): [mentorship projects]({{ 'mentorship_cohort_9' | absolute_url }}).
 
-Cohort nine (December 2025 to April 2026): [mentorship projects]({{ 'mentorship_cohort_9' | absolute_url }}).
+Cohort ten (January 2025 to April 2025): [mentorship projects]({{ 'mentorship_cohort_9' | absolute_url }}).
+
+Cohort eleven (December 2025 to April 2026): [mentorship projects]({{ 'mentorship_cohort_9' | absolute_url }}).
 
 
 ## Timeline 
