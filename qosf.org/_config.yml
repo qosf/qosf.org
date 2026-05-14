@@ -30,7 +30,7 @@ doks:
             - item_name: Mentorship
               item_url: '/qc_mentorship'
             - item_name: uhday
-              item_url: '/unitaryhack_day'
+              item_url: '/uhday'
     footer:
         content:
             logo:
