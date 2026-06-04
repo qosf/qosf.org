@@ -1,6 +1,6 @@
 import { createServerSupabaseClient } from "@/lib/supabase/server";
 import { notFound } from "next/navigation";
-import { ExternalLink, GraduationCap, MapPin, Users } from "lucide-react";
+import { ExternalLink, GraduationCap, MapPin, Users, Globe } from "lucide-react";
 import Link from "next/link";
 
 export default async function PublicProfilePage({
@@ -32,7 +32,6 @@ export default async function PublicProfilePage({
 
   return (
     <div className="container mx-auto px-4 py-8 max-w-2xl">
-      {/* Card */}
       <div className="card">
         <div className="text-center mb-6">
           <div className="w-20 h-20 bg-qosf-blue/10 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -53,16 +52,34 @@ export default async function PublicProfilePage({
           )}
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            {profile.pronouns && (
+              <div className="flex items-center gap-2 text-sm">
+                <Users size={16} className="text-qosf-text-light shrink-0" />
+                <span>{profile.pronouns}</span>
+              </div>
+            )}
+            {profile.country && (
+              <div className="flex items-center gap-2 text-sm">
+                <Globe size={16} className="text-qosf-text-light shrink-0" />
+                <span>{profile.country}</span>
+              </div>
+            )}
             {profile.timezone && (
               <div className="flex items-center gap-2 text-sm">
                 <MapPin size={16} className="text-qosf-text-light shrink-0" />
                 <span>{profile.timezone}</span>
               </div>
             )}
-            {profile.educational_level && (
+            {profile.academic_degree && (
               <div className="flex items-center gap-2 text-sm">
                 <GraduationCap size={16} className="text-qosf-text-light shrink-0" />
-                <span>{profile.educational_level}</span>
+                <span>{profile.academic_degree}</span>
+              </div>
+            )}
+            {profile.institution && (
+              <div className="flex items-center gap-2 text-sm">
+                <GraduationCap size={16} className="text-qosf-text-light shrink-0" />
+                <span>{profile.institution}</span>
               </div>
             )}
           </div>

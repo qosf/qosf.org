@@ -7,6 +7,104 @@ import { createClient } from "@/lib/supabase/client";
 import SurveyForm from "@/components/SurveyForm";
 import { FileText, AlertCircle, CalendarClock } from "lucide-react";
 import type { Cohort } from "@/lib/types";
+import { COUNTRIES, TIMEZONES, PRONOUNS, ACADEMIC_DEGREES } from "@/lib/constants";
+
+// Shared questions for both roles
+const sharedQuestions = {
+  elements: [
+    {
+      type: "text",
+      name: "full_name",
+      title: "Full Name",
+      isRequired: true,
+    },
+    {
+      type: "dropdown",
+      name: "country",
+      title: "Country",
+      isRequired: true,
+      choices: COUNTRIES.map((c) => ({ value: c, text: c })),
+    },
+    {
+      type: "dropdown",
+      name: "timezone",
+      title: "Timezone",
+      isRequired: true,
+      choices: TIMEZONES.map((tz) => ({ value: tz, text: tz })),
+    },
+    {
+      type: "dropdown",
+      name: "pronouns",
+      title: "Pronouns",
+      isRequired: true,
+      choices: PRONOUNS.map((p) => ({ value: p, text: p })),
+    },
+    {
+      type: "dropdown",
+      name: "academic_degree",
+      title: "Academic Degree",
+      isRequired: true,
+      choices: ACADEMIC_DEGREES.map((d) => ({ value: d, text: d })),
+    },
+    {
+      type: "text",
+      name: "institution",
+      title: "Institution (Academic or Professional Affiliation)",
+      isRequired: true,
+      placeholder: "e.g., MIT, IBM, University of Oxford...",
+    },
+    {
+      type: "checkbox",
+      name: "research_interests",
+      title: "Research Interests",
+      isRequired: true,
+      choices: [
+        "Quantum Computing Theory",
+        "Quantum Algorithms",
+        "Quantum Error Correction",
+        "Quantum Machine Learning",
+        "Quantum Information Science",
+        "Quantum Hardware",
+        "Quantum Cryptography",
+        "Open Source Development",
+        "Quantum Simulation",
+        "Other",
+      ],
+    },
+    {
+      type: "text",
+      name: "keywords",
+      title: "Keywords (comma separated)",
+      placeholder: "e.g., qiskit, cirq, quantum chemistry, open source",
+    },
+    {
+      type: "text",
+      name: "linkedin_url",
+      title: "LinkedIn Profile URL",
+      inputType: "url",
+    },
+    {
+      type: "text",
+      name: "github_url",
+      title: "GitHub Profile URL",
+      inputType: "url",
+    },
+    {
+      type: "comment",
+      name: "bio",
+      title: "Short Bio",
+      maxLength: 1000,
+    },
+    {
+      type: "boolean",
+      name: "terms_accepted",
+      title: "I have read and agree to the <a href='/terms' target='_blank'>Terms &amp; Conditions</a> of the QOSF Mentorship Programme",
+      isRequired: true,
+      labelTrue: "Yes, I agree",
+      labelFalse: "No",
+    },
+  ],
+};
 
 const menteeSurveyJson = {
   title: "Mentee Application",
@@ -14,68 +112,7 @@ const menteeSurveyJson = {
   pages: [
     {
       elements: [
-        {
-          type: "text",
-          name: "full_name",
-          title: "Full Name",
-          isRequired: true,
-        },
-        {
-          type: "text",
-          name: "educational_level",
-          title: "Educational Level",
-          isRequired: true,
-          placeholder: "e.g., Bachelor's in Physics, Master's in CS, PhD candidate...",
-        },
-        {
-          type: "checkbox",
-          name: "research_interests",
-          title: "Research Interests",
-          isRequired: true,
-          choices: [
-            "Quantum Computing Theory",
-            "Quantum Algorithms",
-            "Quantum Error Correction",
-            "Quantum Machine Learning",
-            "Quantum Information Science",
-            "Quantum Hardware",
-            "Quantum Cryptography",
-            "Open Source Development",
-            "Quantum Simulation",
-            "Other",
-          ],
-        },
-        {
-          type: "text",
-          name: "timezone",
-          title: "Timezone",
-          isRequired: true,
-          placeholder: "e.g., America/New_York, Europe/Berlin, Asia/Tokyo",
-        },
-        {
-          type: "text",
-          name: "linkedin_url",
-          title: "LinkedIn Profile URL",
-          inputType: "url",
-        },
-        {
-          type: "text",
-          name: "github_url",
-          title: "GitHub Profile URL",
-          inputType: "url",
-        },
-        {
-          type: "text",
-          name: "keywords",
-          title: "Keywords (comma separated)",
-          placeholder: "e.g., qiskit, cirq, quantum chemistry, open source",
-        },
-        {
-          type: "comment",
-          name: "bio",
-          title: "Biopic / Short Bio",
-          maxLength: 1000,
-        },
+        ...sharedQuestions.elements,
         {
           type: "comment",
           name: "motivation",
@@ -93,68 +130,7 @@ const mentorSurveyJson = {
   pages: [
     {
       elements: [
-        {
-          type: "text",
-          name: "full_name",
-          title: "Full Name",
-          isRequired: true,
-        },
-        {
-          type: "text",
-          name: "educational_level",
-          title: "Educational Level / Position",
-          isRequired: true,
-          placeholder: "e.g., PhD, Professor, Industry Researcher...",
-        },
-        {
-          type: "checkbox",
-          name: "research_interests",
-          title: "Areas of Expertise",
-          isRequired: true,
-          choices: [
-            "Quantum Computing Theory",
-            "Quantum Algorithms",
-            "Quantum Error Correction",
-            "Quantum Machine Learning",
-            "Quantum Information Science",
-            "Quantum Hardware",
-            "Quantum Cryptography",
-            "Open Source Development",
-            "Quantum Simulation",
-            "Other",
-          ],
-        },
-        {
-          type: "text",
-          name: "timezone",
-          title: "Timezone",
-          isRequired: true,
-          placeholder: "e.g., America/New_York, Europe/Berlin, Asia/Tokyo",
-        },
-        {
-          type: "text",
-          name: "linkedin_url",
-          title: "LinkedIn Profile URL",
-          inputType: "url",
-        },
-        {
-          type: "text",
-          name: "github_url",
-          title: "GitHub Profile URL",
-          inputType: "url",
-        },
-        {
-          type: "text",
-          name: "keywords",
-          title: "Keywords (comma separated)",
-          placeholder: "e.g., qiskit, cirq, quantum chemistry, open source",
-        },
-        {
-          type: "comment",
-          name: "bio",
-          title: "Professional Bio",
-          maxLength: 1000,
-        },
+        ...sharedQuestions.elements,
         {
           type: "comment",
           name: "mentorship_philosophy",
@@ -253,19 +229,23 @@ export default function ApplyPage() {
       return;
     }
 
-    // 1. Update the user's profile with application data
+    // 1. Update profile with application data
     const { error: profileErr } = await supabase.from("profiles").upsert({
       user_id: user.id,
       email: user.email,
       full_name: formData.full_name as string,
       role,
       bio: formData.bio as string,
-      educational_level: formData.educational_level as string,
+      country: formData.country as string,
+      pronouns: formData.pronouns as string,
+      academic_degree: formData.academic_degree as string,
+      institution: formData.institution as string,
+      timezone: formData.timezone as string,
       research_interests: formData.research_interests as string[],
       keywords: (formData.keywords as string)?.split(",").map((k: string) => k.trim()).filter(Boolean),
-      timezone: formData.timezone as string,
       linkedin_url: formData.linkedin_url as string,
       github_url: formData.github_url as string,
+      terms_accepted: !!formData.terms_accepted,
       status: "submitted",
     }, { onConflict: "user_id" });
 

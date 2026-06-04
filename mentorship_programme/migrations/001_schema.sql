@@ -63,6 +63,12 @@ CREATE TABLE IF NOT EXISTS profiles (
   linkedin_url TEXT,
   github_url TEXT,
   status TEXT NOT NULL DEFAULT 'draft' CHECK (status IN ('draft', 'submitted', 'approved', 'rejected')),
+  -- New profile fields
+  country TEXT,
+  pronouns TEXT,
+  academic_degree TEXT,
+  institution TEXT,
+  terms_accepted BOOLEAN NOT NULL DEFAULT FALSE,
   created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
   updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
 );

@@ -1,4 +1,4 @@
-import { X, ExternalLink } from "lucide-react";
+import { X, ExternalLink, GraduationCap } from "lucide-react";
 import Link from "next/link";
 import type { Profile } from "@/lib/types";
 
@@ -28,25 +28,47 @@ export default function ProfileModal({ profile, onClose }: ProfileModalProps) {
         {/* Details */}
         <dl className="space-y-3 text-sm">
           <div className="flex justify-between">
-            <dt className="text-qosf-text-light w-1/3">Email</dt>
-            <dd className="font-medium w-2/3 text-right">{profile.email}</dd>
+            <dt className="text-qosf-text-light w-2/5">Email</dt>
+            <dd className="font-medium w-3/5 text-right">{profile.email}</dd>
           </div>
           <div className="flex justify-between">
-            <dt className="text-qosf-text-light w-1/3">Status</dt>
-            <dd className="font-medium w-2/3 text-right capitalize">{profile.status}</dd>
+            <dt className="text-qosf-text-light w-2/5">Status</dt>
+            <dd className="font-medium w-3/5 text-right capitalize">{profile.status}</dd>
           </div>
-          <div className="flex justify-between">
-            <dt className="text-qosf-text-light w-1/3">Timezone</dt>
-            <dd className="font-medium w-2/3 text-right">{profile.timezone ?? "—"}</dd>
-          </div>
-          <div className="flex justify-between">
-            <dt className="text-qosf-text-light w-1/3">Education</dt>
-            <dd className="font-medium w-2/3 text-right">{profile.educational_level ?? "—"}</dd>
-          </div>
+          {profile.pronouns && (
+            <div className="flex justify-between">
+              <dt className="text-qosf-text-light w-2/5">Pronouns</dt>
+              <dd className="font-medium w-3/5 text-right">{profile.pronouns}</dd>
+            </div>
+          )}
+          {profile.country && (
+            <div className="flex justify-between">
+              <dt className="text-qosf-text-light w-2/5">Country</dt>
+              <dd className="font-medium w-3/5 text-right">{profile.country}</dd>
+            </div>
+          )}
+          {profile.timezone && (
+            <div className="flex justify-between">
+              <dt className="text-qosf-text-light w-2/5">Timezone</dt>
+              <dd className="font-medium w-3/5 text-right">{profile.timezone}</dd>
+            </div>
+          )}
+          {profile.academic_degree && (
+            <div className="flex justify-between">
+              <dt className="text-qosf-text-light w-2/5">Academic Degree</dt>
+              <dd className="font-medium w-3/5 text-right">{profile.academic_degree}</dd>
+            </div>
+          )}
+          {profile.institution && (
+            <div className="flex justify-between">
+              <dt className="text-qosf-text-light w-2/5">Institution</dt>
+              <dd className="font-medium w-3/5 text-right">{profile.institution}</dd>
+            </div>
+          )}
           {profile.linkedin_url && (
             <div className="flex justify-between">
-              <dt className="text-qosf-text-light w-1/3">LinkedIn</dt>
-              <dd className="w-2/3 text-right">
+              <dt className="text-qosf-text-light w-2/5">LinkedIn</dt>
+              <dd className="w-3/5 text-right">
                 <a href={profile.linkedin_url} target="_blank" rel="noopener noreferrer"
                   className="text-qosf-blue hover:underline truncate block">
                   {profile.linkedin_url.replace(/^https?:\/\//, "")}
@@ -56,8 +78,8 @@ export default function ProfileModal({ profile, onClose }: ProfileModalProps) {
           )}
           {profile.github_url && (
             <div className="flex justify-between">
-              <dt className="text-qosf-text-light w-1/3">GitHub</dt>
-              <dd className="w-2/3 text-right">
+              <dt className="text-qosf-text-light w-2/5">GitHub</dt>
+              <dd className="w-3/5 text-right">
                 <a href={profile.github_url} target="_blank" rel="noopener noreferrer"
                   className="text-qosf-blue hover:underline truncate block">
                   {profile.github_url.replace(/^https?:\/\//, "")}

@@ -106,11 +106,16 @@ export default function DashboardPage() {
             Welcome, {profile.full_name || "(no name)"}
           </p>
         </div>
-        {profile.role === "admin" && (
-          <Link href="/admin/mentors" className="btn-secondary text-sm">
-            <Shield size={16} /> Admin Panel
+        <div className="flex items-center gap-2">
+          <Link href="/profile/edit" className="text-sm text-qosf-blue hover:underline">
+            Edit Profile
           </Link>
-        )}
+          {profile.role === "admin" && (
+            <Link href="/admin/mentors" className="btn-secondary text-sm">
+              <Shield size={16} /> Admin Panel
+            </Link>
+          )}
+        </div>
       </div>
 
       {/* Role selection — shown when no application has been submitted yet */}

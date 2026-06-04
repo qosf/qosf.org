@@ -9,12 +9,15 @@ export interface MatchSuggestion {
 
 /**
  * Scoring weights — tweak these to adjust how matches are prioritised.
+ * Normalised so that max raw score = 100 (before multiplying by 100).
  */
 const WEIGHTS = {
-  interestOverlap: 1.0,
-  timezoneProximity: 0.6,
-  educationMatch: 0.3,
+  interestOverlap: 0.50,   // up to 50% of final score
+  timezoneProximity: 0.35, // up to 35%
+  educationMatch: 0.15,    // up to 15%
 };
+
+const TOTAL_WEIGHT = WEIGHTS.interestOverlap + WEIGHTS.timezoneProximity + WEIGHTS.educationMatch;
 
 /**
  * Generate ranked mentor→mentee suggestions.
@@ -24,7 +27,7 @@ const WEIGHTS = {
  *
  * @param mentors  Approved mentor profiles
  * @param mentees  Approved mentee profiles
- * @returns        Descending-score list of suggested pairs
+ * @returns        Descending-score list of suggested pairs (score 0–100)
  */
 export function suggestMatches(
   mentors: Profile[],
@@ -46,7 +49,7 @@ export function suggestMatches(
 
 function scorePair(mentor: Profile, mentee: Profile): MatchSuggestion {
   const reasons: string[] = [];
-  let score = 0;
+  let raw = 0; // runs 0–TOTAL_WEIGHT
 
   // 1. Research-interest overlap
   const shared = intersection(
@@ -56,36 +59,35 @@ function scorePair(mentor: Profile, mentee: Profile): MatchSuggestion {
   if (shared.length > 0) {
     const maxLen = Math.max(
       mentor.research_interests?.length ?? 1,
+      mentee.research_interests?.length ?? 1,
       1,
     );
-    score += (shared.length / maxLen) * 100 * WEIGHTS.interestOverlap;
+    raw += (shared.length / maxLen) * WEIGHTS.interestOverlap;
     reasons.push(`Shared interests: ${shared.join(", ")}`);
   }
 
-  // 2. Timezone proximity (same half-of-the-world = compatible)
-  if (
-    mentor.timezone &&
-    mentee.timezone &&
-    timezoneRegion(mentor.timezone) === timezoneRegion(mentee.timezone)
-  ) {
-    score += 100 * WEIGHTS.timezoneProximity;
-    reasons.push("Same timezone region");
-  } else if (!mentor.timezone || !mentee.timezone) {
-    // Can't compare — neutral
+  // 2. Timezone proximity (UTC offset within 3 hours)
+  const tzScore = timezoneProximity(mentor.timezone, mentee.timezone);
+  if (tzScore > 0) {
+    raw += tzScore * WEIGHTS.timezoneProximity;
+    reasons.push("Compatible timezone");
   }
 
-  // 3. Education-level hint
+  // 3. Academic degree match
   if (
-    mentor.educational_level &&
-    mentee.educational_level &&
-    mentor.educational_level.toLowerCase() ===
-      mentee.educational_level.toLowerCase()
+    mentor.academic_degree &&
+    mentee.academic_degree &&
+    mentor.academic_degree.toLowerCase() ===
+      mentee.academic_degree.toLowerCase()
   ) {
-    score += 100 * WEIGHTS.educationMatch;
-    reasons.push("Similar educational level");
+    raw += WEIGHTS.educationMatch;
+    reasons.push("Similar academic degree");
   }
 
-  return { mentor, mentee, score: Math.round(score), reasons };
+  // Normalise to 0–100
+  const score = TOTAL_WEIGHT > 0 ? Math.round((raw / TOTAL_WEIGHT) * 100) : 0;
+
+  return { mentor, mentee, score, reasons };
 }
 
 function intersection(a: string[], b: string[]): string[] {
@@ -93,8 +95,34 @@ function intersection(a: string[], b: string[]): string[] {
   return a.filter((x) => setB.has(x.toLowerCase().trim()));
 }
 
-/** Coarse timezone region based on common IANA area prefixes. */
-function timezoneRegion(tz: string): string | null {
-  const parts = tz.split("/");
-  return parts.length >= 2 ? parts[0].toLowerCase() : null;
+/**
+ * Parse a UTC-offset string like "UTC+05:30" or "UTC-04:00" into hours.
+ * Returns null if unparseable.
+ */
+function parseUtcOffset(tz: string | undefined | null): number | null {
+  if (!tz) return null;
+  const m = tz.match(/^UTC([+-])(\d{2}):(\d{2})$/);
+  if (!m) return null;
+  const sign = m[1] === "+" ? 1 : -1;
+  const hours = parseInt(m[2], 10);
+  const minutes = parseInt(m[3], 10);
+  return sign * (hours + minutes / 60);
+}
+
+/**
+ * Score timezone compatibility (0 = none, 1 = same offset).
+ * Two timezones within 3 hours get a proportional score.
+ */
+function timezoneProximity(
+  a: string | undefined | null,
+  b: string | undefined | null,
+): number {
+  const hA = parseUtcOffset(a);
+  const hB = parseUtcOffset(b);
+  if (hA === null || hB === null) return 0;
+
+  const diff = Math.abs(hA - hB);
+  if (diff <= 1) return 1.0;       // same offset
+  if (diff <= 3) return 0.6;       // within 3 hours
+  return 0;                         // too far apart
 }

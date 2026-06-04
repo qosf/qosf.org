@@ -18,6 +18,11 @@ export interface Profile {
   linkedin_url?: string;
   github_url?: string;
   status: ApplicationStatus;
+  country?: string;
+  pronouns?: string;
+  academic_degree?: string;
+  institution?: string;
+  terms_accepted?: boolean;
   created_at: string;
   updated_at: string;
 }
