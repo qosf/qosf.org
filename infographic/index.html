@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quantum Open-Source Ecosystem</title>
+  <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAC0lEQVQI12NgAAIABQABNjN9GQAAAAlwSFlzAAAWJQAAFiUBSVIk8AAAAA0lEQVQI12P4z8BQDwAEgAF/QualzQAAAABJRU5ErkJggg==">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { background: #daeafa; overflow: hidden; font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; }
+
+    #graph-container {
+      width: 100vw;
+      height: 100vh;
+      position: fixed;
+      top: 0; left: 0;
+    }
+
+    /* --- Controls Toggle Button --- */
+    #toggle-controls {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      z-index: 110;
+      width: 38px;
+      height: 38px;
+      border: none;
+      border-radius: 10px;
+      background: rgba(255,255,255,0.85);
+      backdrop-filter: blur(10px);
+      box-shadow: 0 2px 16px rgba(0,0,0,0.10);
+      cursor: pointer;
+      font-size: 18px;
+      line-height: 1;
+      color: #2c5282;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.25s;
+      border: 1px solid rgba(101,158,213,0.20);
+    }
+    #toggle-controls:hover {
+      background: rgba(255,255,255,0.95);
+      box-shadow: 0 4px 20px rgba(0,0,0,0.14);
+      transform: scale(1.04);
+    }
+    #toggle-controls.panel-hidden {
+      left: 20px;
+    }
+
+    /* --- Controls Panel --- */
+    #controls {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      z-index: 100;
+      background: rgba(255,255,255,0.78);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-radius: 14px;
+      padding: 16px 18px;
+      padding-top: 50px; /* space for toggle overlap */
+      box-shadow: 0 4px 32px rgba(0,0,0,0.08);
+      width: 210px;
+      border: 1px solid rgba(255,255,255,0.45);
+      transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s ease;
+      transform-origin: top left;
+    }
+    #controls.hidden {
+      transform: translateX(-110%) scale(0.92);
+      opacity: 0;
+      pointer-events: none;
+    }
+    #controls h2 {
+      font-size: 14px;
+      font-weight: 600;
+      color: #1a3a5c;
+      margin-bottom: 8px;
+      letter-spacing: 0.3px;
+    }
+    .control-group {
+      margin-bottom: 6px;
+    }
+    .control-group label {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 12px;
+      color: #2c5282;
+      cursor: pointer;
+      padding: 3px 6px;
+      border-radius: 6px;
+      transition: background 0.15s;
+    }
+    .control-group label:hover { background: rgba(101,158,213,0.12); }
+    .control-group input[type="radio"] {
+      accent-color: #659ed5;
+      width: 13px; height: 13px;
+      flex-shrink: 0;
+    }
+    .control-group .edge-count {
+      font-size: 10px;
+      color: #7a9cc6;
+      margin-left: auto;
+    }
+    .control-heading {
+      font-size: 10px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.7px;
+      color: #7a9cc6;
+      margin: 10px 0 3px 6px;
+    }
+    .control-heading:first-of-type { margin-top: 0; }
+
+    #legend {
+      margin-top: 10px;
+      padding-top: 8px;
+      border-top: 1px solid rgba(101,158,213,0.12);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 3px 10px;
+    }
+    .legend-item {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      font-size: 10px;
+      color: #3a6b95;
+    }
+    .legend-swatch {
+      width: 8px; height: 8px;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+
+    /* --- Node Cards (CSS2DRenderer) --- */
+    .node-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      pointer-events: none;
+      user-select: none;
+      transition: transform 0.15s;
+    }
+    .node-card .avatar {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      object-fit: contain;
+      background: rgba(255,255,255,0.90);
+      border: 2.5px solid rgba(101,158,213,0.45);
+      box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+      padding: 5px;
+      margin-bottom: 5px;
+      transition: all 0.2s;
+    }
+    .node-card .node-name {
+      font-size: 12px;
+      font-weight: 700;
+      color: #1a3a5c;
+      background: rgba(255,255,255,0.88);
+      backdrop-filter: blur(4px);
+      padding: 3px 12px;
+      border-radius: 12px;
+      max-width: 180px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      box-shadow: 0 1px 8px rgba(0,0,0,0.06);
+      border: 1px solid rgba(101,158,213,0.15);
+      transition: all 0.2s;
+    }
+    .node-card .node-role {
+      font-size: 9px;
+      color: #4a7aad;
+      background: rgba(255,255,255,0.80);
+      backdrop-filter: blur(4px);
+      padding: 2px 10px;
+      border-radius: 8px;
+      margin-top: 3px;
+      max-width: 190px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      border: 1px solid rgba(101,158,213,0.10);
+    }
+
+    /* Highlight on hover */
+    .node-card.highlight .avatar {
+      border-color: #ffa940;
+      box-shadow: 0 0 24px rgba(255,169,64,0.40);
+      transform: scale(1.08);
+    }
+    .node-card.highlight .node-name {
+      background: rgba(255,169,64,0.20);
+      border-color: #ffa940;
+    }
+
+    /* Tooltip (link label) */
+    .link-label {
+      font-size: 10px;
+      padding: 3px 8px;
+      border-radius: 6px;
+      background: rgba(0,0,0,0.65);
+      color: #fff;
+      backdrop-filter: blur(4px);
+      white-space: nowrap;
+      pointer-events: none;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      #controls {
+        top: 10px; left: 10px;
+        right: 10px;
+        width: auto;
+        padding: 12px 14px;
+        padding-top: 44px;
+      }
+      #controls h2 { font-size: 13px; }
+      #toggle-controls { top: 10px; left: 10px; width: 34px; height: 34px; font-size: 16px; }
+      .node-card .avatar { width: 36px; height: 36px; }
+      .node-card .node-name { font-size: 10px; }
+    }
+
+    /* Loading / status */
+    #loading {
+      position: fixed;
+      top: 50%; left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 200;
+      color: #2c5282;
+      font-size: 16px;
+      text-align: center;
+      background: rgba(218,234,250,0.92);
+      padding: 30px 40px;
+      border-radius: 16px;
+      box-shadow: 0 4px 30px rgba(0,0,0,0.08);
+      border: 1px solid rgba(101,158,213,0.2);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+    }
+    #loading .spinner {
+      width: 32px; height: 32px;
+      border: 3px solid rgba(101,158,213,0.2);
+      border-top-color: #659ed5;
+      border-radius: 50%;
+      animation: spin 0.8s linear infinite;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    #loading.done { opacity: 0; transition: opacity 0.5s; pointer-events: none; }
+  </style>
+</head>
+<body>
+
+<div id="loading">
+  <div class="spinner"></div>
+  <span>Loading quantum ecosystem…</span>
+</div>
+
+<div id="graph-container"></div>
+
+<button id="toggle-controls" title="Toggle controls">☰</button>
+
+<div id="controls">
+  <h2>⚛ Quantum Ecosystem</h2>
+
+  <div class="control-heading">Relationships</div>
+  <div class="control-group" id="rel-group"></div>
+
+  <div id="legend">
+    <span class="legend-item">
+      <span class="legend-swatch" style="background:#1a3a5c;"></span>
+      Programming SDK
+    </span>
+    <span class="legend-item">
+      <span class="legend-swatch" style="background:#2b6cb0;"></span>
+      Hardware SDK
+    </span>
+    <span class="legend-item">
+      <span class="legend-swatch" style="background:#38a169;"></span>
+      Compiler
+    </span>
+    <span class="legend-item">
+      <span class="legend-swatch" style="background:#d69e2e;"></span>
+      Simulator
+    </span>
+    <span class="legend-item">
+      <span class="legend-swatch" style="background:#9f7aea;"></span>
+      Error Mitigation
+    </span>
+    <span class="legend-item">
+      <span class="legend-swatch" style="background:#e53e3e;"></span>
+      Domain Library
+    </span>
+  </div>
+</div>
+
+<script type="module">
+// ──────────────────────────────────────────────
+// 1. PROJECT DATA (embedded from projects.yaml)
+// ──────────────────────────────────────────────
+const PROJECT_DATA = {
+  "qiskit": {
+    "id": "qiskit",
+    "name": "Qiskit",
+    "ecosystem_role": "Central hub of the largest quantum open-source ecosystem",
+    "type": "programming_sdk",
+    "category": "programming_sdks",
+    "hardware_backends": ["ibm_superconducting","ionq_trapped_ion","quantinuum_trapped_ion","rigetti_superconducting","iqm_superconducting","aqt_trapped_ion"],
+    "img": "images/qiskit.svg"
+  },
+  "cirq": {
+    "id": "cirq",
+    "name": "Cirq",
+    "ecosystem_role": "Core of Google's quantum software stack",
+    "type": "programming_sdk",
+    "category": "programming_sdks",
+    "hardware_backends": ["google_superconducting","ionq_trapped_ion","pasqal_neutral_atom","rigetti_superconducting","alpine_quantum_trapped_ion"],
+    "img": "images/cirq.svg"
+  },
+  "pennylane": {
+    "id": "pennylane",
+    "name": "PennyLane",
+    "ecosystem_role": "Leading quantum machine learning framework",
+    "type": "programming_sdk",
+    "category": "programming_sdks",
+    "hardware_backends": ["xanadu_photonic","ibm_superconducting","google_superconducting","ionq_trapped_ion","rigetti_superconducting","oqd_trapped_ion"],
+    "img": "images/pennylane.png"
+  },
+  "pyquil": {
+    "id": "pyquil",
+    "name": "PyQuil / Forest SDK",
+    "ecosystem_role": "Full-stack SDK for Rigetti's superconducting systems",
+    "type": "programming_sdk",
+    "category": "programming_sdks",
+    "hardware_backends": ["rigetti_superconducting"],
+    "img": "images/pyquil.png"
+  },
+  "ocean": {
+    "id": "ocean",
+    "name": "Ocean SDK",
+    "ecosystem_role": "Primary SDK for quantum annealing applications",
+    "type": "programming_sdk",
+    "category": "programming_sdks",
+    "hardware_backends": ["dwave_annealer"],
+    "img": "images/ocean.png"
+  },
+  "qdk": {
+    "id": "qdk",
+    "name": "Quantum Dev. Kit (QDK)",
+    "ecosystem_role": "Comprehensive quantum development environment",
+    "type": "programming_sdk",
+    "category": "programming_sdks",
+    "hardware_backends": ["multiple_via_azure_quantum"],
+    "img": "images/qdk.png"
+  },
+  "projectq": {
+    "id": "projectq",
+    "name": "ProjectQ",
+    "ecosystem_role": "Academic framework with strong compilation focus",
+    "type": "programming_sdk",
+    "category": "programming_sdks",
+    "hardware_backends": ["ibm_superconducting","ionq_trapped_ion","aqt_trapped_ion"],
+    "img": "images/projectq.svg"
+  },
+  "openqasm": {
+    "id": "openqasm",
+    "name": "OpenQASM",
+    "ecosystem_role": "Industry-standard intermediate representation",
+    "type": "intermediate_representation",
+    "category": "programming_sdks",
+    "hardware_backends": [],
+    "img": "images/openqasm.svg"
+  },
+  "bloqade": {
+    "id": "bloqade",
+    "name": "Bloqade",
+    "ecosystem_role": "Leading SDK for neutral-atom quantum computing",
+    "type": "hardware_targeted_sdk",
+    "category": "hardware_targeted_sdks",
+    "hardware_backends": ["quera_neutral_atom","quera_aquila"],
+    "img": "images/bloqade.png"
+  },
+  "perceval": {
+    "id": "perceval",
+    "name": "Perceval",
+    "ecosystem_role": "Primary SDK for discrete-variable photonic computing",
+    "type": "hardware_targeted_sdk",
+    "category": "hardware_targeted_sdks",
+    "hardware_backends": ["quandela_photonic"],
+    "img": "images/perceval.png"
+  },
+  "strawberryfields": {
+    "id": "strawberryfields",
+    "name": "Strawberry Fields",
+    "ecosystem_role": "SDK for continuous-variable photonic quantum computing",
+    "type": "hardware_targeted_sdk",
+    "category": "hardware_targeted_sdks",
+    "hardware_backends": ["xanadu_photonic","xanadu_aurora"],
+    "img": "images/strawberryfields.png"
+  },
+  "tket": {
+    "id": "tket",
+    "name": "TKET",
+    "ecosystem_role": "Universal quantum compiler bridging all major platforms",
+    "type": "compiler",
+    "category": "compilers",
+    "hardware_backends": [],
+    "img": "images/tket.png"
+  },
+  "qiskit_aer": {
+    "id": "qiskit_aer",
+    "name": "Qiskit Aer",
+    "ecosystem_role": "Official simulation engine for Qiskit",
+    "type": "simulator",
+    "category": "simulators",
+    "hardware_backends": [],
+    "img": "images/qiskit_aer.svg"
+  },
+  "qsim": {
+    "id": "qsim",
+    "name": "qsim",
+    "ecosystem_role": "Google's primary quantum circuit simulator",
+    "type": "simulator",
+    "category": "simulators",
+    "hardware_backends": [],
+    "img": "images/qsim.svg"
+  },
+  "cuquantum": {
+    "id": "cuquantum",
+    "name": "cuQuantum",
+    "ecosystem_role": "Industry-leading GPU-accelerated quantum simulation",
+    "type": "simulator",
+    "category": "simulators",
+    "hardware_backends": [],
+    "img": "images/cuquantum.svg"
+  },
+  "quest": {
+    "id": "quest",
+    "name": "QuEST",
+    "ecosystem_role": "Academic high-performance simulator for HPC",
+    "type": "simulator",
+    "category": "simulators",
+    "hardware_backends": [],
+    "img": "images/quest.svg"
+  },
+  "qulacs": {
+    "id": "qulacs",
+    "name": "Qulacs",
+    "ecosystem_role": "Fast simulator optimized for NISQ variational algorithms",
+    "type": "simulator",
+    "category": "simulators",
+    "hardware_backends": [],
+    "img": "images/qulacs.png"
+  },
+  "qutip": {
+    "id": "qutip",
+    "name": "QuTiP",
+    "ecosystem_role": "Standard tool for open quantum system simulation",
+    "type": "simulator",
+    "category": "simulators",
+    "hardware_backends": [],
+    "img": "images/qutip.png"
+  },
+  "stim": {
+    "id": "stim",
+    "name": "Stim",
+    "ecosystem_role": "Leading QEC-focused circuit simulator",
+    "type": "simulator",
+    "category": "simulators",
+    "hardware_backends": [],
+    "img": "images/stim.svg"
+  },
+  "mitiq": {
+    "id": "mitiq",
+    "name": "Mitiq",
+    "ecosystem_role": "Universal error mitigation for all major SDKs",
+    "type": "error_mitigation",
+    "category": "error_mitigation",
+    "hardware_backends": [],
+    "img": "images/mitiq.png"
+  },
+  "openfermion": {
+    "id": "openfermion",
+    "name": "OpenFermion",
+    "ecosystem_role": "Standard library for quantum chemistry on quantum computers",
+    "type": "domain_library",
+    "category": "domain_libraries",
+    "hardware_backends": [],
+    "img": "images/openfermion.svg"
+  }
+};
+
+// ──────────────────────────────────────────────
+// 2. RELATIONSHIPS
+// ──────────────────────────────────────────────
+// Cross-integrations (explicit bidirectional edges)
+const CROSS_INTEGRATIONS = [
+  ["openqasm","qiskit"], ["openqasm","cirq"], ["openqasm","tket"], ["openqasm","qdk"],
+  ["tket","qiskit"], ["tket","cirq"], ["tket","pyquil"],
+  ["mitiq","qiskit"], ["mitiq","cirq"], ["mitiq","pyquil"], ["mitiq","pennylane"],
+  ["openfermion","cirq"], ["openfermion","projectq"], ["openfermion","pyquil"],
+  ["cuquantum","qsim"], ["cuquantum","qiskit"], ["cuquantum","pennylane"],
+  ["qdk","qiskit"], ["qdk","cirq"], ["qdk","openqasm"]
+];
+
+// SDK-Simulator connections
+const SDK_SIMULATOR = [
+  ["qiskit","qiskit_aer"], ["qiskit","cuquantum"],
+  ["cirq","qsim"],
+  ["pennylane","qulacs"], ["pennylane","cuquantum"]
+];
+
+// ──────────────────────────────────────────────
+// 3. DERIVE SHARED-HARDWARE EDGES
+// ──────────────────────────────────────────────
+function deriveHardwareEdges(projects) {
+  const edges = [];
+  const hwMap = {}; // hardware_backend -> [project keys]
+  for (const [key, proj] of Object.entries(projects)) {
+    for (const hw of (proj.hardware_backends || [])) {
+      if (!hwMap[hw]) hwMap[hw] = [];
+      hwMap[hw].push(key);
+    }
+  }
+  for (const [hw, keys] of Object.entries(hwMap)) {
+    if (keys.length < 2) continue;
+    for (let i = 0; i < keys.length; i++) {
+      for (let j = i + 1; j < keys.length; j++) {
+        edges.push({ source: keys[i], target: keys[j], type: 'hardware', label: hw });
+      }
+    }
+  }
+  return edges;
+}
+
+// ──────────────────────────────────────────────
+// 4. BUILD GRAPH DATA
+// ──────────────────────────────────────────────
+const nodeKeys = Object.keys(PROJECT_DATA);
+
+// Category colors
+const CAT_COLORS = {
+  'programming_sdk': '#1a3a5c',
+  'hardware_targeted_sdk': '#2b6cb0',
+  'compiler': '#38a169',
+  'simulator': '#d69e2e',
+  'error_mitigation': '#9f7aea',
+  'domain_library': '#e53e3e',
+  'intermediate_representation': '#718096'
+};
+const CAT_ORDER = {
+  'programming_sdk': 1,
+  'hardware_targeted_sdk': 2,
+  'compiler': 3,
+  'simulator': 4,
+  'error_mitigation': 5,
+  'domain_library': 6,
+  'intermediate_representation': 7
+};
+
+function buildNodes() {
+  return nodeKeys.map(key => {
+    const p = PROJECT_DATA[key];
+    const cat = p.category || p.type || 'other';
+    return {
+      id: key,
+      name: p.name,
+      role: p.ecosystem_role,
+      type: p.type,
+      category: cat,
+      color: CAT_COLORS[cat] || '#718096',
+      catOrder: CAT_ORDER[cat] || 99,
+      img: p.img
+    };
+  });
+}
+
+function buildEdges(mode) {
+  const edges = [];
+  const seen = new Set();
+  const validNodes = new Set(Object.keys(PROJECT_DATA));
+
+  function addEdge(src, tgt, type, label) {
+    // Skip edges referencing non-existent project nodes
+    if (!validNodes.has(src) || !validNodes.has(tgt)) return;
+    const key = [src, tgt].sort().join('|');
+    if (seen.has(key)) return;
+    seen.add(key);
+    edges.push({ source: src, target: tgt, type, label: label || type });
+  }
+
+  if (mode === 'hardware' || mode === 'all') {
+    const hwEdges = deriveHardwareEdges(PROJECT_DATA);
+    for (const e of hwEdges) {
+      addEdge(e.source, e.target, 'hardware', e.label);
+    }
+  }
+  if (mode === 'cross' || mode === 'all') {
+    for (const [src, tgt] of CROSS_INTEGRATIONS) {
+      addEdge(src, tgt, 'cross', 'integration');
+    }
+  }
+  if (mode === 'simulator' || mode === 'all') {
+    for (const [src, tgt] of SDK_SIMULATOR) {
+      addEdge(src, tgt, 'simulator', 'simulator');
+    }
+  }
+
+  return edges;
+}
+
+// ──────────────────────────────────────────────
+// 5. EDGE STYLING PER TYPE
+// ──────────────────────────────────────────────
+const EDGE_STYLES = {
+  hardware:  { color: '#659ed5', width: 0.8, opacity: 0.35 },
+  cross:     { color: '#e8a040', width: 0.8, opacity: 0.40 },
+  simulator: { color: '#68d391', width: 0.8, opacity: 0.35 }
+};
+
+// ──────────────────────────────────────────────
+// 6. SETUP THE 3D FORCE GRAPH
+// ──────────────────────────────────────────────
+import ForceGraph3D from 'https://esm.sh/3d-force-graph@1.80.0?deps=three@0.179.0';
+import { CSS2DRenderer, CSS2DObject } from 'https://esm.sh/three@0.179.0/examples/jsm/renderers/CSS2DRenderer.js';
+
+const container = document.getElementById('graph-container');
+let currentMode = 'hardware';
+let graphData = null;
+let graph = null;
+let cssRenderer = null;
+let highlightNodes = new Set();
+let highlightLinks = new Set();
+let resizeHandler = null;
+
+// Preload images once
+function preloadImages(nodes, cb) {
+  let loaded = 0;
+  const total = nodes.length;
+  if (total === 0) { cb(); return; }
+  for (const n of nodes) {
+    const img = new Image();
+    img.onload = img.onerror = () => {
+      loaded++;
+      if (loaded >= total) cb();
+    };
+    img.src = n.img;
+  }
+}
+
+function destroyGraph() {
+  if (graph) {
+    graph.pauseAnimation();
+    graph._destructor && graph._destructor();
+  }
+  // Nuke all DOM children (canvas + CSS2D divs)
+  container.innerHTML = '';
+  if (resizeHandler) {
+    window.removeEventListener('resize', resizeHandler);
+    resizeHandler = null;
+  }
+  graph = null;
+  cssRenderer = null;
+  highlightNodes.clear();
+  highlightLinks.clear();
+}
+
+function buildGraph(mode) {
+  destroyGraph();
+
+  // Create CSS2DRenderer
+  cssRenderer = new CSS2DRenderer();
+  cssRenderer.setSize(window.innerWidth, window.innerHeight);
+  cssRenderer.domElement.style.position = 'absolute';
+  cssRenderer.domElement.style.top = '0';
+  cssRenderer.domElement.style.pointerEvents = 'none';
+
+  const nodes = buildNodes();
+  const edges = buildEdges(mode);
+  graphData = { nodes, links: edges };
+
+  graph = new ForceGraph3D(container, {
+    extraRenderers: [cssRenderer],
+    controlType: 'orbit'
+  })
+    .backgroundColor('#daeafa')
+    .nodeRelSize(40)
+    .nodeVal(1)
+    .nodeLabel(null)
+    .nodeThreeObject(node => {
+      const card = document.createElement('div');
+      card.className = 'node-card';
+      card.innerHTML = `
+        <img class="avatar" src="${node.img}" alt="${node.name}" />
+        <div class="node-name">${node.name}</div>
+        <div class="node-role">${node.role}</div>
+      `;
+      card.dataset.nodeId = node.id;
+      return new CSS2DObject(card);
+    })
+    .nodeThreeObjectExtend(true)
+    .nodeColor('#daeafa')
+    .nodeOpacity(0.001)
+    .linkColor(link => EDGE_STYLES[link.type]?.color || '#659ed5')
+    .linkOpacity(link => {
+      if (highlightLinks.size && !highlightLinks.has(link)) return 0.05;
+      return EDGE_STYLES[link.type]?.opacity || 0.25;
+    })
+    .linkWidth(link => EDGE_STYLES[link.type]?.width || 0.5)
+    .linkLabel(link => {
+      const src = typeof link.source === 'object' ? link.source.id : link.source;
+      const tgt = typeof link.target === 'object' ? link.target.id : link.target;
+      const sName = PROJECT_DATA[src]?.name || src;
+      const tName = PROJECT_DATA[tgt]?.name || tgt;
+      return `${sName} ↔ ${tName}  (${link.label || link.type})`;
+    })
+    .linkHoverPrecision(5)
+    .onNodeHover(node => {
+      highlightNodes.clear();
+      highlightLinks.clear();
+      if (node) {
+        highlightNodes.add(node.id);
+        if (graphData) {
+          graphData.links.forEach(link => {
+            const srcId = typeof link.source === 'object' ? link.source.id : link.source;
+            const tgtId = typeof link.target === 'object' ? link.target.id : link.target;
+            if (srcId === node.id || tgtId === node.id) {
+              highlightLinks.add(link);
+            }
+          });
+        }
+      }
+      document.querySelectorAll('.node-card').forEach(el => {
+        el.classList.toggle('highlight', highlightNodes.has(el.dataset.nodeId));
+      });
+    })
+    .d3AlphaDecay(0.02)
+    .d3VelocityDecay(0.3)
+    .warmupTicks(50)
+    .cooldownTicks(300)
+    .graphData(graphData);
+
+  resizeHandler = () => {
+    const w = window.innerWidth;
+    const h = window.innerHeight;
+    graph.width(w);
+    graph.height(h);
+    cssRenderer.setSize(w, h);
+  };
+  window.addEventListener('resize', resizeHandler);
+
+  return graph;
+}
+
+function updateGraph(mode) {
+  currentMode = mode;
+  buildGraph(mode);
+
+  // Update edge count labels
+  document.querySelectorAll('.edge-count').forEach(el => {
+    const m = el.dataset.mode;
+    if (m === mode) {
+      const edges = buildEdges(mode);
+      el.textContent = `(${edges.length})`;
+    } else {
+      el.textContent = `(${buildEdges(m).length})`;
+    }
+  });
+
+  // Auto-fit after layout settles
+  setTimeout(() => {
+    graph.zoomToFit(400, 30);
+  }, 800);
+}
+
+// ──────────────────────────────────────────────
+// 7. CONTROLS UI
+// ──────────────────────────────────────────────
+function buildControls() {
+  const modes = [
+    { id: 'hardware',  label: 'Shared hardware' },
+    { id: 'cross',     label: 'Cross-integrations' },
+    { id: 'simulator', label: 'SDK ↔ Simulator' },
+    { id: 'all',       label: 'All relationships' }
+  ];
+
+  const group = document.getElementById('rel-group');
+  group.innerHTML = modes.map(m => `
+    <label>
+      <input type="radio" name="rel-mode" value="${m.id}"
+        ${m.id === currentMode ? 'checked' : ''} />
+      <span>${m.label}</span>
+      <span class="edge-count" data-mode="${m.id}">(${buildEdges(m.id).length})</span>
+    </label>
+  `).join('');
+
+  group.addEventListener('change', e => {
+    if (e.target.name === 'rel-mode') {
+      updateGraph(e.target.value);
+    }
+  });
+}
+
+// ──────────────────────────────────────────────
+// 8. BOOT
+// ──────────────────────────────────────────────
+function boot() {
+  const nodes = buildNodes();
+
+  preloadImages(nodes, () => {
+    buildGraph(currentMode);
+    buildControls();
+
+    // Hide loading
+    document.getElementById('loading').classList.add('done');
+
+    // Toggle controls panel
+    const toggleBtn = document.getElementById('toggle-controls');
+    const panel = document.getElementById('controls');
+    let visible = true;
+    toggleBtn.addEventListener('click', () => {
+      visible = !visible;
+      panel.classList.toggle('hidden', !visible);
+      toggleBtn.textContent = visible ? '☰' : '⚙';
+      toggleBtn.classList.toggle('panel-hidden', !visible);
+    });
+  });
+}
+
+boot();
+</script>
+</body>
+</html>

@@ -1,0 +1,915 @@
+metadata:
+  title: Quantum Open-Source Ecosystem — Unified Data Source
+  version: '1.1'
+  description: Merged database combining project metadata, relationships, and logo
+    URLs. Single source of truth for automated processing.
+  last_updated: '2026-06-04'
+  sources_merged:
+  - quantum_open_source_ecosystem.yaml
+  - quantum_ecosystem_logos.yaml
+projects:
+  qiskit:
+    id: qiskit
+    name: Qiskit
+    type: programming_sdk
+    organization: IBM Quantum
+    country: USA
+    first_release: 2017
+    license: Apache 2.0
+    language: Python (core in Rust)
+    description: The world's most popular open-source SDK for quantum computing. Provides
+      tools for building, optimizing, and executing quantum circuits.
+    key_features:
+    - circuit_construction
+    - transpilation_optimization
+    - noise_modeling
+    - quantum_primitives
+    - quantum_addons
+    website: https://qiskit.org
+    github: https://github.com/Qiskit/qiskit
+    hardware_backends:
+    - ibm_superconducting
+    - ionq_trapped_ion
+    - quantinuum_trapped_ion
+    - rigetti_superconducting
+    - iqm_superconducting
+    - aqt_trapped_ion
+    related_simulators:
+    - qiskit_aer
+    uses_compiler: tket
+    used_by:
+    - mitiq
+    - qiskit_aer
+    - qiskit_functions
+    ecosystem_role: Central hub of the largest quantum open-source ecosystem
+    node_type: programming_sdk
+    category: programming_sdks
+    logo:
+      logo_url: https://upload.wikimedia.org/wikipedia/commons/5/51/Qiskit-Logo.svg
+      logo_source: wikimedia_commons
+      format: SVG
+      alt_text: Qiskit logo — blue circular icon with quantum circuit motif
+      fallback_url: https://avatars.githubusercontent.com/u/30696987?s=200&v=4
+      alternate_url: null
+      note: null
+  cirq:
+    id: cirq
+    name: Cirq
+    type: programming_sdk
+    organization: Google Quantum AI
+    country: USA
+    first_release: 2018
+    license: Apache 2.0
+    language: Python
+    description: Open-source framework for writing, manipulating, and optimizing quantum
+      circuits for NISQ devices.
+    key_features:
+    - circuit_construction
+    - nisq_optimization
+    - device_modeling
+    - parameterized_circuits
+    website: https://quantumai.google/cirq
+    github: https://github.com/quantumlib/cirq
+    hardware_backends:
+    - google_superconducting
+    - ionq_trapped_ion
+    - pasqal_neutral_atom
+    - rigetti_superconducting
+    - alpine_quantum_trapped_ion
+    related_simulators:
+    - qsim
+    used_by:
+    - openfermion
+    - mitiq
+    - tensorflow_quantum
+    ecosystem_role: Core of Google's quantum software stack
+    node_type: programming_sdk
+    category: programming_sdks
+    logo:
+      logo_url: https://upload.wikimedia.org/wikipedia/commons/4/4b/Cirq_Logo.svg
+      logo_source: wikimedia_commons
+      format: SVG
+      alt_text: Cirq logo — Google Quantum AI framework wordmark
+      fallback_url: null
+      alternate_url: null
+      note: null
+  pennylane:
+    id: pennylane
+    name: PennyLane
+    type: programming_sdk
+    organization: Xanadu
+    country: Canada
+    first_release: 2018
+    license: Apache 2.0
+    language: Python
+    description: Cross-platform library for quantum machine learning, quantum computing,
+      and quantum chemistry with automatic differentiation.
+    key_features:
+    - quantum_machine_learning
+    - automatic_differentiation
+    - hybrid_quantum_classical
+    - hardware_agnostic_execution
+    website: https://pennylane.ai
+    github: https://github.com/PennyLaneAI/pennylane
+    hardware_backends:
+    - xanadu_photonic
+    - ibm_superconducting
+    - google_superconducting
+    - ionq_trapped_ion
+    - rigetti_superconducting
+    - oqd_trapped_ion
+    related_simulators:
+    - pennylane_lightning
+    - default_qubit
+    ecosystem_role: Leading quantum machine learning framework
+    node_type: programming_sdk
+    category: programming_sdks
+    logo:
+      logo_url: https://avatars.githubusercontent.com/u/37773363?s=200&v=4
+      logo_source: github_org_avatar
+      format: PNG
+      alt_text: PennyLane logo — stylized PL monogram
+      fallback_url: https://pennylane.ai/images/pennylane-logo.svg
+      alternate_url: null
+      note: null
+  pyquil:
+    id: pyquil
+    name: PyQuil / Forest SDK
+    type: programming_sdk
+    organization: Rigetti Computing
+    country: USA
+    first_release: 2016
+    license: Apache 2.0
+    language: Python
+    description: Python library for quantum programming using Quil (Quantum Instruction
+      Language). Includes compiler and simulator.
+    key_features:
+    - quil_language
+    - hybrid_classical_quantum
+    - quantum_cloud_services
+    - pulse_level_access
+    website: https://pyquil-docs.rigetti.com
+    github: https://github.com/rigetti/pyquil
+    hardware_backends:
+    - rigetti_superconducting
+    related_simulators:
+    - qvm
+    ecosystem_role: Full-stack SDK for Rigetti's superconducting systems
+    node_type: programming_sdk
+    category: programming_sdks
+    logo:
+      logo_url: https://upload.wikimedia.org/wikipedia/commons/0/08/Rigetti_Computing_logo.svg
+      logo_source: wikimedia_commons
+      format: SVG
+      alt_text: Rigetti Computing logo — PyQuil/Forest SDK parent company
+      fallback_url: null
+      alternate_url: null
+      note: null
+  ocean:
+    id: ocean
+    name: Ocean SDK
+    type: programming_sdk
+    organization: D-Wave Quantum
+    country: Canada
+    first_release: 2018
+    license: Apache 2.0
+    language: Python
+    description: Suite of open-source tools for quantum annealing and hybrid quantum-classical
+      problem solving.
+    key_features:
+    - quantum_annealing
+    - problem_mapping
+    - hybrid_solvers
+    - sampler_api
+    website: https://www.dwavequantum.com/solutions-and-products/ocean
+    github: https://github.com/dwavesystems
+    hardware_backends:
+    - dwave_annealer
+    ecosystem_role: Primary SDK for quantum annealing applications
+    node_type: programming_sdk
+    category: programming_sdks
+    logo:
+      logo_url: https://upload.wikimedia.org/wikipedia/commons/f/fc/D-Wave_Systems_logo.svg
+      logo_source: wikimedia_commons
+      format: SVG
+      alt_text: D-Wave Systems logo — Ocean SDK parent company
+      fallback_url: null
+      alternate_url: null
+      note: null
+  qdk:
+    id: qdk
+    name: Quantum Development Kit (QDK)
+    type: programming_sdk
+    organization: Microsoft
+    country: USA
+    first_release: 2017
+    license: MIT
+    language: Q#, Python, Rust
+    description: Open-source toolkit for building quantum applications with Q# language,
+      simulators, and resource estimator.
+    key_features:
+    - qsharp_language
+    - resource_estimation
+    - error_correction_tools
+    - chemistry_applications
+    - vs_code_integration
+    website: https://azure.microsoft.com/en-us/products/quantum
+    github: https://github.com/microsoft/qdk
+    hardware_backends:
+    - multiple_via_azure_quantum
+    ecosystem_role: Comprehensive quantum development environment
+    node_type: programming_sdk
+    category: programming_sdks
+    logo:
+      logo_url: https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg
+      logo_source: wikimedia_commons
+      format: SVG
+      alt_text: Microsoft logo — QDK / Azure Quantum parent company
+      fallback_url: null
+      alternate_url: https://azure.microsoft.com/content/dam/microsoft/legacy/images/azure-quantum-logo.png
+      note: null
+  projectq:
+    id: projectq
+    name: ProjectQ
+    type: programming_sdk
+    organization: ETH Zurich
+    country: Switzerland
+    first_release: 2016
+    license: Apache 2.0
+    language: Python (C++ backend)
+    description: Open-source software framework with a compiler targeting various
+      hardware types and a high-performance simulator.
+    key_features:
+    - compiler_framework
+    - hardware_targeting
+    - emulation_capabilities
+    - resource_estimation
+    website: https://projectq.ch
+    github: https://github.com/ProjectQ-Framework/ProjectQ
+    hardware_backends:
+    - ibm_superconducting
+    - ionq_trapped_ion
+    - aqt_trapped_ion
+    ecosystem_role: Academic framework with strong compilation focus
+    node_type: programming_sdk
+    category: programming_sdks
+    logo:
+      logo_url: https://upload.wikimedia.org/wikipedia/commons/3/3f/ETH_Z%C3%BCrich_logo.svg
+      logo_source: wikimedia_commons
+      format: SVG
+      alt_text: ETH Zurich logo — ProjectQ originating institution
+      fallback_url: null
+      alternate_url: null
+      note: ProjectQ itself does not have a dedicated logo; uses ETH Zurich institutional
+        branding
+  openqasm:
+    id: openqasm
+    name: OpenQASM
+    type: intermediate_representation
+    organization: IBM, Microsoft, AWS, Google (Technical Steering Committee)
+    country: International
+    first_release: 2017
+    license: Apache 2.0
+    description: Open quantum assembly language - the lingua franca for describing
+      quantum circuits.
+    key_features:
+    - circuit_interchange_format
+    - gate_definitions
+    - classical_control_flow
+    - pulse_level_grammar
+    website: https://openqasm.com
+    github: https://github.com/openqasm/openqasm
+    used_by:
+    - qiskit
+    - cirq
+    - qdk
+    - tket
+    ecosystem_role: Industry-standard intermediate representation
+    node_type: programming_sdk
+    category: programming_sdks
+    logo:
+      logo_url: https://upload.wikimedia.org/wikipedia/commons/5/51/Qiskit-Logo.svg
+      logo_source: wikimedia_commons
+      format: SVG
+      alt_text: OpenQASM logo — quantum circuit standard, Qiskit family identity
+      fallback_url: null
+      alternate_url: null
+      note: OpenQASM shares visual identity with the Qiskit ecosystem
+  bloqade:
+    id: bloqade
+    name: Bloqade
+    type: hardware_targeted_sdk
+    organization: QuEra Computing
+    country: USA
+    first_release: 2023
+    license: Apache 2.0 with LLVM Exceptions
+    language: Python
+    description: SDK for neutral-atom quantum computing. Supports analog and digital
+      modes with atom movement control.
+    key_features:
+    - neutral_atom_programming
+    - analog_mode
+    - digital_mode
+    - atom_shuttling
+    - qec_support
+    website: https://bloqade.quera.com
+    github: https://github.com/QuEraComputing/bloqade
+    hardware_backends:
+    - quera_neutral_atom
+    - quera_aquila
+    related_simulators:
+    - tsim
+    ecosystem_role: Leading SDK for neutral-atom quantum computing
+    node_type: hardware_targeted_sdk
+    category: hardware_targeted_sdks
+    logo:
+      logo_url: https://upload.wikimedia.org/wikipedia/commons/9/9c/QuEra_Logo_Black.svg
+      logo_source: wikimedia_commons
+      format: SVG
+      alt_text: QuEra Computing logo — Bloqade SDK parent company
+      fallback_url: null
+      alternate_url: null
+      note: Bloqade is QuEra's SDK; uses QuEra corporate branding
+  perceval:
+    id: perceval
+    name: Perceval
+    type: hardware_targeted_sdk
+    organization: Quandela
+    country: France
+    first_release: 2022
+    license: MIT
+    language: Python
+    description: Open-source framework for programming photonic quantum computers.
+    key_features:
+    - photonic_circuit_design
+    - discrete_variable_photonics
+    - simulation_backends
+    - hardware_cloud_access
+    website: https://perceval.quandela.net
+    github: https://github.com/Quandela/Perceval
+    hardware_backends:
+    - quandela_photonic
+    related_simulators:
+    - internal_simulators
+    ecosystem_role: Primary SDK for discrete-variable photonic computing
+    node_type: hardware_targeted_sdk
+    category: hardware_targeted_sdks
+    logo:
+      logo_url: https://avatars.githubusercontent.com/u/99146471?s=200&v=4
+      logo_source: github_org_avatar
+      format: PNG
+      alt_text: Quandela GitHub avatar — Perceval SDK parent company
+      fallback_url: null
+      alternate_url: null
+      note: Perceval uses the Quandela organization avatar on GitHub
+  strawberryfields:
+    id: strawberryfields
+    name: Strawberry Fields
+    type: hardware_targeted_sdk
+    organization: Xanadu
+    country: Canada
+    first_release: 2018
+    license: Apache 2.0
+    language: Python
+    description: Full-stack library for continuous-variable photonic quantum computing
+      with Gaussian and Fock backends.
+    key_features:
+    - continuous_variable_circuits
+    - gaussian_backend
+    - fock_backend
+    - tensorflow_backend
+    - quantum_machine_learning
+    website: https://strawberryfields.ai
+    github: https://github.com/XanaduAI/strawberryfields
+    hardware_backends:
+    - xanadu_photonic
+    - xanadu_aurora
+    ecosystem_role: SDK for continuous-variable photonic quantum computing
+    node_type: hardware_targeted_sdk
+    category: hardware_targeted_sdks
+    logo:
+      logo_url: https://avatars.githubusercontent.com/u/20449530?s=200&v=4
+      logo_source: github_org_avatar
+      format: PNG
+      alt_text: Xanadu logo — Strawberry Fields SDK parent company
+      fallback_url: null
+      alternate_url: null
+      note: Strawberry Fields uses Xanadu organization branding on GitHub
+  tket:
+    id: tket
+    name: TKET
+    type: compiler
+    organization: Quantinuum
+    country: UK
+    first_release: 2019
+    license: Apache 2.0
+    language: C++ (Python bindings)
+    description: High-performance hardware-agnostic quantum compiler with optimization
+      passes for all major platforms.
+    key_features:
+    - circuit_optimization
+    - hardware_agnostic
+    - platform_extensions
+    - gate_synthesis
+    website: https://www.quantinuum.com/products-solutions/developer-tools
+    github: https://github.com/Quantinuum/tket
+    targets:
+    - ibm_superconducting
+    - quantinuum_trapped_ion
+    - google_superconducting
+    - rigetti_superconducting
+    - ionq_trapped_ion
+    ecosystem_role: Universal quantum compiler bridging all major platforms
+    node_type: compiler
+    category: compilers
+    logo:
+      logo_url: https://avatars.githubusercontent.com/u/54432219?s=200&v=4
+      logo_source: github_org_avatar
+      format: PNG
+      alt_text: Quantinuum logo — TKET compiler parent company
+      fallback_url: null
+      alternate_url: null
+      note: TKET uses Quantinuum GitHub organization avatar
+  qiskit_aer:
+    id: qiskit_aer
+    name: Qiskit Aer
+    type: simulator
+    organization: IBM Quantum
+    country: USA
+    first_release: 2018
+    license: Apache 2.0
+    language: C++ (Python interface)
+    description: High-performance simulator for quantum circuits with multiple backends
+      and noise model support.
+    key_features:
+    - statevector_simulation
+    - density_matrix_simulation
+    - noisy_simulation
+    - gpu_acceleration
+    website: https://qiskit.org/ecosystem/aer
+    github: https://github.com/Qiskit/qiskit-aer
+    simulation_methods:
+    - statevector
+    - density_matrix
+    - unitary
+    - stabilizer
+    used_with:
+    - qiskit
+    ecosystem_role: Official simulation engine for Qiskit
+    node_type: simulator
+    category: simulators
+    logo:
+      logo_url: https://upload.wikimedia.org/wikipedia/commons/5/51/Qiskit-Logo.svg
+      logo_source: wikimedia_commons
+      format: SVG
+      alt_text: Qiskit logo — Qiskit Aer simulator
+      fallback_url: null
+      alternate_url: null
+      note: Part of Qiskit ecosystem; shares Qiskit branding
+  qsim:
+    id: qsim
+    name: qsim
+    type: simulator
+    organization: Google Quantum AI
+    country: USA
+    first_release: 2020
+    license: Apache 2.0
+    language: C++ (Python interface)
+    description: State-vector simulator for quantum circuits, used for Google's quantum
+      supremacy experiments.
+    key_features:
+    - statevector_simulation
+    - gpu_acceleration
+    - noisy_simulation
+    - multi_node_distribution
+    website: https://github.com/quantumlib/qsim
+    github: https://github.com/quantumlib/qsim
+    simulation_methods:
+    - statevector
+    - trajectory
+    used_with:
+    - cirq
+    - tensorflow_quantum
+    ecosystem_role: Google's primary quantum circuit simulator
+    node_type: simulator
+    category: simulators
+    logo:
+      logo_url: https://upload.wikimedia.org/wikipedia/commons/4/4b/Cirq_Logo.svg
+      logo_source: wikimedia_commons
+      format: SVG
+      alt_text: Cirq logo — qsim simulator (Google Quantum AI ecosystem)
+      fallback_url: null
+      alternate_url: null
+      note: qsim is part of Google's quantum stack; uses Cirq/Google branding
+  cuquantum:
+    id: cuquantum
+    name: cuQuantum
+    type: simulator
+    organization: NVIDIA
+    country: USA
+    first_release: 2021
+    license: BSD 3-Clause
+    language: C++ (Python interface)
+    description: GPU-accelerated SDK for quantum circuit simulation leveraging NVIDIA
+      GPUs.
+    key_features:
+    - statevector_simulation
+    - tensor_network_simulation
+    - density_matrix_simulation
+    - multi_gpu_scaling
+    website: https://developer.nvidia.com/cuquantum-sdk
+    github: https://github.com/NVIDIA/cuQuantum
+    simulation_methods:
+    - statevector
+    - tensor_network
+    - density_matrix
+    used_with:
+    - qiskit
+    - cirq
+    - pennylane
+    - qsim
+    ecosystem_role: Industry-leading GPU-accelerated quantum simulation
+    node_type: simulator
+    category: simulators
+    logo:
+      logo_url: https://upload.wikimedia.org/wikipedia/commons/2/21/Nvidia_logo.svg
+      logo_source: wikimedia_commons
+      format: SVG
+      alt_text: NVIDIA logo — cuQuantum GPU simulator
+      fallback_url: null
+      alternate_url: null
+      note: cuQuantum is NVIDIA's product; uses NVIDIA corporate branding
+  quest:
+    id: quest
+    name: QuEST
+    type: simulator
+    organization: University of Edinburgh (formerly Oxford)
+    country: UK
+    first_release: 2017
+    license: MIT
+    language: C/C++
+    description: High-performance simulator of quantum circuits using multithreading,
+      GPU acceleration, and distribution.
+    key_features:
+    - statevector_simulation
+    - density_matrix_simulation
+    - mpi_distribution
+    - gpu_acceleration
+    - openmp_multithreading
+    website: https://quest.qtechtheory.org
+    github: https://github.com/QuEST-Kit/QuEST
+    simulation_methods:
+    - statevector
+    - density_matrix
+    ecosystem_role: Academic high-performance simulator for HPC
+    node_type: simulator
+    category: simulators
+    logo:
+      logo_url: https://quest.qtechtheory.org/wp-content/uploads/2021/06/QuEST-logo.png
+      logo_source: official_site
+      format: PNG
+      alt_text: QuEST logo — Quantum Exact Simulation Toolkit
+      fallback_url: null
+      alternate_url: null
+      note: null
+  qulacs:
+    id: qulacs
+    name: Qulacs
+    type: simulator
+    organization: QunaSys, Osaka University, NTT, Fujitsu
+    country: Japan
+    first_release: 2018
+    license: MIT
+    language: C++ (Python interface)
+    description: Fast quantum circuit simulator optimized for variational algorithms
+      and noisy circuits.
+    key_features:
+    - fast_variational_simulation
+    - noisy_gate_simulation
+    - parametric_circuits
+    - gpu_acceleration
+    - circuit_compression
+    website: https://docs.qulacs.org
+    github: https://github.com/qulacs/qulacs
+    simulation_methods:
+    - statevector
+    ecosystem_role: Fast simulator optimized for NISQ variational algorithms
+    node_type: simulator
+    category: simulators
+    logo:
+      logo_url: https://avatars.githubusercontent.com/u/43300397?s=200&v=4
+      logo_source: github_org_avatar
+      format: PNG
+      alt_text: Qulacs logo — fast quantum circuit simulator
+      fallback_url: null
+      alternate_url: null
+      note: null
+  qutip:
+    id: qutip
+    name: QuTiP
+    type: simulator
+    organization: International community (RIKEN, etc.)
+    country: International
+    first_release: 2012
+    license: BSD 3-Clause
+    language: Python (Cython backend)
+    description: Quantum Toolbox in Python for simulating open quantum system dynamics.
+    key_features:
+    - open_quantum_systems
+    - master_equation_solvers
+    - quantum_optics
+    - visualization
+    website: https://qutip.org
+    github: https://github.com/qutip/qutip
+    simulation_methods:
+    - master_equation
+    - monte_carlo_trajectory
+    - statevector
+    ecosystem_role: Standard tool for open quantum system simulation
+    node_type: simulator
+    category: simulators
+    logo:
+      logo_url: https://avatars.githubusercontent.com/u/3240838?s=200&v=4
+      logo_source: github_org_avatar
+      format: PNG
+      alt_text: QuTiP logo — Quantum Toolbox in Python
+      fallback_url: null
+      alternate_url: null
+      note: null
+  stim:
+    id: stim
+    name: Stim
+    type: simulator
+    organization: Google Quantum AI
+    country: USA
+    first_release: 2021
+    license: Apache 2.0
+    language: C++ (Python interface)
+    description: Ultra-fast stabilizer circuit simulator focused on quantum error
+      correction circuits.
+    key_features:
+    - stabilizer_simulation
+    - qec_circuit_analysis
+    - decoder_configuration
+    - bulk_sampling
+    website: https://github.com/quantumlib/Stim
+    github: https://github.com/quantumlib/Stim
+    simulation_methods:
+    - stabilizer
+    ecosystem_role: Leading QEC-focused circuit simulator
+    node_type: simulator
+    category: simulators
+    logo:
+      logo_url: https://upload.wikimedia.org/wikipedia/commons/4/4b/Cirq_Logo.svg
+      logo_source: wikimedia_commons
+      format: SVG
+      alt_text: Cirq logo — Stim QEC simulator (Google Quantum AI ecosystem)
+      fallback_url: null
+      alternate_url: null
+      note: Stim is part of Google's quantum stack; uses Cirq/Google branding
+  mitiq:
+    id: mitiq
+    name: Mitiq
+    type: error_mitigation
+    organization: Unitary Fund
+    country: USA
+    first_release: 2020
+    license: GPL v3
+    language: Python
+    description: Open-source toolkit for implementing error mitigation techniques
+      on NISQ quantum computers.
+    key_features:
+    - zero_noise_extrapolation
+    - probabilistic_error_cancellation
+    - clifford_data_regression
+    - readout_error_mitigation
+    website: https://unitary.foundation/posts/mitiq
+    github: https://github.com/unitaryfoundation/mitiq
+    supports_frontends:
+    - qiskit
+    - cirq
+    - pyquil
+    - pennylane
+    - braket
+    - qibo
+    ecosystem_role: Universal error mitigation for all major SDKs
+    node_type: error_mitigation
+    category: error_mitigation
+    logo:
+      logo_url: https://avatars.githubusercontent.com/u/49626470?s=200&v=4
+      logo_source: github_org_avatar
+      format: PNG
+      alt_text: Unitary Foundation logo — Mitiq error mitigation toolkit
+      fallback_url: null
+      alternate_url: null
+      note: Mitiq uses Unitary Foundation GitHub organization avatar
+  openfermion:
+    id: openfermion
+    name: OpenFermion
+    type: domain_library
+    organization: Google Quantum AI
+    country: USA
+    first_release: 2017
+    license: Apache 2.0
+    language: Python
+    description: Library for compiling and analyzing quantum algorithms for quantum
+      chemistry and materials science.
+    key_features:
+    - fermionic_operators
+    - qubit_mappings
+    - chemistry_simulation
+    - materials_science
+    website: https://quantumai.google/openfermion
+    github: https://github.com/quantumlib/OpenFermion
+    used_with:
+    - cirq
+    - projectq
+    - pyquil
+    ecosystem_role: Standard library for quantum chemistry on quantum computers
+    node_type: domain_library
+    category: domain_libraries
+    logo:
+      logo_url: https://upload.wikimedia.org/wikipedia/commons/4/4b/Cirq_Logo.svg
+      logo_source: wikimedia_commons
+      format: SVG
+      alt_text: Cirq logo — OpenFermion quantum chemistry library
+      fallback_url: null
+      alternate_url: null
+      note: OpenFermion is part of Google's quantum stack; uses Cirq/Google branding
+hardware_modalities:
+  superconducting:
+    description: Qubits built from superconducting circuits operating at millikelvin
+      temperatures
+    key_properties:
+    - fast_gate_times
+    - lithographic_fabrication
+    - requires_dilution_refrigerator
+    manufacturers:
+    - name: IBM
+      country: USA
+      systems: IBM Quantum Heron, Condor, Flamingo
+      qubits: 1000+
+    - name: Google Quantum AI
+      country: USA
+      systems: Sycamore, Willow
+      qubits: 100+
+    - name: Rigetti Computing
+      country: USA
+      systems: Aspen, Ankaa, Cepheus
+      qubits: 100+
+  trapped_ion:
+    description: Qubits encoded in individual atomic ions trapped by electromagnetic
+      fields
+    key_properties:
+    - highest_gate_fidelities
+    - all_to_all_connectivity
+    - long_coherence_times
+    manufacturers:
+    - name: Quantinuum
+      country: UK/USA
+      systems: H1, H2, Helios
+      qubits: 50+
+    - name: IonQ
+      country: USA
+      systems: Forte, Forte Enterprise
+      qubits: 30+
+    - name: Alpine Quantum Technologies (AQT)
+      country: Austria
+      systems: Compact ion-trap systems
+      qubits: 20+
+  neutral_atom:
+    description: Qubits encoded in neutral atoms arranged in optical tweezer arrays
+    key_properties:
+    - high_scalability
+    - reconfigurable_geometry
+    - native_multi_qubit_gates
+    manufacturers:
+    - name: QuEra Computing
+      country: USA
+      systems: Aquila, Helium
+      qubits: 250+
+    - name: Pasqal
+      country: France
+      systems: Orion Gamma, Vela, Centaurus
+      qubits: 200+
+  photonic:
+    description: Qubits encoded in properties of individual photons
+    key_properties:
+    - room_temperature_operation
+    - natural_connectivity_to_networks
+    - continuous_or_discrete_variables
+    manufacturers:
+    - name: Xanadu
+      country: Canada
+      systems: Aurora (Borealis)
+      qubits: 200+
+    - name: Quandela
+      country: France
+      systems: MosaiQ
+      qubits: 10+
+  quantum_annealing:
+    description: Specialized quantum processors for optimization via quantum annealing
+    key_properties:
+    - optimization_focused
+    - large_qubit_counts
+    - analog_computation
+    manufacturers:
+    - name: D-Wave Quantum
+      country: Canada
+      systems: Advantage, Advantage2
+      qubits: 5000+
+relationships:
+  sdk_hardware_connections:
+  - sdk: qiskit
+    hardware:
+    - ibm_superconducting
+    - ionq_trapped_ion
+    - quantinuum_trapped_ion
+    - rigetti_superconducting
+  - sdk: cirq
+    hardware:
+    - google_superconducting
+    - ionq_trapped_ion
+    - pasqal_neutral_atom
+    - rigetti_superconducting
+  - sdk: pennylane
+    hardware:
+    - xanadu_photonic
+    - ibm_superconducting
+    - google_superconducting
+    - ionq_trapped_ion
+    - rigetti_superconducting
+  - sdk: pyquil
+    hardware:
+    - rigetti_superconducting
+  - sdk: ocean
+    hardware:
+    - dwave_annealer
+  - sdk: bloqade
+    hardware:
+    - quera_neutral_atom
+  - sdk: perceval
+    hardware:
+    - quandela_photonic
+  - sdk: strawberryfields
+    hardware:
+    - xanadu_photonic
+  sdk_simulator_connections:
+  - sdk: qiskit
+    simulators:
+    - qiskit_aer
+    - cuquantum
+  - sdk: cirq
+    simulators:
+    - qsim
+    - qsim+cuquantum
+  - sdk: pennylane
+    simulators:
+    - pennylane_lightning
+    - qulacs
+    - cuquantum
+  - sdk: pyquil
+    simulators:
+    - qvm
+  - sdk: projectq
+    simulators:
+    - projectq_simulator
+  cross_integrations:
+  - from: openqasm
+    to:
+    - qiskit
+    - cirq
+    - tket
+    - qdk
+    type: interchange_format
+  - from: tket
+    to:
+    - qiskit
+    - cirq
+    - pyquil
+    type: compilation_plugin
+  - from: mitiq
+    to:
+    - qiskit
+    - cirq
+    - pyquil
+    - pennylane
+    type: error_mitigation_layer
+  - from: openfermion
+    to:
+    - cirq
+    - projectq
+    - pyquil
+    type: domain_library_plugin
+  - from: cuquantum
+    to:
+    - qsim
+    - qiskit
+    - pennylane
+    type: gpu_acceleration
+  - from: qdk
+    to:
+    - qiskit
+    - cirq
+    - openqasm
+    type: interoperability

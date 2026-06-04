@@ -1,0 +1,1048 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    
+    
+
+    
+
+
+<esi:choose>
+    <esi:when test="$(cvToken)">
+        <esi:assign name="idIndex" value="$len($(cvToken)) - 1"/>
+        <esi:choose>
+            <esi:when test="$(idIndex) > 0">
+                <esi:assign name="idValue" value="$int($(cvToken{$(idIndex)})) + 1"/>
+                <esi:assign name="cvToken" value="$substr($(cvToken),0,$(idIndex)) + $(idValue)"/>
+            </esi:when>
+        </esi:choose>
+    </esi:when>
+    <esi:otherwise>
+        
+            <esi:choose>
+                <esi:when test="!$(cvToken)">
+                    <esi:choose>
+                        <esi:when test="$exists($(HTTP_MS_CV_ESI))">
+                            <esi:assign name="cvToken" value="$(HTTP_MS_CV_ESI)"></esi:assign>
+                        </esi:when>
+                        <esi:otherwise>
+                            <esi:assign name="cvToken" value="'CASMicrosoft0000.0'"></esi:assign>
+                        </esi:otherwise>
+                    </esi:choose>
+                </esi:when>
+            </esi:choose>
+        
+
+    </esi:otherwise>
+</esi:choose>
+<!-- Start of ADDITIONAL DEBUG INFO ** cv.html **
+
+    <esi:choose>
+            <esi:when test="$exists($(cvToken))">CVToken: $(cvToken)</esi:when>
+    <esi:otherwise>
+            CVToken: not found
+    </esi:otherwise>
+    </esi:choose>
+  End of ADDITIONAL DEBUG INFO -->
+
+
+
+    <link rel="dns-prefetch" href="https://cdn-dynmedia-1.microsoft.com"/>
+<link rel="preconnect" href="https://cdn-dynmedia-1.microsoft.com"/>
+<link rel="dns-prefetch" href="https://web.vortex.data.microsoft.com"/>
+<link rel="preconnect" href="https://web.vortex.data.microsoft.com"/>
+<link rel="dns-prefetch" href="https://img-prod-cms-rt-microsoft-com.akamaized.net"/>
+<link rel="preconnect" href="https://img-prod-cms-rt-microsoft-com.akamaized.net"/>
+<link rel="dns-prefetch" href="https://c.s-microsoft.com"/>
+<link rel="preconnect" href="https://c.s-microsoft.com"/>
+<link rel="dns-prefetch" href="https://bat.bing.com"/>
+<link rel="preconnect" href="https://bat.bing.com"/>
+<link rel="dns-prefetch" href="https://cdnssl.clicktale.net"/>
+<link rel="preconnect" href="https://cdnssl.clicktale.net"/>
+<link rel="dns-prefetch" href="https://d.impactradius-event.com"/>
+<link rel="preconnect" href="https://d.impactradius-event.com"/>
+<link rel="dns-prefetch" href="https://js.monitor.azure.com"/>
+<link rel="preconnect" href="https://js.monitor.azure.com"/>
+<link rel="dns-prefetch" href="https://mem.gfx.ms"/>
+<link rel="preconnect" href="https://mem.gfx.ms"/>
+<link rel="dns-prefetch" href="https://wcpstatic.microsoft.com"/>
+<link rel="preconnect" href="https://wcpstatic.microsoft.com"/>
+<link rel="dns-prefetch" href="https://www.clarity.ms"/>
+<link rel="preconnect" href="https://www.clarity.ms"/>
+<link rel="dns-prefetch" href="https://fpt.microsoft.com"/>
+<link rel="preconnect" href="https://fpt.microsoft.com"/>
+<link rel="dns-prefetch" href="https://publisher.liveperson.net"/>
+<link rel="preconnect" href="https://publisher.liveperson.net"/>
+<link rel="dns-prefetch" href="https://accdn.lpsnmedia.net"/>
+<link rel="preconnect" href="https://accdn.lpsnmedia.net"/>
+<link rel="dns-prefetch" href="https://lpcdn.lpsnmedia.net"/>
+<link rel="preconnect" href="https://lpcdn.lpsnmedia.net"/>
+<link rel="dns-prefetch" href="https://lptag.liveperson.net"/>
+<link rel="preconnect" href="https://lptag.liveperson.net"/>
+
+    
+    
+    
+    
+    
+    
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+
+    <!-- Check if page requires no cookies (including essential) -->
+    
+
+    <!-- Load Cascade Auth SDK before its usages in body -->
+    
+        
+    
+<script src="/etc.clientlibs/cascade.component.authoring/clientlibs/cascade-auth-sdk.ACSHASHac407e2af23d095a88e37e4e0907e5b6.min.js"></script>
+
+
+
+    
+
+    <link rel="SHORTCUT ICON" href="/favicon.ico?v2" type="image/x-icon"/>
+
+    
+
+
+    
+        <meta name="robots" content="index, follow"/>
+    
+    
+
+    <meta name="template" content="content-page"/>
+    
+    <meta name="awa-canvasType" content="web"/>
+    <meta name="awa-isTented" content="false"/>
+
+    <meta name="awa-pageType"/>
+    <meta name="awa-pgtmp" content="content-page"/>
+    <meta name="awa-pageId" content="0e8704fce710ee31088873e86cc32461"/>
+    <meta name="awa-market" content="en"/>
+    <meta name="awa-cms" content="AEM"/>
+    <meta name="awa-enabledFeatures" content="contentbackfillgenerate;esiproductcards;feature-controlled-mwf;uhf-ms-io-endpoint;uhf-esi-cv;uhf-esi-cache;contentsquare;mediapixel;holiday-themer;lazyload-static-components;clientlibDefer;upsellEnabled;contentbackfillpkgdelete;healthcheck;contentbackfillhttpgenerate;perf-tracker-1ds;dynamic-bundle;cvIncrementer;tentingEnabled;chatCookiesImplemented;alertCountDownWithoutServerTime;pdpDynamicRendering;bundlesDynamicRendering;contentbackfillmetadatachangesvideo;contentbackfillmetadatachangesnonvideo;listDynamicRendering;experimentation-without-personalization;generic-list-importer;combinedUHF;cvCallEnabled;m365ProductCatalog;support-unsupported-locales;vsbEnabled;deferClickTale;videoLazyLoad;prefetchFontsEnabled;enable-code-isolation;imageLinkTag;fetchPriority;contentIngestionAgent;enableClickgroupTelemetry;imageLazyLoad;contentIngestionAgent-dispatcher2westus2Agent;isCacheControlFeatureEnabled;feature-controlled-content-card;lcpPrioritizationPhase1;ocReimagineTelemetry;deferScriptsEnabled;lcpPrioritizationPhase2;ocReimagineSlotNumberTelemetry;contentIngestionAgent-dispatcher1westus2Agent;ocReimagineComponentNameTelemetry;ocReimagineTemplateNameTelemetry;ptePhase1;extended-html-minification-sites;dynamicPrice;gl-auto-config;displayV35Toggle;chatCustomEndpoint;enableBoostPersonalization;ocReimagineTelemetryTemplateNameSwap;enableEmailConnector;enable-eventingService;ocReimagineAIAssistant;acsPMEFeatureEnabled;ocReimagineCustomerApiUrl;ocReimagineCustomerFilterApiUrl;email-FigmaEmailAutomation;storeVideoUmp;ocProductPricePrimaryLocale;complianceManagerEnabled;entertainmentEW;enableClarityScript;EnableCascadeAuthSDK;ecsMigrationCheck"/>
+    <meta name='thirdparty-config' content='v1'/>
+
+  
+  
+  
+  <meta name="Test"/>
+
+  
+    <meta name="format-detection" content="telephone=no"/>
+
+    
+        
+        
+    
+
+    
+
+    
+    
+    
+        <link rel="preload" href="https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/Semibold/latest.woff2" as="font" type="font/woff2" crossorigin/>
+        <link rel="preload" href="https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/normal/latest.woff2" as="font" type="font/woff2" crossorigin/>
+        <link rel="preload" href="https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/Bold/latest.woff2" as="font" type="font/woff2" crossorigin/>
+        <link rel="preload" href="https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/semilight/latest.woff2" as="font" type="font/woff2" crossorigin/>
+        <link rel="preload" href="https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/light/latest.woff2" as="font" type="font/woff2" crossorigin/>
+    
+
+    
+
+ <title>Page not found</title>
+<link rel="canonical" href="https://www.microsoft.com/content/microsoft/errors/500"/>  
+
+
+
+<meta name="twitter:url" content="https://www.microsoft.com/content/microsoft/errors/500"/>
+<meta name="twitter:title" content="Page not found"/>
+
+<meta name="twitter:card" content="summary"/>
+<meta property="og:url" content="https://www.microsoft.com/content/microsoft/errors/500"/>
+<meta property="og:title" content="Page not found"/>
+
+<meta property="og:type" content="website"/>
+
+    
+    
+        
+    
+
+    
+
+
+    
+
+
+    
+    
+<link rel="stylesheet" href="/etc.clientlibs/cascade.component.authoring/clientlibs/clientlib-mwf-old/main-light.ACSHASH34967e4efb3e4f01bd611f3e92715400.min.css" type="text/css">
+
+
+
+
+
+    
+        
+    
+<link rel="stylesheet" href="/etc.clientlibs/cascade.component.authoring/clientlibs/clientlib-base.ACSHASH09fc174a067266136d6f9a3802411f78.min.css" type="text/css">
+
+
+
+    
+
+    
+    
+<link rel="stylesheet" href="/etc.clientlibs/cascade.component.authoring/clientlibs/clientlib-uhf.ACSHASHf9f2395c582fa601707b7a5dfae9f05f.min.css" type="text/css">
+
+
+
+
+    
+        <script id="ie11-polyfill-script">
+
+        var isModernBrowser = (
+            'fetch' in window &&
+            'assign' in Object
+        );
+
+        if ( !isModernBrowser ) {
+            var scriptElement = document.createElement('script');
+
+                scriptElement.async = false;
+                scriptElement.src = '/etc.clientlibs/cascade.component.authoring/clientlibs/clientlib-polyfills/resources/ie11-polyfills.js';
+
+                var polyfillScriptElement = document.querySelector('#ie11-polyfill-script');
+
+                if (polyfillScriptElement) {
+                    polyfillScriptElement.parentNode.insertBefore(scriptElement, polyfillScriptElement.nextSibling);
+                }
+            }
+        </script>
+    
+
+    
+    
+    
+    
+<script src="/etc.clientlibs/cascade.component.authoring/clientlibs/clientlib-jquery.ACSHASH75d0cb3e9ff9fee40f5ce5fd93c17fb2.min.js"></script>
+
+
+
+    
+    
+<script src="/etc.clientlibs/cascade.component.authoring/clientlibs/clientlib-jquery-cookie.ACSHASH5c75a4fa9fb3503322f8a0c9dd51512d.min.js"></script>
+
+
+
+
+
+    
+    
+    
+
+    
+
+    
+    
+    
+
+    
+
+    
+
+
+    <esi:choose>
+        
+        <esi:when test="!($(QUERY_STRING)&& $(QUERY_STRING{'mboxDisable'})==1)">
+            
+            
+    
+<script src="/etc.clientlibs/microsoft/clientlibs/exp-analytics/v1.ACSHASHbf7b336dbb370c984e1bf59b1a980d86.min.js"></script>
+
+
+
+            <script type="text/javascript">
+                var expToken = {
+                    "exp": {
+                        "target": {
+                            "propertyToken": "8c1e142d-c7db-a269-dc00-3656897ea8b0",
+                            "visitorJsHash": "3d099c67f11e65baad62b5d21e36827e",
+                            "expJsHash": "e8ee6e3433a60c66439eaf7e8101f8d8",
+                            "isExpWithoutPersonalizationEnabled": ("false"==="true")
+                        }
+                    }
+                };
+                window.cas = expToken;
+            </script>
+
+            
+            
+            
+    
+        <meta name="cas-exp-visitor" content="/etc.clientlibs/microsoft/components/structure/page/clientlibs/visitor.ACSHASH3d099c67f11e65baad62b5d21e36827e.min.js">
+    
+
+            
+    
+        <meta name="cas-exp-at" content="/etc.clientlibs/microsoft/components/structure/page/clientlibs/experimentation.ACSHASHe8ee6e3433a60c66439eaf7e8101f8d8.min.js">
+    
+
+
+            
+                
+    
+    <script type="text/javascript" src="/etc.clientlibs/microsoft/clientlibs/exp-cookiecomp/v1.ACSHASHa238861e6209e4e02576ddf5d1749c8b.min.js" async></script>
+
+
+            
+
+            
+            <meta name="exp-visitor-anchor" content=""/>
+            <esi:choose>
+                
+                <esi:when test="$exists($(HTTP_X_REQUEST_URI))">
+                    <esi:assign name="request_url" value="$(HTTP_X_REQUEST_URI)"></esi:assign>
+                </esi:when>
+                <esi:otherwise>
+                    
+
+                    
+                        <esi:assign name="request_url" value="'https://'+$(HTTP_HOST)+$(REQUEST_PATH)"></esi:assign>
+                    
+                </esi:otherwise>
+            </esi:choose>
+
+            <esi:choose>
+                <esi:when test="$len($(QUERY_STRING))>0">
+                    <esi:assign name="request_url" value="$(request_url)+'?'+$(QUERY_STRING)"></esi:assign>
+                </esi:when>
+            </esi:choose>
+
+            <esi:choose>
+                
+                
+                <esi:when test="('false'!='true'&&$exists($(HTTP_COOKIE{'mbox'}))&&($(HTTP_COOKIE{'mbox'}) has 'PC')&&($exists($(HTTP_COOKIE{'AMCV_EA76ADE95776D2EC7F000101%40AdobeOrg'})))&&($(HTTP_COOKIE{'AMCV_EA76ADE95776D2EC7F000101%40AdobeOrg'}) has 'MCMID'))||('false'=='true'&&$exists($(HTTP_COOKIE{'mbox'}))&&($(HTTP_COOKIE{'mbox'}) has 'PC'))">
+                    <esi:try>
+                        <esi:attempt>
+                            
+
+
+<esi:choose>
+    <esi:when test="$(cvToken)">
+        <esi:assign name="idIndex" value="$len($(cvToken)) - 1"/>
+        <esi:choose>
+            <esi:when test="$(idIndex) > 0">
+                <esi:assign name="idValue" value="$int($(cvToken{$(idIndex)})) + 1"/>
+                <esi:assign name="cvToken" value="$substr($(cvToken),0,$(idIndex)) + $(idValue)"/>
+            </esi:when>
+        </esi:choose>
+    </esi:when>
+    <esi:otherwise>
+        
+            <esi:choose>
+                <esi:when test="!$(cvToken)">
+                    <esi:choose>
+                        <esi:when test="$exists($(HTTP_MS_CV_ESI))">
+                            <esi:assign name="cvToken" value="$(HTTP_MS_CV_ESI)"></esi:assign>
+                        </esi:when>
+                        <esi:otherwise>
+                            <esi:assign name="cvToken" value="'CASMicrosoft0000.0'"></esi:assign>
+                        </esi:otherwise>
+                    </esi:choose>
+                </esi:when>
+            </esi:choose>
+        
+
+    </esi:otherwise>
+</esi:choose>
+<!-- Start of ADDITIONAL DEBUG INFO ** cv.html **
+
+    <esi:choose>
+            <esi:when test="$exists($(cvToken))">CVToken: $(cvToken)</esi:when>
+    <esi:otherwise>
+            CVToken: not found
+    </esi:otherwise>
+    </esi:choose>
+  End of ADDITIONAL DEBUG INFO -->
+
+
+                            <esi:assign name="expHeaderVal" value="'ms-cv='+$(cvToken)+';exp-ip='+$(REMOTE_ADDR)+';property-token='+'8c1e142d-c7db-a269-dc00-3656897ea8b0'"></esi:assign>
+
+                            
+                            
+                                <esi:include src="https://www.microsoft.com/casexpservice/experimentapi?requestURL=$url_encode($(request_url))&ewpEnabled=false" no-store="on" maxwait="2000" setheader="exp-header:$(expHeaderVal)"/>
+                            
+                            <!-- Start of ADDITIONAL DEBUG INFO ** experimentation.html - inside **
+
+                                <esi:choose>
+                                        <esi:when test="$exists($(cvToken))">CVToken-Experimentation-Inside: $(cvToken)</esi:when>
+                                <esi:otherwise>
+                                        CVToken-Experimentation-Inside: not found
+                                </esi:otherwise>
+                                </esi:choose>
+                                <esi:choose>
+                                        <esi:when test="$exists($(expHeaderVal))">expHeader-Experimentation-Inside: $(expHeaderVal)</esi:when>
+                                <esi:otherwise>
+                                        Exp header value: not found
+                                </esi:otherwise>
+                                </esi:choose>
+                                true
+                              End of ADDITIONAL DEBUG INFO -->
+                        </esi:attempt>
+                        <esi:except>
+                            
+                                <script type="text/javascript">
+                                     window.targetGlobalSettings= {
+                                        enabled: false
+                                     };
+                                </script>
+                            
+                        </esi:except>
+                    </esi:try>
+                </esi:when>
+            </esi:choose>
+
+            
+            <meta name="exp-atjs-anchor" content=""/>
+        </esi:when>
+    </esi:choose>
+
+
+<!-- Start of ADDITIONAL DEBUG INFO ** experimentation.html **
+
+    <esi:choose>
+            <esi:when test="$exists($(cvToken))">CVToken-Experimentation: $(cvToken)</esi:when>
+    <esi:otherwise>
+            CVToken-Experimentation: not found
+    </esi:otherwise>
+    </esi:choose>
+    <esi:choose>
+            <esi:when test="$exists($(expHeaderVal))">expheader-Experimentation: $(expHeaderVal)</esi:when>
+    <esi:otherwise>
+            Exp header value: not found
+    </esi:otherwise>
+    </esi:choose>
+    true
+    End of ADDITIONAL DEBUG INFO -->
+
+    
+    
+    
+<script src="/etc.clientlibs/cascade.component.authoring/dynamicclientsidelibs/handlerscripts/v1.ACSHASH6734c5d7a732130b83c7d4a6ba54dcec.min.js"></script>
+
+
+
+</template>
+</head>
+
+  
+  <body class="page basicpage">
+    
+
+    
+      
+
+
+
+
+
+	<span style="display:none">
+		<esi:assign name="maxAgeHeaders">'max-age=0,s-maxage=14400'</esi:assign>
+		<esi:choose>
+			<esi:when test="($exists($(cvToken)))">
+  			<script>
+  	  			window.mscv = <esi:text>'</esi:text>$(cvToken)<esi:text>'</esi:text>
+  			</script>
+			</esi:when>
+		</esi:choose>
+		<esi:choose>
+			<esi:when test="($exists($(HTTP_MS_CV)) && !$(cvToken))">
+  			<script>
+  	  			window.mscv = <esi:text>'</esi:text>$(HTTP_MS_CV)<esi:text>'</esi:text>
+  			</script>
+			</esi:when>
+		</esi:choose>
+		<esi:choose>
+			<esi:when test="$(maxAgeHeaders)">
+				<esi:vars>
+					$add_header('Cache-Control', $(maxAgeHeaders))
+				</esi:vars>
+			</esi:when>
+		</esi:choose>
+
+		<esi:choose>
+			<esi:when test="$exists($(HTTP_MS_CV))">
+  			<script>
+  	  			window.msservercv = <esi:text>'</esi:text>$(HTTP_MS_CV)<esi:text>'</esi:text>
+  			</script>
+			</esi:when>
+		</esi:choose>
+
+		
+		<esi:choose>
+			<esi:when test="$exists($(TRACE_ID))">
+				This is the Trace Id: $(TRACE_ID)
+				<script>
+					window.traceid = <esi:text>'</esi:text>$(TRACE_ID)<esi:text>'</esi:text>
+				</script>
+			</esi:when>
+			<esi:otherwise>
+				Trace Id is missing
+				<script>
+					window.traceid = undefined;
+				</script>
+			</esi:otherwise>
+		</esi:choose>
+	</span>
+
+	
+
+	
+	<script type="text/javascript">
+		window.msauthIsPublisher = true;
+	</script>
+
+	<esi:choose>
+		
+		<esi:when test="true==true">
+			<esi:choose>
+				<esi:when test="$exists($(HTTP_COOKIE{'Cascade.OpenIdConnectC3'}))">
+					<esi:assign name="AuthSessionCookies" value="'Cascade.OpenIdConnect=' + $(HTTP_COOKIE{'Cascade.OpenIdConnect'}) + '; Cascade.OpenIdConnectC1=' + $(HTTP_COOKIE{'Cascade.OpenIdConnectC1'}) + '; Cascade.OpenIdConnectC2=' + $(HTTP_COOKIE{'Cascade.OpenIdConnectC2'}) + '; Cascade.OpenIdConnectC3=' + $(HTTP_COOKIE{'Cascade.OpenIdConnectC3'})"/>
+				</esi:when>
+				<esi:when test="$exists($(HTTP_COOKIE{'Cascade.OpenIdConnectC2'}))">
+					<esi:assign name="AuthSessionCookies" value="'Cascade.OpenIdConnect=' + $(HTTP_COOKIE{'Cascade.OpenIdConnect'}) + '; Cascade.OpenIdConnectC1=' + $(HTTP_COOKIE{'Cascade.OpenIdConnectC1'}) + '; Cascade.OpenIdConnectC2=' + $(HTTP_COOKIE{'Cascade.OpenIdConnectC2'})"/>
+				</esi:when>
+				<esi:when test="$exists($(HTTP_COOKIE{'Cascade.OpenIdConnectC1'}))">
+					<esi:assign name="AuthSessionCookies" value="'Cascade.OpenIdConnect=' + $(HTTP_COOKIE{'Cascade.OpenIdConnect'}) + '; Cascade.OpenIdConnectC1=' + $(HTTP_COOKIE{'Cascade.OpenIdConnectC1'})"/>
+				</esi:when>
+				<esi:when test="$exists($(HTTP_COOKIE{'Cascade.OpenIdConnect'}))">
+					<esi:assign name="AuthSessionCookies" value="'Cascade.OpenIdConnect=' + $(HTTP_COOKIE{'Cascade.OpenIdConnect'})"/>
+				</esi:when>
+
+			</esi:choose>
+
+			<esi:choose>
+				<esi:when test="$exists($(HTTP_COOKIE{'RPSShare'}))">
+					<script type="text/javascript">
+						window.msauthRpsShare = true;
+					</script>
+				</esi:when>
+			</esi:choose>
+
+			<esi:choose>
+				<esi:when test="$(AuthSessionCookies)">
+					<span id="rps-user-info-esi" style="display:none">
+						
+
+
+<esi:choose>
+    <esi:when test="$(cvToken)">
+        <esi:assign name="idIndex" value="$len($(cvToken)) - 1"/>
+        <esi:choose>
+            <esi:when test="$(idIndex) > 0">
+                <esi:assign name="idValue" value="$int($(cvToken{$(idIndex)})) + 1"/>
+                <esi:assign name="cvToken" value="$substr($(cvToken),0,$(idIndex)) + $(idValue)"/>
+            </esi:when>
+        </esi:choose>
+    </esi:when>
+    <esi:otherwise>
+        
+            <esi:choose>
+                <esi:when test="!$(cvToken)">
+                    <esi:choose>
+                        <esi:when test="$exists($(HTTP_MS_CV_ESI))">
+                            <esi:assign name="cvToken" value="$(HTTP_MS_CV_ESI)"></esi:assign>
+                        </esi:when>
+                        <esi:otherwise>
+                            <esi:assign name="cvToken" value="'CASMicrosoft0000.0'"></esi:assign>
+                        </esi:otherwise>
+                    </esi:choose>
+                </esi:when>
+            </esi:choose>
+        
+
+    </esi:otherwise>
+</esi:choose>
+<!-- Start of ADDITIONAL DEBUG INFO ** cv.html **
+
+    <esi:choose>
+            <esi:when test="$exists($(cvToken))">CVToken: $(cvToken)</esi:when>
+    <esi:otherwise>
+            CVToken: not found
+    </esi:otherwise>
+    </esi:choose>
+  End of ADDITIONAL DEBUG INFO -->
+
+						<esi:assign name="AuthHeader" value="'ms-cv: ' + $(cvToken)"/>
+						<esi:assign name="AuthSessionCookies" value="$(AuthSessionCookies) + '; MUID=' + $(HTTP_COOKIE{'MUID'})"/>
+
+						<esi:choose>
+							<esi:when test="$(QUERY_STRING{'msstorevsbuat'}) == 'enabled'">
+								<esi:eval src="/cascadeauth/api/store-business/v1/account/userinfo?format=esi" setheader="$(AuthHeader)" appendheader="cookie: $(AuthSessionCookies)" dca="esi"/>
+							</esi:when>
+							<esi:when test="'/rpsauth/account/api/v1/userinfo' matches '''rpsauth'''">
+								<esi:eval src="/cascadeauth/api/v1/account/userinfo?format=esi" setheader="$(AuthHeader)" appendheader="cookie: $(AuthSessionCookies)" dca="esi"/>
+							</esi:when>
+    						<esi:otherwise>
+								<esi:eval src="/rpsauth/account/api/v1/userinfo?format=esi" setheader="$(AuthHeader)" appendheader="cookie: $(AuthSessionCookies)" dca="esi"/>
+							</esi:otherwise>
+						</esi:choose>
+
+						<esi:choose>
+							<esi:when test="$exists($(userInfo))">
+								<esi:vars>
+									<script type="text/javascript">
+										window.msauth = {
+											"Type": <esi:text>"</esi:text>$(userInfo{'Type'})<esi:text>"</esi:text>,
+											"TenantId": <esi:text>"</esi:text>$(userInfo{'TenantId'})<esi:text>"</esi:text>,
+											"Cid": <esi:text>"</esi:text>$(userInfo{'Cid'})<esi:text>"</esi:text>,
+											"PassportCid": <esi:text>"</esi:text>$(userInfo{'PassportCid'})<esi:text>"</esi:text>,
+											"IsBusiness": <esi:text>"</esi:text>$(userInfo{'IsBusiness'})<esi:text>"</esi:text>,
+											"EmailAddress": <esi:text>"</esi:text>$(userInfo{'EmailAddress'})<esi:text>"</esi:text>,
+											"Name": <esi:text>"</esi:text>$(userInfo{'Name'})<esi:text>"</esi:text>,
+											"FirstName": <esi:text>"</esi:text>$(userInfo{'FirstName'})<esi:text>"</esi:text>,
+											"LastName": <esi:text>"</esi:text>$(userInfo{'LastName'})<esi:text>"</esi:text>,
+											"AuthTicket": <esi:text>"</esi:text>$(userInfo{'AuthTicket'})<esi:text>"</esi:text>,
+											"AuthTicketEx": <esi:text>"</esi:text>$(userInfo{'AuthTicketEx'})<esi:text>"</esi:text>,
+											"ExpiresOn": <esi:text>"</esi:text>$(userInfo{'ExpiresOn'})<esi:text>"</esi:text>,
+											"AuthenticationType": <esi:text>"</esi:text>$(userInfo{'AuthenticationType'})<esi:text>"</esi:text>
+										};
+									</script>
+								</esi:vars>
+							</esi:when>
+						</esi:choose>
+					</span>
+				</esi:when>
+			</esi:choose>
+			
+		</esi:when>
+	</esi:choose>
+	
+
+    
+    
+      
+<esi:vars>
+    <span aria-hidden="true" class="d-none geo-info" data-continent="$(GEO{'continent'})" data-country_code="$(GEO{'country_code'})" data-region_code="$(GEO{'region_code'})" data-city="$(GEO{'city'})" data-timezone="$(GEO{'timezone'})" data-zip="$(GEO{'zip'})" data-county="$(GEO{'county'})" data-areacode="$(GEO{'areacode'})">
+    </span>
+</esi:vars>
+    
+    
+    
+    <div id="page-top" tabindex="-1"></div>
+    
+
+    <div id="modalsRenderedAfterPageLoad">
+      
+    </div>
+
+    
+
+    
+
+    
+
+    
+    
+      
+
+
+
+      
+<div class="root responsivegrid">
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="responsivegrid aem-GridColumn aem-GridColumn--default--12">
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="universalheader aem-GridColumn aem-GridColumn--default--12" data-component-id="cf9a86dceae618e01d6e6399d243873c">
+
+	
+    	
+    
+<link rel="stylesheet" href="/etc.clientlibs/microsoft/components/content/universalheader/v1/universalheader/clientlibs/site.ACSHASHba88550b05d37722ac0b4ce30f3c4d6c.min.css" type="text/css">
+
+
+
+	
+
+	
+
+	
+		
+    
+    
+
+    
+        <esi:try>
+            <esi:attempt>
+                
+
+
+<esi:choose>
+    <esi:when test="$(cvToken)">
+        <esi:assign name="idIndex" value="$len($(cvToken)) - 1"/>
+        <esi:choose>
+            <esi:when test="$(idIndex) > 0">
+                <esi:assign name="idValue" value="$int($(cvToken{$(idIndex)})) + 1"/>
+                <esi:assign name="cvToken" value="$substr($(cvToken),0,$(idIndex)) + $(idValue)"/>
+            </esi:when>
+        </esi:choose>
+    </esi:when>
+    <esi:otherwise>
+        
+            <esi:choose>
+                <esi:when test="!$(cvToken)">
+                    <esi:choose>
+                        <esi:when test="$exists($(HTTP_MS_CV_ESI))">
+                            <esi:assign name="cvToken" value="$(HTTP_MS_CV_ESI)"></esi:assign>
+                        </esi:when>
+                        <esi:otherwise>
+                            <esi:assign name="cvToken" value="'CASMicrosoft0000.0'"></esi:assign>
+                        </esi:otherwise>
+                    </esi:choose>
+                </esi:when>
+            </esi:choose>
+        
+
+    </esi:otherwise>
+</esi:choose>
+<!-- Start of ADDITIONAL DEBUG INFO ** cv.html **
+
+    <esi:choose>
+            <esi:when test="$exists($(cvToken))">CVToken: $(cvToken)</esi:when>
+    <esi:otherwise>
+            CVToken: not found
+    </esi:otherwise>
+    </esi:choose>
+  End of ADDITIONAL DEBUG INFO -->
+
+                <!-- Start of ADDITIONAL DEBUG INFO ** uhftemplate.html **
+
+    <esi:choose>
+            <esi:when test="$exists($(cvToken))">CVToken: $(cvToken)</esi:when>
+    <esi:otherwise>
+            CVToken: not found
+    </esi:otherwise>
+    </esi:choose>
+  End of ADDITIONAL DEBUG INFO -->
+                <esi:include src="https://www.microsoft.com/cascadesharedapiprod/api/uhf?privacyNotice=true&locale=en&msaem=prod&responseElement=css_header&partner=MSErrorPage&headerId=MSErrorPageHeader&footerId=MSErrorPageFooter" onerror="continue" setheader="ms-cv:$(cvToken)" no-store="off" ttl="10m"/>
+            </esi:attempt>
+            <esi:except>
+                $set_redirect('https://www.microsoft.com/library/errorpages/smarterror.aspx?correlationId=$(cvToken)')
+            </esi:except>
+        </esi:try>
+    
+
+	
+
+
+
+    
+
+
+
+
+<div class='meControl-configInfo' data-isenabled='true' data-signinurl='/rpsauth/v1/account/SignIn' data-msasignouturl='/rpsauth/v1/account/SignOut' data-convergedstack='false' data-accountconstraint='0' data-apigeneration='GEN1' data-silentauthrequirereload='false' data-silentauthaction='none'></div>
+<div class='userInfo-config' data-userInfoUrl='/rpsauth/account/api/v1/userinfo' data-userInfoTimeoutMS='1000' data-retryDelayMS='2000' data-maxRetryAttempt='3'></div>
+
+
+    
+    
+<script src="/etc.clientlibs/microsoft/components/content/universalheader/v1/universalheader/clientlibs/site.ACSHASH69d585e01cb601a02e396b34fdcab8c4.min.js"></script>
+
+
+
+
+</div>
+<div class="error-message aem-GridColumn aem-GridColumn--default--12" data-component-id="1069fa90b7d324396168ad8764738eae">
+    
+
+
+
+
+
+    
+    
+<link rel="stylesheet" href="/etc.clientlibs/microsoft/components/content/error-message/v1/error-message/clientlibs.ACSHASH0ca74fc95f375bde3af1f178a2be4424.min.css" type="text/css">
+
+
+
+
+
+<div class="container">
+    <div class="col-12 col-lg-8 error-message">
+        
+            
+    
+
+    <h2 class="component-heading      ">
+        
+  
+  
+  
+    
+
+    
+       Internal Server Error. 
+      
+    
+  
+
+    </h2>
+
+        
+        <div>
+            <span class="h4 mb-0">The server encountered an internal error or misconfiguration and was unable to complete your request.</span>
+        </div>
+    </div>
+    
+        
+            <p>Request Correlation ID: CASMicrosoftCV867ab947.0.1</p>
+        
+    
+</div>
+
+</div>
+<div class="universalfooter aem-GridColumn aem-GridColumn--default--12" data-component-id="873fa1f863becf63b38092282d4ea0b1">
+	
+
+	
+		
+    
+    
+
+    
+        <esi:try>
+            <esi:attempt>
+                
+
+
+<esi:choose>
+    <esi:when test="$(cvToken)">
+        <esi:assign name="idIndex" value="$len($(cvToken)) - 1"/>
+        <esi:choose>
+            <esi:when test="$(idIndex) > 0">
+                <esi:assign name="idValue" value="$int($(cvToken{$(idIndex)})) + 1"/>
+                <esi:assign name="cvToken" value="$substr($(cvToken),0,$(idIndex)) + $(idValue)"/>
+            </esi:when>
+        </esi:choose>
+    </esi:when>
+    <esi:otherwise>
+        
+            <esi:choose>
+                <esi:when test="!$(cvToken)">
+                    <esi:choose>
+                        <esi:when test="$exists($(HTTP_MS_CV_ESI))">
+                            <esi:assign name="cvToken" value="$(HTTP_MS_CV_ESI)"></esi:assign>
+                        </esi:when>
+                        <esi:otherwise>
+                            <esi:assign name="cvToken" value="'CASMicrosoft0000.0'"></esi:assign>
+                        </esi:otherwise>
+                    </esi:choose>
+                </esi:when>
+            </esi:choose>
+        
+
+    </esi:otherwise>
+</esi:choose>
+<!-- Start of ADDITIONAL DEBUG INFO ** cv.html **
+
+    <esi:choose>
+            <esi:when test="$exists($(cvToken))">CVToken: $(cvToken)</esi:when>
+    <esi:otherwise>
+            CVToken: not found
+    </esi:otherwise>
+    </esi:choose>
+  End of ADDITIONAL DEBUG INFO -->
+
+                <!-- Start of ADDITIONAL DEBUG INFO ** uhftemplate.html **
+
+    <esi:choose>
+            <esi:when test="$exists($(cvToken))">CVToken: $(cvToken)</esi:when>
+    <esi:otherwise>
+            CVToken: not found
+    </esi:otherwise>
+    </esi:choose>
+  End of ADDITIONAL DEBUG INFO -->
+                <esi:include src="https://www.microsoft.com/cascadesharedapiprod/api/uhf?privacyNotice=true&locale=en&msaem=prod&responseElement=footer_js&partner=MSErrorPage&headerId=MSErrorPageHeader&footerId=MSErrorPageFooter" onerror="continue" setheader="ms-cv:$(cvToken)" no-store="off" ttl="10m"/>
+            </esi:attempt>
+            <esi:except>
+                $set_redirect('https://www.microsoft.com/library/errorpages/smarterror.aspx?correlationId=$(cvToken)')
+            </esi:except>
+        </esi:try>
+    
+
+	
+
+
+    
+
+</div>
+
+    
+</div>
+</div>
+
+    
+</div>
+</div>
+
+
+      
+    
+    
+    
+
+	
+
+
+    
+
+
+    
+    
+<script src="/etc.clientlibs/cascade.component.authoring/clientlibs/clientlib-mwf-old/main-light.ACSHASH8253caf0b10d9cb51ecdabc24d288765.min.js"></script>
+
+
+
+
+
+	
+		
+	
+	
+		
+    
+<script src="/etc.clientlibs/cascade.component.authoring/clientlibs/clientlib-base.ACSHASH7e89d60ab495cd79ad67f82f4ceb5b7f.min.js"></script>
+
+
+
+	
+
+    
+        
+    
+<script src="/etc.clientlibs/microsoft/clientlibs/clientlib-httpclient.ACSHASHbdf4e043fe12e5b0add3f5e1e82ea4c5.min.js"></script>
+
+
+
+    
+    
+
+		
+    
+<script src="/etc.clientlibs/cascade.component.authoring/clientlibs/clientlib-cookieconsent.ACSHASHc892f451b0c4db9c8ab2601a427c9b2c.min.js"></script>
+
+
+
+		<!-- Changes for Global Pixel -->
+		
+		
+		
+		
+			<script type="text/javascript" id="contentsquare">
+				(function(){
+					var contentSq =
+						{
+							"entryFile": "https://cdnssl.clicktale.net/www32/ptc/05d32363-d534-4d93-9b65-cde674775e71.js",
+	                    };
+					if (typeof window["partnerScripts"]==="undefined"){
+						window["partnerScripts"]={};
+					}
+					window["partnerScripts"]["contentSquare"] = contentSq;
+				})();
+			</script>
+		
+		
+		<!-- End of changes for Global Pixel -->
+
+
+    <!-- This element is used to configure the 1DS configuration to ignore MC1 and MC0 cookies if required -->
+    <div class="cookie-config" data-isenabled="false"></div>
+
+
+    
+    
+<script src="/etc.clientlibs/microsoft/components/structure/page/clientlibs/featurecontrol.ACSHASHf120033122e43a4cb0b53bb306afc5dc.min.js"></script>
+
+
+
+
+
+<!-- Feature Control Service:List of all Enabled Features -->
+<div id='customFeatureControl' enabledFeatures="contentbackfillgenerate,esiproductcards,feature-controlled-mwf,uhf-ms-io-endpoint,uhf-esi-cv,uhf-esi-cache,contentsquare,mediapixel,holiday-themer,lazyload-static-components,clientlibDefer,upsellEnabled,contentbackfillpkgdelete,healthcheck,contentbackfillhttpgenerate,perf-tracker-1ds,dynamic-bundle,cvIncrementer,tentingEnabled,chatCookiesImplemented,alertCountDownWithoutServerTime,pdpDynamicRendering,bundlesDynamicRendering,contentbackfillmetadatachangesvideo,contentbackfillmetadatachangesnonvideo,listDynamicRendering,experimentation-without-personalization,generic-list-importer,combinedUHF,cvCallEnabled,m365ProductCatalog,support-unsupported-locales,vsbEnabled,deferClickTale,videoLazyLoad,prefetchFontsEnabled,enable-code-isolation,imageLinkTag,fetchPriority,contentIngestionAgent,enableClickgroupTelemetry,imageLazyLoad,contentIngestionAgent-dispatcher2westus2Agent,isCacheControlFeatureEnabled,feature-controlled-content-card,lcpPrioritizationPhase1,ocReimagineTelemetry,deferScriptsEnabled,lcpPrioritizationPhase2,ocReimagineSlotNumberTelemetry,contentIngestionAgent-dispatcher1westus2Agent,ocReimagineComponentNameTelemetry,ocReimagineTemplateNameTelemetry,ptePhase1,extended-html-minification-sites,dynamicPrice,gl-auto-config,displayV35Toggle,chatCustomEndpoint,enableBoostPersonalization,ocReimagineTelemetryTemplateNameSwap,enableEmailConnector,enable-eventingService,ocReimagineAIAssistant,acsPMEFeatureEnabled,ocReimagineCustomerApiUrl,ocReimagineCustomerFilterApiUrl,email-FigmaEmailAutomation,storeVideoUmp,ocProductPricePrimaryLocale,complianceManagerEnabled,entertainmentEW,enableClarityScript,EnableCascadeAuthSDK,ecsMigrationCheck"></div>
+
+
+
+
+<div class='oneds-config' data-instrumentationkey='c72e6b24df604532a6282edd268b4ba4-9cdee1fe-5d2f-4626-9620-dbad9b53a8e5-8065' data-isenabled='true' data-env='prod' data-market='en' data-pageName='Page not found' data-urlCollectQuery='true' data-urlCollectHash='false' data-autoCapturelineage='false' data-autoCaptureresize='false' data-autoCapturescroll='false' data-initialize1DSEventName="none" data-tenantName='acom' data-tenantTitle='Azure.com' data-tenantDomain='azure' data-tenantSiteName='microsoft' data-tenantNameProperty='tenantName' data-tenantTitleProperty='tenantTitle' data-tenantDomainProperty='tenantDomain' data-tenantSiteNameProperty='tenantSiteName' data-max1DSInitializeDelayInSeconds='1'>
+</div>
+
+
+    
+    
+<script src="/etc.clientlibs/microsoft/components/structure/page/clientlibs/custom-oneds.ACSHASH2b7224aac4ea4007cb4436ebcdc8cec8.min.js"></script>
+
+
+
+
+
+
+
+    
+    
+    
+<script src="/etc.clientlibs/microsoft/clientlibs/cookie-compliance-manager.ACSHASHd471cafc5d23f4577f5cf2676dcc276a.min.js"></script>
+
+
+
+
+
+    
+
+
+    
+
+    
+
+    
+    
+    
+
+      
+
+    
+
+    
+
+    
+
+
+    
+  
+
+
+    <!-- Start of ADDITIONAL DEBUG INFO
+	<esi:choose>
+		<esi:when test="$exists($(HTTP_MS_COMMIT_ID))">MS_COMMIT_ID: $(HTTP_MS_COMMIT_ID)</esi:when>
+	</esi:choose>
+	<esi:choose>
+		<esi:when test="$exists($(HTTP_MS_CV))">MS-CV: $(HTTP_MS_CV)</esi:when>
+	</esi:choose>
+	<esi:choose>
+		<esi:when test="$exists($(cvToken))">MS-CV-ESI: $(cvToken)</esi:when>
+	</esi:choose>
+	End of ADDITIONAL DEBUG INFO -->
+  </body>
+</html>
