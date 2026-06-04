@@ -3,7 +3,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "bunx serve@latest out"
+    "start": "next start"
   },
   "type": "module",
   "devDependencies": {
