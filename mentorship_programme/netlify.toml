@@ -1,3 +1,7 @@
 [build]
-    command = "cd mentorship_programme && bun run build"
-    publish = "mentorship_programme/.next"
+  base = "mentorship_programme"
+  command = "cd mentorship_programme && bun run build"
+  publish = "mentorship_programme/.next"
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
