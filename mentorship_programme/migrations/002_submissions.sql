@@ -42,11 +42,11 @@ CREATE POLICY "submissions_select_own" ON submissions
     auth.uid() IN (SELECT user_id FROM profiles WHERE id = submissions.user_id)
   );
 
--- Admins can see all submissions
+-- Admins can see all non-draft submissions (drafts are fully private)
 DROP POLICY IF EXISTS "submissions_select_admin" ON submissions;
 CREATE POLICY "submissions_select_admin" ON submissions
   FOR SELECT USING (
-    public.is_admin()
+    public.is_admin() AND status != 'draft'
   );
 
 -- Anyone can see submitted/winner submissions (public view)

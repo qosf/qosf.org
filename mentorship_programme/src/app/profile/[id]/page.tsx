@@ -173,12 +173,6 @@ export default async function PublicProfilePage({
           </div>
         )}
       </div>
-
-      <div className="text-center mt-6">
-        <Link href="/" className="text-sm text-qosf-blue hover:underline">
-          &larr; Back to QOSF Mentorship Programme
-        </Link>
-      </div>
     </div>
   );
 }

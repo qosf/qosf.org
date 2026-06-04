@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import { useParams } from "next/navigation";
 import Link from "next/link";
 import { createClient } from "@/lib/supabase/client";
-import { ExternalLink, GitBranch, Play, Globe, Calendar, Award, Code } from "lucide-react";
+import { GitBranch, Globe, Calendar, Award, Code } from "lucide-react";
 import { formatDate, getStatusColor } from "@/lib/utils";
 import MarkdownRenderer from "@/components/MarkdownRenderer";
 
@@ -27,23 +27,17 @@ interface SubmissionWithJoins {
   cohort?: { id: string; name?: string };
 }
 
-function isFacebookUrl(url: string): boolean {
-  return /facebook\.com|fb\.watch/i.test(url);
-}
-
-/**
- * Fetch Facebook oEmbed thumbnail URL for a video.
- */
-async function fetchFacebookThumbnail(url: string): Promise<string | null> {
-  try {
-    const oembedUrl = `https://www.facebook.com/plugins/video/oembed.json?url=${encodeURIComponent(url)}`;
-    const res = await fetch(oembedUrl);
-    if (!res.ok) return null;
-    const data = await res.json();
-    return data?.thumbnail_url ?? null;
-  } catch {
-    return null;
+/** Extract YouTube video ID from various URL formats. */
+function getYouTubeEmbedUrl(url: string): string | null {
+  const patterns = [
+    /(?:youtube\.com\/watch\?v=|youtu\.be\/|youtube\.com\/embed\/)([a-zA-Z0-9_-]{11})/,
+    /^([a-zA-Z0-9_-]{11})$/, // bare video ID
+  ];
+  for (const re of patterns) {
+    const m = url.match(re);
+    if (m) return `https://www.youtube.com/embed/${m[1]}`;
   }
+  return null;
 }
 
 export default function ProjectPage() {
@@ -53,9 +47,7 @@ export default function ProjectPage() {
   const [submission, setSubmission] = useState<SubmissionWithJoins | null>(null);
   const [loading, setLoading] = useState(true);
   const [notFound, setNotFound] = useState(false);
-  const [isOwner, setIsOwner] = useState(false);
-  const [heroImage, setHeroImage] = useState<string | null>(null);
-  const [heroLoading, setHeroLoading] = useState(false);
+  const [embedUrl, setEmbedUrl] = useState<string | null>(null);
 
   useEffect(() => {
     let cancelled = false;
@@ -74,7 +66,7 @@ export default function ProjectPage() {
         return;
       }
 
-      // Check ownership (use local variable, not state)
+      // Check ownership
       let owned = false;
       const { data: { user } } = await supabase.auth.getUser();
       if (user) {
@@ -89,10 +81,16 @@ export default function ProjectPage() {
         }
       }
 
-      if (!cancelled) setIsOwner(owned);
+      // Visibility rules:
+      //   draft  → owner only
+      //   banned → no one (404 for everyone)
+      //   submitted/winner → everyone
+      const visible =
+        sub.status === "submitted" ||
+        sub.status === "winner" ||
+        (sub.status === "draft" && owned);
 
-      // Drafts are only visible to the owner
-      if (sub.status === "draft" && !owned) {
+      if (!visible) {
         if (!cancelled) setNotFound(true);
         if (!cancelled) setLoading(false);
         return;
@@ -100,12 +98,10 @@ export default function ProjectPage() {
 
       if (!cancelled) setSubmission(sub);
 
-      // Fetch Facebook thumbnail if it's a FB video
-      if (sub.video_link && isFacebookUrl(sub.video_link)) {
-        if (!cancelled) setHeroLoading(true);
-        const thumb = await fetchFacebookThumbnail(sub.video_link);
-        if (thumb && !cancelled) setHeroImage(thumb);
-        if (!cancelled) setHeroLoading(false);
+      // YouTube embed hero
+      if (sub.video_link) {
+        const url = getYouTubeEmbedUrl(sub.video_link);
+        if (url && !cancelled) setEmbedUrl(url);
       }
 
       if (!cancelled) setLoading(false);
@@ -137,13 +133,15 @@ export default function ProjectPage() {
 
   return (
     <div className="container mx-auto px-4 py-8 max-w-4xl">
-      {/* Hero image from Facebook video */}
-      {heroImage && (
+      {/* YouTube hero embed */}
+      {embedUrl && (
         <div className="rounded-lg overflow-hidden mb-8 aspect-video bg-gray-100">
-          <img
-            src={heroImage}
-            alt={`${submission.project_name} video thumbnail`}
-            className="w-full h-full object-cover"
+          <iframe
+            src={embedUrl}
+            title="Project video"
+            className="w-full h-full"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
           />
         </div>
       )}
@@ -231,14 +229,14 @@ export default function ProjectPage() {
             <Globe size={16} /> Demo
           </a>
         )}
-        {submission.video_link && (
+        {submission.video_link && !embedUrl && (
           <a
             href={submission.video_link}
             target="_blank"
             rel="noopener noreferrer"
             className="btn-secondary text-sm flex items-center gap-1.5"
           >
-            <Play size={16} /> Watch Video
+            <Globe size={16} /> Watch Video
           </a>
         )}
       </div>
@@ -249,23 +247,6 @@ export default function ProjectPage() {
         <MarkdownRenderer content={submission.project_description} />
       </div>
 
-      {/* Owner actions */}
-      {isOwner && (
-        <div className="mt-6 text-center">
-          <Link
-            href={`/submit/${submission.id}`}
-            className="text-sm text-qosf-blue hover:underline"
-          >
-            Edit Project &rarr;
-          </Link>
-        </div>
-      )}
-
-      <div className="text-center mt-6">
-        <Link href="/dashboard" className="text-sm text-qosf-blue hover:underline">
-          &larr; Back to Dashboard
-        </Link>
-      </div>
     </div>
   );
 }

@@ -16,6 +16,7 @@ export default function AdminSubmissionsPage() {
       const { data } = await supabase
         .from("submissions")
         .select("*, profile:profiles!submissions_user_id_fkey(id, full_name, email), cohort:cohorts!submissions_cohort_id_fkey(id, name)")
+        .neq("status", "draft")
         .order("created_at", { ascending: false });
       setSubmissions(data ?? []);
     })();
@@ -54,7 +55,7 @@ export default function AdminSubmissionsPage() {
       <div className="flex items-center justify-between mb-6">
         <h1 className="text-2xl font-bold text-qosf-blue">Submissions</h1>
         <div className="flex gap-2">
-          {["all", "draft", "submitted", "banned", "winner"].map((f) => (
+          {["all", "submitted", "banned", "winner"].map((f) => (
             <button
               key={f}
               onClick={() => setFilter(f)}
