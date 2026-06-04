@@ -1,7 +1,7 @@
 [build]
   base = "mentorship_programme"
   command = "bun run build"
-  publish = "mentorship_programme/.next"
+  publish = ".next"
 
 [[plugins]]
   package = "@netlify/plugin-nextjs"
