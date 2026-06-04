@@ -22,13 +22,7 @@ export default function Header({ session }: HeaderProps) {
     router.refresh();
   }
 
-  const navLinks = [
-    { href: "/", label: "Home" },
-    { href: "/about", label: "About" },
-    { href: "/apply", label: "Apply" },
-    { href: "/terms", label: "Terms" },
-    { href: "/privacy", label: "Privacy" },
-  ];
+  const navLinks: { href: string; label: string }[] = [];
 
   return (
     <header className="site-header bg-qosf-blue text-white shadow-md">

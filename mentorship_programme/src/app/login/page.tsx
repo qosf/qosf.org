@@ -4,11 +4,12 @@ import { useState } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 import { createClient } from "@/lib/supabase/client";
-import { LogIn, Mail, Lock, AlertCircle } from "lucide-react";
+import { LogIn, Mail, Lock, AlertCircle, Eye, EyeOff } from "lucide-react";
 
 export default function LoginPage() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [showPw, setShowPw] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
   const router = useRouter();
@@ -19,7 +20,7 @@ export default function LoginPage() {
     setError(null);
     setLoading(true);
 
-    const { error: authError } = await supabase.auth.signInWithPassword({
+    const { data, error: authError } = await supabase.auth.signInWithPassword({
       email,
       password,
     });
@@ -31,31 +32,20 @@ export default function LoginPage() {
       return;
     }
 
-    router.push("/dashboard");
-    router.refresh();
-  }
+    // Check role and redirect accordingly
+    const { data: profile } = await supabase
+      .from("profiles")
+      .select("role")
+      .eq("user_id", data?.user?.id)
+      .limit(1)
+      .maybeSingle();
 
-  async function handleMagicLink(e: React.FormEvent) {
-    e.preventDefault();
-    setError(null);
-    setLoading(true);
-
-    const { error: authError } = await supabase.auth.signInWithOtp({
-      email,
-      options: {
-        emailRedirectTo: `${window.location.origin}/dashboard`,
-      },
-    });
-
-    setLoading(false);
-
-    if (authError) {
-      setError(authError.message);
-      return;
+    if (profile?.role === "admin") {
+      router.push("/admin/applications");
+    } else {
+      router.push("/dashboard");
     }
-
-    setError(null);
-    alert("Check your email for the magic link!");
+    router.refresh();
   }
 
   return (
@@ -103,14 +93,28 @@ export default function LoginPage() {
               <Lock size={18} className="absolute left-3 top-1/2 -translate-y-1/2 text-qosf-text-light" />
               <input
                 id="password"
-                type="password"
+                type={showPw ? "text" : "password"}
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
                 required
-                className="w-full pl-10 pr-4 py-2.5 border border-qosf-border rounded-lg focus:ring-2 focus:ring-qosf-blue focus:border-transparent outline-none"
+                className="w-full pl-10 pr-10 py-2.5 border border-qosf-border rounded-lg focus:ring-2 focus:ring-qosf-blue focus:border-transparent outline-none"
                 placeholder="Your password"
               />
+              <button
+                type="button"
+                onClick={() => setShowPw(!showPw)}
+                className="absolute right-3 top-1/2 -translate-y-1/2 text-qosf-text-light hover:text-qosf-blue"
+                tabIndex={-1}
+              >
+                {showPw ? <EyeOff size={18} /> : <Eye size={18} />}
+              </button>
             </div>
+          </div>
+
+          <div className="flex justify-end">
+            <Link href="/reset-password" className="text-xs text-qosf-blue hover:underline">
+              Forgot password?
+            </Link>
           </div>
 
           <button
@@ -121,20 +125,6 @@ export default function LoginPage() {
             {loading ? "Signing in..." : "Sign In"}
           </button>
         </form>
-
-        <div className="my-4 flex items-center gap-2">
-          <hr className="flex-1 border-qosf-border" />
-          <span className="text-sm text-qosf-text-light">or</span>
-          <hr className="flex-1 border-qosf-border" />
-        </div>
-
-        <button
-          onClick={handleMagicLink}
-          disabled={loading}
-          className="btn-outline w-full justify-center disabled:opacity-50"
-        >
-          Send Magic Link
-        </button>
 
         <p className="text-center text-sm text-qosf-text-light mt-6">
           Don&apos;t have an account?{" "}

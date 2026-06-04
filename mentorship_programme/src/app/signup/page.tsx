@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 import { createClient } from "@/lib/supabase/client";
-import { UserPlus, AlertCircle, Mail } from "lucide-react";
+import { UserPlus, AlertCircle, Mail, Eye, EyeOff } from "lucide-react";
 
 export default function SignupPage() {
   const [email, setEmail] = useState("");
@@ -13,6 +13,7 @@ export default function SignupPage() {
   const [error, setError] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
   const [checkEmail, setCheckEmail] = useState(false);
+  const [showPw, setShowPw] = useState(false);
   const router = useRouter();
   const supabase = createClient();
 
@@ -136,16 +137,26 @@ export default function SignupPage() {
             <label htmlFor="password" className="block text-sm font-medium text-qosf-text mb-1">
               Password
             </label>
-            <input
-              id="password"
-              type="password"
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-              required
-              minLength={6}
-              className="w-full px-4 py-2.5 border border-qosf-border rounded-lg focus:ring-2 focus:ring-qosf-blue focus:border-transparent outline-none"
-              placeholder="At least 6 characters"
-            />
+            <div className="relative">
+              <input
+                id="password"
+                type={showPw ? "text" : "password"}
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+                required
+                minLength={6}
+                className="w-full pr-10 px-4 py-2.5 border border-qosf-border rounded-lg focus:ring-2 focus:ring-qosf-blue focus:border-transparent outline-none"
+                placeholder="At least 6 characters"
+              />
+              <button
+                type="button"
+                onClick={() => setShowPw(!showPw)}
+                className="absolute right-3 top-1/2 -translate-y-1/2 text-qosf-text-light hover:text-qosf-blue"
+                tabIndex={-1}
+              >
+                {showPw ? <EyeOff size={18} /> : <Eye size={18} />}
+              </button>
+            </div>
           </div>
 
           <button

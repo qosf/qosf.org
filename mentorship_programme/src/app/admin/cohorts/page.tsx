@@ -40,7 +40,11 @@ export default async function AdminCohortsPage() {
             )}
             {cohorts?.map((cohort: Cohort) => (
               <tr key={cohort.id} className="border-t border-qosf-border hover:bg-gray-50">
-                <td className="px-4 py-3 font-medium">{cohort.name}</td>
+                <td className="px-4 py-3 font-medium">
+                  <Link href={`/cohort/${cohort.id}`} className="text-qosf-blue hover:underline">
+                    {cohort.name}
+                  </Link>
+                </td>
                 <td className="px-4 py-3">
                   <span className={`text-xs font-medium px-2.5 py-0.5 rounded-full ${getStatusColor(cohort.status)}`}>
                     {getCohortStatusLabel(cohort.status)}

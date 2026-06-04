@@ -143,6 +143,12 @@ CREATE POLICY "profiles_update_admin" ON profiles
     public.is_admin()
   );
 
+DROP POLICY IF EXISTS "profiles_delete_admin" ON profiles;
+CREATE POLICY "profiles_delete_admin" ON profiles
+  FOR DELETE USING (
+    public.is_admin()
+  );
+
 -- =============================================================
 -- COHORTS
 -- =============================================================
@@ -181,6 +187,12 @@ CREATE POLICY "cohorts_insert_admin" ON cohorts
 DROP POLICY IF EXISTS "cohorts_update_admin" ON cohorts;
 CREATE POLICY "cohorts_update_admin" ON cohorts
   FOR UPDATE USING (
+    public.is_admin()
+  );
+
+DROP POLICY IF EXISTS "cohorts_delete_admin" ON cohorts;
+CREATE POLICY "cohorts_delete_admin" ON cohorts
+  FOR DELETE USING (
     public.is_admin()
   );
 
@@ -231,6 +243,12 @@ CREATE POLICY "applications_update_own" ON applications
 DROP POLICY IF EXISTS "applications_update_admin" ON applications;
 CREATE POLICY "applications_update_admin" ON applications
   FOR UPDATE USING (
+    public.is_admin()
+  );
+
+DROP POLICY IF EXISTS "applications_delete_admin" ON applications;
+CREATE POLICY "applications_delete_admin" ON applications
+  FOR DELETE USING (
     public.is_admin()
   );
 
@@ -287,6 +305,12 @@ CREATE POLICY "matches_update_admin" ON matches
     public.is_admin()
   );
 
+DROP POLICY IF EXISTS "matches_delete_admin" ON matches;
+CREATE POLICY "matches_delete_admin" ON matches
+  FOR DELETE USING (
+    public.is_admin()
+  );
+
 -- =============================================================
 -- TIMELINE EVENTS
 -- =============================================================
@@ -311,6 +335,18 @@ CREATE POLICY "timeline_select_all" ON timeline_events
 DROP POLICY IF EXISTS "timeline_insert_admin" ON timeline_events;
 CREATE POLICY "timeline_insert_admin" ON timeline_events
   FOR INSERT WITH CHECK (
+    public.is_admin()
+  );
+
+DROP POLICY IF EXISTS "timeline_update_admin" ON timeline_events;
+CREATE POLICY "timeline_update_admin" ON timeline_events
+  FOR UPDATE USING (
+    public.is_admin()
+  );
+
+DROP POLICY IF EXISTS "timeline_delete_admin" ON timeline_events;
+CREATE POLICY "timeline_delete_admin" ON timeline_events
+  FOR DELETE USING (
     public.is_admin()
   );
 

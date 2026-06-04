@@ -233,18 +233,8 @@ export default function ApplyPage() {
   }
 
   if (!role || (role !== "mentee" && role !== "mentor")) {
-    return (
-      <div className="container mx-auto px-4 py-12 text-center">
-        <AlertCircle size={40} className="mx-auto text-qosf-accent mb-4" />
-        <h1 className="text-2xl font-bold text-qosf-blue mb-2">No Role Selected</h1>
-        <p className="text-qosf-text-light mb-6">
-          Please choose a role from your dashboard to start an application.
-        </p>
-        <Link href="/dashboard" className="btn-secondary">
-          Go to Dashboard
-        </Link>
-      </div>
-    );
+    router.push("/dashboard");
+    return null;
   }
 
   async function handleSubmit(formData: Record<string, unknown>) {

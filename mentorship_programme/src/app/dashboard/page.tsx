@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 import { createClient } from "@/lib/supabase/client";
-import { ArrowRight, Users, UserCheck, Clock, Shield, FileText } from "lucide-react";
+import { ArrowRight, Users, UserCheck, Clock, Shield, FileText, Trash2 } from "lucide-react";
 import { formatDate, getCohortStatusLabel, getStatusColor } from "@/lib/utils";
 import type { Profile, Cohort } from "@/lib/types";
 
@@ -17,12 +17,30 @@ export default function DashboardPage() {
   const [matches, setMatches] = useState<any[]>([]);
   const [loading, setLoading] = useState(true);
 
+  async function deleteApplication(id: string) {
+    if (!confirm("Delete this application?")) return;
+    await supabase.from("applications").delete().eq("id", id);
+    setApplications((prev) => prev.filter((a) => a.id !== id));
+  }
+
   useEffect(() => {
     let cancelled = false;
 
     async function load() {
       const { data: { user } } = await supabase.auth.getUser();
       if (!user) { router.push("/login"); return; }
+
+      // Admin users go straight to the admin panel
+      const { data: roleCheck } = await supabase
+        .from("profiles")
+        .select("role")
+        .eq("user_id", user.id)
+        .limit(1)
+        .maybeSingle();
+      if (roleCheck?.role === "admin") {
+        router.push("/admin/applications");
+        return;
+      }
 
       // Fetch profile, cohorts, applications, matches in parallel
       const [profileRes, cohortsRes, appsRes] = await Promise.all([
@@ -162,9 +180,28 @@ export default function DashboardPage() {
                     </p>
                   </div>
                 </div>
-                <span className={`text-xs font-medium px-2.5 py-0.5 rounded-full ${getStatusColor(app.status)}`}>
-                  {app.status}
-                </span>
+                <div className="flex items-center gap-2">
+                  {(app.status === "draft" || app.status === "submitted") && (
+                    <>
+                      <Link
+                        href={`/apply?role=${app.role}`}
+                        className="text-xs text-qosf-blue hover:underline"
+                      >
+                        Edit
+                      </Link>
+                      <button
+                        onClick={() => deleteApplication(app.id)}
+                        className="text-red-500 hover:text-red-700"
+                        title="Delete application"
+                      >
+                        <Trash2 size={16} />
+                      </button>
+                    </>
+                  )}
+                  <span className={`text-xs font-medium px-2.5 py-0.5 rounded-full ${getStatusColor(app.status)}`}>
+                    {app.status}
+                  </span>
+                </div>
               </div>
             ))}
           </div>
