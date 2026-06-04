@@ -1,6 +1,5 @@
 [build]
-  base = "mentorship_programme"
-  command = "bun install && cd mentorship_programme && bun run build"
+  command = "bun run build"
   publish = ".next"
 
 [[plugins]]

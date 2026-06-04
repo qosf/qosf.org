@@ -7,6 +7,7 @@
   },
   "type": "module",
   "devDependencies": {
+    "@netlify/plugin-nextjs": "^5.15.11",
     "@types/bun": "latest"
   },
   "peerDependencies": {
