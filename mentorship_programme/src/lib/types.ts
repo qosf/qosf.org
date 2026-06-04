@@ -4,6 +4,8 @@ export type ApplicationStatus = "draft" | "submitted" | "approved" | "rejected";
 
 export type MatchStatus = "pending" | "accepted" | "rejected" | "completed";
 
+export type SubmissionStatus = "draft" | "submitted" | "banned" | "winner";
+
 export interface Profile {
   id: string;
   user_id: string;
@@ -63,6 +65,26 @@ export interface Match {
   updated_at: string;
   mentor?: Profile;
   mentee?: Profile;
+}
+
+export interface Submission {
+  id: string;
+  user_id: string;
+  cohort_id: string;
+  project_name: string;
+  plotline: string;
+  keywords: string[];
+  project_description: string;
+  repo_link?: string;
+  demo_link?: string;
+  video_link?: string;
+  status: SubmissionStatus;
+  is_winner: boolean;
+  created_at: string;
+  updated_at: string;
+  // joined from other tables
+  profile?: Profile;
+  cohort?: Cohort;
 }
 
 export interface TimelineEvent {

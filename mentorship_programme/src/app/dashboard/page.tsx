@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 import { createClient } from "@/lib/supabase/client";
-import { ArrowRight, Users, UserCheck, Clock, Shield, FileText, Trash2 } from "lucide-react";
+import { ArrowRight, Users, UserCheck, Clock, Shield, FileText, Trash2, Code, ExternalLink, Settings } from "lucide-react";
 import { formatDate, getCohortStatusLabel, getStatusColor } from "@/lib/utils";
 import type { Profile, Cohort } from "@/lib/types";
 
@@ -15,6 +15,7 @@ export default function DashboardPage() {
   const [cohorts, setCohorts] = useState<Cohort[]>([]);
   const [applications, setApplications] = useState<any[]>([]);
   const [matches, setMatches] = useState<any[]>([]);
+  const [submissions, setSubmissions] = useState<any[]>([]);
   const [loading, setLoading] = useState(true);
 
   async function deleteApplication(id: string) {
@@ -30,7 +31,6 @@ export default function DashboardPage() {
       const { data: { user } } = await supabase.auth.getUser();
       if (!user) { router.push("/login"); return; }
 
-      // Admin users go straight to the admin panel
       const { data: roleCheck } = await supabase
         .from("profiles")
         .select("role")
@@ -42,7 +42,6 @@ export default function DashboardPage() {
         return;
       }
 
-      // Fetch profile, cohorts, applications, matches in parallel
       const [profileRes, cohortsRes, appsRes] = await Promise.all([
         supabase.from("profiles").select("*").eq("user_id", user.id).limit(1),
         supabase.from("cohorts").select("*").order("created_at", { ascending: false }),
@@ -56,7 +55,13 @@ export default function DashboardPage() {
       setCohorts(cohortsRes.data ?? []);
       setApplications(appsRes.data ?? []);
 
-      // Fetch matches only if we have a profile
+      const { data: subs } = await supabase
+        .from("submissions")
+        .select("*, cohort:cohorts(name, status, application_end)")
+        .eq("user_id", p?.id ?? "")
+        .order("created_at", { ascending: false });
+      setSubmissions(subs ?? []);
+
       if (p) {
         const matchColumn = p.role === "mentor" ? "mentor_id" : "mentee_id";
         const { data: m } = await supabase
@@ -75,7 +80,7 @@ export default function DashboardPage() {
 
   if (loading) {
     return (
-      <div className="container mx-auto px-4 py-8 text-center">
+      <div className="container mx-auto px-4 py-12 text-center">
         <p className="text-qosf-text-light">Loading...</p>
       </div>
     );
@@ -83,12 +88,16 @@ export default function DashboardPage() {
 
   if (!profile) {
     return (
-      <div className="container mx-auto px-4 py-8 text-center">
+      <div className="container mx-auto px-4 py-12 text-center">
         <UserCheck size={48} className="mx-auto text-qosf-text-light mb-4" />
-        <h3 className="text-xl font-bold text-qosf-blue mb-2">Get Started</h3>
-        <p className="text-qosf-text-light">
+        <h2 className="text-xl font-bold text-qosf-blue mb-2">Get Started</h2>
+        <p className="text-qosf-text-light mb-6">
           Choose your path below to apply for the mentorship program.
         </p>
+        <div className="flex flex-wrap justify-center gap-4">
+          <Link href="/apply?role=mentee" className="btn-primary">Apply as Mentee</Link>
+          <Link href="/apply?role=mentor" className="btn-secondary">Apply as Mentor</Link>
+        </div>
       </div>
     );
   }
@@ -97,50 +106,54 @@ export default function DashboardPage() {
 
   return (
     <div className="container mx-auto px-4 py-8">
-      <div className="flex items-center justify-between mb-8">
-        <div>
-          <h1 className="text-2xl md:text-3xl font-bold text-qosf-blue">
-            Dashboard
-          </h1>
-          <p className="text-qosf-text-light mt-1">
-            Welcome, {profile.full_name || "(no name)"}
-          </p>
-        </div>
-        <div className="flex items-center gap-2">
-          <Link href="/profile/edit" className="text-sm text-qosf-blue hover:underline">
-            Edit Profile
-          </Link>
-          {profile.role === "admin" && (
-            <Link href="/admin/mentors" className="btn-secondary text-sm">
-              <Shield size={16} /> Admin Panel
+      {/* ── Blue hero card ── */}
+      <div className="hero-subheader rounded-lg mb-8 p-6 md:p-8">
+        <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
+          <div>
+            <h1 className="text-2xl md:text-3xl font-bold mb-1">
+              Hi, {profile.full_name || "there"}
+            </h1>
+            <p className="text-white/80 text-sm">
+              {profile.role === "mentee" ? "Mentee" : profile.role === "mentor" ? "Mentor" : ""}
+              {profile.pronouns && <> &middot; {profile.pronouns}</>}
+              {profile.institution && <> &middot; {profile.institution}</>}
+            </p>
+          </div>
+          <div className="flex items-center gap-3">
+            <Link
+              href={`/profile/${profile.id}`}
+              className="text-white/80 hover:text-white text-sm flex items-center gap-1.5 transition-colors"
+            >
+              <ExternalLink size={14} /> Public Profile
             </Link>
-          )}
+            <Link
+              href="/profile/edit"
+              className="bg-white/20 hover:bg-white/30 text-white text-sm font-bold py-2 px-4 rounded-full flex items-center gap-2 transition-colors"
+            >
+              <Settings size={14} /> Edit Profile
+            </Link>
+          </div>
         </div>
       </div>
 
-      {/* Role selection — shown when no application has been submitted yet */}
+      {/* ── Role selection cards ── */}
       {!hasSubmittedApp && (
         <div className="mb-8">
-          <h2 className="section-title">Choose Your Path</h2>
-          <p className="text-qosf-text-light mb-6">
-            Submit an application to join the mentorship program.
-            Your submission will be reviewed by our team.
-          </p>
-          <div className="grid md:grid-cols-2 gap-6">
+          <h2 className="text-lg md:text-xl font-bold text-qosf-blue mb-4">Choose Your Path</h2>
+          <div className="grid md:grid-cols-2 gap-4">
             <Link href="/apply?role=mentee" className="card block hover:shadow-lg transition-shadow group">
               <div className="flex items-start gap-4">
-                <div className="w-14 h-14 bg-qosf-blue/10 rounded-full flex items-center justify-center shrink-0">
-                  <UserCheck size={28} className="text-qosf-blue" />
+                <div className="w-12 h-12 bg-qosf-blue/10 rounded-full flex items-center justify-center shrink-0">
+                  <UserCheck size={24} className="text-qosf-blue" />
                 </div>
-                <div>
-                  <h3 className="text-lg font-bold text-qosf-blue group-hover:text-qosf-accent transition-colors">
+                <div className="flex-1 min-w-0">
+                  <h3 className="font-bold text-qosf-blue group-hover:text-qosf-accent transition-colors">
                     Apply as Mentee
                   </h3>
-                  <p className="text-sm text-qosf-text-light mt-1">
-                    I want to learn and work on an open-source quantum computing
-                    project with expert guidance.
+                  <p className="text-sm text-qosf-text-light mt-0.5">
+                    Work on an open-source quantum computing project with expert guidance.
                   </p>
-                  <span className="inline-flex items-center gap-1 text-sm text-qosf-blue font-medium mt-3">
+                  <span className="inline-flex items-center gap-1 text-sm text-qosf-blue font-medium mt-2">
                     Start application <ArrowRight size={14} />
                   </span>
                 </div>
@@ -148,18 +161,17 @@ export default function DashboardPage() {
             </Link>
             <Link href="/apply?role=mentor" className="card block hover:shadow-lg transition-shadow group">
               <div className="flex items-start gap-4">
-                <div className="w-14 h-14 bg-qosf-accent/20 rounded-full flex items-center justify-center shrink-0">
-                  <Users size={28} className="text-qosf-accent" />
+                <div className="w-12 h-12 bg-qosf-accent/20 rounded-full flex items-center justify-center shrink-0">
+                  <Users size={24} className="text-qosf-accent" />
                 </div>
-                <div>
-                  <h3 className="text-lg font-bold text-qosf-blue group-hover:text-qosf-accent transition-colors">
+                <div className="flex-1 min-w-0">
+                  <h3 className="font-bold text-qosf-blue group-hover:text-qosf-accent transition-colors">
                     Apply as Mentor
                   </h3>
-                  <p className="text-sm text-qosf-text-light mt-1">
-                    I have expertise in quantum computing and want to guide
-                    mentees through their projects.
+                  <p className="text-sm text-qosf-text-light mt-0.5">
+                    Guide mentees through their quantum computing projects.
                   </p>
-                  <span className="inline-flex items-center gap-1 text-sm text-qosf-blue font-medium mt-3">
+                  <span className="inline-flex items-center gap-1 text-sm text-qosf-blue font-medium mt-2">
                     Start application <ArrowRight size={14} />
                   </span>
                 </div>
@@ -169,36 +181,31 @@ export default function DashboardPage() {
         </div>
       )}
 
-      {/* Existing application status */}
+      {/* ── Applications section ── */}
       {applications.length > 0 && (
-        <div className="mb-8">
-          <h2 className="section-title">Your Applications</h2>
-          <div className="space-y-3">
+        <div className="card mb-8">
+          <div className="flex items-center justify-between mb-4">
+            <h2 className="text-lg md:text-xl font-bold text-qosf-blue">Your Applications</h2>
+          </div>
+          <div className="divide-y divide-qosf-border">
             {applications.map((app: any) => (
-              <div key={app.id} className="card flex items-center justify-between">
-                <div className="flex items-center gap-3">
-                  <FileText size={20} className="text-qosf-blue" />
-                  <div>
-                    <p className="font-medium capitalize">{app.role} Application</p>
+              <div key={app.id} className="flex items-center justify-between gap-4 py-3 first:pt-0 last:pb-0">
+                <div className="flex items-center gap-3 min-w-0">
+                  <FileText size={20} className="text-qosf-blue shrink-0" />
+                  <div className="min-w-0">
+                    <p className="font-medium capitalize text-sm">{app.role} Application</p>
                     <p className="text-xs text-qosf-text-light">
-                      {app.cohort?.name ?? "General"} &middot; Submitted {formatDate(app.created_at)}
+                      {app.cohort?.name ?? "General"} &middot; {formatDate(app.created_at)}
                     </p>
                   </div>
                 </div>
-                <div className="flex items-center gap-2">
+                <div className="flex items-center gap-3 shrink-0">
                   {(app.status === "draft" || app.status === "submitted") && (
                     <>
-                      <Link
-                        href={`/apply?role=${app.role}`}
-                        className="text-xs text-qosf-blue hover:underline"
-                      >
-                        Edit
-                      </Link>
-                      <button
-                        onClick={() => deleteApplication(app.id)}
-                        className="text-red-500 hover:text-red-700"
-                        title="Delete application"
-                      >
+                      <Link href={`/apply?role=${app.role}`}
+                        className="text-xs text-qosf-blue hover:underline font-medium">Edit</Link>
+                      <button onClick={() => deleteApplication(app.id)}
+                        className="text-red-500 hover:text-red-700" title="Delete">
                         <Trash2 size={16} />
                       </button>
                     </>
@@ -213,54 +220,121 @@ export default function DashboardPage() {
         </div>
       )}
 
-      {/* Active cohorts */}
-      {cohorts.length > 0 && (
-        <div className="mb-8">
-          <h2 className="section-title">Cohorts</h2>
-          <div className="grid md:grid-cols-2 gap-4">
-            {cohorts.map((cohort: Cohort) => (
-              <Link key={cohort.id} href={`/cohort/${cohort.id}`} className="card block hover:shadow-lg transition-shadow">
-                <div className="flex items-start justify-between mb-2">
-                  <h3 className="font-bold text-qosf-blue">{cohort.name}</h3>
-                  <span className={`text-xs font-medium px-2.5 py-0.5 rounded-full ${getStatusColor(cohort.status)}`}>
-                    {getCohortStatusLabel(cohort.status)}
-                  </span>
-                </div>
-                {cohort.description && (
-                  <p className="text-sm text-qosf-text-light mb-3 line-clamp-2">{cohort.description}</p>
-                )}
-                <div className="flex items-center gap-4 text-xs text-qosf-text-light">
-                  <span className="flex items-center gap-1">
-                    <Clock size={12} />
-                    Apps: {formatDate(cohort.application_start)} – {formatDate(cohort.application_end)}
-                  </span>
-                </div>
-              </Link>
-            ))}
+      {/* ── Submissions section (mentees) ── */}
+      {profile.role === "mentee" && (
+        <div className="card mb-8">
+          <div className="flex items-center justify-between mb-4">
+            <h2 className="text-lg md:text-xl font-bold text-qosf-blue">My Projects</h2>
+            <Link href="/submit" className="btn-primary text-sm py-1.5 px-4 font-bold">+ New Project</Link>
           </div>
-        </div>
-      )}
-
-      {/* Active matches */}
-      {matches.length > 0 && (
-        <div>
-          <h2 className="section-title">Your Matches</h2>
-          <div className="grid md:grid-cols-2 gap-4">
-            {matches.map((match: any) => {
-              const other = profile.role === "mentor" ? match.mentee : match.mentor;
-              return (
-                <div key={match.id} className="card">
-                  <div className="flex items-center gap-4">
-                    <div className="w-10 h-10 bg-qosf-blue/10 rounded-full flex items-center justify-center">
-                      <Users size={20} className="text-qosf-blue" />
+          {submissions.length === 0 ? (
+            <p className="text-sm text-qosf-text-light py-2">You haven&apos;t submitted any projects yet.</p>
+          ) : (
+            <div className="divide-y divide-qosf-border">
+              {submissions.map((sub: any) => {
+                const deadlinePassed = sub.cohort?.application_end
+                  ? new Date(sub.cohort.application_end) < new Date() : false;
+                const canEdit = sub.status === "draft" || (sub.status === "submitted" && !deadlinePassed);
+                return (
+                  <div key={sub.id} className="flex items-center justify-between gap-4 py-3 first:pt-0 last:pb-0">
+                    <div className="flex items-center gap-3 min-w-0">
+                      <Code size={20} className="text-qosf-blue shrink-0" />
+                      <div className="min-w-0">
+                        <div className="flex items-center gap-2">
+                          <Link href={`/project/${sub.id}`}
+                            className="font-medium text-sm truncate text-qosf-blue hover:underline">
+                            {sub.project_name}
+                          </Link>
+                          {sub.is_winner && (
+                            <span className="text-xs bg-yellow-100 text-yellow-800 px-2 py-0.5 rounded-full font-medium shrink-0">Winner</span>
+                          )}
+                        </div>
+                        <p className="text-xs text-qosf-text-light truncate mt-0.5">
+                          {sub.cohort?.name ?? ""}
+                          {sub.status !== "draft" && sub.plotline && <> &middot; {sub.plotline.substring(0, 60)}&hellip;</>}
+                        </p>
+                      </div>
                     </div>
-                    <div>
-                      <p className="font-medium">{other?.full_name ?? "Unknown"}</p>
-                      <span className={`text-xs font-medium px-2 py-0.5 rounded-full ${getStatusColor(match.status)}`}>
-                        {match.status}
+                    <div className="flex items-center gap-2 shrink-0">
+                      <Link href={`/project/${sub.id}`}
+                        className="text-xs text-qosf-blue hover:underline font-medium">
+                        View
+                      </Link>
+                      {canEdit && (
+                        <Link href={`/submit/${sub.id}`}
+                          className="text-xs text-qosf-blue hover:underline font-medium">Edit</Link>
+                      )}
+                      <span className={`text-xs font-medium px-2.5 py-0.5 rounded-full ${getStatusColor(sub.status)}`}>
+                        {sub.status}
                       </span>
                     </div>
                   </div>
+                );
+              })}
+            </div>
+          )}
+        </div>
+      )}
+
+      {/* ── Cohorts section ── */}
+      {cohorts.length > 0 && (
+        <div className="card mb-8">
+          <h2 className="text-lg md:text-xl font-bold text-qosf-blue mb-4">Cohorts</h2>
+          {cohorts.length === 0 ? (
+            <p className="text-sm text-qosf-text-light py-2">No cohorts available.</p>
+          ) : (
+            <div className="divide-y divide-qosf-border">
+              {cohorts.map((cohort: Cohort) => (
+                <Link key={cohort.id} href={`/cohort/${cohort.id}`}
+                  className="flex items-center justify-between gap-4 py-3 first:pt-0 last:pb-0 hover:bg-gray-50/50 -mx-2 px-2 rounded transition-colors">
+                  <div className="min-w-0">
+                    <div className="flex items-center gap-2">
+                      <span className="font-bold text-sm text-qosf-blue">{cohort.name}</span>
+                      <span className={`text-xs font-medium px-2 py-0.5 rounded-full ${getStatusColor(cohort.status)}`}>
+                        {getCohortStatusLabel(cohort.status)}
+                      </span>
+                    </div>
+                    {cohort.description && (
+                      <p className="text-xs text-qosf-text-light mt-0.5 line-clamp-1">{cohort.description}</p>
+                    )}
+                  </div>
+                  <div className="flex items-center gap-1 text-xs text-qosf-text-light shrink-0">
+                    <Clock size={12} />
+                    <span>{formatDate(cohort.application_start)} – {formatDate(cohort.application_end)}</span>
+                  </div>
+                </Link>
+              ))}
+            </div>
+          )}
+        </div>
+      )}
+
+      {/* ── Matches section ── */}
+      {matches.length > 0 && (
+        <div className="card mb-8">
+          <h2 className="text-lg md:text-xl font-bold text-qosf-blue mb-4">Your Matches</h2>
+          <div className="divide-y divide-qosf-border">
+            {matches.map((match: any) => {
+              const other = profile.role === "mentor" ? match.mentee : match.mentor;
+              return (
+                <div key={match.id} className="flex items-center justify-between gap-4 py-3 first:pt-0 last:pb-0">
+                  <div className="flex items-center gap-3 min-w-0">
+                    <div className="w-9 h-9 bg-qosf-blue/10 rounded-full flex items-center justify-center shrink-0">
+                      <Users size={18} className="text-qosf-blue" />
+                    </div>
+                    <div className="min-w-0">
+                      <Link href={`/profile/${other?.id}`}
+                        className="font-medium text-sm text-qosf-blue hover:underline">
+                        {other?.full_name ?? "Unknown"}
+                      </Link>
+                      <p className="text-xs text-qosf-text-light capitalize">
+                        {profile.role === "mentor" ? "Mentee" : "Mentor"}
+                      </p>
+                    </div>
+                  </div>
+                  <span className={`text-xs font-medium px-2.5 py-0.5 rounded-full shrink-0 ${getStatusColor(match.status)}`}>
+                    {match.status}
+                  </span>
                 </div>
               );
             })}
@@ -268,7 +342,8 @@ export default function DashboardPage() {
         </div>
       )}
 
-      {!hasSubmittedApp && cohorts.length === 0 && matches.length === 0 && (
+      {/* ── Empty state ── */}
+      {!hasSubmittedApp && cohorts.length === 0 && matches.length === 0 && profile.role !== "mentee" && (
         <div className="text-center py-12">
           <UserCheck size={48} className="mx-auto text-qosf-text-light mb-4" />
           <h3 className="text-xl font-bold text-qosf-blue mb-2">Get Started</h3>

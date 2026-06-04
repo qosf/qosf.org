@@ -1,6 +1,6 @@
 import { createServerSupabaseClient } from "@/lib/supabase/server";
 import { notFound } from "next/navigation";
-import { ExternalLink, GraduationCap, MapPin, Users, Globe } from "lucide-react";
+import { ExternalLink, GraduationCap, MapPin, Users, Globe, Code } from "lucide-react";
 import Link from "next/link";
 
 export default async function PublicProfilePage({
@@ -29,6 +29,14 @@ export default async function PublicProfilePage({
     .select("*, cohort:cohorts!matches_cohort_id_fkey(name, status, mentorship_start, mentorship_end)")
     .eq(matchColumn, id)
     .in("status", ["accepted", "completed"]);
+
+  // Projects (submissions) by this user — only show submitted/winner ones
+  const { data: userSubmissions } = await supabase
+    .from("submissions")
+    .select("*, cohort:cohorts!submissions_cohort_id_fkey(id, name)")
+    .eq("user_id", id)
+    .in("status", ["submitted", "winner"])
+    .order("created_at", { ascending: false });
 
   return (
     <div className="container mx-auto px-4 py-8 max-w-2xl">
@@ -112,6 +120,34 @@ export default async function PublicProfilePage({
             )}
           </div>
         </div>
+
+        {/* Projects */}
+        {userSubmissions && userSubmissions.length > 0 && (
+          <div className="pt-4 border-t border-qosf-border mt-4">
+            <h3 className="text-sm font-semibold text-qosf-text-light mb-3">
+              Projects
+            </h3>
+            <div className="space-y-2">
+              {userSubmissions.map((sub: any) => (
+                <div key={sub.id} className="text-sm">
+                  <Link
+                    href={`/project/${sub.id}`}
+                    className="text-qosf-blue hover:underline font-medium flex items-center gap-1.5"
+                  >
+                    <Code size={14} />
+                    {sub.project_name}
+                  </Link>
+                  <span className="text-qosf-text-light">
+                    {" "}&middot; {sub.cohort?.name ?? "Cohort"}
+                    {sub.is_winner && (
+                      <span className="ml-2 text-yellow-700 font-medium">Winner</span>
+                    )}
+                  </span>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
 
         {/* Cohort participation */}
         {participations && participations.length > 0 && (

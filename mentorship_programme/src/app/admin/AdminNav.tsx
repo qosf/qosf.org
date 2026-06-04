@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Users, UserCheck, Calendar, GitCompare, Shield, FileText } from "lucide-react";
+import { Users, UserCheck, Calendar, GitCompare, Shield, FileText, Code } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const navItems = [
@@ -11,6 +11,7 @@ const navItems = [
   { href: "/admin/mentees", label: "Mentees", icon: UserCheck },
   { href: "/admin/cohorts", label: "Cohorts", icon: Calendar },
   { href: "/admin/matches", label: "Matches", icon: GitCompare },
+  { href: "/admin/submissions", label: "Submissions", icon: Code },
 ];
 
 export default function AdminNav() {
