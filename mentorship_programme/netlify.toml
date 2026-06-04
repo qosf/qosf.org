@@ -1,15 +1,7 @@
 [build]
-  command = "bun run build"
-  publish = ".next"
+  base = "mentorship_programme"
+  command = "bun install && cd mentorship_programme && bun run build"
+  publish = "mentorship_programme/.next"
 
-[[redirects]]
-  from = "/*"
-  to = "/.netlify/functions/__nextjs"
-  status = 200
-
-[[headers]]
-  for = "/*"
-  [headers.values]
-    X-Frame-Options = "DENY"
-    X-Content-Type-Options = "nosniff"
-    Referrer-Policy = "strict-origin-when-cross-origin"
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
