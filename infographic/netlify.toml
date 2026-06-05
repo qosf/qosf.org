@@ -1,6 +1,5 @@
 [build]
   base = "infographic"
-  publish = "."
 
 # Ensure SVG files have the correct MIME type
 [[headers]]
