@@ -3,13 +3,15 @@
 # Page settings
 layout: default
 keywords:
+left_illustration: illustrations/manifesto_left_side.png
+right_illustration: illustrations/manifesto_right_side.png
+custom_css: manifesto.css
 comments: false
 
 # Hero section
 title: QOSF Manifesto
 description: Our core beliefs and mission statement, and why you should get excited about us.
 buttons:
-      icon: home
     - icon: slack
       content: Join our Slack
       url: 'https://join.slack.com/t/qosf/shared_invite/zt-2nq2n0t9i-PyiiCKg1bAzRpNzLMM7pWg'
