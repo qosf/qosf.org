@@ -279,6 +279,17 @@ const PROJECTS_DATA = {
     "website": "https://qosf.org",
     "github": "https://github.com/qosf",
     "img": "images/qosf.svg"
+  },
+  "unitary_foundation": {
+    "id": "unitary_foundation",
+    "name": "Unitary Foundation",
+    "ecosystem_role": "Non-profit supporting quantum open-source ecosystem",
+    "type": "organization",
+    "category": "organization",
+    "hardware_backends": [],
+    "website": "https://unitary.foundation",
+    "github": "https://github.com/unitaryfoundation",
+    "img": "images/unitary_foundation.png"
   }
 };
 

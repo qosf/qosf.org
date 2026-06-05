@@ -48,34 +48,28 @@
       left: 20px;
     }
 
-    /* --- QOSF Logo --- */
+    /* --- QOSF Logo (plain, no card) --- */
     #qosf-logo {
       position: fixed;
-      top: 20px;
+      top: 24px;
       left: 66px;
       z-index: 110;
       display: flex;
       align-items: center;
       justify-content: center;
-      height: 38px;
-      width: 38px;
-      border-radius: 10px;
-      background: rgba(255,255,255,0.85);
-      backdrop-filter: blur(10px);
-      box-shadow: 0 2px 16px rgba(0,0,0,0.10);
-      border: 1px solid rgba(101,158,213,0.20);
-      transition: all 0.25s;
+      width: 30px;
+      height: 30px;
       cursor: pointer;
       text-decoration: none;
+      opacity: 0.85;
+      transition: opacity 0.2s;
     }
     #qosf-logo:hover {
-      background: rgba(255,255,255,0.95);
-      box-shadow: 0 4px 20px rgba(0,0,0,0.14);
-      transform: scale(1.04);
+      opacity: 1;
     }
     #qosf-logo img {
-      width: 22px;
-      height: 22px;
+      width: 28px;
+      height: 28px;
       object-fit: contain;
     }
 
@@ -253,8 +247,8 @@
       }
       #controls h2 { font-size: 13px; }
       #toggle-controls { top: 10px; left: 10px; width: 34px; height: 34px; font-size: 16px; }
-      #qosf-logo { top: 10px; left: 52px; width: 34px; height: 34px; }
-      #qosf-logo img { width: 18px; height: 18px; }
+      #qosf-logo { top: 14px; left: 52px; width: 26px; height: 26px; }
+      #qosf-logo img { width: 24px; height: 24px; }
       .node-card .avatar { width: 36px; height: 36px; }
       .node-card .node-name { font-size: 10px; }
     }

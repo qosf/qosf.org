@@ -764,6 +764,34 @@ projects:
       fallback_url: null
       alternate_url: null
       note: null
+  unitary_foundation:
+    id: unitary_foundation
+    name: Unitary Foundation
+    type: organization
+    organization: Unitary Foundation
+    country: USA
+    first_release: 2020
+    license: N/A
+    language: N/A
+    description: Non-profit helping create a quantum technology ecosystem that benefits the most people.
+    key_features:
+    - microgrants
+    - research
+    - community
+    - open_source_toolkit
+    website: https://unitary.foundation
+    github: https://github.com/unitaryfoundation
+    ecosystem_role: Non-profit supporting quantum open-source ecosystem
+    node_type: organization
+    category: organization
+    logo:
+      logo_url: https://avatars.githubusercontent.com/u/50056634
+      logo_source: github_org_avatar
+      format: PNG
+      alt_text: Unitary Foundation logo
+      fallback_url: null
+      alternate_url: null
+      note: null
 hardware_modalities:
   superconducting:
     description: Qubits built from superconducting circuits operating at millikelvin
