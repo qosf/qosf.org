@@ -301,221 +301,13 @@
   </div>
 </div>
 
+<script src="projects-data.js"></script>
+
 <script type="module">
 // ──────────────────────────────────────────────
-// 1. PROJECT DATA (embedded from projects.yaml)
+// 1. PROJECT DATA (loaded from projects-data.js)
 // ──────────────────────────────────────────────
-const PROJECT_DATA = {
-  "qiskit": {
-    "id": "qiskit",
-    "name": "Qiskit",
-    "ecosystem_role": "Central hub of the largest quantum open-source ecosystem",
-    "type": "programming_sdk",
-    "category": "programming_sdks",
-    "hardware_backends": ["ibm_superconducting","ionq_trapped_ion","quantinuum_trapped_ion","rigetti_superconducting","iqm_superconducting","aqt_trapped_ion"],
-    "img": "images/qiskit.svg"
-  },
-  "cirq": {
-    "id": "cirq",
-    "name": "Cirq",
-    "ecosystem_role": "Core of Google's quantum software stack",
-    "type": "programming_sdk",
-    "category": "programming_sdks",
-    "hardware_backends": ["google_superconducting","ionq_trapped_ion","pasqal_neutral_atom","rigetti_superconducting","alpine_quantum_trapped_ion"],
-    "img": "images/cirq.svg"
-  },
-  "pennylane": {
-    "id": "pennylane",
-    "name": "PennyLane",
-    "ecosystem_role": "Leading quantum machine learning framework",
-    "type": "programming_sdk",
-    "category": "programming_sdks",
-    "hardware_backends": ["xanadu_photonic","ibm_superconducting","google_superconducting","ionq_trapped_ion","rigetti_superconducting","oqd_trapped_ion"],
-    "img": "images/pennylane.png"
-  },
-  "pyquil": {
-    "id": "pyquil",
-    "name": "PyQuil / Forest SDK",
-    "ecosystem_role": "Full-stack SDK for Rigetti's superconducting systems",
-    "type": "programming_sdk",
-    "category": "programming_sdks",
-    "hardware_backends": ["rigetti_superconducting"],
-    "img": "images/pyquil.png"
-  },
-  "ocean": {
-    "id": "ocean",
-    "name": "Ocean SDK",
-    "ecosystem_role": "Primary SDK for quantum annealing applications",
-    "type": "programming_sdk",
-    "category": "programming_sdks",
-    "hardware_backends": ["dwave_annealer"],
-    "img": "images/ocean.png"
-  },
-  "qdk": {
-    "id": "qdk",
-    "name": "Quantum Dev. Kit (QDK)",
-    "ecosystem_role": "Comprehensive quantum development environment",
-    "type": "programming_sdk",
-    "category": "programming_sdks",
-    "hardware_backends": ["multiple_via_azure_quantum"],
-    "img": "images/qdk.png"
-  },
-  "projectq": {
-    "id": "projectq",
-    "name": "ProjectQ",
-    "ecosystem_role": "Academic framework with strong compilation focus",
-    "type": "programming_sdk",
-    "category": "programming_sdks",
-    "hardware_backends": ["ibm_superconducting","ionq_trapped_ion","aqt_trapped_ion"],
-    "img": "images/projectq.svg"
-  },
-  "openqasm": {
-    "id": "openqasm",
-    "name": "OpenQASM",
-    "ecosystem_role": "Industry-standard intermediate representation",
-    "type": "intermediate_representation",
-    "category": "programming_sdks",
-    "hardware_backends": [],
-    "img": "images/openqasm.svg"
-  },
-  "bloqade": {
-    "id": "bloqade",
-    "name": "Bloqade",
-    "ecosystem_role": "Leading SDK for neutral-atom quantum computing",
-    "type": "hardware_targeted_sdk",
-    "category": "hardware_targeted_sdks",
-    "hardware_backends": ["quera_neutral_atom","quera_aquila"],
-    "img": "images/bloqade.png"
-  },
-  "perceval": {
-    "id": "perceval",
-    "name": "Perceval",
-    "ecosystem_role": "Primary SDK for discrete-variable photonic computing",
-    "type": "hardware_targeted_sdk",
-    "category": "hardware_targeted_sdks",
-    "hardware_backends": ["quandela_photonic"],
-    "img": "images/perceval.png"
-  },
-  "strawberryfields": {
-    "id": "strawberryfields",
-    "name": "Strawberry Fields",
-    "ecosystem_role": "SDK for continuous-variable photonic quantum computing",
-    "type": "hardware_targeted_sdk",
-    "category": "hardware_targeted_sdks",
-    "hardware_backends": ["xanadu_photonic","xanadu_aurora"],
-    "img": "images/strawberryfields.png"
-  },
-  "tket": {
-    "id": "tket",
-    "name": "TKET",
-    "ecosystem_role": "Universal quantum compiler bridging all major platforms",
-    "type": "compiler",
-    "category": "compilers",
-    "hardware_backends": [],
-    "img": "images/tket.png"
-  },
-  "qiskit_aer": {
-    "id": "qiskit_aer",
-    "name": "Qiskit Aer",
-    "ecosystem_role": "Official simulation engine for Qiskit",
-    "type": "simulator",
-    "category": "simulators",
-    "hardware_backends": [],
-    "img": "images/qiskit_aer.svg"
-  },
-  "qsim": {
-    "id": "qsim",
-    "name": "qsim",
-    "ecosystem_role": "Google's primary quantum circuit simulator",
-    "type": "simulator",
-    "category": "simulators",
-    "hardware_backends": [],
-    "img": "images/qsim.svg"
-  },
-  "cuquantum": {
-    "id": "cuquantum",
-    "name": "cuQuantum",
-    "ecosystem_role": "Industry-leading GPU-accelerated quantum simulation",
-    "type": "simulator",
-    "category": "simulators",
-    "hardware_backends": [],
-    "img": "images/cuquantum.svg"
-  },
-  "quest": {
-    "id": "quest",
-    "name": "QuEST",
-    "ecosystem_role": "Academic high-performance simulator for HPC",
-    "type": "simulator",
-    "category": "simulators",
-    "hardware_backends": [],
-    "img": "images/quest.svg"
-  },
-  "qulacs": {
-    "id": "qulacs",
-    "name": "Qulacs",
-    "ecosystem_role": "Fast simulator optimized for NISQ variational algorithms",
-    "type": "simulator",
-    "category": "simulators",
-    "hardware_backends": [],
-    "img": "images/qulacs.png"
-  },
-  "qutip": {
-    "id": "qutip",
-    "name": "QuTiP",
-    "ecosystem_role": "Standard tool for open quantum system simulation",
-    "type": "simulator",
-    "category": "simulators",
-    "hardware_backends": [],
-    "img": "images/qutip.png"
-  },
-  "stim": {
-    "id": "stim",
-    "name": "Stim",
-    "ecosystem_role": "Leading QEC-focused circuit simulator",
-    "type": "simulator",
-    "category": "simulators",
-    "hardware_backends": [],
-    "img": "images/stim.svg"
-  },
-  "mitiq": {
-    "id": "mitiq",
-    "name": "Mitiq",
-    "ecosystem_role": "Universal error mitigation for all major SDKs",
-    "type": "error_mitigation",
-    "category": "error_mitigation",
-    "hardware_backends": [],
-    "img": "images/mitiq.png"
-  },
-  "openfermion": {
-    "id": "openfermion",
-    "name": "OpenFermion",
-    "ecosystem_role": "Standard library for quantum chemistry on quantum computers",
-    "type": "domain_library",
-    "category": "domain_libraries",
-    "hardware_backends": [],
-    "img": "images/openfermion.svg"
-  }
-};
-
-// ──────────────────────────────────────────────
-// 2. RELATIONSHIPS
-// ──────────────────────────────────────────────
-// Cross-integrations (explicit bidirectional edges)
-const CROSS_INTEGRATIONS = [
-  ["openqasm","qiskit"], ["openqasm","cirq"], ["openqasm","tket"], ["openqasm","qdk"],
-  ["tket","qiskit"], ["tket","cirq"], ["tket","pyquil"],
-  ["mitiq","qiskit"], ["mitiq","cirq"], ["mitiq","pyquil"], ["mitiq","pennylane"],
-  ["openfermion","cirq"], ["openfermion","projectq"], ["openfermion","pyquil"],
-  ["cuquantum","qsim"], ["cuquantum","qiskit"], ["cuquantum","pennylane"],
-  ["qdk","qiskit"], ["qdk","cirq"], ["qdk","openqasm"]
-];
-
-// SDK-Simulator connections
-const SDK_SIMULATOR = [
-  ["qiskit","qiskit_aer"], ["qiskit","cuquantum"],
-  ["cirq","qsim"],
-  ["pennylane","qulacs"], ["pennylane","cuquantum"]
-];
+const PROJECT_DATA = PROJECTS_DATA;
 
 // ──────────────────────────────────────────────
 // 3. DERIVE SHARED-HARDWARE EDGES
@@ -586,9 +378,9 @@ function buildEdges(mode) {
   const edges = [];
   const seen = new Set();
   const validNodes = new Set(Object.keys(PROJECT_DATA));
+  const rels = RELATIONSHIPS_DATA;
 
   function addEdge(src, tgt, type, label) {
-    // Skip edges referencing non-existent project nodes
     if (!validNodes.has(src) || !validNodes.has(tgt)) return;
     const key = [src, tgt].sort().join('|');
     if (seen.has(key)) return;
@@ -603,13 +395,19 @@ function buildEdges(mode) {
     }
   }
   if (mode === 'cross' || mode === 'all') {
-    for (const [src, tgt] of CROSS_INTEGRATIONS) {
-      addEdge(src, tgt, 'cross', 'integration');
+    for (const entry of (rels.cross_integrations || [])) {
+      const from = entry.from;
+      for (const tgt of (entry.to || [])) {
+        addEdge(from, tgt, 'cross', 'integration');
+      }
     }
   }
   if (mode === 'simulator' || mode === 'all') {
-    for (const [src, tgt] of SDK_SIMULATOR) {
-      addEdge(src, tgt, 'simulator', 'simulator');
+    for (const entry of (rels.sdk_simulator_connections || [])) {
+      const sdk = entry.sdk;
+      for (const sim of (entry.simulators || [])) {
+        addEdge(sdk, sim, 'simulator', 'simulator');
+      }
     }
   }
 
