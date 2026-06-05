@@ -29,7 +29,7 @@ const PROJECTS_DATA = {
       "rigetti_superconducting",
       "alpine_quantum_trapped_ion"
     ],
-    "img": "images/cirq.svg"
+    "img": "images/cirq.png"
   },
   "pennylane": {
     "id": "pennylane",
@@ -78,7 +78,7 @@ const PROJECTS_DATA = {
     "hardware_backends": [
       "multiple_via_azure_quantum"
     ],
-    "img": "images/qdk.png"
+    "img": "images/qdk.svg"
   },
   "projectq": {
     "id": "projectq",
@@ -91,7 +91,7 @@ const PROJECTS_DATA = {
       "ionq_trapped_ion",
       "aqt_trapped_ion"
     ],
-    "img": "images/projectq.svg"
+    "img": "images/projectq.png"
   },
   "openqasm": {
     "id": "openqasm",
@@ -162,7 +162,7 @@ const PROJECTS_DATA = {
     "type": "simulator",
     "category": "simulators",
     "hardware_backends": [],
-    "img": "images/qsim.svg"
+    "img": "images/qsim.png"
   },
   "cuquantum": {
     "id": "cuquantum",
@@ -207,7 +207,7 @@ const PROJECTS_DATA = {
     "type": "simulator",
     "category": "simulators",
     "hardware_backends": [],
-    "img": "images/stim.svg"
+    "img": "images/stim.png"
   },
   "mitiq": {
     "id": "mitiq",
@@ -225,7 +225,7 @@ const PROJECTS_DATA = {
     "type": "domain_library",
     "category": "domain_libraries",
     "hardware_backends": [],
-    "img": "images/openfermion.svg"
+    "img": "images/openfermion.png"
   }
 };
 
