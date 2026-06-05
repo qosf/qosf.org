@@ -540,6 +540,14 @@ function buildGraph(mode) {
         el.classList.toggle('highlight', highlightNodes.has(el.dataset.nodeId));
       });
     })
+    .showPointerCursor(true)
+    .onNodeClick(node => {
+      const p = PROJECT_DATA[node.id];
+      if (p) {
+        const url = p.website || p.github;
+        if (url) window.open(url, '_blank');
+      }
+    })
     .d3AlphaDecay(0.02)
     .d3VelocityDecay(0.3)
     .d3Force('link', d3.forceLink()

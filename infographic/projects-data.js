@@ -14,6 +14,8 @@ const PROJECTS_DATA = {
       "iqm_superconducting",
       "aqt_trapped_ion"
     ],
+    "website": "https://qiskit.org",
+    "github": "https://github.com/Qiskit/qiskit",
     "img": "images/qiskit.svg"
   },
   "cirq": {
@@ -29,6 +31,8 @@ const PROJECTS_DATA = {
       "rigetti_superconducting",
       "alpine_quantum_trapped_ion"
     ],
+    "website": "https://quantumai.google/cirq",
+    "github": "https://github.com/quantumlib/cirq",
     "img": "images/cirq.png"
   },
   "pennylane": {
@@ -45,6 +49,8 @@ const PROJECTS_DATA = {
       "rigetti_superconducting",
       "oqd_trapped_ion"
     ],
+    "website": "https://pennylane.ai",
+    "github": "https://github.com/PennyLaneAI/pennylane",
     "img": "images/pennylane.png"
   },
   "pyquil": {
@@ -56,6 +62,8 @@ const PROJECTS_DATA = {
     "hardware_backends": [
       "rigetti_superconducting"
     ],
+    "website": "https://pyquil-docs.rigetti.com",
+    "github": "https://github.com/rigetti/pyquil",
     "img": "images/pyquil.png"
   },
   "ocean": {
@@ -67,6 +75,8 @@ const PROJECTS_DATA = {
     "hardware_backends": [
       "dwave_annealer"
     ],
+    "website": "https://www.dwavequantum.com/solutions-and-products/ocean",
+    "github": "https://github.com/dwavesystems",
     "img": "images/ocean.png"
   },
   "qdk": {
@@ -78,6 +88,8 @@ const PROJECTS_DATA = {
     "hardware_backends": [
       "multiple_via_azure_quantum"
     ],
+    "website": "https://azure.microsoft.com/en-us/products/quantum",
+    "github": "https://github.com/microsoft/qdk",
     "img": "images/qdk.svg"
   },
   "projectq": {
@@ -91,6 +103,8 @@ const PROJECTS_DATA = {
       "ionq_trapped_ion",
       "aqt_trapped_ion"
     ],
+    "website": "https://projectq.ch",
+    "github": "https://github.com/ProjectQ-Framework/ProjectQ",
     "img": "images/projectq.png"
   },
   "openqasm": {
@@ -100,6 +114,8 @@ const PROJECTS_DATA = {
     "type": "intermediate_representation",
     "category": "programming_sdks",
     "hardware_backends": [],
+    "website": "https://openqasm.com",
+    "github": "https://github.com/openqasm/openqasm",
     "img": "images/openqasm.svg"
   },
   "bloqade": {
@@ -112,6 +128,8 @@ const PROJECTS_DATA = {
       "quera_neutral_atom",
       "quera_aquila"
     ],
+    "website": "https://bloqade.quera.com",
+    "github": "https://github.com/QuEraComputing/bloqade",
     "img": "images/bloqade.png"
   },
   "perceval": {
@@ -123,6 +141,8 @@ const PROJECTS_DATA = {
     "hardware_backends": [
       "quandela_photonic"
     ],
+    "website": "https://perceval.quandela.net",
+    "github": "https://github.com/Quandela/Perceval",
     "img": "images/perceval.png"
   },
   "strawberryfields": {
@@ -135,6 +155,8 @@ const PROJECTS_DATA = {
       "xanadu_photonic",
       "xanadu_aurora"
     ],
+    "website": "https://strawberryfields.ai",
+    "github": "https://github.com/XanaduAI/strawberryfields",
     "img": "images/strawberryfields.png"
   },
   "tket": {
@@ -144,6 +166,8 @@ const PROJECTS_DATA = {
     "type": "compiler",
     "category": "compilers",
     "hardware_backends": [],
+    "website": "https://www.quantinuum.com/products-solutions/developer-tools",
+    "github": "https://github.com/Quantinuum/tket",
     "img": "images/tket.png"
   },
   "qiskit_aer": {
@@ -153,6 +177,8 @@ const PROJECTS_DATA = {
     "type": "simulator",
     "category": "simulators",
     "hardware_backends": [],
+    "website": "https://qiskit.org/ecosystem/aer",
+    "github": "https://github.com/Qiskit/qiskit-aer",
     "img": "images/qiskit_aer.svg"
   },
   "qsim": {
@@ -162,6 +188,8 @@ const PROJECTS_DATA = {
     "type": "simulator",
     "category": "simulators",
     "hardware_backends": [],
+    "website": "https://github.com/quantumlib/qsim",
+    "github": "https://github.com/quantumlib/qsim",
     "img": "images/qsim.png"
   },
   "cuquantum": {
@@ -171,6 +199,8 @@ const PROJECTS_DATA = {
     "type": "simulator",
     "category": "simulators",
     "hardware_backends": [],
+    "website": "https://developer.nvidia.com/cuquantum-sdk",
+    "github": "https://github.com/NVIDIA/cuQuantum",
     "img": "images/cuquantum.svg"
   },
   "quest": {
@@ -180,6 +210,8 @@ const PROJECTS_DATA = {
     "type": "simulator",
     "category": "simulators",
     "hardware_backends": [],
+    "website": "https://quest.qtechtheory.org",
+    "github": "https://github.com/QuEST-Kit/QuEST",
     "img": "images/quest.svg"
   },
   "qulacs": {
@@ -189,6 +221,8 @@ const PROJECTS_DATA = {
     "type": "simulator",
     "category": "simulators",
     "hardware_backends": [],
+    "website": "https://docs.qulacs.org",
+    "github": "https://github.com/qulacs/qulacs",
     "img": "images/qulacs.png"
   },
   "qutip": {
@@ -198,6 +232,8 @@ const PROJECTS_DATA = {
     "type": "simulator",
     "category": "simulators",
     "hardware_backends": [],
+    "website": "https://qutip.org",
+    "github": "https://github.com/qutip/qutip",
     "img": "images/qutip.png"
   },
   "stim": {
@@ -207,6 +243,8 @@ const PROJECTS_DATA = {
     "type": "simulator",
     "category": "simulators",
     "hardware_backends": [],
+    "website": "https://github.com/quantumlib/Stim",
+    "github": "https://github.com/quantumlib/Stim",
     "img": "images/stim.png"
   },
   "mitiq": {
@@ -216,6 +254,8 @@ const PROJECTS_DATA = {
     "type": "error_mitigation",
     "category": "error_mitigation",
     "hardware_backends": [],
+    "website": "https://unitary.foundation/posts/mitiq",
+    "github": "https://github.com/unitaryfoundation/mitiq",
     "img": "images/mitiq.png"
   },
   "openfermion": {
@@ -225,6 +265,8 @@ const PROJECTS_DATA = {
     "type": "domain_library",
     "category": "domain_libraries",
     "hardware_backends": [],
+    "website": "https://quantumai.google/openfermion",
+    "github": "https://github.com/quantumlib/OpenFermion",
     "img": "images/openfermion.png"
   }
 };

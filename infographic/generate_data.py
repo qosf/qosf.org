@@ -26,6 +26,8 @@ for key, p in raw['projects'].items():
         'type': p.get('type', ''),
         'category': p.get('category', p.get('type', '')),
         'hardware_backends': p.get('hardware_backends', []),
+        'website': p.get('website', ''),
+        'github': p.get('github', ''),
         'img': find_image(key),
     }
 
