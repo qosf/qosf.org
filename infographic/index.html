@@ -418,9 +418,9 @@ function buildEdges(mode) {
 // 5. EDGE STYLING PER TYPE
 // ──────────────────────────────────────────────
 const EDGE_STYLES = {
-  hardware:  { color: '#659ed5', width: 0.8, opacity: 0.35 },
-  cross:     { color: '#e8a040', width: 0.8, opacity: 0.40 },
-  simulator: { color: '#68d391', width: 0.8, opacity: 0.35 }
+  hardware:  { color: '#659ed5', width: 1.5, opacity: 0.5 },
+  cross:     { color: '#e8a040', width: 1.5, opacity: 0.5 },
+  simulator: { color: '#68d391', width: 1.5, opacity: 0.5 }
 };
 
 // ──────────────────────────────────────────────
@@ -428,6 +428,7 @@ const EDGE_STYLES = {
 // ──────────────────────────────────────────────
 import ForceGraph3D from 'https://esm.sh/3d-force-graph@1.80.0?deps=three@0.179.0';
 import { CSS2DRenderer, CSS2DObject } from 'https://esm.sh/three@0.179.0/examples/jsm/renderers/CSS2DRenderer.js';
+import * as d3 from 'https://esm.sh/d3-force-3d';
 
 const container = document.getElementById('graph-container');
 let currentMode = 'hardware';
@@ -489,7 +490,7 @@ function buildGraph(mode) {
     controlType: 'orbit'
   })
     .backgroundColor('#daeafa')
-    .nodeRelSize(40)
+    .nodeRelSize(20)
     .nodeVal(1)
     .nodeLabel(null)
     .nodeThreeObject(node => {
@@ -541,6 +542,16 @@ function buildGraph(mode) {
     })
     .d3AlphaDecay(0.02)
     .d3VelocityDecay(0.3)
+    .d3Force('link', d3.forceLink()
+      .id(d => d.id)
+      .distance(300)   // ↑ = looser clusters
+      .strength(0.15)   // ↑ = links pull harder
+    )
+    .d3Force('charge', d3.forceManyBody()
+      .strength(-150)       // less negative = free nodes don't scatter as far
+      .distanceMax(2500)
+    )
+    .d3Force('center', d3.forceCenter().strength(0.05))
     .warmupTicks(50)
     .cooldownTicks(300)
     .graphData(graphData);
