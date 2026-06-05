@@ -1,7 +1,6 @@
 [build]
   base = "infographic"
   publish = "."
-  command = "python3 generate_data.py"
 
 # Ensure SVG files have the correct MIME type
 [[headers]]
