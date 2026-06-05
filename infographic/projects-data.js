@@ -268,6 +268,17 @@ const PROJECTS_DATA = {
     "website": "https://quantumai.google/openfermion",
     "github": "https://github.com/quantumlib/OpenFermion",
     "img": "images/openfermion.png"
+  },
+  "qosf": {
+    "id": "qosf",
+    "name": "QOSF",
+    "ecosystem_role": "Foundation supporting the quantum open-source ecosystem",
+    "type": "organization",
+    "category": "organization",
+    "hardware_backends": [],
+    "website": "https://qosf.org",
+    "github": "https://github.com/qosf",
+    "img": "images/qosf.svg"
   }
 };
 

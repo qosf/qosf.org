@@ -48,6 +48,37 @@
       left: 20px;
     }
 
+    /* --- QOSF Logo --- */
+    #qosf-logo {
+      position: fixed;
+      top: 20px;
+      left: 66px;
+      z-index: 110;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 38px;
+      width: 38px;
+      border-radius: 10px;
+      background: rgba(255,255,255,0.85);
+      backdrop-filter: blur(10px);
+      box-shadow: 0 2px 16px rgba(0,0,0,0.10);
+      border: 1px solid rgba(101,158,213,0.20);
+      transition: all 0.25s;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    #qosf-logo:hover {
+      background: rgba(255,255,255,0.95);
+      box-shadow: 0 4px 20px rgba(0,0,0,0.14);
+      transform: scale(1.04);
+    }
+    #qosf-logo img {
+      width: 22px;
+      height: 22px;
+      object-fit: contain;
+    }
+
     /* --- Controls Panel --- */
     #controls {
       position: fixed;
@@ -222,6 +253,8 @@
       }
       #controls h2 { font-size: 13px; }
       #toggle-controls { top: 10px; left: 10px; width: 34px; height: 34px; font-size: 16px; }
+      #qosf-logo { top: 10px; left: 52px; width: 34px; height: 34px; }
+      #qosf-logo img { width: 18px; height: 18px; }
       .node-card .avatar { width: 36px; height: 36px; }
       .node-card .node-name { font-size: 10px; }
     }
@@ -266,6 +299,10 @@
 <div id="graph-container"></div>
 
 <button id="toggle-controls" title="Toggle controls">☰</button>
+
+<a id="qosf-logo" href="https://qosf.org" target="_blank" title="Quantum Open Source Foundation">
+  <img src="images/qosf.svg" alt="QOSF">
+</a>
 
 <div id="controls">
   <h2>⚛ Quantum Ecosystem</h2>
@@ -345,7 +382,8 @@ const CAT_COLORS = {
   'simulator': '#d69e2e',
   'error_mitigation': '#9f7aea',
   'domain_library': '#e53e3e',
-  'intermediate_representation': '#718096'
+  'intermediate_representation': '#718096',
+  'organization': '#805ad5'
 };
 const CAT_ORDER = {
   'programming_sdk': 1,
