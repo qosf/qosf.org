@@ -1,0 +1,88 @@
+# ---------------------------------------------------------------------------
+# Cohort operations data for the QOSF mentorship platform.
+#
+# Organizers update this file (via pull request) to drive the public cohort
+# dashboard at /cohort_dashboard. Only NON-SENSITIVE operational data belongs
+# here - never commit applicant personal data. Personal records live in the
+# Google Sheet behind the application forms.
+# ---------------------------------------------------------------------------
+
+cohort:
+  label: "Cohort 12"
+  name: "Quantum Computing Mentorship Program"
+  application_window: "September 29 - October 26, 2026"
+  program_window: "December 7, 2026 - March 14, 2027"
+  decision_release: "November 16, 2026"
+
+# Headline numbers shown on the dashboard.
+metrics:
+  - label: "Mentees enrolled"
+    value: "48"
+  - label: "Mentors"
+    value: "21"
+  - label: "Active projects"
+    value: "23"
+  - label: "Countries"
+    value: "17"
+
+# Program milestones. status: done | active | upcoming
+timeline:
+  - phase: "Mentor applications open"
+    dates: "Sep 29, 2026"
+    owner: "Organizers"
+    status: done
+  - phase: "Mentee applications open"
+    dates: "Oct 6, 2026"
+    owner: "Organizers"
+    status: done
+  - phase: "Applications close"
+    dates: "Oct 26, 2026"
+    owner: "Organizers"
+    status: active
+  - phase: "Application & assessment review"
+    dates: "Oct 27 - Nov 16, 2026"
+    owner: "Mentors + organizers"
+    status: upcoming
+  - phase: "Matching & project scoping"
+    dates: "Nov 17 - Dec 1, 2026"
+    owner: "Mentors + mentees"
+    status: upcoming
+  - phase: "Projects in progress"
+    dates: "Dec 7, 2026 - Mar 14, 2027"
+    owner: "Mentees"
+    status: upcoming
+  - phase: "Final presentations"
+    dates: "Mar 15-19, 2027"
+    owner: "Everyone"
+    status: upcoming
+
+# Project status board. health: on-track | at-risk | blocked | complete
+projects:
+  - title: "Noise-aware transpiler pass"
+    mentor: "A. Rivera"
+    mentees: "2"
+    milestone: "Benchmark baseline"
+    due: "Jan 18, 2027"
+    status: "On track"
+    health: on-track
+  - title: "Variational state-prep tutorial"
+    mentor: "K. Osei"
+    mentees: "1"
+    milestone: "Draft notebook review"
+    due: "Jan 25, 2027"
+    status: "At risk"
+    health: at-risk
+  - title: "Tensor-network simulator backend"
+    mentor: "L. Marchetti"
+    mentees: "3"
+    milestone: "API design sign-off"
+    due: "Jan 11, 2027"
+    status: "Blocked on review"
+    health: blocked
+  - title: "Pulse-level calibration toolkit"
+    mentor: "S. Ahmed"
+    mentees: "2"
+    milestone: "Hardware access granted"
+    due: "Complete"
+    status: "Complete"
+    health: complete
