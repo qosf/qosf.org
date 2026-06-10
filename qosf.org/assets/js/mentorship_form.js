@@ -60,6 +60,14 @@
     if (!data.timezone) { return "Please select your timezone."; }
     if (!data.level) { return "Please select your level."; }
     if (!data.interests) { return "Please select at least one interest."; }
+    if (!data.availability) { return "Please enter your availability."; }
+    if (data.role === "mentor") {
+      if (!data.affiliation) { return "Please enter your affiliation."; }
+      if (!data.capacity) { return "Please enter how many mentees you can take."; }
+      if (!data.bio) { return "Please add a short bio."; }
+    } else {
+      if (!data.motivation) { return "Please tell us why you want to join."; }
+    }
     if (!data.consent) { return "Please give consent to continue."; }
     return null;
   }

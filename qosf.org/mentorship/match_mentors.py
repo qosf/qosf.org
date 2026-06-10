@@ -1,4 +1,4 @@
-#! /usr/bin/env python
+#! /usr/bin/env python3
 # -*- coding: utf-8 -*-
 # vim:fenc=utf-8
 #
@@ -89,9 +89,17 @@ def load_applicants(path):
     return mentees, mentors
 
 
+def timezone_distance(mentee, mentor):
+    """Circular distance in hours, wrapping around the 24h clock.
+
+    UTC+11 and UTC-11 are 2 hours apart, not 22.
+    """
+    dt = abs(mentee["timezone"] - mentor["timezone"])
+    return min(dt, 24 - dt)
+
+
 def timezone_score(mentee, mentor):
-    distance = abs(mentee["timezone"] - mentor["timezone"])
-    return max(0.0, 1.0 - distance / MAX_TZ_DISTANCE)
+    return max(0.0, 1.0 - timezone_distance(mentee, mentor) / MAX_TZ_DISTANCE)
 
 
 def interest_score(mentee, mentor):
@@ -135,7 +143,7 @@ def score_pair(mentee, mentor):
 
 def explain(mentee, mentor, components):
     shared = sorted(mentee["interests"] & mentor["interests"])
-    tz = abs(mentee["timezone"] - mentor["timezone"])
+    tz = timezone_distance(mentee, mentor)
     bits = []
     bits.append("shared interests: " + (", ".join(shared) if shared else "none"))
     bits.append("timezone gap: {:g}h".format(tz))

@@ -35,8 +35,14 @@ var FIELDS = [
 
 function doPost(e) {
   var lock = LockService.getScriptLock();
-  lock.waitLock(30000); // avoid two submissions writing at once
+  var acquired = false;
   try {
+    // tryLock returns false on timeout instead of throwing, so we can always
+    // respond with a structured JSON payload.
+    acquired = lock.tryLock(30000); // avoid two submissions writing at once
+    if (!acquired) {
+      return json_({ result: "error", message: "Server busy, please try again." });
+    }
     var sheet = getSheet_();
     var params = (e && e.parameter) ? e.parameter : {};
     var row = FIELDS.map(function (field) {
@@ -47,7 +53,9 @@ function doPost(e) {
   } catch (err) {
     return json_({ result: "error", message: String(err) });
   } finally {
-    lock.releaseLock();
+    if (acquired) {
+      lock.releaseLock();
+    }
   }
 }
 

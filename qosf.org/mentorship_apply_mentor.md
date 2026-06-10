@@ -117,6 +117,7 @@ Fields marked <span style="color:#c0341d">*</span> are required. Your details ar
 </form>
 
 <script>
-  window.MENTORSHIP_ENDPOINT = "{{ site.mentorship.form_endpoint }}";
+  window.MENTORSHIP_ENDPOINT = {{ site.mentorship.form_endpoint | jsonify }};
+  window.MENTORSHIP_CONTACT = {{ site.mentorship.contact_email | jsonify }};
 </script>
 <script src="{% if jekyll.environment == 'production' %}{{ site.doks.baseurl }}{% endif %}/assets/js/mentorship_form.js"></script>
