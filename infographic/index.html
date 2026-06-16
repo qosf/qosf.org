@@ -146,6 +146,78 @@
       flex-wrap: wrap;
       gap: 3px 10px;
     }
+    #legend.hidden { display: none; }
+
+    .checkbox-group label {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 12px;
+      color: #2c5282;
+      cursor: pointer;
+      padding: 3px 6px;
+      border-radius: 6px;
+      transition: background 0.15s;
+      margin-top: 6px;
+    }
+    .checkbox-group label:hover { background: rgba(101,158,213,0.12); }
+    .checkbox-group input[type="checkbox"] {
+      accent-color: #659ed5;
+      width: 14px; height: 14px;
+      flex-shrink: 0;
+    }
+
+    .collapse-toggle {
+      font-size: 10px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.7px;
+      color: #7a9cc6;
+      margin: 10px 0 3px 6px;
+      cursor: pointer;
+      user-select: none;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .collapse-toggle:hover { color: #2c5282; }
+    .collapse-toggle .arrow {
+      display: inline-block;
+      transition: transform 0.2s;
+      font-size: 8px;
+    }
+    .collapse-toggle .arrow.open { transform: rotate(90deg); }
+    .collapse-content { overflow: hidden; max-height: 300px; transition: max-height 0.3s ease, opacity 0.3s ease; opacity: 1; }
+    .collapse-content.collapsed { max-height: 0; opacity: 0; }
+
+    .slider-group {
+      padding: 4px 6px;
+    }
+    .slider-group label {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 11px;
+      color: #3a6b95;
+      margin-bottom: 2px;
+    }
+    .slider-group input[type="range"] {
+      width: 100%;
+      accent-color: #659ed5;
+      height: 4px;
+      cursor: pointer;
+    }
+    .slider-value {
+      font-size: 10px;
+      color: #7a9cc6;
+      font-weight: 600;
+    }
+    .orphan-count {
+      font-size: 10px;
+      color: #7a9cc6;
+      margin-left: auto;
+      font-weight: 400;
+    }
     .legend-item {
       display: flex;
       align-items: center;
@@ -303,6 +375,56 @@
 
   <div class="control-heading">Relationships</div>
   <div class="control-group" id="rel-group"></div>
+
+  <div class="checkbox-group">
+    <label>
+      <input type="checkbox" id="hide-orphans" />
+      <span>Hide unrelated nodes</span>
+      <span class="orphan-count" id="orphan-count"></span>
+    </label>
+  </div>
+
+  <div class="collapse-toggle" id="adv-toggle">
+    <span class="arrow" id="adv-arrow">&#9654;</span>
+    Advanced
+  </div>
+  <div class="collapse-content" id="adv-content">
+    <div class="slider-group">
+      <label>
+        <span>Link distance</span>
+        <span class="slider-value" id="dist-val">300</span>
+      </label>
+      <input type="range" id="link-dist" min="50" max="600" value="300" step="10" />
+    </div>
+    <div class="slider-group">
+      <label>
+        <span>Repulsion</span>
+        <span class="slider-value" id="repel-val">-150</span>
+      </label>
+      <input type="range" id="repulsion" min="-400" max="-20" value="-150" step="10" />
+    </div>
+    <div class="slider-group">
+      <label>
+        <span>Link strength</span>
+        <span class="slider-value" id="strength-val">0.15</span>
+      </label>
+      <input type="range" id="link-strength" min="0" max="50" value="15" step="1" />
+    </div>
+    <div class="slider-group">
+      <label>
+        <span>Center gravity</span>
+        <span class="slider-value" id="gravity-val">0.05</span>
+      </label>
+      <input type="range" id="center-gravity" min="0" max="20" value="5" step="1" />
+    </div>
+    <div class="slider-group">
+      <label>
+        <span>Settling speed</span>
+        <span class="slider-value" id="decay-val">0.02</span>
+      </label>
+      <input type="range" id="alpha-decay" min="5" max="80" value="20" step="1" />
+    </div>
+  </div>
 
   <div id="legend">
     <span class="legend-item">
@@ -464,6 +586,12 @@ import * as d3 from 'https://esm.sh/d3-force-3d';
 
 const container = document.getElementById('graph-container');
 let currentMode = 'hardware';
+let hideOrphans = false;
+let linkDistance = 300;
+let repulsionStrength = -150;
+let linkStrength = 0.15;
+let centerGravity = 0.05;
+let alphaDecay = 0.02;
 let graphData = null;
 let graph = null;
 let cssRenderer = null;
@@ -503,6 +631,22 @@ function destroyGraph() {
   highlightLinks.clear();
 }
 
+function getOrphanIds(edges) {
+  const connected = new Set();
+  for (const e of edges) {
+    const src = typeof e.source === 'object' ? e.source.id : e.source;
+    const tgt = typeof e.target === 'object' ? e.target.id : e.target;
+    connected.add(src);
+    connected.add(tgt);
+  }
+  const allIds = new Set(Object.keys(PROJECT_DATA));
+  const orphans = new Set();
+  for (const id of allIds) {
+    if (!connected.has(id)) orphans.add(id);
+  }
+  return orphans;
+}
+
 function buildGraph(mode) {
   destroyGraph();
 
@@ -513,8 +657,25 @@ function buildGraph(mode) {
   cssRenderer.domElement.style.top = '0';
   cssRenderer.domElement.style.pointerEvents = 'none';
 
-  const nodes = buildNodes();
-  const edges = buildEdges(mode);
+  let nodes = buildNodes();
+  let edges = buildEdges(mode);
+
+  // Filter orphans if enabled
+  if (hideOrphans && edges.length > 0) {
+    const orphanIds = getOrphanIds(edges);
+    const orphanCount = orphanIds.size;
+    document.getElementById('orphan-count').textContent = `(${orphanCount} hidden)`;
+    nodes = nodes.filter(n => !orphanIds.has(n.id));
+    // Rebuild edges referencing only remaining nodes
+    edges = edges.filter(e => {
+      const src = typeof e.source === 'object' ? e.source.id : e.source;
+      const tgt = typeof e.target === 'object' ? e.target.id : e.target;
+      return !orphanIds.has(src) && !orphanIds.has(tgt);
+    });
+  } else {
+    document.getElementById('orphan-count').textContent = '';
+  }
+
   graphData = { nodes, links: edges };
 
   graph = new ForceGraph3D(container, {
@@ -580,18 +741,18 @@ function buildGraph(mode) {
         if (url) window.open(url, '_blank');
       }
     })
-    .d3AlphaDecay(0.02)
+    .d3AlphaDecay(alphaDecay)
     .d3VelocityDecay(0.3)
     .d3Force('link', d3.forceLink()
       .id(d => d.id)
-      .distance(300)   // ↑ = looser clusters
-      .strength(0.15)   // ↑ = links pull harder
+      .distance(linkDistance)
+      .strength(linkStrength)
     )
     .d3Force('charge', d3.forceManyBody()
-      .strength(-150)       // less negative = free nodes don't scatter as far
+      .strength(repulsionStrength)
       .distanceMax(2500)
     )
-    .d3Force('center', d3.forceCenter().strength(0.05))
+    .d3Force('center', d3.forceCenter().strength(centerGravity))
     .warmupTicks(50)
     .cooldownTicks(300)
     .graphData(graphData);
@@ -652,8 +813,83 @@ function buildControls() {
 
   group.addEventListener('change', e => {
     if (e.target.name === 'rel-mode') {
-      updateGraph(e.target.value);
+      currentMode = e.target.value;
+      updateGraph(currentMode);
     }
+  });
+
+  // Hide orphans checkbox
+  const hideCheck = document.getElementById('hide-orphans');
+  hideCheck.addEventListener('change', () => {
+    hideOrphans = hideCheck.checked;
+    updateGraph(currentMode);
+  });
+
+  // Advanced section toggle
+  const advToggle = document.getElementById('adv-toggle');
+  const advContent = document.getElementById('adv-content');
+  const advArrow = document.getElementById('adv-arrow');
+  let advOpen = false;
+  advContent.classList.add('collapsed');
+  advToggle.addEventListener('click', () => {
+    advOpen = !advOpen;
+    advContent.classList.toggle('collapsed', !advOpen);
+    advArrow.classList.toggle('open', advOpen);
+  });
+
+  // Link distance slider
+  const distSlider = document.getElementById('link-dist');
+  const distVal = document.getElementById('dist-val');
+  distSlider.addEventListener('input', () => {
+    linkDistance = parseInt(distSlider.value);
+    distVal.textContent = linkDistance;
+  });
+  distSlider.addEventListener('change', () => {
+    updateGraph(currentMode);
+  });
+
+  // Repulsion slider
+  const repelSlider = document.getElementById('repulsion');
+  const repelVal = document.getElementById('repel-val');
+  repelSlider.addEventListener('input', () => {
+    repulsionStrength = parseInt(repelSlider.value);
+    repelVal.textContent = repulsionStrength;
+  });
+  repelSlider.addEventListener('change', () => {
+    updateGraph(currentMode);
+  });
+
+  // Link strength slider
+  const strengthSlider = document.getElementById('link-strength');
+  const strengthVal = document.getElementById('strength-val');
+  strengthSlider.addEventListener('input', () => {
+    linkStrength = parseInt(strengthSlider.value) / 100;
+    strengthVal.textContent = linkStrength.toFixed(2);
+  });
+  strengthSlider.addEventListener('change', () => {
+    updateGraph(currentMode);
+  });
+
+  // Center gravity slider
+  const gravitySlider = document.getElementById('center-gravity');
+  const gravityVal = document.getElementById('gravity-val');
+  gravitySlider.addEventListener('input', () => {
+    centerGravity = parseInt(gravitySlider.value) / 100;
+    gravityVal.textContent = centerGravity.toFixed(2);
+  });
+  gravitySlider.addEventListener('change', () => {
+    updateGraph(currentMode);
+  });
+
+  // Alpha decay slider
+  const decaySlider = document.getElementById('alpha-decay');
+  const decayVal = document.getElementById('decay-val');
+  decaySlider.addEventListener('input', () => {
+    alphaDecay = parseInt(decaySlider.value) / 1000;
+    decayVal.textContent = alphaDecay.toFixed(3);
+  });
+  decaySlider.addEventListener('change', () => {
+    updateGraph(currentMode);
   });
 }
 
