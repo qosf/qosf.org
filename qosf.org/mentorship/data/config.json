@@ -1,0 +1,7 @@
+{
+  "benchmarksUrl": "https://unitaryfoundation.github.io/metriq-data/benchmark.latest.json",
+  "platformsIndexUrl": "https://unitaryfoundation.github.io/metriq-data/platforms/index.json",
+  "baselineDevice": "ibm_torino",
+  "gymDocsUrl": "https://unitaryfoundation.github.io/metriq-gym/benchmarks/overview/#available-benchmarks",
+  "benchmarkPages": []
+}

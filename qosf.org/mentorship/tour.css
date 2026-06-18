@@ -1,0 +1,41 @@
+/* Tour button brand color match */
+.subtle-link {
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: color 0.18s ease;
+}
+
+.subtle-link i {
+  color: var(--accent-2);
+  font-size: 14px;
+}
+
+.subtle-link:hover {
+  color: var(--text);
+  text-decoration: underline;
+}
+
+/* Driver.js overrides */
+.driver-popover {
+  font-family: var(--font-sans) !important;
+  border-radius: 12px !important;
+}
+.driver-popover-title {
+  font-family: var(--font-sans) !important;
+  font-weight: 600 !important;
+  font-size: 16px !important;
+}
+.driver-popover-description {
+  font-family: var(--font-sans) !important;
+  font-size: 14px !important;
+  line-height: 1.5 !important;
+}
+.driver-popover-footer button {
+  font-family: var(--font-sans) !important;
+  border-radius: 6px !important;
+}
