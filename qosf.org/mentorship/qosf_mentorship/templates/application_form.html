@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block title %}{{ role }} application · QOSF Mentorship{% endblock %}
+{% block content %}
+<section class="page-hero">
+  <div class="container narrow">
+    <p class="eyebrow">{{ role }} form</p>
+    <h1>{{ role }} application</h1>
+    <p>Submitted data is stored in the cohort database and used by organizers for matching and future program management.</p>
+  </div>
+</section>
+<section class="container narrow form-card">
+  <form method="post">
+    {{ form.hidden_tag() }}
+    <div class="form-grid">
+      {% for field in form if field.type not in ['CSRFTokenField', 'HiddenField', 'SubmitField'] %}
+        <label class="field {% if field.type == 'TextAreaField' %}wide{% endif %}">
+          <span>{{ field.label.text }}</span>
+          {{ field(class_='input') }}
+          {% if field.description %}<small>{{ field.description }}</small>{% endif %}
+          {% for error in field.errors %}<em>{{ error }}</em>{% endfor %}
+        </label>
+      {% endfor %}
+    </div>
+    <button class="button primary" type="submit">Submit securely</button>
+  </form>
+</section>
+{% endblock %}

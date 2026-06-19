@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% block title %}Admin · QOSF Mentorship{% endblock %}
+{% block content %}
+<section class="page-hero">
+  <div class="container">
+    <p class="eyebrow">Operations</p>
+    <h1>Applicant database</h1>
+    <p>Manage submitted forms and move into matching and execution.</p>
+    <div class="button-row">
+      <a class="button primary" href="{{ url_for('matching') }}">Match applicants</a>
+      <a class="button secondary" href="{{ url_for('projects') }}">Track projects</a>
+      <form method="post" action="{{ url_for('auto_pair') }}">
+        <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+        <button class="button auto-pair-button" type="submit">Automatically pair cohort</button>
+      </form>
+    </div>
+  </div>
+</section>
+<section class="container table-section">
+  <div class="panel danger-zone">
+    <h2>Database maintenance</h2>
+    <p>Use the minus buttons on the right of each mentee, mentor, or project/pairing to remove one record at a time from the SQLite database.</p>
+  </div>
+  <h2>Mentees</h2>
+  {% set applicants = mentees %}{% include "applicant_table.html" with context %}
+  <h2>Mentors</h2>
+  {% set applicants = mentors %}{% include "applicant_table.html" with context %}
+  <h2>Confirmed matches / projects</h2>
+  <div class="cards compact">
+    {% for match in matches %}
+      <article>
+        <div class="record-row">
+          <div><strong>{{ match.mentee.name }}</strong> with <strong>{{ match.mentor.name }}</strong><p>{{ match.score }}% · {{ match.rationale }}</p></div>
+          {% if match.project %}
+            <form method="post" action="{{ url_for('delete_project_route', project_id=match.project.id) }}">
+              <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+              <input type="hidden" name="next" value="{{ url_for('admin') }}">
+              <button class="minus-button" type="submit" aria-label="Remove project {{ match.project.title }}">−</button>
+            </form>
+          {% endif %}
+        </div>
+      </article>
+    {% else %}<p>No matches confirmed yet.</p>{% endfor %}
+  </div>
+</section>
+{% endblock %}
