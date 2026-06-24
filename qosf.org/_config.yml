@@ -29,6 +29,8 @@ doks:
               item_url: '/evaluation'
             - item_name: Mentorship
               item_url: '/qc_mentorship'
+            - item_name: Cohort
+              item_url: '/mentorship_platform'
             - item_name: uhday
               item_url: '/uhday'
     footer:
@@ -58,6 +60,15 @@ plugins:
 
 font-awesome:
   assets: true
+
+# Mentorship cohort platform settings
+# Application forms POST to this endpoint. Deploy the Google Apps Script web app
+# in mentorship/apps_script_Code.gs and paste its /exec URL below. This is a
+# public web-app URL (safe to commit) - not a secret key. Leave blank to run the
+# forms in offline preview mode (no submission).
+mentorship:
+    form_endpoint: '' # e.g. https://script.google.com/macros/s/AKfy.../exec
+    contact_email: 'qosf.mentorship@gmail.com'
 
 # Jekyll settings
 url: 'https://qosf.org'

@@ -1,0 +1,24 @@
+role,name,email,country,timezone,level,interests,availability,capacity
+mentee,Ada Nakamura,ada@example.com,Japan,9,2,"algorithms,qml",8,
+mentee,Bilal Haddad,bilal@example.com,Germany,2,3,"error-correction,simulation",6,
+mentee,Carla Mendes,carla@example.com,Brazil,-3,2,"chemistry,algorithms",10,
+mentee,Deepa Rao,deepa@example.com,India,5.5,4,"qml,optimization",7,
+mentee,Erik Johansson,erik@example.com,Sweden,1,1,"hardware,compilers",5,
+mentee,Fatima Zahra,fatima@example.com,Morocco,0,2,"cryptography,algorithms",9,
+mentee,Grace Liu,grace@example.com,United States,-8,3,"qml,chemistry",6,
+mentee,Hiroshi Tanaka,hiroshi@example.com,Japan,9,2,"simulation,hardware",8,
+mentee,Ivan Petrov,ivan@example.com,Russia,3,3,"algorithms,error-correction",7,
+mentee,Julia Santos,julia@example.com,Portugal,0,2,"qml,optimization",6,
+mentee,Kwame Mensah,kwame@example.com,Ghana,0,1,"hardware,simulation",5,
+mentee,Lin Wei,lin@example.com,China,8,4,"chemistry,qml",8,
+mentee,Maria Garcia,maria@example.com,Mexico,-6,2,"algorithms,cryptography",7,
+mentee,Noah Cohen,noah@example.com,Israel,2,3,"optimization,compilers",6,
+mentee,Olga Ivanova,olga@example.com,Ukraine,2,2,"simulation,error-correction",9,
+mentor,Dr. Sofia Alvarez,sofia@example.com,Spain,1,6,"algorithms,optimization,qml",6,2
+mentor,Prof. Kenji Tan,kenji@example.com,Singapore,8,6,"error-correction,simulation,hardware",4,2
+mentor,Dr. Lena Fischer,lena@example.com,Germany,2,5,"chemistry,algorithms,qml",5,3
+mentor,Dr. Omar Khalil,omar@example.com,United States,-5,5,"compilers,hardware,simulation",4,2
+mentor,Dr. Priya Nair,priya@example.com,India,5.5,4,"qml,optimization,algorithms",6,3
+mentor,Dr. Marco Rossi,marco@example.com,Italy,1,6,"cryptography,algorithms,error-correction",5,2
+mentor,Dr. Yuki Sato,yuki@example.com,Japan,9,5,"simulation,qml,chemistry",5,2
+mentor,Dr. Aisha Bello,aisha@example.com,Nigeria,1,4,"hardware,compilers,optimization",4,2

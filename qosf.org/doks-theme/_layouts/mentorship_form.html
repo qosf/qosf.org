@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		{% include site-head.html %}
+	</head>
+	<body class="{{ site.doks.color_theme }}" data-spy="scroll" data-target=".js-scrollspy">
+		{% include site-header.html %}
+		<div class="hero-subheader">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-9">
+						<div class="align-container" data-mh>
+							<div class="align-inner">
+								{% if page.eyebrow %}
+									<span class="mentorship-eyebrow">{{ page.eyebrow }}</span>
+								{% endif %}
+								{% if page.title %}
+									<h1 class="hero-subheader__title">{{ page.title }}</h1>
+								{% endif %}
+								{% if page.description %}
+									<p class="hero-subheader__desc">{{ page.description | markdownify }}</p>
+								{% endif %}
+								{% for button in page.buttons %}
+									{% if button.external_url == true %}
+									<a href="{{ button.url }}" class="btn btn--dark btn--rounded btn--w-icon">
+										{{ button.content }}
+										{% if button.icon %}
+											{% if button.icon contains 'fa' %}
+												&nbsp;&nbsp;<i class="fas fa-icon {{ button.icon }} fa-lg"></i>
+											{% else %}
+												<i class="icon icon--{{ button.icon }}"></i>
+											{% endif %}
+										{% endif %}
+									</a>
+									{% else %}
+									<a href="{% if jekyll.environment == 'production' %}{{ site.doks.baseurl }}{% endif %}{{ button.url }}" class="btn btn--dark btn--rounded btn--w-icon">
+										{{ button.content }}
+										{% if button.icon %}
+											{% if button.icon contains 'fa' %}
+												&nbsp;&nbsp;<i class="fas fa-icon {{ button.icon }} fa-lg"></i>
+											{% else %}
+												<i class="icon icon--{{ button.icon }}"></i>
+											{% endif %}
+										{% endif %}
+									</a>
+									{% endif %}
+								{% endfor %}
+							</div><!-- /.align-inner -->
+						</div><!-- /.align-container -->
+					</div><!-- /.col -->
+				</div><!-- /.row -->
+			</div><!-- /.container -->
+		</div><!-- /.hero-subheader -->
+		<div class="section">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="content mentorship-content">
+							{{ content }}
+						</div><!-- /.content -->
+					</div><!-- /.col -->
+				</div><!-- /.row -->
+			</div><!-- /.container -->
+		</div><!-- /.section -->
+		<div class="js-footer-area">
+			{% include site-footer.html %}
+		</div><!-- /.js-footer-area -->
+	</body>
+</html>
