@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block title %}Matching · QOSF Mentorship{% endblock %}
+{% block content %}
+<section class="page-hero"><div class="container"><p class="eyebrow">Matching</p><h1>Mentee-mentor compatibility</h1><p>Ranked by closest timezone, closest weekly availability, character-based research-interest matches, character-based skill matches, and mentor capacity.</p><form method="post" action="{{ url_for('auto_pair') }}" class="button-row"><input type="hidden" name="csrf_token" value="{{ csrf_token() }}"><button class="button auto-pair-button" type="submit">Automatically pair cohort</button></form></div></section>
+<section class="container cards">
+{% for mentee, candidates in suggestions %}
+  <article class="match-card">
+    <h2>{{ mentee.name }}</h2>
+    <p class="muted">{{ mentee.educational_level }} · UTC{{ '%+d'|format(mentee.timezone) }} · {{ mentee.interests }}</p>
+    {% for candidate in candidates %}
+      <div class="candidate">
+        <div><strong>{{ candidate.mentor.name }}</strong><p>{{ candidate.rationale }}</p></div>
+        <form method="post" action="{{ url_for('create_match') }}">
+          <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+          <input type="hidden" name="mentee_id" value="{{ mentee.id }}">
+          <input type="hidden" name="mentor_id" value="{{ candidate.mentor.id }}">
+          <button class="score-button" type="submit">{{ candidate.score }}%<span>Confirm</span></button>
+        </form>
+      </div>
+    {% else %}<p>No available mentors yet.</p>{% endfor %}
+  </article>
+{% else %}<p>No mentees submitted yet.</p>{% endfor %}
+</section>
+{% endblock %}

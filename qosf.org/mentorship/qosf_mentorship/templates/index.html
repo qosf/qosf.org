@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+{% block title %}QOSF Mentorship Cohort Platform{% endblock %}
+{% block content %}
+<section class="hero hero-blue">
+  <div class="container hero-grid">
+    <div>
+      <p class="eyebrow">QC Mentorship program</p>
+      <h1>End-to-end cohort operations for the QOSF mentorship program.</h1>
+      <p class="hero-copy">Collect secure mentor and mentee applications, compare timezones and research interests, confirm matches, and track every project milestone from kickoff to final presentation.</p>
+      <div class="button-row">
+        <a class="button primary" href="{{ url_for('apply_mentee') }}">Apply as mentee</a>
+        <a class="button secondary" href="{{ url_for('apply_mentor') }}">Register as mentor</a>
+      </div>
+    </div>
+    <aside class="hero-card" aria-label="Cohort status summary">
+      <h2>Live cohort status</h2>
+      <div class="stat-grid">
+        <span><strong>{{ stats.mentees }}</strong>Mentees</span>
+        <span><strong>{{ stats.mentors }}</strong>Mentors</span>
+        <span><strong>{{ stats.matches }}</strong>Matches</span>
+        <span><strong>{{ stats.projects }}</strong>Projects</span>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<section class="container section-grid">
+  <article class="panel">
+    <h2>Application process</h2>
+    <p>Structured forms gather timezone, educational level, skills, availability, and quantum research interests so organizers can make transparent matching decisions.</p>
+    <ul class="check-list">
+      <li>CSRF-protected form</li>
+    </ul>
+  </article>
+  <article class="panel">
+    <h2>Mentor matching</h2>
+    <p>The matching dashboard can automatically pair mentees and mentors by closest timezone, closest weekly availability, character-based research-interest matches, character-based skill matches, and mentor capacity.</p>
+    <a class="text-link" href="{{ url_for('matching') }}">Open matching dashboard</a>
+  </article>
+  <article class="panel">
+    <h2>Execution process</h2>
+    <p>Program milestones, project statuses, blockers, and next deadlines remain visible from a single cohort control center.</p>
+    <a class="text-link" href="{{ url_for('projects') }}">Review projects</a>
+  </article>
+</section>
+
+<section class="container timeline-section">
+  <div class="section-heading">
+    <p class="eyebrow">Timeline</p>
+    <h2>Clear deadlines for the whole cohort</h2>
+  </div>
+  <div class="timeline">
+    {% for milestone in milestones %}
+      <div class="timeline-item">
+        <span class="date-pill">{{ milestone.due_date.isoformat() }}</span>
+        <h3>{{ milestone.title }}</h3>
+        <p>{{ milestone.description }}</p>
+        <small>{{ milestone.phase }}</small>
+      </div>
+    {% endfor %}
+  </div>
+</section>
+{% endblock %}

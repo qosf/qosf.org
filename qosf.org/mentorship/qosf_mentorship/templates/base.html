@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %}QOSF Mentorship{% endblock %}</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Noto+Sans:wght@400;500;700&family=Source+Code+Pro:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/qosf.css') }}">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-shell">
+      <a class="brand" href="{{ url_for('index') }}" aria-label="Quantum Open Source Foundation mentorship portal">
+        <img class="brand-logo" src="https://qosf.org/assets/img/logos/qosf_colour_logo.svg" alt="QOSF logo">
+        <span class="brand-text">Mentorship Portal</span>
+      </a>
+      <nav class="nav-links" aria-label="QOSF primary navigation">
+        {% for label, href in nav_items %}<a href="{{ href }}">{{ label }}</a>{% endfor %}
+        <a class="portal-link" href="{{ url_for('admin') }}">Cohort Portal</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    {% with messages = get_flashed_messages(with_categories=true) %}
+      {% if messages %}
+        <section class="container flashes" aria-live="polite">
+          {% for category, message in messages %}<div class="flash {{ category }}">{{ message }}</div>{% endfor %}
+        </section>
+      {% endif %}
+    {% endwith %}
+    {% block content %}{% endblock %}
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h2>Quantum Open Source Foundation (QOSF)</h2>
+        <p>The content of this website is released under the <a href="https://github.com/qosf/qosf.org/blob/master/LICENSE">CC0 1.0 Universal</a> license.</p>
+      </div>
+      <div class="social-list">
+        <a href="https://www.linkedin.com/company/qosf">LinkedIn</a>
+        <a href="https://www.youtube.com/channel/UCcEdG3UB19AZMxHymhefh1Q">YouTube</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

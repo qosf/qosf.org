@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block title %}Admin login · QOSF Mentorship{% endblock %}
+{% block content %}
+<section class="page-hero"><div class="container narrow"><p class="eyebrow">Secure access</p><h1>Cohort control center</h1><p>Applicant records, matching suggestions, and project statuses require administrator access.</p></div></section>
+<section class="container narrow form-card">
+  <form method="post">
+    {{ form.hidden_tag() }}
+    <label class="field"><span>{{ form.password.label.text }}</span>{{ form.password(class_='input') }}</label>
+    <button class="button primary" type="submit">Sign in</button>
+  </form>
+</section>
+{% endblock %}

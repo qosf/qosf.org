@@ -1,0 +1,23 @@
+<div class="responsive-table">
+<table>
+  <thead><tr><th>Name</th><th>Email</th><th>UTC</th><th>Level</th><th>Interests</th><th>Availability</th><th>Remove</th></tr></thead>
+  <tbody>
+    {% for applicant in applicants %}
+      <tr>
+        <td>{{ applicant.name }}</td>
+        <td>{{ applicant.email }}</td>
+        <td>{{ '%+d'|format(applicant.timezone) }}</td>
+        <td>{{ applicant.educational_level }}</td>
+        <td>{{ applicant.interests }}</td>
+        <td>{{ applicant.availability }}</td>
+        <td>
+          <form method="post" action="{{ url_for('delete_applicant_route', applicant_id=applicant.id) }}">
+            <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+            <button class="minus-button" type="submit" aria-label="Remove {{ applicant.name }}">−</button>
+          </form>
+        </td>
+      </tr>
+    {% else %}<tr><td colspan="7">No records yet.</td></tr>{% endfor %}
+  </tbody>
+</table>
+</div>

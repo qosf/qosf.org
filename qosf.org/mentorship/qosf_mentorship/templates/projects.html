@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block title %}Projects · QOSF Mentorship{% endblock %}
+{% block content %}
+<section class="page-hero"><div class="container"><p class="eyebrow">Execution</p><h1>Project status board</h1><p>Track deadlines, blockers, and progress for every mentorship project.</p></div></section>
+<section class="container project-layout">
+  <div>
+    <h2>Projects</h2>
+    <div class="cards compact">
+    {% for project in projects %}
+      <article>
+        <span class="status {{ project.status }}">{{ project.status }}</span>
+        <h3>{{ project.title }}</h3>
+        <p>{{ project.summary }}</p>
+        <div class="record-row">
+          <p class="muted">Next deadline: {{ project.next_deadline.isoformat() }}</p>
+          <form method="post" action="{{ url_for('delete_project_route', project_id=project.id) }}">
+            <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+            <input type="hidden" name="next" value="{{ url_for('projects') }}">
+            <button class="minus-button" type="submit" aria-label="Remove project {{ project.title }}">−</button>
+          </form>
+        </div>
+        <form method="post" class="inline-update">
+          <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+          <input type="hidden" name="project_id" value="{{ project.id }}">
+          <select name="status">{% for value, label in form.status.choices %}<option value="{{ value }}" {% if value == project.status %}selected{% endif %}>{{ label }}</option>{% endfor %}</select>
+          <input type="date" name="next_deadline" value="{{ project.next_deadline.isoformat() }}">
+          <textarea name="summary">{{ project.summary }}</textarea>
+          <button class="button secondary" type="submit">Update</button>
+        </form>
+      </article>
+    {% else %}<p>No projects yet. Confirm a match to create the first workspace.</p>{% endfor %}
+    </div>
+  </div>
+  <aside class="panel">
+    <h2>Cohort milestones</h2>
+    {% for milestone in milestones %}<div class="mini-milestone"><strong>{{ milestone.title }}</strong><span>{{ milestone.due_date.isoformat() }}</span><p>{{ milestone.description }}</p></div>{% endfor %}
+  </aside>
+</section>
+{% endblock %}
