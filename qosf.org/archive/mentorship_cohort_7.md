@@ -6,7 +6,7 @@ keywords:
 comments: false
 
 # Hero section
-title: Quantum Computing Mentorship Program Cohort Three Showcase 
+title: Quantum Computing Mentorship Program Cohort Seven Showcase 
 description: Connecting quantum enthusiasts with mentors from academia & industry.
 buttons:
     - content: Apply for mentorship
@@ -26,6 +26,6 @@ permalink: /archive/mentorship_cohort_7/
 
 ## Quantum Mentorship Program Cohort 7 Project Showcase 
 
-This is a showcase of all the projects created during the third cohort of our Quantum Computing Mentorship Program. Mentees and mentors worked on a open-source project, with the support of a community of like-minded people from all around the world. In total, there were 24 projects completed!
+This is a showcase of all the projects created during the seventh cohort of our Quantum Computing Mentorship Program. Mentees and mentors worked on a open-source project, with the support of a community of like-minded people from all around the world. In total, there were 24 projects completed!
 
 ---

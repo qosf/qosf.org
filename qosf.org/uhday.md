@@ -30,7 +30,7 @@ permalink: /unitaryhack_day/
 
 ## General Overview
 
-You’re invited to participate in our local **UnitaryHACK Day**, an in-person event that is part of the global hackathon organized by the:contentReference[oaicite:0]{index=0}.
+You’re invited to participate in our local **UnitaryHACK Day**, an in-person event that is part of the global hackathon organized by [Unitary Fund](https://unitary.fund).
 
 With the support of mentors and a community of quantum enthusiasts, you will collaborate on open-source projects, contribute to real repositories, and gain hands-on experience in quantum computing.
 
@@ -148,7 +148,7 @@ This event is organized by:
 - Sara Andotra  
 - Alberto Maldonado Romo  
 
-in collaboration with the :contentReference[oaicite:1]{index=1} and :contentReference[oaicite:2]{index=2}.
+in collaboration with [Unitary Fund](https://unitary.fund) and NYU Tandon School of Engineering.
 
 
 

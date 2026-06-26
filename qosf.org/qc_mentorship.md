@@ -9,10 +9,6 @@ comments: false
 title: Quantum Computing Mentorship Program
 description: Connecting quantum enthusiasts with mentors from academia & industry.
 buttons:
-    - content: Apply for mentorship (for applicants)
-      url: ''
-      external_url: true
-      icon: fa-file-import
     - content: Apply to be a mentor
       url: 'https://forms.gle/NTa94uTJDGweNfuP7'
       external_url: true

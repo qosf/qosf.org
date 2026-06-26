@@ -9,7 +9,6 @@ comments: false
 title: QOSF Manifesto
 description: Our core beliefs and mission statement, and why you should get excited about us.
 buttons:
-      icon: home
     - icon: slack
       content: Join our Slack
       url: 'https://join.slack.com/t/qosf/shared_invite/zt-2nq2n0t9i-PyiiCKg1bAzRpNzLMM7pWg'
