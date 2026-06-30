@@ -29,13 +29,10 @@ doks:
               item_url: '/evaluation'
             - item_name: Mentorship
               item_url: '/qc_mentorship'
-<<<<<<< HEAD
             - item_name: Cohort
               item_url: '/mentorship_platform'
             - item_name: uhday
               item_url: '/uhday'
-=======
->>>>>>> db84698 (Fix site issues: manifesto YAML, workflow path, cohort titles, uhday content, nav)
     footer:
         content:
             logo:
