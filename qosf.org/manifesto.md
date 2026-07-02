@@ -3,6 +3,9 @@
 # Page settings
 layout: default
 keywords:
+left_illustration: illustrations/manifesto_left_side.png
+right_illustration: illustrations/manifesto_right_side.png
+custom_css: manifesto.css
 comments: false
 
 # Hero section
