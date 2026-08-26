@@ -80,19 +80,19 @@ Cohort eleven (December 2025 to April 2026): [mentorship projects]({{ 'mentorshi
 
 ## Timeline 
 
-The program is running in cohorts. Here is the timeline for the next cohort, i.e., cohort 10th, which will start in October 2024. If you would like to be informed about updates, please follow us on [Twitter](https://twitter.com/qosfoundation), [LinkedIn](https://www.linkedin.com/company/qosf/) and [Facebook](https://www.facebook.com/quantumOSfoundation)!
+The program is running in cohorts. Here is the timeline for the next cohort, i.e., cohort 12th, which will start in October 2024. If you would like to be informed about updates, please follow us on [Twitter](https://twitter.com/qosfoundation), [LinkedIn](https://www.linkedin.com/company/qosf/) and [Facebook](https://www.facebook.com/quantumOSfoundation)!
 
 | Program milestone                                           | Timeframe                                                           |
 --------------------------------------------------------------|---------------------------------------------------------------------|
-| Program applications released for mentors                   | September 29, 2025                     | 
-| Program applications released for mentees                   | October 6, 2025                     |
-| Program applications closed for mentors                     | October 17, 2025                    |
-| Program applications closed for mentees                     | October 26, 2025                    | 
-| Applications review                                         | October 27 - November 16, 2025       |
-| Pairing mentors with mentees and defining projects’ scope   | November 17 - December 1, 2025       |
+| Program applications released for mentors                   | September 29, 2026                     | 
+| Program applications released for mentees                   | October 6, 20626                     |
+| Program applications closed for mentors                     | October 17, 2026                    |
+| Program applications closed for mentees                     | October 26, 2026                    | 
+| Applications review                                         | October 27 - November 16, 2026       |
+| Pairing mentors with mentees and defining projects’ scope   | November 17 - December 1, 2026       |
 | Mentees and mentors work on projects                        | December 8, 2025 - March 15, 2026   |
-| Program wrap-up, Final presentations                        | March 16-20, 2026     |
-| Promotion of all open-source projects                       | April - May 2026|
+| Program wrap-up, Final presentations                        | March 16-20, 2027     |
+| Promotion of all open-source projects                       | April - May 2027|
     
 
 ## How does it work?
