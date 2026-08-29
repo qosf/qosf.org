@@ -102,6 +102,9 @@
   - description: Pauli propagation simulation of quantum circuits in the Heisenberg picture.
     name: PauliPropagation.jl
     url: https://github.com/MSRudolph/PauliPropagation.jl
+  - description: Fast simulation of photonic quantum computing with differentiability support.
+    name: Piquasso
+    url: https://github.com/Budapest-Quantum-Computing-Group/piquasso
   - description: Efficient simulation of open quantum dynamics of identical qubits.
     name: PIQS
     url: https://github.com/nathanshammah/piqs
