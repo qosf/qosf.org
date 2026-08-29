@@ -1,0 +1,111 @@
+@import "tailwindcss";
+
+:root {
+  --color-qosf-blue: #1e3a5f;
+  --color-qosf-blue-light: #2c5282;
+  --color-qosf-blue-dark: #0f2440;
+  --color-qosf-accent: #e8a838;
+  --color-qosf-accent-light: #f0c060;
+  --color-qosf-bg: #f8f9fa;
+  --color-qosf-text: #333333;
+  --color-qosf-text-light: #666666;
+  --color-qosf-border: #dee2e6;
+}
+
+@theme {
+  --color-qosf-blue: #1e3a5f;
+  --color-qosf-blue-light: #2c5282;
+  --color-qosf-blue-dark: #0f2440;
+  --color-qosf-accent: #e8a838;
+  --color-qosf-accent-light: #f0c060;
+  --color-qosf-bg: #f8f9fa;
+  --color-qosf-text: #333333;
+  --color-qosf-text-light: #666666;
+  --color-qosf-border: #dee2e6;
+  --font-montserrat: "Montserrat", sans-serif;
+  --font-noto: "Noto Sans", sans-serif;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-noto);
+    color: var(--color-qosf-text);
+    background-color: var(--color-qosf-bg);
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-montserrat);
+    font-weight: 700;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-qosf-accent text-white font-bold py-2 px-6 rounded-full hover:bg-qosf-accent-light transition-colors duration-200 inline-flex items-center gap-2;
+  }
+  .btn-secondary {
+    @apply bg-qosf-blue text-white font-bold py-2 px-6 rounded-full hover:bg-qosf-blue-light transition-colors duration-200 inline-flex items-center gap-2;
+  }
+  .btn-outline {
+    @apply border-2 border-qosf-blue text-qosf-blue font-bold py-2 px-6 rounded-full hover:bg-qosf-blue hover:text-white transition-colors duration-200 inline-flex items-center gap-2;
+  }
+  .card {
+    @apply bg-white rounded-lg shadow-md p-6 border border-qosf-border;
+  }
+  .section-title {
+    @apply text-2xl md:text-3xl font-bold text-qosf-blue mb-6;
+  }
+  .hero-subheader {
+    @apply bg-qosf-blue text-white py-12 md:py-20;
+  }
+  .hero-subheader__title {
+    @apply text-3xl md:text-4xl font-bold mb-4;
+  }
+  .hero-subheader__desc {
+    @apply text-lg md:text-xl opacity-90 mb-6;
+  }
+  .content a {
+    @apply text-qosf-blue-light underline hover:text-qosf-accent transition-colors;
+  }
+  .content h2 {
+    @apply text-2xl font-bold text-qosf-blue mt-8 mb-4;
+  }
+  .content h3 {
+    @apply text-xl font-bold text-qosf-blue mt-6 mb-3;
+  }
+  .content p {
+    @apply mb-4 leading-relaxed;
+  }
+  .content ul {
+    @apply list-disc pl-6 mb-4 space-y-1;
+  }
+  .content ol {
+    @apply list-decimal pl-6 mb-4 space-y-1;
+  }
+  .content blockquote {
+    @apply border-l-4 border-qosf-accent pl-4 italic my-4 text-qosf-text-light;
+  }
+  .content code {
+    @apply bg-gray-100 text-qosf-blue-dark px-1.5 py-0.5 rounded text-sm font-mono;
+  }
+  .content pre {
+    @apply bg-gray-100 rounded-lg p-4 overflow-x-auto mb-4;
+  }
+  .content pre code {
+    @apply bg-transparent p-0;
+  }
+  .content img {
+    @apply max-w-full h-auto rounded-lg my-4;
+  }
+  .content table {
+    @apply w-full border-collapse mb-4;
+  }
+  .content th {
+    @apply bg-qosf-blue text-white px-4 py-2 text-left font-bold;
+  }
+  .content td {
+    @apply border border-qosf-border px-4 py-2;
+  }
+  .content tr:nth-child(even) {
+    @apply bg-gray-50;
+  }
+}
